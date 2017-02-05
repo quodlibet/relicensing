@@ -1,0 +1,89 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp884071itb;
+        Sat, 4 Feb 2017 05:53:12 -0800 (PST)
+X-Received: by 10.159.36.209 with SMTP id 75mr748741uar.51.1486216392534;
+        Sat, 04 Feb 2017 05:53:12 -0800 (PST)
+Return-Path: <joe.wreschnig@gmail.com>
+Received: from mail-vk0-f44.google.com (mail-vk0-f44.google.com. [209.85.213.44])
+        by mx.google.com with ESMTPS id f4si5881924vkg.133.2017.02.04.05.53.12
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 04 Feb 2017 05:53:12 -0800 (PST)
+Received-SPF: pass (google.com: domain of joe.wreschnig@gmail.com designates 209.85.213.44 as permitted sender) client-ip=209.85.213.44;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of joe.wreschnig@gmail.com designates 209.85.213.44 as permitted sender) smtp.mailfrom=joe.wreschnig@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-vk0-f44.google.com with SMTP id x75so1155vke.2
+        for <reiter.christoph@gmail.com>; Sat, 04 Feb 2017 05:53:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=FqPFrBQAEzcfCsBw45r8lx8UbDSqb3oBqGxy7a21EUE=;
+        b=UUUenv9GI1r0smNpImpjxrfD6DweJ2NVzfcW25029B6Cnh6uLPYS9jApcoeZHCWTkN
+         H4DTV6t1Kg15ik47ubp6V3rhxUUVGHNQWnF15cnXuHi7WHUnddetyQ4ZY0t1LXHt4UW3
+         pnelO0JkxarATLPAHv5pQb7yr5gzqkuDIilsOeSNz0L51NdLfeV82O5/LglUSJ1eaYy9
+         kgxcgzq1SVCeRZ5sA5+e1vVG0/7DvUawEXBJ8qDQVHwthGKAhkWXY15uXPkAkjl1Fsve
+         nY9V+eldAmxN9PnuJsAEV8lMhHq3mwSSdILjXVYN2I/B8NA/AA+oYan8ROpgzkfVIuR/
+         T0sQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=FqPFrBQAEzcfCsBw45r8lx8UbDSqb3oBqGxy7a21EUE=;
+        b=mgzXegl3TYolIF4EX2UagOGyzm65oqdnoBBZM92hrmh+XyX0ODOsPcp874eor5Ng6a
+         CMwF878Fx1VKu+SxakDOk2TJxvrUfHd5ezz9Fsyul63FQwiUJcwNfASF8gNX4+XHh+pt
+         AnDKibSUULlpeUqs1loLddA5asmMUI854ef+isp2tvXvvIqcyovxh18DynuXAYCJt931
+         HADaozcvjc20ceqhj5Wg0V47LCxVV3iBM60WkkcHzxi3v9zyct9+o2k67Rfs/CIOnr/C
+         EjmV1BQlOzpzMOiQASojZb9AEiUhD6zlmSdfmxzbxLbgfiSZ4s1o6tCjlEYLx/BFajpy
+         0Uww==
+X-Gm-Message-State: AMke39ldKDlX9vwcb8ZvxNuT66AKjRb7RglPn9jFwXGuIUhU8rRdpfLO+AweayR5qAZhjABwpwF8IuER51V8zA==
+X-Received: by 10.31.138.9 with SMTP id m9mr744204vkd.110.1486216391909; Sat,
+ 04 Feb 2017 05:53:11 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.103.82.214 with HTTP; Sat, 4 Feb 2017 05:53:11 -0800 (PST)
+In-Reply-To: <CAE6_+UfVunQpPUEmLnrhktE6gqmtUc1ud_403YuoxJG19zdPxQ@mail.gmail.com>
+References: <CAE6_+UfVunQpPUEmLnrhktE6gqmtUc1ud_403YuoxJG19zdPxQ@mail.gmail.com>
+From: Joe Wreschnig <joe.wreschnig@gmail.com>
+Date: Sat, 4 Feb 2017 14:53:11 +0100
+Message-ID: <CAHRwm6vPMQrEn6ddPpoOgG8b1rbgxfNFqNOS2yBE4mmxXyLX7Q@mail.gmail.com>
+Subject: Re: licensing gplv2+
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: text/plain; charset=UTF-8
+
+Yes, this is fine.
+
+All code I have written for Quod Libet and Mutagen may be used,
+modified, and distributed under the terms of the GNU GPLv2 or later.
+
+All code I have written using the "old-style" MIT license without
+explicit permission to "sublicense" may also be sublicensed.
+
+On Fri, Feb 3, 2017 at 9:24 PM, Christoph Reiter
+<reiter.christoph@gmail.com> wrote:
+> Hey Joe,
+>
+> I was wondering what your thoughts are on relicensing your mutagen/quodlibet
+> GPLv2 code as GPLv2+. My main motivation here is compatibility with GPLv3 and
+> as a result Apache2.
+>
+> Some cases where it would help:
+>
+> * python-musicbrainzngs is trying to use "requests" instead of urllib which
+>   is licensed under Apache2 and incompatible with GPLv2. That would affect
+>   picard and quodlibet.
+>
+> * It would also be nice if we could use requests in quodlibet..
+>
+> * puddletag (a mutagen user) is GPLv3, which makes it a violation imo
+>
+> * picard is trying to port to pyqt5 which is GPLv3
+>
+> And while I'm already asking: The distutils code in quodlibet has its own
+> license [0] which reads similarly to the MIT license [1] (minus sublicensing).
+> Would you agree on relicensing that to MIT for simplicity's sake?
+>
+> thanks
+>
+> [0] https://github.com/quodlibet/quodlibet/blob/master/quodlibet/gdist/__init__.py#L2
+> [1] https://en.wikipedia.org/wiki/MIT_License
