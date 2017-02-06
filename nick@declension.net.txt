@@ -1,0 +1,62 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1599974itb;
+        Mon, 6 Feb 2017 06:49:38 -0800 (PST)
+X-Received: by 10.55.93.131 with SMTP id r125mr10469793qkb.208.1486392578022;
+        Mon, 06 Feb 2017 06:49:38 -0800 (PST)
+Return-Path: <nick@declension.net>
+Received: from out1-smtp.messagingengine.com (out1-smtp.messagingengine.com. [66.111.4.25])
+        by mx.google.com with ESMTPS id n40si636886qtc.108.2017.02.06.06.49.37
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 06:49:37 -0800 (PST)
+Received-SPF: neutral (google.com: 66.111.4.25 is neither permitted nor denied by best guess record for domain of nick@declension.net) client-ip=66.111.4.25;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@messagingengine.com;
+       spf=neutral (google.com: 66.111.4.25 is neither permitted nor denied by best guess record for domain of nick@declension.net) smtp.mailfrom=nick@declension.net
+Received: from compute1.internal (compute1.nyi.internal [10.202.2.41])
+	by mailout.nyi.internal (Postfix) with ESMTP id 7CC3D20B1E
+	for <reiter.christoph@gmail.com>; Mon,  6 Feb 2017 09:49:37 -0500 (EST)
+Received: from frontend1 ([10.202.2.160])
+  by compute1.internal (MEProxy); Mon, 06 Feb 2017 09:49:37 -0500
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=
+	messagingengine.com; h=content-transfer-encoding:content-type
+	:date:from:in-reply-to:message-id:mime-version:references
+	:subject:to:x-me-sender:x-me-sender:x-sasl-enc:x-sasl-enc; s=
+	smtpout; bh=d3XtwpR6fOcghMBbQqVbgcgB5lw=; b=PmG2Sbzp7P59t1XABsC8
+	1DOJ3fsPFPjhX2n31XYA/q0K6XiaIbnsb0ieQRCBHtNvzmRE4COdgQNMFuh08D3Y
+	9E3NDFCjmKlZcubU/xgBAFIk0cVK4BWrrVwRUgdkQXQFE8l5BJJYEpcfNNFSNCNY
+	8BTws5IzjN18daasixnhhK8=
+X-ME-Sender: <xms:AY2YWDYzqZc94mBKNMBqydxGGF1iVuU6bzxveJg1UHKaUVIXljrgcQ>
+X-Sasl-enc: abwqNSnGxmDEsPv75MezsezzCK3o8BsZfi/T2jRrglQp 1486392577
+Received: from [97.3.154.83] (unknown [165.225.80.105])
+	by mail.messagingengine.com (Postfix) with ESMTPA id 164607E2B0
+	for <reiter.christoph@gmail.com>; Mon,  6 Feb 2017 09:49:36 -0500 (EST)
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UdpnXJKB9T1KAs0KNEd9yBmNsJqEMBL0uVwdttMiaKkug@mail.gmail.com>
+From: Nick Boultbee <nick@declension.net>
+Message-ID: <0cfab77e-c089-9882-2627-f92a577baae7@declension.net>
+Date: Mon, 6 Feb 2017 14:49:31 +0000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101
+ Thunderbird/45.7.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UdpnXJKB9T1KAs0KNEd9yBmNsJqEMBL0uVwdttMiaKkug@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+I, Nick Boultbee, hereby make all my contributions made to mutagen [1] and Quod Libet [2] available under the terms of the "GNU GPL version 2 or later" [3]
+
+[1]https://github.com/quodlibet/mutagen
+[2]https://github.com/quodlibet/quodlibet
+[3]https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+On 06/02/17 14:31, Christoph Reiter wrote:
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+> [3]
+>
+> [1]https://github.com/quodlibet/mutagen
+> [2]https://github.com/quodlibet/quodlibet
+> [3]https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+

@@ -1,0 +1,173 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1675718itb;
+        Mon, 6 Feb 2017 10:07:10 -0800 (PST)
+X-Received: by 10.55.67.135 with SMTP id q129mr11188450qka.98.1486404430822;
+        Mon, 06 Feb 2017 10:07:10 -0800 (PST)
+Return-Path: <adrian.sampson@gmail.com>
+Received: from mail-qt0-x234.google.com (mail-qt0-x234.google.com. [2607:f8b0:400d:c0d::234])
+        by mx.google.com with ESMTPS id d142si897qkc.250.2017.02.06.10.07.10
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 10:07:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of adrian.sampson@gmail.com designates 2607:f8b0:400d:c0d::234 as permitted sender) client-ip=2607:f8b0:400d:c0d::234;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of adrian.sampson@gmail.com designates 2607:f8b0:400d:c0d::234 as permitted sender) smtp.mailfrom=adrian.sampson@gmail.com
+Received: by mail-qt0-x234.google.com with SMTP id k15so98480311qtg.3
+        for <reiter.christoph@gmail.com>; Mon, 06 Feb 2017 10:07:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=sender:from:mime-version:subject:date:references:to:in-reply-to
+         :message-id;
+        bh=ZWk28UE6Yl0j3OmF2oSN/9/ink3Zn+LAaMBc6gZhEbI=;
+        b=FgLEnM5OqgVB3DPfhsIvtOYdoaXGOI3QxZe2iVF6jWIjN3jqHYCQQCysEiUg9dySGi
+         TBExAGQUlnsysuUFVkU+EFNMXxn92ai3WoC+XHdQ0P3cEW55Csk5PlQJAR3D05eYeYKZ
+         H3+RgSd8Q+6g+itRacuKlQMCCaPzgf3hoxMZCj0Mi90MKno969Qt8vU66g8+FFqsZpCP
+         enjHiM7hrKnb1hohe2FYJwbH8fvP5of16M3Z1S3q79Mr9wFPHZDW4PZogyaETrHwVqT0
+         1/JbwBfQQ4pGcTMfXR22dCD8vzLEAY8Zn4SAxqJ/5dimmaNMCYiX/VpUDAfP0fKiR9ZC
+         pHNQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:sender:from:mime-version:subject:date:references
+         :to:in-reply-to:message-id;
+        bh=ZWk28UE6Yl0j3OmF2oSN/9/ink3Zn+LAaMBc6gZhEbI=;
+        b=Ci0tOY8BFI+QBYO6n+L53f/LyTfp7EDwM7sjqS80pIvKHMwBze2UCexlXqcuYQM+5u
+         L2jx7bAxJbf4iqu52W2+IkQarM6HyT9+vABTiTAZFvKlTYpZT+U98l8hZXmmuRbSB7mv
+         lkOEKqrakwrSgEU4vpZZoyMrOXb7qk86RCfOVwXII5t1u7jj3CE1HCdYbQp0syq6LK9Y
+         Xm8m5pa0yQdfxNGbV8ZrgdW4yhgCU+/NRfYc33wTmAPiQ7+CTUr8C5SXo6B4tKcgNxxU
+         n6f+aJpHIZmddmuzVFW0T1U0zVp3RDbphVdzg4Jixufz2Z5LHzBhGq0jXHNDaLZdbhDT
+         d1lg==
+X-Gm-Message-State: AMke39kYVTgxUHUUiC7c0P3NlKQfg8+cP3wXvtDpC0LdoHgn8RrolA0atAgvsYhBELkn8w==
+X-Received: by 10.237.36.166 with SMTP id t35mr10145827qtc.172.1486404430200;
+        Mon, 06 Feb 2017 10:07:10 -0800 (PST)
+Return-Path: <adrian.sampson@gmail.com>
+Received: from als485.cs.cornell.edu (als485.cs.cornell.edu. [128.84.217.158])
+        by smtp.gmail.com with ESMTPSA id f68sm1109110qkf.34.2017.02.06.10.07.08
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 10:07:08 -0800 (PST)
+Sender: Adrian Sampson <adrian.sampson@gmail.com>
+From: Adrian Sampson <adrian@radbox.org>
+Content-Type: multipart/alternative;
+ boundary="Apple-Mail=_5A617E6B-DD6C-4F03-B260-6BB6E6BEF5C2"
+Mime-Version: 1.0 (Mac OS X Mail 10.3 \(3263\))
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+Date: Mon, 6 Feb 2017 13:07:06 -0500
+References: <CAE6_+UdT4TVybkS_o3=aui9s2e--nY8QQN=JbFXad5LuJpQeQw@mail.gmail.com>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+In-Reply-To: <CAE6_+UdT4TVybkS_o3=aui9s2e--nY8QQN=JbFXad5LuJpQeQw@mail.gmail.com>
+Message-Id: <230AEF56-0B35-4ADE-8E02-8F529D849EAF@radbox.org>
+X-Mailer: Apple Mail (2.3263)
+
+
+--Apple-Mail=_5A617E6B-DD6C-4F03-B260-6BB6E6BEF5C2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=us-ascii
+
+Of course! Thanks for doing the extra work for this, Christoph.
+
+I, Adrian Sampson, hereby make all my contributions made to mutagen [1] =
+and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or =
+later"
+[3]
+
+[1] https://github.com/quodlibet/mutagen =
+<https://github.com/quodlibet/mutagen>
+[2] https://github.com/quodlibet/quodlibet =
+<https://github.com/quodlibet/quodlibet>
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt =
+<https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
+
+
+> On Feb 6, 2017, at 12:37 PM, Christoph Reiter =
+<reiter.christoph@gmail.com> wrote:
+>=20
+> Hey,
+>=20
+> I'm trying to change the license of mutagen and Quod Libet from "GNU =
+GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and =
+it looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>=20
+> Would you be willing to make your contributions to both mutagen and =
+Quod Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with =
+the
+> following:
+>=20
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D
+>=20
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] =
+and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or =
+later"
+> [3]
+>=20
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>=20
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D
+>=20
+> If you have any objections or questions regarding the relicensing or =
+your
+> contributions please tell me.
+>=20
+> thanks!
+
+
+--Apple-Mail=_5A617E6B-DD6C-4F03-B260-6BB6E6BEF5C2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=us-ascii
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html =
+charset=3Dus-ascii"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" =
+class=3D"">Of course! Thanks for doing the extra work for this, =
+Christoph.<div class=3D""><br class=3D""></div><div class=3D"">I, Adrian =
+Sampson, hereby make all my contributions made to mutagen [1] and<br =
+class=3D"">Quod Libet [2] available under the terms of the "GNU GPL =
+version 2 or later"<br class=3D"">[3]<br class=3D""><br =
+class=3D"">[1]&nbsp;<a href=3D"https://github.com/quodlibet/mutagen" =
+class=3D"">https://github.com/quodlibet/mutagen</a><br =
+class=3D"">[2]&nbsp;<a href=3D"https://github.com/quodlibet/quodlibet" =
+class=3D"">https://github.com/quodlibet/quodlibet</a><br =
+class=3D"">[3]&nbsp;<a =
+href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" =
+class=3D"">https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</a></div>=
+<div class=3D""><br class=3D""></div><div class=3D""><br =
+class=3D""><div><blockquote type=3D"cite" class=3D""><div class=3D"">On =
+Feb 6, 2017, at 12:37 PM, Christoph Reiter &lt;<a =
+href=3D"mailto:reiter.christoph@gmail.com" =
+class=3D"">reiter.christoph@gmail.com</a>&gt; wrote:</div><br =
+class=3D"Apple-interchange-newline"><div class=3D""><div =
+class=3D"">Hey,<br class=3D""><br class=3D"">I'm trying to change the =
+license of mutagen and Quod Libet from "GNU GPLv2" to<br class=3D"">"GNU =
+GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it =
+looks<br class=3D"">like you contributed to one or both of them under =
+the "GNU GPLv2".<br class=3D""><br class=3D"">Would you be willing to =
+make your contributions to both mutagen and Quod Libet<br =
+class=3D"">available under the "GNU GPLv2 or later"? If yes, please =
+respond with the<br class=3D"">following:<br class=3D""><br =
+class=3D"">=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D""><br class=3D"">I, =
+&lt;insert-name&gt;, hereby make all my contributions made to mutagen =
+[1] and<br class=3D"">Quod Libet [2] available under the terms of the =
+"GNU GPL version 2 or later"<br class=3D"">[3]<br class=3D""><br =
+class=3D"">[1] <a href=3D"https://github.com/quodlibet/mutagen" =
+class=3D"">https://github.com/quodlibet/mutagen</a><br class=3D"">[2] <a =
+href=3D"https://github.com/quodlibet/quodlibet" =
+class=3D"">https://github.com/quodlibet/quodlibet</a><br class=3D"">[3] =
+<a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" =
+class=3D"">https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</a><br =
+class=3D""><br class=3D"">=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D""><br =
+class=3D"">If you have any objections or questions regarding the =
+relicensing or your<br class=3D"">contributions please tell me.<br =
+class=3D""><br class=3D"">thanks!<br =
+class=3D""></div></div></blockquote></div><br =
+class=3D""></div></body></html>=
+
+--Apple-Mail=_5A617E6B-DD6C-4F03-B260-6BB6E6BEF5C2--
