@@ -8,3 +8,6 @@ Nick Boultbee
 Adrian Sampson
     adrian@radbox.org
     sampsyo@github
+Lukáš Lalinský
+    lalinsky@gmail.com
+    lalinsky@github
