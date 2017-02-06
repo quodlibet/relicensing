@@ -1,0 +1,163 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1729421itb;
+        Mon, 6 Feb 2017 12:47:25 -0800 (PST)
+X-Received: by 10.157.37.209 with SMTP id q75mr6629963ota.267.1486414045826;
+        Mon, 06 Feb 2017 12:47:25 -0800 (PST)
+Return-Path: <mlrsmith@gmail.com>
+Received: from mail-ot0-x235.google.com (mail-ot0-x235.google.com. [2607:f8b0:4003:c0f::235])
+        by mx.google.com with ESMTPS id 124si96744oie.61.2017.02.06.12.47.25
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 12:47:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of mlrsmith@gmail.com designates 2607:f8b0:4003:c0f::235 as permitted sender) client-ip=2607:f8b0:4003:c0f::235;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of mlrsmith@gmail.com designates 2607:f8b0:4003:c0f::235 as permitted sender) smtp.mailfrom=mlrsmith@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-ot0-x235.google.com with SMTP id 32so58188605oth.3
+        for <reiter.christoph@gmail.com>; Mon, 06 Feb 2017 12:47:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=gKp/LWu4HJyS5liXw/DO9/y9eB0QozEHawffmDhRNt4=;
+        b=EJkHWrVQYb8XlDRHXslVqps1YTcUvR9IMQrEYWr8ZqP1bX7jq/P25HTQ+TD4ByiuBH
+         V8YrqGlVE9oYbdKTr3+pnqG2UHy0raCFb0FgmWfMH5YlHRKHgY5ftI4u8BIPImWLEhw+
+         QVqYiIQ6wU4MDXmc27Ok/qenVD1FsZlNTNxhYItuo3tMSo7W7vjJjDUYf3vRuLxOuvYQ
+         1g/9ZIfPh1NEeIeaSnwBJpFURuE4nPTenQj56XdT9aOzAZuNJ7OLx5jPAC+bU2LWhZQs
+         qBNiGCiQiAp9+Ma/rj33JJFpOnm2nbF6RXXD9C7/FnVwM+3YPF7CKa9v3Gd3xAyGJgI9
+         3suQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=gKp/LWu4HJyS5liXw/DO9/y9eB0QozEHawffmDhRNt4=;
+        b=U6vo8B8yU3r5cIYrySiTeiRmx0Z/+gJ3gwEzQHX5Zsj77h1EuErlIWo3H0tSxgFj2n
+         iuwenRTuWMy5Zz+YRkH7UTm2CGP6iT3Q+dmLx+DI0PnhO+gX56/jL4bUonp8N9xeW4OQ
+         /59u2aWQg8Pbh0AnpUU0T5/BVl5Z0dE6oofpc8FEJiUfo3G+8SMRCCLR3CY3fL0PfyGx
+         Rli7f9zcZ6CzsDPMyBBioxiTF7oGwgHfdIPjqaEHiNB+rYqhHM7mgFg9Tnyr8OA7X+fn
+         /j3hUfTb5wDd0KF1OnFYWa4SLMP4ODwxKSULswBMezh5TYtH1X9nLh444XcJwNDklsaB
+         JnZg==
+X-Gm-Message-State: AMke39mxIZj+c/vEx4qYBAqToXe4SX3RfSs+XNVS7VTVjZwU/rqvTHoTaklHTycWqnFAoTILPuhvlc5OYiSKbg==
+X-Received: by 10.157.47.152 with SMTP id r24mr6886897otb.126.1486414045468;
+ Mon, 06 Feb 2017 12:47:25 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.157.18.141 with HTTP; Mon, 6 Feb 2017 12:47:25 -0800 (PST)
+In-Reply-To: <CAE6_+Udcyz+gj4C7rEcbQWuuLAeMKz87TpfMd5w16wVb5UYsGA@mail.gmail.com>
+References: <CAE6_+UcNO8avmNM20A5wZtesuJatsA88QbEE2Fsq=Cdjknb-yw@mail.gmail.com>
+ <CAB=BY8uM8u5L-YP3Vdi4GT2i_7BHZ_HwkeYTWiUv3UpH+bOmyQ@mail.gmail.com> <CAE6_+Udcyz+gj4C7rEcbQWuuLAeMKz87TpfMd5w16wVb5UYsGA@mail.gmail.com>
+From: Michael Smith <mlrsmith@gmail.com>
+Date: Mon, 6 Feb 2017 12:47:25 -0800
+Message-ID: <CAB=BY8vb4TmBMfN8VSVQogROjmBds-WCcx-AOdrd=qcpzG8_bg@mail.gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary=001a113d1a162b79230547e2bd9c
+
+--001a113d1a162b79230547e2bd9c
+Content-Type: text/plain; charset=UTF-8
+
+Ok. Well, I don't recall if that was a bug report, a patch, or just based
+on describing the correct fix - and I'd probably argue that this patch
+isn't significant enough to be copyrightable anyway.
+
+However, if you do want to consider this mine:
+
+I, Michael Smith, hereby make all my contributions made to mutagen [1] and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Mike
+
+
+On Mon, Feb 6, 2017 at 12:42 PM, Christoph Reiter <
+reiter.christoph@gmail.com> wrote:
+
+> On Mon, Feb 6, 2017 at 9:28 PM, Michael Smith <mlrsmith@gmail.com> wrote:
+> > Hi Christoph,
+> >
+> > I don't recall having contributed directly to either of these projects -
+> > perhaps they've incorporated code from other things I wrote and licensed
+> > under the GPL. Can you be more specific about what contributions you're
+> > asking me to relicense?
+>
+> Hey, thanks for replying anyway! Your entry was the one with the most
+> question marks on my list :)
+>
+> The contribution I was referring to is:
+>
+> https://github.com/quodlibet/mutagen/commit/b5e87554d6222db8389cd6bc19d872
+> f1c8026a0c
+>
+> The commit message is missing context if "thanks" is for reporting the
+> bug or providing a fix.
+> The bug tracker form 2006 is sadly no longer available.
+> You were the only "Michael Smith" coming up doing ogg related stuff at
+> that time.
+>
+
+--001a113d1a162b79230547e2bd9c
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Ok. Well, I don&#39;t recall if that was a bug report, a p=
+atch, or just based on describing the correct fix - and I&#39;d probably ar=
+gue that this patch isn&#39;t significant enough to be copyrightable anyway=
+.<div><br></div><div>However, if you do want to consider this mine:</div><d=
+iv><br></div><div><span style=3D"font-size:12.8px">I, Michael Smith, hereby=
+ make all my contributions made to mutagen [1] and</span><br style=3D"font-=
+size:12.8px"><span style=3D"font-size:12.8px">Quod Libet [2] available unde=
+r the terms of the &quot;GNU GPL version 2 or later&quot;</span><br style=
+=3D"font-size:12.8px"><span style=3D"font-size:12.8px">[3]</span><br style=
+=3D"font-size:12.8px"><br style=3D"font-size:12.8px"><span style=3D"font-si=
+ze:12.8px">[1]=C2=A0</span><a href=3D"https://github.com/quodlibet/mutagen"=
+ rel=3D"noreferrer" target=3D"_blank" style=3D"font-size:12.8px">https://gi=
+thub.com/quodlibet/<wbr>mutagen</a><br style=3D"font-size:12.8px"><span sty=
+le=3D"font-size:12.8px">[2]=C2=A0</span><a href=3D"https://github.com/quodl=
+ibet/quodlibet" rel=3D"noreferrer" target=3D"_blank" style=3D"font-size:12.=
+8px">https://github.com/quodlibet/<wbr>quodlibet</a><br style=3D"font-size:=
+12.8px"><span style=3D"font-size:12.8px">[3]=C2=A0</span><a href=3D"https:/=
+/www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=3D"noreferrer" target=
+=3D"_blank" style=3D"font-size:12.8px">https://www.gnu.org/licenses/<wbr>ol=
+d-licenses/gpl-2.0.txt</a><br style=3D"font-size:12.8px"></div><div><br></d=
+iv><div>Mike</div><div><br></div></div><div class=3D"gmail_extra"><br><div =
+class=3D"gmail_quote">On Mon, Feb 6, 2017 at 12:42 PM, Christoph Reiter <sp=
+an dir=3D"ltr">&lt;<a href=3D"mailto:reiter.christoph@gmail.com" target=3D"=
+_blank">reiter.christoph@gmail.com</a>&gt;</span> wrote:<br><blockquote cla=
+ss=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;pa=
+dding-left:1ex"><span class=3D"">On Mon, Feb 6, 2017 at 9:28 PM, Michael Sm=
+ith &lt;<a href=3D"mailto:mlrsmith@gmail.com">mlrsmith@gmail.com</a>&gt; wr=
+ote:<br>
+&gt; Hi Christoph,<br>
+&gt;<br>
+&gt; I don&#39;t recall having contributed directly to either of these proj=
+ects -<br>
+&gt; perhaps they&#39;ve incorporated code from other things I wrote and li=
+censed<br>
+&gt; under the GPL. Can you be more specific about what contributions you&#=
+39;re<br>
+&gt; asking me to relicense?<br>
+<br>
+</span>Hey, thanks for replying anyway! Your entry was the one with the mos=
+t<br>
+question marks on my list :)<br>
+<br>
+The contribution I was referring to is:<br>
+<br>
+<a href=3D"https://github.com/quodlibet/mutagen/commit/b5e87554d6222db8389c=
+d6bc19d872f1c8026a0c" rel=3D"noreferrer" target=3D"_blank">https://github.c=
+om/quodlibet/<wbr>mutagen/commit/<wbr>b5e87554d6222db8389cd6bc19d872<wbr>f1=
+c8026a0c</a><br>
+<br>
+The commit message is missing context if &quot;thanks&quot; is for reportin=
+g the<br>
+bug or providing a fix.<br>
+The bug tracker form 2006 is sadly no longer available.<br>
+You were the only &quot;Michael Smith&quot; coming up doing ogg related stu=
+ff at<br>
+that time.<br>
+</blockquote></div><br></div>
+
+--001a113d1a162b79230547e2bd9c--

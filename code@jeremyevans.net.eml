@@ -1,0 +1,80 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1713169itb;
+        Mon, 6 Feb 2017 12:00:04 -0800 (PST)
+X-Received: by 10.98.158.89 with SMTP id s86mr15046571pfd.33.1486411204555;
+        Mon, 06 Feb 2017 12:00:04 -0800 (PST)
+Return-Path: <code@jeremyevans.net>
+Received: from mxout-08.mxes.net (mxout-08.mxes.net. [216.86.168.183])
+        by mx.google.com with ESMTPS id c23si1648843pli.184.2017.02.06.12.00.04
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 12:00:04 -0800 (PST)
+Received-SPF: neutral (google.com: 216.86.168.183 is neither permitted nor denied by best guess record for domain of code@jeremyevans.net) client-ip=216.86.168.183;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 216.86.168.183 is neither permitted nor denied by best guess record for domain of code@jeremyevans.net) smtp.mailfrom=code@jeremyevans.net
+Received: from battleground.jeremyevans.local (unknown [73.90.99.19])
+	(using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by smtp.mxes.net (Postfix) with ESMTPSA id 4426B509BD
+	for <reiter.christoph@gmail.com>; Mon,  6 Feb 2017 15:00:02 -0500 (EST)
+Received: from jeremyevans.local (speedstar.jeremyevans.local [10.187.8.2])
+	by battleground.jeremyevans.local (OpenSMTPD) with ESMTP id 3e745e43
+	for <reiter.christoph@gmail.com>;
+	Mon, 6 Feb 2017 12:00:01 -0800 (PST)
+Date: Mon, 6 Feb 2017 12:00:01 -0800
+From: Jeremy Evans <code@jeremyevans.net>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+Message-ID: <20170206200001.GT96364@jeremyevans.local>
+References: <CAE6_+UcmR1FU+qVK7awOTZXP=dEOoW_drDYUZNSOLhvRxNMc4Q@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <CAE6_+UcmR1FU+qVK7awOTZXP=dEOoW_drDYUZNSOLhvRxNMc4Q@mail.gmail.com>
+User-Agent: Mutt/1.7.2 (2016-11-26)
+
+I, Jeremy Evans, hereby make all my contributions made to mutagen [1]
+and Quod Libet [2] available under the terms of the "GNU GPL version 2
+or later" [3].
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+I will state that I would prefer keeping mutagen GPLv2 only, but as my
+contribution was small and I haven't been an active user of mutagen in
+many years, I don't want to hold back your relicensing effort or force
+you to rewrite the related code.
+
+Thanks,
+Jeremy
+
+On 02/06 08:39, Christoph Reiter wrote:
+> Hey,
+> 
+> I'm trying to change the license of mutagen and Quod Libet from "GNU GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to both mutagen and Quod Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+> 
+> =========
+> 
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+> [3]
+> 
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+> 
+> thanks!

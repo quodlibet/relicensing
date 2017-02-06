@@ -1,0 +1,171 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1727586itb;
+        Mon, 6 Feb 2017 12:41:15 -0800 (PST)
+X-Received: by 10.13.236.200 with SMTP id v191mr8549992ywe.319.1486413675778;
+        Mon, 06 Feb 2017 12:41:15 -0800 (PST)
+Return-Path: <placido.revilla@gmail.com>
+Received: from mail-yw0-x229.google.com (mail-yw0-x229.google.com. [2607:f8b0:4002:c05::229])
+        by mx.google.com with ESMTPS id e91si434232ybi.337.2017.02.06.12.41.15
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 12:41:15 -0800 (PST)
+Received-SPF: pass (google.com: domain of placido.revilla@gmail.com designates 2607:f8b0:4002:c05::229 as permitted sender) client-ip=2607:f8b0:4002:c05::229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of placido.revilla@gmail.com designates 2607:f8b0:4002:c05::229 as permitted sender) smtp.mailfrom=placido.revilla@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-yw0-x229.google.com with SMTP id w75so54408793ywg.1
+        for <reiter.christoph@gmail.com>; Mon, 06 Feb 2017 12:41:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=zxCsbHJVV3eyeOHf0NEftpEmvEdCxj8ZOixUGt1yoGY=;
+        b=VQLiYMxJPBKiK5KM11BVephAARO1YU93hKs3TQhR3+aP5eWfti91egqvZZ2UCf4d4j
+         /GmVYocTrpoxfr6vMbg7PO5Y6E6Jo6Z8jv0pk/mVFA0nvFZM+BUlmSvsOcVe0eVe5/jk
+         DYwmXzL7bbYEP1gKL6N4qht3vQz9esEJ6hXs88CLMxYk+Hq0gu33sdyTFaXc3CCN84lb
+         Br5TiBoy5FLHzUtk2ujWreplYj9LWXTKUgRFLn24PnCUfP196WTpIbyNci8kE0R9QQHv
+         JDuudRs9g9vgIpokvto063ktU08/hvO3DJhZMF45YRCj8BKHnz4ZABhVg2c7FYdGvMn9
+         POyQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=zxCsbHJVV3eyeOHf0NEftpEmvEdCxj8ZOixUGt1yoGY=;
+        b=oEdahUtPGFOFJcEuL/ORE+HcWGYEpuDIyYUBCHSo01mur13Hdw7EXguQ+YUHEMxRfA
+         vvR2KId33qM7pPz5y4796po1qlIUnWTWtRaDCh0ZLDn4/aekKN/C20NtdausdJVUAHNx
+         VlA60rRGDC0zYxqkUJcywMK2fe0URoORhm59WYBPadn3buf+Gr9vvkl0K+XatY+tSaIS
+         AKJwxWO0hCLKY43tHX0DdtijP54VFQtw+kibSfxy76NdoGivKtnbT/APeSMY5w8pZZek
+         PSkOrv3iXb0D8cLSygUX5cKXAVyLGg67zTMoNvr/egKlHFQYN9H+qteG40w7n4F4+GLg
+         EoCw==
+X-Gm-Message-State: AMke39mBRjy9hSvIiEf8v+uPahMY/srqJlI/Kj7V/hDSEgM/+seP7F2QjtmurFmV3uoSC38E8Q0dOozMbu5KRg==
+X-Received: by 10.129.41.141 with SMTP id p135mr8090618ywp.66.1486413675397;
+ Mon, 06 Feb 2017 12:41:15 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.37.114.86 with HTTP; Mon, 6 Feb 2017 12:40:55 -0800 (PST)
+In-Reply-To: <CAE6_+UdoSDAjWx9EOyJUDnvxD5M14Bm-zCzZcd_rQmfNtv6dDQ@mail.gmail.com>
+References: <CAE6_+UdoSDAjWx9EOyJUDnvxD5M14Bm-zCzZcd_rQmfNtv6dDQ@mail.gmail.com>
+From: Placido Revilla <placido.revilla@gmail.com>
+Date: Mon, 6 Feb 2017 12:40:55 -0800
+Message-ID: <CACpe7U8WzU4trfKi-oEid5=H+TEUa0Kc7SqGb=qhEVYAyQm3UQ@mail.gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary=001a114226041c9fe30547e2a7a5
+
+--001a114226041c9fe30547e2a7a5
+Content-Type: text/plain; charset=UTF-8
+
+I, Placido Revilla, hereby make all my contributions made to mutagen [1] and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+On Mon, Feb 6, 2017 at 11:43 AM, Christoph Reiter <
+reiter.christoph@gmail.com> wrote:
+
+> Hey,
+>
+> I'm trying to change the license of mutagen and Quod Libet from "GNU
+> GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it
+> looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to both mutagen and Quod
+> Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+>
+> =========
+>
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or
+> later"
+> [3]
+>
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/
+> relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+
+--001a114226041c9fe30547e2a7a5
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"font-size:12.8px">I, Placido Revilla, hereb=
+y make all my contributions made to mutagen [1] and</span><br style=3D"font=
+-size:12.8px"><span style=3D"font-size:12.8px">Quod Libet [2] available und=
+er the terms of the &quot;GNU GPL version 2 or later&quot;</span><br style=
+=3D"font-size:12.8px"><span style=3D"font-size:12.8px">[3]</span><br style=
+=3D"font-size:12.8px"><br style=3D"font-size:12.8px"><span style=3D"font-si=
+ze:12.8px">[1]=C2=A0</span><a href=3D"https://github.com/quodlibet/mutagen"=
+ rel=3D"noreferrer" target=3D"_blank" style=3D"font-size:12.8px">https://gi=
+thub.com/quodlibet/<wbr>mutagen</a><br style=3D"font-size:12.8px"><span sty=
+le=3D"font-size:12.8px">[2]=C2=A0</span><a href=3D"https://github.com/quodl=
+ibet/quodlibet" rel=3D"noreferrer" target=3D"_blank" style=3D"font-size:12.=
+8px">https://github.com/quodlibet/<wbr>quodlibet</a><br style=3D"font-size:=
+12.8px"><span style=3D"font-size:12.8px">[3]=C2=A0</span><a href=3D"https:/=
+/www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=3D"noreferrer" target=
+=3D"_blank" style=3D"font-size:12.8px">https://www.gnu.org/licenses/<wbr>ol=
+d-licenses/gpl-2.0.txt</a><br></div><div class=3D"gmail_extra"><br><div cla=
+ss=3D"gmail_quote">On Mon, Feb 6, 2017 at 11:43 AM, Christoph Reiter <span =
+dir=3D"ltr">&lt;<a href=3D"mailto:reiter.christoph@gmail.com" target=3D"_bl=
+ank">reiter.christoph@gmail.com</a>&gt;</span> wrote:<br><blockquote class=
+=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padd=
+ing-left:1ex">Hey,<br>
+<br>
+I&#39;m trying to change the license of mutagen and Quod Libet from &quot;G=
+NU GPLv2&quot; to<br>
+&quot;GNU GPLv2 or later&quot; for compatibility with GPLv3 and Apache 2.0 =
+and it looks<br>
+like you contributed to one or both of them under the &quot;GNU GPLv2&quot;=
+.<br>
+<br>
+Would you be willing to make your contributions to both mutagen and Quod Li=
+bet<br>
+available under the &quot;GNU GPLv2 or later&quot;? If yes, please respond =
+with the<br>
+following:<br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+I, &lt;insert-name&gt;, hereby make all my contributions made to mutagen [1=
+] and<br>
+Quod Libet [2] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br>
+[3]<br>
+<br>
+[1] <a href=3D"https://github.com/quodlibet/mutagen" rel=3D"noreferrer" tar=
+get=3D"_blank">https://github.com/quodlibet/<wbr>mutagen</a><br>
+[2] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" t=
+arget=3D"_blank">https://github.com/quodlibet/<wbr>quodlibet</a><br>
+[3] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" target=3D"_blank">https://www.gnu.org/licenses/<wbr>old-lic=
+enses/gpl-2.0.txt</a><br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" target=3D"_blank">https://github.com/quodli=
+bet/<wbr>relicensing</a><br>
+<br>
+If you have any objections or questions regarding the relicensing or your<b=
+r>
+contributions please tell me.<br>
+<br>
+thanks!<br>
+</blockquote></div><br></div>
+
+--001a114226041c9fe30547e2a7a5--

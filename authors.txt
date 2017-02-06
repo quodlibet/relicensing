@@ -30,3 +30,16 @@ Miguel Angel Alvarez
 Dave Hayes
     dwhayes@gmail.com
     daveisadork@github
+Jeremy Evans
+    code@jeremyevans.net
+    jeremyevans@github
+Placido Revilla
+    placido.revilla@gmail.com
+    placidorevilla@github
+Joshua Kwan
+    joshk@triplehelix.org
+    joshua.m.kwan@gmail.com
+Michael Smith
+    msmith@xiph.org
+    mlrsmith@gmail.com
+    mlrsmithold@github
