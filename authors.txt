@@ -11,3 +11,6 @@ Adrian Sampson
 Lukáš Lalinský
     lalinsky@gmail.com
     lalinsky@github
+Ben Ockmore
+    ben.sput@gmail.com
+    LordSputnik@github
