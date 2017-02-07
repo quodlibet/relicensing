@@ -1,0 +1,96 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1849567itb;
+        Mon, 6 Feb 2017 19:52:33 -0800 (PST)
+X-Received: by 10.84.224.134 with SMTP id s6mr22485336plj.49.1486439553365;
+        Mon, 06 Feb 2017 19:52:33 -0800 (PST)
+Return-Path: <zstednic@fredhutch.org>
+Received: from dogbert1.fhcrc.org (dogbert1.fhcrc.org. [140.107.42.12])
+        by mx.google.com with ESMTPS id j16si2724394pga.164.2017.02.06.19.52.33
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 19:52:33 -0800 (PST)
+Received-SPF: pass (google.com: domain of zstednic@fredhutch.org designates 140.107.42.12 as permitted sender) client-ip=140.107.42.12;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of zstednic@fredhutch.org designates 140.107.42.12 as permitted sender) smtp.mailfrom=zstednic@fredhutch.org
+Received: from dogbert1.fhcrc.org (localhost [127.0.0.1])
+	by localhost (Postfix) with SMTP id 0C3814C5D6C
+	for <reiter.christoph@gmail.com>; Mon,  6 Feb 2017 19:52:33 -0800 (PST)
+Received: from starbuck.fhcrc.org (starbuck.fhcrc.org [140.107.152.103])
+	(using TLSv1 with cipher ECDHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by dogbert1.fhcrc.org (Postfix) with ESMTPS id DFA754C5D2D
+	for <reiter.christoph@gmail.com>; Mon,  6 Feb 2017 19:52:31 -0800 (PST)
+Received: from ADAMA.fhcrc.org ([169.254.2.85]) by starbuck.fhcrc.org
+ ([140.107.152.103]) with mapi id 14.03.0248.002; Mon, 6 Feb 2017 19:52:31
+ -0800
+From: "Stednick, Zach" <zstednic@fredhutch.org>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: RE: mutagen/quodlibet GPLv2+ relicensing
+Thread-Topic: mutagen/quodlibet GPLv2+ relicensing
+Thread-Index: AQHSgLG3CIRxcZZ6i06H54pQp9zLBaFc6b5G
+Date: Tue, 7 Feb 2017 03:52:31 +0000
+Message-ID: <0809734EF497E043A1F5C5E295CC108E012863B5B0@adama.fhcrc.org>
+References: <CAE6_+UfRFPp8hXJY7zsVPzCLVP4MQVSGuYzaP6MrBT+LrsrMqA@mail.gmail.com>
+In-Reply-To: <CAE6_+UfRFPp8hXJY7zsVPzCLVP4MQVSGuYzaP6MrBT+LrsrMqA@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [140.107.132.208]
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-PMX-Version: 6.3.2.2635362, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2017.2.7.34517, AntiVirus-Engine: 5.33.0, AntiVirus-Data: 2017.2.6.5330004
+X-FHCRC-SCANNED: Mon Feb  6 19:52:31 2017
+
+I, Zach Stednick, hereby make all my contributions made to mutagen [1] and=
+=0A=
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later=
+"=0A=
+[3]=0A=
+=0A=
+[1] https://github.com/quodlibet/mutagen=0A=
+[2] https://github.com/quodlibet/quodlibet=0A=
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt=0A=
+________________________________________=0A=
+From: Christoph Reiter [reiter.christoph@gmail.com]=0A=
+Sent: Monday, February 06, 2017 11:46 AM=0A=
+To: Stednick, Zach=0A=
+Subject: mutagen/quodlibet GPLv2+ relicensing=0A=
+=0A=
+Hey,=0A=
+=0A=
+I'm trying to change the license of mutagen and Quod Libet from "GNU GPLv2"=
+ to=0A=
+"GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it loo=
+ks=0A=
+like you contributed to one or both of them under the "GNU GPLv2".=0A=
+=0A=
+Would you be willing to make your contributions to both mutagen and Quod Li=
+bet=0A=
+available under the "GNU GPLv2 or later"? If yes, please respond with the=
+=0A=
+following:=0A=
+=0A=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=0A=
+=0A=
+I, <insert-name>, hereby make all my contributions made to mutagen [1] and=
+=0A=
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later=
+"=0A=
+[3]=0A=
+=0A=
+[1] https://github.com/quodlibet/mutagen=0A=
+[2] https://github.com/quodlibet/quodlibet=0A=
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt=0A=
+=0A=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=0A=
+=0A=
+Your response will be published at https://github.com/quodlibet/relicensing=
+=0A=
+=0A=
+If you have any objections or questions regarding the relicensing or your=
+=0A=
+contributions please tell me.=0A=
+=0A=
+thanks!=0A=

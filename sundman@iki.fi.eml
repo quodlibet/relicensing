@@ -1,0 +1,52 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1899178itb;
+        Mon, 6 Feb 2017 23:05:51 -0800 (PST)
+X-Received: by 10.55.121.134 with SMTP id u128mr14299014qkc.12.1486451150984;
+        Mon, 06 Feb 2017 23:05:50 -0800 (PST)
+Return-Path: <sundman@iki.fi>
+Received: from out1-smtp.messagingengine.com (out1-smtp.messagingengine.com. [66.111.4.25])
+        by mx.google.com with ESMTPS id k28si2306892qtf.116.2017.02.06.23.05.50
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 23:05:50 -0800 (PST)
+Received-SPF: neutral (google.com: 66.111.4.25 is neither permitted nor denied by domain of sundman@iki.fi) client-ip=66.111.4.25;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@messagingengine.com;
+       spf=neutral (google.com: 66.111.4.25 is neither permitted nor denied by domain of sundman@iki.fi) smtp.mailfrom=sundman@iki.fi
+Received: from compute6.internal (compute6.nyi.internal [10.202.2.46])
+	by mailout.nyi.internal (Postfix) with ESMTP id 7AA0120B21
+	for <reiter.christoph@gmail.com>; Tue,  7 Feb 2017 02:05:50 -0500 (EST)
+Received: from frontend1 ([10.202.2.160])
+  by compute6.internal (MEProxy); Tue, 07 Feb 2017 02:05:50 -0500
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=
+	messagingengine.com; h=content-transfer-encoding:content-type
+	:date:from:in-reply-to:message-id:mime-version:references
+	:subject:to:x-me-sender:x-me-sender:x-sasl-enc:x-sasl-enc; s=
+	smtpout; bh=hvThGMr2AphpGAVN1d7RnM/Ho8k=; b=NUHO5fXkV90Mzf76+xBj
+	9fkQGJ/XQokYnaF7EQT2dmx/y+wnzvOfltfYo1c1Y2iuEg4YMA8UGxnkjuBzwnxH
+	1+A7V7b0HgYxW+jC6YN+Nz78WztxpyY263iXgxdjdEezI/DSSuuNNBTvafqkseLP
+	8AL+Ih2ASEvUt88MSAsG7Hs=
+X-ME-Sender: <xms:znGZWILVFp-_ymp8w5wz23a4cH3LiCtKic7PKU0KPU3gfcpPC5O9RQ>
+X-Sasl-enc: THW51TF3HGTPlnZvfYe9tdbVhw5pO8SygO4DQsAa/3Tc 1486451150
+Received: from [192.168.7.5] (85.253.139.129.cable.starman.ee [85.253.139.129])
+	by mail.messagingengine.com (Postfix) with ESMTPA id 0CB047E077
+	for <reiter.christoph@gmail.com>; Tue,  7 Feb 2017 02:05:49 -0500 (EST)
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UfPfpmiY6mtCj=i5U5WsEAcRNexz=53v1+zkjX=xyeYOA@mail.gmail.com>
+From: Marcus Sundman <sundman@iki.fi>
+Message-ID: <edce188f-c3cb-86e2-95d8-96735cc49959@iki.fi>
+Date: Tue, 7 Feb 2017 09:05:48 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101
+ Thunderbird/45.7.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UfPfpmiY6mtCj=i5U5WsEAcRNexz=53v1+zkjX=xyeYOA@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+I, Marcus Sundman, hereby make all my contributions made to mutagen [1] and Quod Libet [2] available under the terms of the "GNU GPL version 2 or later" [3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+

@@ -7,6 +7,7 @@ Nick Boultbee
     declension@github
 Adrian Sampson
     adrian@radbox.org
+    adrian.sampson@gmail.com
     sampsyo@github
 Lukáš Lalinský
     lalinsky@gmail.com
@@ -43,3 +44,19 @@ Michael Smith
     msmith@xiph.org
     mlrsmith@gmail.com
     mlrsmithold@github
+Philipp Wolfer
+    ph.wolfer@gmail.com
+    phw@github
+Fabian Peter Hammerle
+    fabian.hammerle@gmail.com
+    fphammerle@github
+Zach Stednick
+    zstednic@fhcrc.org
+    zstednic@fredhutch.org
+    stedy@github
+Vladislav Naumov
+    vnaum@vnaum.com
+    vladislav.naumov@gmail.com
+    vnaum@github
+Marcus Sundman
+    sundman@iki.fi

@@ -1,0 +1,196 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp1794302itb;
+        Mon, 6 Feb 2017 16:20:17 -0800 (PST)
+X-Received: by 10.200.47.100 with SMTP id k33mr11247038qta.241.1486426817806;
+        Mon, 06 Feb 2017 16:20:17 -0800 (PST)
+Return-Path: <fabian.hammerle@gmail.com>
+Received: from mail-qt0-x22c.google.com (mail-qt0-x22c.google.com. [2607:f8b0:400d:c0d::22c])
+        by mx.google.com with ESMTPS id h62si1297347qkc.91.2017.02.06.16.20.17
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 06 Feb 2017 16:20:17 -0800 (PST)
+Received-SPF: pass (google.com: domain of fabian.hammerle@gmail.com designates 2607:f8b0:400d:c0d::22c as permitted sender) client-ip=2607:f8b0:400d:c0d::22c;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of fabian.hammerle@gmail.com designates 2607:f8b0:400d:c0d::22c as permitted sender) smtp.mailfrom=fabian.hammerle@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qt0-x22c.google.com with SMTP id x49so115839689qtc.2
+        for <reiter.christoph@gmail.com>; Mon, 06 Feb 2017 16:20:17 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=3zmcDe9THKZrttPYHR37C0yitPxdCfP87LGl+WO7vDI=;
+        b=u17akf0oFFRQXo+c0mcOfRTUb4wdS5aYbQUFzZfr4PZsNljCQioDpINbFFeYU1fu1v
+         rWhwtdGdNAKwfQwi4NDvzIVH2yqdSH4Oe1VFKyk06jGFdpNQZsgjWQkK24w1gaMu+RuL
+         g5VYFpQ4lg+7prdtXJqDF0MNaDlma56gGIcbeT8oG7lWw72xTQvtz9T8ggOOe9CHLqO0
+         w/ztywSQTA+QbAe5FrRP6VC35HTlr/22OfdYLvzljONiBIU279zw0ujK5/SDPeE+KqR9
+         cNDqsONXWkbvVF8Qlngzya/GOorrCvRueNSxxuEmTMlL6yR6bDZRqhm1GMgut0/NjuKe
+         lrQQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=3zmcDe9THKZrttPYHR37C0yitPxdCfP87LGl+WO7vDI=;
+        b=Yy82eyAlUtirrLug1rAB1qHwOZTmYL0vSGFNvw8dgLJ4u33ZzDLmtY9CcGvSAb67sB
+         rANwFXjRlA7CZuRAgJEY1oz23EQrMbMvcTwxArWF3nFz2glMF/BNbKoqm2nENHVV0nH4
+         3TJSyUBAuT4S5u/U/f8OtpkNjKxUhst5j4sA1jUjCF4S5mvOSVtWlSL7FpBks9x12lgx
+         +LgozEihyFOizdhVz7cAbMDpTm/YY3HBocELnS1NLFhaPKHtzR9sYPmPsfcznE9aM3Lf
+         wEqCELpQ3rppCwNraf1Zoj4/oYY3hpz30c4moghtLRpEPrR32PC52XoY4YiMD40j1J52
+         shxg==
+X-Gm-Message-State: AMke39mnEg9/HN80r4T86VVdBHlbPcugd8CLPeeifvWTfPqLigUFh83WOkRO5vKY04jWt+9jKj7DgrhKBzedmw==
+X-Received: by 10.237.33.67 with SMTP id 61mr11369093qtc.37.1486426817111;
+ Mon, 06 Feb 2017 16:20:17 -0800 (PST)
+MIME-Version: 1.0
+References: <CAE6_+Ud9iaDzRuwD-v16T4B4+HKBHJKiCfYa-TB7njEKCMnhzQ@mail.gmail.com>
+In-Reply-To: <CAE6_+Ud9iaDzRuwD-v16T4B4+HKBHJKiCfYa-TB7njEKCMnhzQ@mail.gmail.com>
+From: Fabian Peter Hammerle <fabian.hammerle@gmail.com>
+Date: Tue, 07 Feb 2017 00:20:06 +0000
+Message-ID: <CAMYHV0DDJnnm3bOOb3Vsk=-DVLmb0L32sz_1Fd8fpK=hNLNDZg@mail.gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/mixed; boundary=94eb2c0caed66b4f3c0547e5b68a
+
+--94eb2c0caed66b4f3c0547e5b68a
+Content-Type: multipart/alternative; boundary=94eb2c0caed66b4f360547e5b688
+
+--94eb2c0caed66b4f360547e5b688
+Content-Type: text/plain; charset=UTF-8
+
+Hi,
+
+I attached the requested text (signed) to this mail [msg.gpg].
+
+Fabian
+
+On Mon, 6 Feb 2017 at 20:38 Christoph Reiter <reiter.christoph@gmail.com>
+wrote:
+
+> Hey,
+>
+> I'm trying to change the license of mutagen and Quod Libet from "GNU
+> GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it
+> looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to both mutagen and Quod
+> Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+>
+> =========
+>
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or
+> later"
+> [3]
+>
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at
+> https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+-- 
+Fabian Peter Hammerle
+
+tel: +43 676 41 28 235
+mail: fabian.hammerle@gmail.com
+
+--94eb2c0caed66b4f360547e5b688
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi,<div><br></div><div>I attached the requested text (sign=
+ed) to this mail [msg.gpg].</div><div><br></div><div>Fabian</div><br><div c=
+lass=3D"gmail_quote"><div dir=3D"ltr">On Mon, 6 Feb 2017 at 20:38 Christoph=
+ Reiter &lt;<a href=3D"mailto:reiter.christoph@gmail.com">reiter.christoph@=
+gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Hey,<br =
+class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+I&#39;m trying to change the license of mutagen and Quod Libet from &quot;G=
+NU GPLv2&quot; to<br class=3D"gmail_msg">
+&quot;GNU GPLv2 or later&quot; for compatibility with GPLv3 and Apache 2.0 =
+and it looks<br class=3D"gmail_msg">
+like you contributed to one or both of them under the &quot;GNU GPLv2&quot;=
+.<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+Would you be willing to make your contributions to both mutagen and Quod Li=
+bet<br class=3D"gmail_msg">
+available under the &quot;GNU GPLv2 or later&quot;? If yes, please respond =
+with the<br class=3D"gmail_msg">
+following:<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+I, &lt;insert-name&gt;, hereby make all my contributions made to mutagen [1=
+] and<br class=3D"gmail_msg">
+Quod Libet [2] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br class=3D"gmail_msg">
+[3]<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+[1] <a href=3D"https://github.com/quodlibet/mutagen" rel=3D"noreferrer" cla=
+ss=3D"gmail_msg" target=3D"_blank">https://github.com/quodlibet/mutagen</a>=
+<br class=3D"gmail_msg">
+[2] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" c=
+lass=3D"gmail_msg" target=3D"_blank">https://github.com/quodlibet/quodlibet=
+</a><br class=3D"gmail_msg">
+[3] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https://www.gnu.org/l=
+icenses/old-licenses/gpl-2.0.txt</a><br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https=
+://github.com/quodlibet/relicensing</a><br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+If you have any objections or questions regarding the relicensing or your<b=
+r class=3D"gmail_msg">
+contributions please tell me.<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+thanks!<br class=3D"gmail_msg">
+</blockquote></div></div><div dir=3D"ltr">-- <br></div><div data-smartmail=
+=3D"gmail_signature"><div dir=3D"ltr">Fabian Peter Hammerle<br><br>tel: +43=
+ 676 41 28 235<br>mail: <a href=3D"mailto:fabian.hammerle@gmail.com">fabian=
+.hammerle@gmail.com</a></div></div>
+
+--94eb2c0caed66b4f360547e5b688--
+--94eb2c0caed66b4f3c0547e5b68a
+Content-Type: application/pgp-encrypted; name="msg.gpg"
+Content-Disposition: attachment; filename="msg.gpg"
+Content-Transfer-Encoding: base64
+Content-ID: <15a15f055be500678b11>
+X-Attachment-Id: 15a15f055be500678b11
+
+LS0tLS1CRUdJTiBQR1AgU0lHTkVEIE1FU1NBR0UtLS0tLQpIYXNoOiBTSEEyNTYKCkksIEZhYmlh
+biBQZXRlciBIYW1tZXJsZSwgaGVyZWJ5IG1ha2UgYWxsIG15IGNvbnRyaWJ1dGlvbnMgbWFkZSB0
+byBtdXRhZ2VuIFsxXSBhbmQKUXVvZCBMaWJldCBbMl0gYXZhaWxhYmxlIHVuZGVyIHRoZSB0ZXJt
+cyBvZiB0aGUgIkdOVSBHUEwgdmVyc2lvbiAyIG9yIGxhdGVyIgpbM10KClsxXSBodHRwczovL2dp
+dGh1Yi5jb20vcXVvZGxpYmV0L211dGFnZW4KWzJdIGh0dHBzOi8vZ2l0aHViLmNvbS9xdW9kbGli
+ZXQvcXVvZGxpYmV0ClszXSBodHRwczovL3d3dy5nbnUub3JnL2xpY2Vuc2VzL29sZC1saWNlbnNl
+cy9ncGwtMi4wLnR4dAotLS0tLUJFR0lOIFBHUCBTSUdOQVRVUkUtLS0tLQpWZXJzaW9uOiBHbnVQ
+RyB2MgoKaVFJY0JBRUJDQUFHQlFKWW1SSlRBQW9KRUpZNEgvMUpuMzY1bmJrUC8ybVFVc0QyMHVO
+L1Z5anRPYXRrRHd5ZQpsMnZwdlR3ZTJTNlpSa0gxYWI2VDVnUXp5VHVnRHRJdEY5WVlPVnFicStL
+a2laMkZaZkVSK2diSWkwc0FYMUY3Cjc3VXgzNi90RmdETng2SGt0ZWU4b2lXaFNtSk1aeGRKZ3NT
+amx2czhzaEUrenBzOVlZQ29GY01ldG4zQ0ZtaFcKNHNCV1NTVkxUOU1IaWlWZitWOVI0cVJtOFZq
+OHBSWHdvb01mZXloc0xHNjZvaGlRbnBJbzdtVUNnbStmOVBnegplYzhIRDJaa2hGZjdJd3kzTVRm
+em90cEhjeG03eWVoU3liVjZLZWc2dmNNMGt2WGpoOW1UL0JRTDUrTHN3bXVrCjUvK0FIV1NJQVdB
+U1ErOCtJRlZvTzBPZG84cThLZ1J1cjR5bGJXRTRxbGY3Y3crS3NxNGk5ZTVQZW9ueHBFczMKa1dm
+THZRWTludCtRTFAzdktRTEFMRnZmdXA0aG9kUmJlWUIyVmRPNm4wV1duUWQ5VHJxVlNSTGw5eGVE
+dmF4awpSMGRFbFFBMzNJUDNzaWk4Ym1sVGR5VE1DVFFzQXlOTkxlK3NCTVVDOEczNlY2WlZ4VjdY
+SDg5b1A5Vzc5WWJMCmh0UnpwYzZCYzlOa1ZCbytwTjQrY3VyN0NSdldBUyttT2xUSytJaHQreTBp
+bHRTSDQrLzRqdWZMY01XMDQwMHQKL3BmMFNnR3l0NWV4SU82ZytsbnZYREZyZ3FlaEl1cjk0MFAv
+Y1ZBNHloM2tFV2lhcDE0emhsWFY0cXBadjg5bQpQT2RGN0pkOE5FUEFBNmJ2ZG5GRzdPVDNITUsz
+OWNRRXBwRmp6dDY0SWNxTWRZOENuUUJJK203cFhmcmR4L2c1Cm44THh4VHBpWUIydWVGbCtVbjlj
+Cj04dDhyCi0tLS0tRU5EIFBHUCBTSUdOQVRVUkUtLS0tLQo=
+--94eb2c0caed66b4f3c0547e5b68a--
