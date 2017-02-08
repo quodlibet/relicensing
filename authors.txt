@@ -60,3 +60,10 @@ Vladislav Naumov
     vnaum@github
 Marcus Sundman
     sundman@iki.fi
+Evan Purkhiser
+    evanpurkhiser@gmail.com
+    EvanPurkhiser@github
+Nuutti Kotivuori
+    naked@iki.fi
+    nuutti.kotivuori@poplatek.fi
+    nuutti.kotivuori@gmail.com

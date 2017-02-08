@@ -1,0 +1,163 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp2424699itb;
+        Wed, 8 Feb 2017 00:34:02 -0800 (PST)
+X-Received: by 10.36.253.74 with SMTP id m71mr16197520ith.2.1486542842660;
+        Wed, 08 Feb 2017 00:34:02 -0800 (PST)
+Return-Path: <nuutti.kotivuori@gmail.com>
+Received: from mail-io0-f179.google.com (mail-io0-f179.google.com. [209.85.223.179])
+        by mx.google.com with ESMTPS id q4si693973itc.66.2017.02.08.00.34.02
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Feb 2017 00:34:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of nuutti.kotivuori@gmail.com designates 209.85.223.179 as permitted sender) client-ip=209.85.223.179;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of nuutti.kotivuori@gmail.com designates 209.85.223.179 as permitted sender) smtp.mailfrom=nuutti.kotivuori@gmail.com
+Received: by mail-io0-f179.google.com with SMTP id l66so107789820ioi.1
+        for <reiter.christoph@gmail.com>; Wed, 08 Feb 2017 00:34:02 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=8bJ0l0yhcVfYRuAtGSxZ8HRnAlmQ6oGWnMaMKEEqrbk=;
+        b=pEzS5l7Y0miuJhXl0xaKyE2A8MMOuDF/jdsXLGp5rWQndD2PX6gPMYkPQuFIcDZsfj
+         CEWz3uxtnGHjqXeTGeTQHLN1U7B7Ra6vZ7L+b5BYm53+OHrZCM62/CcDuIjdATIBHjIO
+         Kc5D6/cj1q0gp1QTW8D6g/IH5dtovc3mp4j33CAvbyt3v31Sfd27Y2zxySJLg/zwsLrt
+         ZNz1U12BOv1nplTZM/1blx3bH2ErgCREx4/lEbEkN98myM+BSdKNVoj+QlxkBzpqwuiO
+         zmPClVST3EEYgm2D44+ucD/zAcuh+3HDRUlh5VamCbcFgkG+nLsud30s/ambJBaBBGim
+         aKhw==
+X-Gm-Message-State: AMke39k+x3BHBbU7W5xUzeyXv+SGFLMu/U7ZTcnUTCJijQycPkv59e5BcDaJo5xNVPBY/2zlE2/zYIQl+fG6Fg==
+X-Received: by 10.107.137.224 with SMTP id t93mr7937617ioi.60.1486542842127;
+ Wed, 08 Feb 2017 00:34:02 -0800 (PST)
+MIME-Version: 1.0
+References: <CAE6_+UcEeLpq2G8XmQinQxWAYdH4ucc2RQdZxw6nFRwAsEMKgA@mail.gmail.com>
+In-Reply-To: <CAE6_+UcEeLpq2G8XmQinQxWAYdH4ucc2RQdZxw6nFRwAsEMKgA@mail.gmail.com>
+From: Nuutti Kotivuori <naked@iki.fi>
+Date: Wed, 08 Feb 2017 08:33:51 +0000
+Message-ID: <CADDY0SkqZdKihuNykRU=kTHQWoCf7pj8PDKm21KZSUzsm-w=Dg@mail.gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary=001a113b29b20c7037054800babd
+
+--001a113b29b20c7037054800babd
+Content-Type: text/plain; charset=UTF-8
+
+I, Nuutti Kotivuori, hereby make all my contributions made to mutagen [1]
+and
+Quod Libet [2] available under the terms of the "WTFPL version 2"
+[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] *http://www.wtfpl.net/txt/copying/ <http://www.wtfpl.net/txt/copying/>*
+
+On Mon, 6 Feb 2017 at 21:43 Christoph Reiter <reiter.christoph@gmail.com>
+wrote:
+
+> Hey,
+>
+> I'm trying to change the license of mutagen and Quod Libet from "GNU
+> GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it
+> looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to both mutagen and Quod
+> Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+>
+> =========
+>
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or
+> later"
+> [3]
+>
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at
+> https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+
+--001a113b29b20c7037054800babd
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"color:rgb(33,33,33)">I, Nuutti Kotivuori, h=
+ereby make all my contributions made to mutagen [1] and</span><br class=3D"=
+gmail_msg" style=3D"color:rgb(33,33,33)"><span style=3D"color:rgb(33,33,33)=
+">Quod Libet [2] available under the terms of the &quot;WTFPL version 2&quo=
+t;</span><br class=3D"gmail_msg" style=3D"color:rgb(33,33,33)"><span style=
+=3D"color:rgb(33,33,33)">[3]</span><br class=3D"gmail_msg" style=3D"color:r=
+gb(33,33,33)"><br class=3D"gmail_msg" style=3D"color:rgb(33,33,33)"><span s=
+tyle=3D"color:rgb(33,33,33)">[1]<span class=3D"inbox-inbox-Apple-converted-=
+space">=C2=A0</span></span><a href=3D"https://github.com/quodlibet/mutagen"=
+ rel=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https://github.co=
+m/quodlibet/mutagen</a><br class=3D"gmail_msg" style=3D"color:rgb(33,33,33)=
+"><span style=3D"color:rgb(33,33,33)">[2]<span class=3D"inbox-inbox-Apple-c=
+onverted-space">=C2=A0</span></span><a href=3D"https://github.com/quodlibet=
+/quodlibet" rel=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https:=
+//github.com/quodlibet/quodlibet</a><br class=3D"gmail_msg" style=3D"color:=
+rgb(33,33,33)"><span style=3D"color:rgb(33,33,33)">[3]<span class=3D"inbox-=
+inbox-Apple-converted-space">=C2=A0</span></span><font color=3D"#3367d6"><u=
+><a href=3D"http://www.wtfpl.net/txt/copying/">http://www.wtfpl.net/txt/cop=
+ying/</a></u></font><br></div><br><div class=3D"gmail_quote"><div dir=3D"lt=
+r">On Mon, 6 Feb 2017 at 21:43 Christoph Reiter &lt;<a href=3D"mailto:reite=
+r.christoph@gmail.com">reiter.christoph@gmail.com</a>&gt; wrote:<br></div><=
+blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px=
+ #ccc solid;padding-left:1ex">Hey,<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+I&#39;m trying to change the license of mutagen and Quod Libet from &quot;G=
+NU GPLv2&quot; to<br class=3D"gmail_msg">
+&quot;GNU GPLv2 or later&quot; for compatibility with GPLv3 and Apache 2.0 =
+and it looks<br class=3D"gmail_msg">
+like you contributed to one or both of them under the &quot;GNU GPLv2&quot;=
+.<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+Would you be willing to make your contributions to both mutagen and Quod Li=
+bet<br class=3D"gmail_msg">
+available under the &quot;GNU GPLv2 or later&quot;? If yes, please respond =
+with the<br class=3D"gmail_msg">
+following:<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+I, &lt;insert-name&gt;, hereby make all my contributions made to mutagen [1=
+] and<br class=3D"gmail_msg">
+Quod Libet [2] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br class=3D"gmail_msg">
+[3]<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+[1] <a href=3D"https://github.com/quodlibet/mutagen" rel=3D"noreferrer" cla=
+ss=3D"gmail_msg" target=3D"_blank">https://github.com/quodlibet/mutagen</a>=
+<br class=3D"gmail_msg">
+[2] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" c=
+lass=3D"gmail_msg" target=3D"_blank">https://github.com/quodlibet/quodlibet=
+</a><br class=3D"gmail_msg">
+[3] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https://www.gnu.org/l=
+icenses/old-licenses/gpl-2.0.txt</a><br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https=
+://github.com/quodlibet/relicensing</a><br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+If you have any objections or questions regarding the relicensing or your<b=
+r class=3D"gmail_msg">
+contributions please tell me.<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+thanks!<br class=3D"gmail_msg">
+</blockquote></div>
+
+--001a113b29b20c7037054800babd--
