@@ -1,0 +1,71 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp12881itb;
+        Thu, 9 Feb 2017 08:01:25 -0800 (PST)
+X-Received: by 10.99.36.7 with SMTP id k7mr4811941pgk.199.1486656085933;
+        Thu, 09 Feb 2017 08:01:25 -0800 (PST)
+Return-Path: <bpruessmann@gmail.com>
+Received: from mail-pg0-f42.google.com (mail-pg0-f42.google.com. [74.125.83.42])
+        by mx.google.com with ESMTPS id v75si9763633pfa.126.2017.02.09.08.01.25
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Feb 2017 08:01:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of bpruessmann@gmail.com designates 74.125.83.42 as permitted sender) client-ip=74.125.83.42;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of bpruessmann@gmail.com designates 74.125.83.42 as permitted sender) smtp.mailfrom=bpruessmann@gmail.com
+Received: by mail-pg0-f42.google.com with SMTP id 204so95pge.0
+        for <reiter.christoph@gmail.com>; Thu, 09 Feb 2017 08:01:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=sender:subject:to:references:from:message-id:date:user-agent
+         :mime-version:in-reply-to:content-transfer-encoding;
+        bh=ZOwqUf644BIqrKQ+KmFwz+3NB1hgpJ6N5yEE71tKJq8=;
+        b=lDLwsw+JKOIVhA6LL5gxXB9drWg1aqMIhyxLNnqxgRDK2Z3Z4v4yKOQA/JYPMYr+OK
+         guvxYUze4UbvcromtyxDKZmzEULCGDkNnI+PalfK4XVBrXOLn79xz9O3NYeOy4ynAKdD
+         RyQyoydBNQ0jXx0f0qsn2IQOaI3gkFW4Av9mpSzdkwGgS0Er3FsvHrtSlEnU+IAWjTDl
+         pUzhTFvY5Uzoqvc28+2d9AZxxy7r5hF/iQsAula9MXRlNsnIt6mDQ3KQS4wcHPTdo3gG
+         1swaWGWZqSZKzJ3WivPeTXCwjPGt7UsrX7TrjThC7EIdB3XgrF7NU5cMWCq7U2Ip29cw
+         0/Gg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:sender:subject:to:references:from:message-id
+         :date:user-agent:mime-version:in-reply-to:content-transfer-encoding;
+        bh=ZOwqUf644BIqrKQ+KmFwz+3NB1hgpJ6N5yEE71tKJq8=;
+        b=YoocJlaM2Y6LGgkniPfwSqaUYtdyIULatLBtZ0HHsW/sygNMrvsfl5UDDcl41z8yAW
+         4ERx9+xsKgQe8uQSMWCTrebVaSgzl97zmO4ywNsQDY44Vw65PKUlfl8TViJnpp7oi8o3
+         od9yFVN3hxns3X21Wba0rIN00Wqn/JnY97ESwouuYX3nRH9WWsqqGVADYt35czG8ST4k
+         h4bhartOsI2NtrlQlZPk6hi+WSshxV1B9ZAXqJvRRzd6Tg3IOniPo3vbtvTumzw6/rGq
+         dZOcEd9fP8dlb24Xkb6p7jxdo4EMlUntu131RE5zgurMxPZ0gijgxv8nWGfAtKgrjNTM
+         9HwQ==
+X-Gm-Message-State: AMke39lcpA9v8PlE4P5j+zEzHivVk9tgn5lxd+R0GhjJka+kVlCQv6PvjhcirmQZsrRGAQ==
+X-Received: by 10.99.39.70 with SMTP id n67mr4771166pgn.203.1486656084941;
+        Thu, 09 Feb 2017 08:01:24 -0800 (PST)
+Return-Path: <bpruessmann@gmail.com>
+Received: from [10.137.2.13] ([107.17.164.234])
+        by smtp.gmail.com with ESMTPSA id j28sm30213752pfj.2.2017.02.09.08.01.23
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Feb 2017 08:01:24 -0800 (PST)
+Sender: =?UTF-8?B?Qm9yaXMgUHLDvMOfbWFubg==?= <bpruessmann@gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UedAfbb+mNabOw6yWX-8yRhVCTYtTF_7PD2-AHn_kT+VQ@mail.gmail.com>
+From: =?UTF-8?Q?Boris_Pr=c3=bc=c3=9fmann?= <boris@pruessmann.org>
+Message-ID: <9e035560-cebb-3133-5989-16b819abb915@pruessmann.org>
+Date: Thu, 9 Feb 2017 17:01:21 +0100
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101
+ Thunderbird/45.4.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UedAfbb+mNabOw6yWX-8yRhVCTYtTF_7PD2-AHn_kT+VQ@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+I, Boris Pruessmann, hereby make all my contributions made to mutagen
+[1] and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt

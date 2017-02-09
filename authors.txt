@@ -78,3 +78,7 @@ Emfox Zhou
     emfox@debian.org
     emfoxzhou@gmail.com
     emfox@github
+Boris Pruessmann
+    boris@pruessmann.org
+    bpruessmann@gmail.com
+    docbobo@github
