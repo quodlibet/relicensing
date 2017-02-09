@@ -1,0 +1,180 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp44447itb;
+        Thu, 9 Feb 2017 09:19:36 -0800 (PST)
+X-Received: by 10.202.216.69 with SMTP id p66mr2239658oig.109.1486660776912;
+        Thu, 09 Feb 2017 09:19:36 -0800 (PST)
+Return-Path: <jyrki@spotify.com>
+Received: from mail-ot0-x233.google.com (mail-ot0-x233.google.com. [2607:f8b0:4003:c0f::233])
+        by mx.google.com with ESMTPS id k6si4498465otb.237.2017.02.09.09.19.36
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Feb 2017 09:19:36 -0800 (PST)
+Received-SPF: pass (google.com: domain of jyrki@spotify.com designates 2607:f8b0:4003:c0f::233 as permitted sender) client-ip=2607:f8b0:4003:c0f::233;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@spotify.com;
+       spf=pass (google.com: domain of jyrki@spotify.com designates 2607:f8b0:4003:c0f::233 as permitted sender) smtp.mailfrom=jyrki@spotify.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=spotify.com
+Received: by mail-ot0-x233.google.com with SMTP id 32so5oth.3
+        for <reiter.christoph@gmail.com>; Thu, 09 Feb 2017 09:19:36 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=spotify.com; s=google;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=dOP7E+lnG5m+M0rcNuqyBRXz0FsPEAqs/MdzCvhh9ig=;
+        b=P8xbqT92U5F6xnsEa0Z8jyNrBqaPsGdXGyUc97cKumAubOKa0tUzf74At6D2mW22fS
+         D9ZmB67fwek+T/xzjJQj3h5a3Gw1bJF+AagYATieJBpLvfEBH5rExKPBKh3Y1Rpawlfb
+         4jUc1c6ODnib7ncqDN3rFUtEe0WWxm/1Phy6Y=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=dOP7E+lnG5m+M0rcNuqyBRXz0FsPEAqs/MdzCvhh9ig=;
+        b=W9RvkRwDr6sZr8+P9AMR7qibcGNJlRrW05dGT11jS1wyyTTEjoec65yJ5uV57gQ8VH
+         dVvsM/DUXcxCxCxKkuvHoHA4L09kiSM/IkJNI8rJFw5xHKo8nC+DgiZA6nbZBg8EGr+d
+         WV/JpxWXIfJIJEHq2Cnfkii6z1jzBeb6qqxNWMrAT4nx4vspd8AfoLJ0wTB81G6w43xX
+         vB4gie4qdZt3STEAECHrXdRIKdtF5iCs0T+bIjwuzjNm7vKY3DQa3nGoi3iLAcdofKy/
+         /rJiRrKk87J87uevVAB6YAe4LUIib0o5F/KcqMpiFHsoEoZxQkvTMvT6tilawwAspven
+         oKtA==
+X-Gm-Message-State: AMke39kflv+4+G1m76REv+SX2z39M6FD9Wr/Dzc1Ja7k+htCoNNvwmLmmaLci1wud3BDM+7JsNmBOGOcnKdBBULl
+X-Received: by 10.157.32.17 with SMTP id n17mr2268989ota.81.1486660776403;
+ Thu, 09 Feb 2017 09:19:36 -0800 (PST)
+MIME-Version: 1.0
+References: <CAE6_+Ufegnazodmsn1Qt0a3J2FHo3HkxdCS6VYBFzXAuaEMwZQ@mail.gmail.com>
+In-Reply-To: <CAE6_+Ufegnazodmsn1Qt0a3J2FHo3HkxdCS6VYBFzXAuaEMwZQ@mail.gmail.com>
+From: Jyrki Pulliainen <jyrki@spotify.com>
+Date: Thu, 09 Feb 2017 17:19:25 +0000
+Message-ID: <CAJsDnX2cf+kuUGS0oRQsGEWa17ZBwiNwSVV-oM1d2jtqV7xKng@mail.gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>, Jyrki Pulliainen <jyrki@dywypi.org>
+Content-Type: multipart/alternative; boundary=001a1140a9c87ac10e05481c2fe0
+
+--001a1140a9c87ac10e05481c2fe0
+Content-Type: text/plain; charset=UTF-8
+
+Hi Christoph,
+
+sorry that the answer took a while, I had to get the stamp of approval from
+our legal.
+
+So here goes:
+
+
+I, Jyrki Pulliainen, hereby make all my contributions made to mutagen [1]
+and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+Good luck with getting in touch with everyone!
+
+Best,
+Jyrki
+
+On Thu, Feb 9, 2017 at 2:55 AM Christoph Reiter <reiter.christoph@gmail.com>
+wrote:
+
+> Hey,
+>
+> I'm trying to change the license of mutagen and Quod Libet from "GNU
+> GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it
+> looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to both mutagen and Quod
+> Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+>
+> =========
+>
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or
+> later"
+> [3]
+>
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at
+> https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+
+--001a1140a9c87ac10e05481c2fe0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Christoph,<div><br></div><div>sorry that the answer too=
+k a while, I had to get the stamp of approval from our legal.=C2=A0</div><d=
+iv><br></div><div>So here goes:</div><div><br></div><div><div><br></div><di=
+v>I, Jyrki Pulliainen, hereby make all my contributions made to mutagen [1]=
+ and</div><div>Quod Libet [2] available under the terms of the &quot;GNU GP=
+L version 2 or later&quot;</div><div>[3]</div><div><br></div><div>[1] <a hr=
+ef=3D"https://github.com/quodlibet/mutagen">https://github.com/quodlibet/mu=
+tagen</a></div><div>[2] <a href=3D"https://github.com/quodlibet/quodlibet">=
+https://github.com/quodlibet/quodlibet</a></div><div>[3] <a href=3D"https:/=
+/www.gnu.org/licenses/old-licenses/gpl-2.0.txt">https://www.gnu.org/license=
+s/old-licenses/gpl-2.0.txt</a></div></div><div><br></div><div><br></div><di=
+v>Good luck with getting in touch with everyone!</div><div><br></div><div>B=
+est,</div><div>Jyrki</div></div><br><div class=3D"gmail_quote"><div dir=3D"=
+ltr">On Thu, Feb 9, 2017 at 2:55 AM Christoph Reiter &lt;<a href=3D"mailto:=
+reiter.christoph@gmail.com">reiter.christoph@gmail.com</a>&gt; wrote:<br></=
+div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-lef=
+t:1px #ccc solid;padding-left:1ex">Hey,<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+I&#39;m trying to change the license of mutagen and Quod Libet from &quot;G=
+NU GPLv2&quot; to<br class=3D"gmail_msg">
+&quot;GNU GPLv2 or later&quot; for compatibility with GPLv3 and Apache 2.0 =
+and it looks<br class=3D"gmail_msg">
+like you contributed to one or both of them under the &quot;GNU GPLv2&quot;=
+.<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+Would you be willing to make your contributions to both mutagen and Quod Li=
+bet<br class=3D"gmail_msg">
+available under the &quot;GNU GPLv2 or later&quot;? If yes, please respond =
+with the<br class=3D"gmail_msg">
+following:<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+I, &lt;insert-name&gt;, hereby make all my contributions made to mutagen [1=
+] and<br class=3D"gmail_msg">
+Quod Libet [2] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br class=3D"gmail_msg">
+[3]<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+[1] <a href=3D"https://github.com/quodlibet/mutagen" rel=3D"noreferrer" cla=
+ss=3D"gmail_msg" target=3D"_blank">https://github.com/quodlibet/mutagen</a>=
+<br class=3D"gmail_msg">
+[2] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" c=
+lass=3D"gmail_msg" target=3D"_blank">https://github.com/quodlibet/quodlibet=
+</a><br class=3D"gmail_msg">
+[3] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https://www.gnu.org/l=
+icenses/old-licenses/gpl-2.0.txt</a><br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" class=3D"gmail_msg" target=3D"_blank">https=
+://github.com/quodlibet/relicensing</a><br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+If you have any objections or questions regarding the relicensing or your<b=
+r class=3D"gmail_msg">
+contributions please tell me.<br class=3D"gmail_msg">
+<br class=3D"gmail_msg">
+thanks!<br class=3D"gmail_msg">
+</blockquote></div>
+
+--001a1140a9c87ac10e05481c2fe0--

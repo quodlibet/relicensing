@@ -82,3 +82,8 @@ Boris Pruessmann
     boris@pruessmann.org
     bpruessmann@gmail.com
     docbobo@github
+Jyrki Pulliainen
+    jyrki@dywypi.org
+    jyrki@spotify.com
+    jyrki.pulliainen@gmail.com
+    nailor@github
