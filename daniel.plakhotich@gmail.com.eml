@@ -1,0 +1,91 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.92.6 with SMTP id q6csp198276itb;
+        Thu, 9 Feb 2017 03:09:38 -0800 (PST)
+X-Received: by 10.129.55.86 with SMTP id e83mr1664597ywa.94.1486638578519;
+        Thu, 09 Feb 2017 03:09:38 -0800 (PST)
+Return-Path: <daniel.plakhotich@gmail.com>
+Received: from mail-yw0-x22b.google.com (mail-yw0-x22b.google.com. [2607:f8b0:4002:c05::22b])
+        by mx.google.com with ESMTPS id q206si2911893ywb.127.2017.02.09.03.09.38
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Feb 2017 03:09:38 -0800 (PST)
+Received-SPF: pass (google.com: domain of daniel.plakhotich@gmail.com designates 2607:f8b0:4002:c05::22b as permitted sender) client-ip=2607:f8b0:4002:c05::22b;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of daniel.plakhotich@gmail.com designates 2607:f8b0:4002:c05::22b as permitted sender) smtp.mailfrom=daniel.plakhotich@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-yw0-x22b.google.com with SMTP id u68so475ywg.0
+        for <reiter.christoph@gmail.com>; Thu, 09 Feb 2017 03:09:38 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=DM7mvy6Q9M8jiqIUpGrd9KsC2VShJMphjDmpAEmAteQ=;
+        b=dbJOAvFR5rNRraaMIlAksbP+ayGm013kFr86CopdVOsC5EDpHYZntpN2Vlyqbf0C5c
+         YoRm6mPe1HRHHsE0G4RRswHoKos/0n5diq3wxW90+nUtRNNfcq/WP6LDoxvAnTHIdqcv
+         vPLbvyeKxKHRjTJJuljlkUb6N4gxzlKIFV+FXd2jVcdGfGpyIZvCgUVrLt0eQMJ+LRP+
+         jAEr+Sjq2U/xjAu6OzZmQ8uDlRjouKSYVUTjjRA7qbhMVaSXHT/uLFUOdicfdhDsCHsl
+         BttqMKhFs/LBK8bwpyHAN0VqEjW8H1en9wKMbN+wzl87w7VlKb6SWDZoNWn8wyv9O8Tq
+         pvzg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=DM7mvy6Q9M8jiqIUpGrd9KsC2VShJMphjDmpAEmAteQ=;
+        b=ikX6qL2EnJY7cdPgis0iOqKNJm64TqxFzhuSaQlTpQDMUcSxb+EBSBj9xH7vT/URdr
+         9l8mkFs9AwyG0tt0RQlO/pfNQBnhrLCNWT0vF6S3PSKyYg0mi56M2zBkNyDD0o3lKNUc
+         cd5wgwGWtdvHQiCPCHOhkeQz/C/IRrgkpeAOVVUP1lXwNggdqfkQ1DlLgCoKoCpwADd4
+         /6klMAefpxh689+90on8itrNrpTdQftMhe0Su3Kpgx6IZkJv9/I6uLaOcovQIEZiiv0u
+         sbTg9dBJaYV+RXEb8TXXgVGFrvq8n/xntv0gffOExdWw33TMTfP/yMeW40JdG3Zk+tQm
+         aYrQ==
+X-Gm-Message-State: AMke39lWTzh7+x1wNFaMGnRr34bf9ZntfssmYu1g4zxMOakoT3jZJj2EHYs8tP4cHjUs2+xFGJ1+tf2TpleT/g==
+X-Received: by 10.13.226.141 with SMTP id l135mr1704129ywe.77.1486638577937;
+ Thu, 09 Feb 2017 03:09:37 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.37.173.194 with HTTP; Thu, 9 Feb 2017 03:09:37 -0800 (PST)
+In-Reply-To: <CAE6_+UcwRU5r8No6GHMOrEGbmzoQJ6PuTXc_G_XjWXY8n94XnA@mail.gmail.com>
+References: <CAE6_+UcwRU5r8No6GHMOrEGbmzoQJ6PuTXc_G_XjWXY8n94XnA@mail.gmail.com>
+From: Daniel Plakhotich <daniel.plakhotich@gmail.com>
+Date: Thu, 9 Feb 2017 13:09:37 +0200
+Message-ID: <CAHyGfTjKBRTu=8qWa50eqGaBew5WMsZEuAg7sV=kHBj_YaGJ3A@mail.gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: text/plain; charset=UTF-8
+
+I, Daniel Plakhotich, hereby make all my contributions made to mutagen [1] and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+On Thu, Feb 9, 2017 at 12:56 PM, Christoph Reiter
+<reiter.christoph@gmail.com> wrote:
+> Hey,
+>
+> I'm trying to change the license of mutagen and Quod Libet from "GNU GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to both mutagen and Quod Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+>
+> =========
+>
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+> [3]
+>
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
