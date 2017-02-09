@@ -74,3 +74,7 @@ Daniel Plachotich
     daniel.plachotich@yandex.ru
     daniel.plakhotich@gmail.com
     danpla@github
+Emfox Zhou
+    emfox@debian.org
+    emfoxzhou@gmail.com
+    emfox@github
