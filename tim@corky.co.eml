@@ -1,0 +1,87 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.118.148 with SMTP id z142csp323434itb;
+        Sun, 12 Feb 2017 00:27:12 -0800 (PST)
+X-Received: by 10.28.111.75 with SMTP id k72mr13825959wmc.39.1486888032170;
+        Sun, 12 Feb 2017 00:27:12 -0800 (PST)
+Return-Path: <tim@corky.co>
+Received: from b-painless.mh.aa.net.uk (b-painless.mh.aa.net.uk. [81.187.30.52])
+        by mx.google.com with ESMTPS id p12si8911210wrd.158.2017.02.12.00.27.11
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 12 Feb 2017 00:27:12 -0800 (PST)
+Received-SPF: neutral (google.com: 81.187.30.52 is neither permitted nor denied by best guess record for domain of tim@corky.co) client-ip=81.187.30.52;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 81.187.30.52 is neither permitted nor denied by best guess record for domain of tim@corky.co) smtp.mailfrom=tim@corky.co
+Received: from 8.2.c.a.e.8.e.f.f.f.5.3.4.d.6.7.8.4.3.6.9.4.2.1.0.b.8.0.1.0.0.2.ip6.arpa ([2001:8b0:1249:6348:76d4:35ff:fe8e:ac28] helo=wopr)
+	by b-painless.mh.aa.net.uk with esmtps (TLS1.2:DHE_RSA_AES_128_CBC_SHA1:128)
+	(Exim 4.84_2)
+	(envelope-from <tim@corky.co>)
+	id 1ccpV1-0000eI-KX
+	for reiter.christoph@gmail.com; Sun, 12 Feb 2017 08:27:11 +0000
+Received: from wopr.net.home ([2001:8b0:1249::4] helo=wopr)
+	by wopr with esmtps (TLS1.0:DHE_RSA_AES_256_CBC_SHA1:256)
+	(Exim 4.80)
+	(envelope-from <tim@corky.co>)
+	id 1ccpV0-00053J-1A
+	for reiter.christoph@gmail.com; Sun, 12 Feb 2017 08:27:10 +0000
+Received: from wopr.net.home (wopr.net.home [2001:8b0:1249::4]) by
+ http.net.home (Horde Framework) with HTTP; Sun, 12 Feb 2017 08:27:09 +0000
+Date: Sun, 12 Feb 2017 08:27:09 +0000
+Message-ID: <20170212082709.Horde._H-QAbq5RnKR3iFHQqALDg9@http.net.home>
+From: Tim Phipps <tim@corky.co>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+In-Reply-To: <CAE6_+Uc9set4p8CQ8z5cbUu0ZAp5_qaYAU2J7N6LQtSxKm+7ew@mail.gmail.com>
+Reply-to: tim@corky.co
+User-Agent: Internet Messaging Program (IMP) H5 (6.2.2)
+Content-Type: text/plain; charset=UTF-8; format=flowed; DelSp=Yes
+MIME-Version: 1.0
+Content-Disposition: inline
+
+Hi Christopher,
+Sorry to not reply sooner, been a bit busy, anyway I have no problem  
+with this so here's the necessary:
+
+I, Tim Phipps, hereby make all my contributions made to mutagen [1] and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+[3]
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+Quoting Christoph Reiter <reiter.christoph@gmail.com>:
+
+> Hey,
+>
+> I'm trying to change the license of mutagen and Quod Libet from "GNU  
+> GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to both mutagen and  
+> Quod Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+>
+> =========
+>
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+> [3]
+>
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+
+
+

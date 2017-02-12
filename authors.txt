@@ -91,3 +91,8 @@ Marien Zwart
     m_zwart@123mail.org
     marien.zwart@gmail.com
     marienz@gentoo.org
+Tim Phipps
+    tim@phipps-hutton.freeserve.co.uk
+    phipps-hutton@sky.com
+    phipps.hutton@gmail.com
+    tim@corky.co
