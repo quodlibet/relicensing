@@ -87,3 +87,7 @@ Jyrki Pulliainen
     jyrki@spotify.com
     jyrki.pulliainen@gmail.com
     nailor@github
+Marien Zwart
+    m_zwart@123mail.org
+    marien.zwart@gmail.com
+    marienz@gentoo.org

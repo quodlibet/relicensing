@@ -1,0 +1,180 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.118.148 with SMTP id z142csp292966itb;
+        Sat, 11 Feb 2017 22:02:33 -0800 (PST)
+X-Received: by 10.202.92.70 with SMTP id q67mr7868785oib.148.1486879353613;
+        Sat, 11 Feb 2017 22:02:33 -0800 (PST)
+Return-Path: <marien.zwart@gmail.com>
+Received: from mail-oi0-x22a.google.com (mail-oi0-x22a.google.com. [2607:f8b0:4003:c06::22a])
+        by mx.google.com with ESMTPS id u188si1969488oig.318.2017.02.11.22.02.33
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 11 Feb 2017 22:02:33 -0800 (PST)
+Received-SPF: pass (google.com: domain of marien.zwart@gmail.com designates 2607:f8b0:4003:c06::22a as permitted sender) client-ip=2607:f8b0:4003:c06::22a;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of marien.zwart@gmail.com designates 2607:f8b0:4003:c06::22a as permitted sender) smtp.mailfrom=marien.zwart@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-oi0-x22a.google.com with SMTP id w204so33059699oiw.0
+        for <reiter.christoph@gmail.com>; Sat, 11 Feb 2017 22:02:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=1EPW1a00YMrDeVde6LrUMmXqZYYzX1bWpRYnaFHLkuA=;
+        b=Bg4OhML3dAoHQ4Sbs9dkRSf762v6jP2Mk5MKbflYKjsnn40kHpkfQgIMzrQxY0iidG
+         0P0TG2J/0ec1qb8S/GtGjFx3txSi6UpDBN4vcuf1UOH0ThP2TGuzRtTR0ARJmw2Gb9OO
+         0A0E9PSZsYYkXpD1ZUkscMjRCd4QvDMtArAnCuMhxBww3RBixb0M7+qxhsyFlODaF36J
+         5bIRNKbXN6f9cX0ZAzCPpa0Tou7ojbwpZfF3RA5aiuV78RNmYQRHOk/ENWnIEx1SOpFg
+         ia0v7GBwSXA1P4X4kVzvMptBZ7BAIwukqc4NGuR/Bo0P0ioW+LJGussRD8d3ntFVYMXC
+         jjRA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=1EPW1a00YMrDeVde6LrUMmXqZYYzX1bWpRYnaFHLkuA=;
+        b=PcFId5ZMUtccmLZJD3hzoiva9dvQd0QqJ4lwbftu0a2UY+p0igFdb0KcIpmY235WIA
+         AN2Yjd/bzcWUvT9Oygz5JOBQMLjfR2sj5J2YpAmCoDffERn7q4qi7bHoP0zzSfcSYr02
+         8dhG9gVCBxAQeU8KfJyWMwIypVp8glAXb4XAZw50KR2XePHsBdG2SiVWyqMObSprwRqL
+         v5WPixso00OUghs0Mlsnf/umkQbmW5cFujI4h1ntSl6hYxE9iZ9c4+5m2FIRyoDzaB71
+         SN8WWY1RXC2yfk5NAkvQWD5faWpGEKAcRfYWyLAsSVZZ2zyRijWgWgYHUKpph3Bq7ok6
+         A0Ew==
+X-Gm-Message-State: AMke39m05KfUNCM8/6N3Rnj7/elVRk1DUzb/1pBpW6ltptKAx8dKmiPB54EI3gSdCY6hWJ+9Aa3Y/Yzf5S16Hw==
+X-Received: by 10.202.196.3 with SMTP id u3mr9023941oif.97.1486879353209; Sat,
+ 11 Feb 2017 22:02:33 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.74.48.89 with HTTP; Sat, 11 Feb 2017 22:02:32 -0800 (PST)
+Received: by 10.74.48.89 with HTTP; Sat, 11 Feb 2017 22:02:32 -0800 (PST)
+In-Reply-To: <CAE6_+UcYfQauE=+V0M9U-q8uxmev8UugrbQF9GaDcs0mOeWxtA@mail.gmail.com>
+References: <CAE6_+UcYfQauE=+V0M9U-q8uxmev8UugrbQF9GaDcs0mOeWxtA@mail.gmail.com>
+From: Marien Zwart <marien.zwart@gmail.com>
+Date: Sun, 12 Feb 2017 17:02:32 +1100
+Message-ID: <CAEWfL_SAabTeLfRcS_XZRvnKULoZXBOKmFkKUY_sU53jmcW2FQ@mail.gmail.com>
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary=001a11351cd0ac09a905484f13c9
+
+--001a11351cd0ac09a905484f13c9
+Content-Type: text/plain; charset=UTF-8
+
+I, Marien Zwart, hereby make all my contributions made to mutagen [1] and
+Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Best of luck with the relicensing effort!
+
+On 11 Feb. 2017 19:02, "Christoph Reiter" <reiter.christoph@gmail.com>
+wrote:
+
+> Hey,
+>
+> I'm trying to change the license of mutagen and Quod Libet from "GNU
+> GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it
+> looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to both mutagen and Quod
+> Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+>
+> =========
+>
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or
+> later"
+> [3]
+>
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/
+> relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+
+--001a11351cd0ac09a905484f13c9
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><span style=3D"font-family:sans-serif;font-size:13.696px"=
+>I, Marien Zwart, hereby make all my contributions made to mutagen [1] and<=
+/span><br style=3D"font-family:sans-serif;font-size:13.696px"><span style=
+=3D"font-family:sans-serif;font-size:13.696px">Quod Libet [2] available und=
+er the terms of the &quot;GNU GPL version 2 or later&quot;</span><br style=
+=3D"font-family:sans-serif;font-size:13.696px"><span style=3D"font-family:s=
+ans-serif;font-size:13.696px">[3]</span><br style=3D"font-family:sans-serif=
+;font-size:13.696px"><br style=3D"font-family:sans-serif;font-size:13.696px=
+"><span style=3D"font-family:sans-serif;font-size:13.696px">[1]=C2=A0</span=
+><a href=3D"https://github.com/quodlibet/mutagen" style=3D"text-decoration:=
+none;color:rgb(66,133,244);font-family:sans-serif;font-size:13.696px">https=
+://github.com/quodlibet/<wbr>mutagen</a><br style=3D"font-family:sans-serif=
+;font-size:13.696px"><span style=3D"font-family:sans-serif;font-size:13.696=
+px">[2]=C2=A0</span><a href=3D"https://github.com/quodlibet/quodlibet" styl=
+e=3D"text-decoration:none;color:rgb(66,133,244);font-family:sans-serif;font=
+-size:13.696px">https://github.com/quodlibet/<wbr>quodlibet</a><br style=3D=
+"font-family:sans-serif;font-size:13.696px"><span style=3D"font-family:sans=
+-serif;font-size:13.696px">[3]=C2=A0</span><a href=3D"https://www.gnu.org/l=
+icenses/old-licenses/gpl-2.0.txt" style=3D"text-decoration:none;color:rgb(6=
+6,133,244);font-family:sans-serif;font-size:13.696px">https://www.gnu.org/l=
+icenses/<wbr>old-licenses/gpl-2.0.txt</a><br><br><div data-smartmail=3D"gma=
+il_signature">Best of luck with the relicensing effort!</div></div><div cla=
+ss=3D"gmail_extra"><br><div class=3D"gmail_quote">On 11 Feb. 2017 19:02, &q=
+uot;Christoph Reiter&quot; &lt;<a href=3D"mailto:reiter.christoph@gmail.com=
+">reiter.christoph@gmail.com</a>&gt; wrote:<br type=3D"attribution"><blockq=
+uote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc =
+solid;padding-left:1ex">Hey,<br>
+<br>
+I&#39;m trying to change the license of mutagen and Quod Libet from &quot;G=
+NU GPLv2&quot; to<br>
+&quot;GNU GPLv2 or later&quot; for compatibility with GPLv3 and Apache 2.0 =
+and it looks<br>
+like you contributed to one or both of them under the &quot;GNU GPLv2&quot;=
+.<br>
+<br>
+Would you be willing to make your contributions to both mutagen and Quod Li=
+bet<br>
+available under the &quot;GNU GPLv2 or later&quot;? If yes, please respond =
+with the<br>
+following:<br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+I, &lt;insert-name&gt;, hereby make all my contributions made to mutagen [1=
+] and<br>
+Quod Libet [2] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br>
+[3]<br>
+<br>
+[1] <a href=3D"https://github.com/quodlibet/mutagen" rel=3D"noreferrer" tar=
+get=3D"_blank">https://github.com/quodlibet/<wbr>mutagen</a><br>
+[2] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" t=
+arget=3D"_blank">https://github.com/quodlibet/<wbr>quodlibet</a><br>
+[3] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" target=3D"_blank">https://www.gnu.org/licenses/<wbr>old-lic=
+enses/gpl-2.0.txt</a><br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" target=3D"_blank">https://github.com/quodli=
+bet/<wbr>relicensing</a><br>
+<br>
+If you have any objections or questions regarding the relicensing or your<b=
+r>
+contributions please tell me.<br>
+<br>
+thanks!<br>
+</blockquote></div></div>
+
+--001a11351cd0ac09a905484f13c9--
