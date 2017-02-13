@@ -1,3 +1,5 @@
+This is just a mapping from names to email addresses and usernames
+
 Joe Wreschnig
     piman@sacredchao.net
     joe.wreschnig@gmail.com
@@ -96,3 +98,17 @@ Tim Phipps
     phipps-hutton@sky.com
     phipps.hutton@gmail.com
     tim@corky.co
+Bastian Kleineidam
+    calvin@debian.org
+    bastian.kleineidam@web.de
+    calvin@users.sourceforge.net
+    bastian.kleineidam@triplex.de
+    bastian.kleineidam@gmail.com
+    reflexionsniveau@web.de
+    calvin@cs.uni-sb.de
+    wummel@github
+Eric Streit
+    Eric.Streit@wanadoo.fr
+    eric@yojik.eu
+Peter Johnson
+    johnson.peter@gmail.com
