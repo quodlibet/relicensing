@@ -6,25 +6,6 @@ and credited in the NEWS file.
 
 The following credits have been excluded:
 
-Bastian Kleineidam:
-
-    Contact:
-        calvin@debian.org
-        bastian.kleineidam@web.de
-        calvin@users.sourceforge.net
-        bastian.kleineidam@triplex.de
-        bastian.kleineidam@gmail.com
-        reflexionsniveau@web.de
-        calvin@cs.uni-sb.de
-        wummel@github
-
-    Credited in the NEWS file, but the provided patch in the bug tracker is
-    not what was committed.
-
-    https://github.com/quodlibet/mutagen/commit/249adf623dc2a420b3f300330056074c1c39e899
-    https://web.archive.org/web/20060627185859/http://www.sacredchao.net/quodlibet/ticket/696
-
-
 Eric Streit:
 
     Contact:

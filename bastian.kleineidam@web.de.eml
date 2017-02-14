@@ -1,0 +1,88 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.36.118.148 with SMTP id z142csp969300itb;
+        Mon, 13 Feb 2017 11:57:15 -0800 (PST)
+X-Received: by 10.223.128.202 with SMTP id 68mr23411077wrl.92.1487015834935;
+        Mon, 13 Feb 2017 11:57:14 -0800 (PST)
+Return-Path: <bastian.kleineidam@web.de>
+Received: from mout.web.de (mout.web.de. [212.227.15.14])
+        by mx.google.com with ESMTPS id 39si15134614wrv.83.2017.02.13.11.57.14
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 13 Feb 2017 11:57:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of bastian.kleineidam@web.de designates 212.227.15.14 as permitted sender) client-ip=212.227.15.14;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bastian.kleineidam@web.de designates 212.227.15.14 as permitted sender) smtp.mailfrom=bastian.kleineidam@web.de
+Received: from [127.0.0.1] ([87.118.116.90]) by smtp.web.de (mrweb002
+ [213.165.67.108]) with ESMTPSA (Nemesis) id 0Lxf1X-1cJXPd0a5r-017CLd for
+ <reiter.christoph@gmail.com>; Mon, 13 Feb 2017 20:57:14 +0100
+Subject: Re: mutagen/quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+Uc7U6C06+yOrOGgt2gjyC7ALhpFTjBNSG_SZGpM=TYFEw@mail.gmail.com>
+From: Bastian Kleineidam <bastian.kleineidam@web.de>
+Message-ID: <4e519872-7cba-bcc1-6538-2e0fb44e1b54@web.de>
+Date: Mon, 13 Feb 2017 19:57:00 +0000
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+Uc7U6C06+yOrOGgt2gjyC7ALhpFTjBNSG_SZGpM=TYFEw@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-Provags-ID: V03:K0:Htd/qLIc/y23NEkoJzN8iasCCbGDjktKxP4Uoccusn3AfBtZ9fI
+ QWicDnWNdfwuLoWO4xPG5G8PYUbmAnbmM2lXxUB6xQ87nMsY0tTZy1Is1FUrBq31PD7Nhnz
+ 8VVlbv+B0x+JA6kAnCNBLDt/fud3smtFe8atvmVYSoa/5pWKfydsQalkFTJphxzWiv+sMB8
+ 4OmSJ4NL5EkFWadfZETHA==
+X-UI-Out-Filterresults: notjunk:1;V01:K0:jb79JgDBG3I=:Lz5n72nPNPnEBQg6i8pMah
+ /9j8H1KHuSqrG794CDoyvl1ZNXJPqip565nr1vTfjKCt13Paiu3IoJmYG51VxyCXRoqkxxHU9
+ 7KvT1GfyUiOhrIU+LkK2glzYLaZWKSwgYZhSaqPOiE/9mXrNKyd1mk1CreyuEoaBdGhs/LG0w
+ HSh2Aa0HxBErVIz4ZEdeHFVKwW1TJjKZ6xHzwBsr13WGoX0VBEVOIOD41DKNQV7Du8C/RlGgw
+ MmeZ4+0zP1b1mCfbhZMfau3/DKt8ze84kDuhoj9XT26BmwpZedge33BW0pW+Ar23ABeb+QNE/
+ TdhllgNYkMIhVcbUlcZDGJvoKlzZPc+PdamuGc2xAoQwhzVdtA+Hb5uA4Ybhnrd8wq0OnGBee
+ q8R1Nia5MRFeAL1Nbiox6PU81klNVo/cOvV5G4yYHddwgYjCbALYNDfIrC/xikt1zf/mmcd+y
+ dhVFJgF2WxjfM9uGb0w/hKXv9IR71UpoWTodHr0eyqA/AYVmxnvjybMQmFaWDKseexZ7ZvWgH
+ kzHYoLBCArVGdbxmIsjfN19woj1vqgMmInGMT3h4Mmm2bZ2ehc8xQ5mlKajSHtwCsUqoe0L37
+ WLri5Cec90qYdXtnn2V1vDTr7J/dQZxglUFor+KIz/F4YqulZe4IHcO8stitPRehPol9gzxsk
+ /ltXnMrwe/C/72p4pSwmf5e30OonD4qjuGaXthFCK3s3+Y2fFraxlqls9lQMmy9SBGno3aHmx
+ 0t2vOuTaYED4cCrY7WC/xbdeLxxHKTjEfjoq59C9xQr552ELVgoMjWrHcZ60cmod6KAWvCSCu
+ 2xyDrLjS8zKutY96OcrMK9jTY4sZg==
+
+Hi Christoph,
+
+I, Bastian Kleineidam, hereby make all my contributions made to mutagen
+[1] and Quod Libet [2] available under the terms of the "GNU GPL version
+2 or later"[3]
+
+[1] https://github.com/quodlibet/mutagen
+[2] https://github.com/quodlibet/quodlibet
+[3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Viele Grüße und viel Spaß beim Coden,
+Bastian
+
+Christoph Reiter:
+> Hey,
+> 
+> I'm trying to change the license of mutagen and Quod Libet from "GNU GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and it looks
+> like you contributed to one or both of them under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to both mutagen and Quod Libet
+> available under the "GNU GPLv2 or later"? If yes, please respond with the
+> following:
+> 
+> =========
+> 
+> I, <insert-name>, hereby make all my contributions made to mutagen [1] and
+> Quod Libet [2] available under the terms of the "GNU GPL version 2 or later"
+> [3]
+> 
+> [1] https://github.com/quodlibet/mutagen
+> [2] https://github.com/quodlibet/quodlibet
+> [3] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+> 
+> thanks!
+> 
