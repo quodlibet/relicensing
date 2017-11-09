@@ -1,0 +1,90 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2176832wrc;
+        Wed, 8 Nov 2017 16:12:09 -0800 (PST)
+X-Received: by 10.84.176.131 with SMTP id v3mr1991008plb.208.1510186329532;
+        Wed, 08 Nov 2017 16:12:09 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510186329; cv=none;
+        d=google.com; s=arc-20160816;
+        b=RPmVh9YcFuoHVBnJJJVHO1do/oXJrcpOYTAQyozVfY5thHpuLP4vY6tIf/mT9hSCBB
+         0Kgm/P1hpaEa07BoGKCIRHruUg2vCrEnsrFi7j2Khx0h3Nxk/NB5vGoqXWfpEqLQf0iL
+         89zq3ATzLlYEBdb8IO/MdRnin1ajGFGXMOs5XvBDCiD1iBlHeDH8jZLsXKkq4QD9SFoU
+         3Vksw5nTkS6Wj6QbtQP1gDMGFqTUlk9UlnfuuQ5/7MAIHExW5QD32dXBFVoJmHVkjn4m
+         CqA+FJnzag8B6ZZCvVlcSJW4YREnKTZJwX+6KYkI8wrcFJCfyu+xm7/2GkGtftZL1C01
+         3eZA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:in-reply-to:to:references:date:subject:mime-version
+         :content-transfer-encoding:from:dkim-signature
+         :arc-authentication-results;
+        bh=zXwOjpNDiF7kdCdruIv6lj9RhIoypD7JHKoeWeycPKA=;
+        b=rXAP9DBCQ7r4J7akzQg8p0/QCFEXRTeFK06Rm4dt/hZjCWjd0NuxPNl45Gwdk7ybN+
+         lNFBi8cj1xhZwWlCjRvSA3EoYl14U9bX7725ZTb4bLl1IH41AuU2byfNB1JeAPbQeYJ6
+         OqvI4LMqqQ8xYUyntqT8IKMCpqsDjBGs2XICiPkClK0W+ee/EslTSBnTRdPVa8tUKybI
+         6CRdeObWZUNk+rweRvjn4nIqqFztsDMxUvEH5JNQc3ClKDeu9PYzCpGEMwJozbXlfowJ
+         CK8rfhYt+/s/pVXe/uWEhwHGNkncUDxV5IJ2DkwD3maujacOY3DQwOgQ1UgahbkhbzVA
+         KXfA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=AyeeQ+fv;
+       spf=pass (google.com: domain of qjhjdm@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=qjhjdm@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <qjhjdm@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id u3sor1748635plb.48.2017.11.08.16.12.09
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Wed, 08 Nov 2017 16:12:09 -0800 (PST)
+Received-SPF: pass (google.com: domain of qjhjdm@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=AyeeQ+fv;
+       spf=pass (google.com: domain of qjhjdm@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=qjhjdm@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=from:content-transfer-encoding:mime-version:subject:date:references
+         :to:in-reply-to:message-id;
+        bh=zXwOjpNDiF7kdCdruIv6lj9RhIoypD7JHKoeWeycPKA=;
+        b=AyeeQ+fvESmdXbpT6BUVFEQf9Mr9y6uLjEXqZ/PjuCbkxOT50biwzU2aD7rf8LAajC
+         c8jnDIOHE88muxpipi5QPakEBZCIIGqRqrocI24m1AhxkMEMcY2C+TvHU3n0BQL3yONu
+         PRN+ajEUY2tfzKbMB6YvzNDN48u3fetllfvRWiOCpoa+OSHdQdylzq1uR+SLhowh/qw4
+         QgpXMojEPxTap/9u2pdWD/DU/BW/LYmrVnARnn4tf3w5tCfnFxNebBNRj7fg0ujj3fdA
+         QNgeVmgP5XPBono/lHHV9YTlIJ+yu9pZ+ioLU5Sj+Gp7DcgJVlt2eEt6wlJ+NwblsfMm
+         hwOA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:content-transfer-encoding:mime-version
+         :subject:date:references:to:in-reply-to:message-id;
+        bh=zXwOjpNDiF7kdCdruIv6lj9RhIoypD7JHKoeWeycPKA=;
+        b=mlkiwPL7EXAbxJOZC0gRp0yqlqFscaVoFLTn1LaJhw9QYy8ztpqDHnU7hq5VdP3KEC
+         EMeW1Tes75AQDDIxdeGmmjz9U9qFcwN6v/NfOPGT3YZy6XunxumKyrfWl8q7+gMulxZ1
+         OaKJ9ODJs3xjXrqyP5coZpIDpvNpIfCIviD8myoPeE7kjsgns3daVQyNYAUoZFT2pQlQ
+         fB6KYiPyDkBod7UAmF1KQxrdz4N+vxbG97pVG4J6P7WD5oDynH+80rmYgTgD7r/ejnMR
+         Ap8e9I3LzUFDCTBLOWGj9sZ4r9yBdf+DIQ0q6DMg64FabRQNCkg2cGW5RTdN/t6GXLPO
+         AelQ==
+X-Gm-Message-State: AJaThX6KimygRz/crhIj6dB+rfm69QBeai8Na/NJ7TbGqipNN834JuoJ
+	FGEGQvBOKgflcG9hvsiZ7YWzdAKq
+X-Google-Smtp-Source: ABhQp+QhlZtnyYtpPik+AID4itIvKEwM/OSe8dGriuCTeTuw4cmuhmc/d92uMiybTg2xGxnI3vAhtw==
+X-Received: by 10.159.195.73 with SMTP id z9mr2035732pln.346.1510186328690;
+        Wed, 08 Nov 2017 16:12:08 -0800 (PST)
+Return-Path: <qjhjdm@gmail.com>
+Received: from [192.168.1.3] (198-27-249-41.fiber.dynamic.sonic.net. [198.27.249.41])
+        by smtp.gmail.com with ESMTPSA id 70sm9494799pfv.97.2017.11.08.16.12.07
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 16:12:08 -0800 (PST)
+From: zsau <qjhjdm@gmail.com>
+Content-Type: text/plain;
+	charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0 (Mac OS X Mail 11.1 \(3445.4.7\))
+Subject: Re: quodlibet GPLv2+ relicensing
+Date: Wed, 8 Nov 2017 16:12:06 -0800
+References: <CAE6_+UecyjS8CODJmARjcnog_=zbtRNhGX8-xvNL-MSRSdBZQA@mail.gmail.com>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+In-Reply-To: <CAE6_+UecyjS8CODJmARjcnog_=zbtRNhGX8-xvNL-MSRSdBZQA@mail.gmail.com>
+Message-Id: <B51C9453-B33B-49BF-ADDC-C13566E8A626@gmail.com>
+X-Mailer: Apple Mail (2.3445.4.7)
+
+I, zsau, hereby make all my contributions made to Quod Libet [1] =
+available under the terms of the "GNU GPL version 2 or later" [2].
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt=

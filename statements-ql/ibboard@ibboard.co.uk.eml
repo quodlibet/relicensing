@@ -1,0 +1,104 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1955656wrc;
+        Wed, 8 Nov 2017 11:57:48 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+TJSHaknhmm82dp06Jbe5sxYFZXR7F4xD238ALHpl64P/YivJQC10bOdZ2K+HNdNvcVnobi
+X-Received: by 10.223.136.162 with SMTP id f31mr1333391wrf.130.1510171068643;
+        Wed, 08 Nov 2017 11:57:48 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510171068; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WxAqRndkO5dCOtg+NXluxSaIugmc8M2OlaIYQzafexL49tOYp6LCxJuLE5o4QLJJsk
+         tCyfmEtKstxmCKV92FnwfLNHOIy6GsOXbDtRq0tzORht3Vq+9bv1QuOt3AxoV0eTSkGS
+         oeob855Lry9HTqo/qHaLBuK4JKaZFtbzc065+aK31OPp3e1pfMzRnAl4B269MuyRQ1h4
+         fTLevobzzKsHeUX18noLIXRU09ZsEK7hFetiddfcQ2edwRYaOBwoWSkQe1I5XEk0tNrd
+         HWoZNnAqPEKNARe2eThmXMnAk7f9dDTzkV26PvHJqGYy8JzD8TG/ViVX86zD9aP9g3F9
+         MagQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:content-language:in-reply-to:mime-version
+         :user-agent:date:message-id:from:references:to:subject
+         :arc-authentication-results;
+        bh=70btE9vQSe7kfUUC6mSUaROjo+JNOYxDktHaVCITQ3Y=;
+        b=wvf34SOFDcn5Vrl3TgsRbY0AfoHo+70Z9F6olLcCm+2QSRZs1nG9iRcu+0TCTAtJUY
+         IRPh2TdKNEBObN71GnSPuOKjOGXzAfX5lY6Q3HBfOrlLlo2ZnzgKXK7QRT/Sg9HarLK0
+         PaPRMqt2wi7RClziDgE53oGM6l7urukaOCb9ZKEWdZn5Ui8Id04Xf7LkpalttZZImFUW
+         y3ysVYbm/xrH1e2Mrr7VF/LsKUeOqDJhcKp3sdSFGMcKVq4Wbz58MY/d69aotIEh3++e
+         qTpyA3JHlAzJPmPcFLQeCNCDz89FOFdpgKYcrKuVV0/Q72vuNozFbKsVWa8Y8xhgKXEs
+         g4RQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of ibboard@ibboard.co.uk designates 213.229.111.243 as permitted sender) smtp.mailfrom=ibboard@ibboard.co.uk
+Return-Path: <ibboard@ibboard.co.uk>
+Received: from mail.ibboard.co.uk (clouduk.ibboard.co.uk. [213.229.111.243])
+        by mx.google.com with ESMTPS id i17si4241281wmb.49.2017.11.08.11.57.48
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 11:57:48 -0800 (PST)
+Received-SPF: pass (google.com: domain of ibboard@ibboard.co.uk designates 213.229.111.243 as permitted sender) client-ip=213.229.111.243;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of ibboard@ibboard.co.uk designates 213.229.111.243 as permitted sender) smtp.mailfrom=ibboard@ibboard.co.uk
+Received: from localhost (unknown [127.0.0.1])
+	by mail.ibboard.co.uk (Postfix) with ESMTP id 93724120D87F3
+	for <reiter.christoph@gmail.com>; Wed,  8 Nov 2017 19:57:46 +0000 (UTC)
+Received: from mail.ibboard.co.uk ([127.0.0.1])
+	by localhost (clouduk.ibboard.co.uk [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Gv_pEgIgXXMp for <reiter.christoph@gmail.com>;
+	Wed,  8 Nov 2017 19:57:44 +0000 (GMT)
+Received: from AnkhMorpork.home (host81-129-200-18.range81-129.btcentralplus.com [81.129.200.18])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.ibboard.co.uk (Postfix) with ESMTPSA id DA884120D87F1
+	for <reiter.christoph@gmail.com>; Wed,  8 Nov 2017 19:57:44 +0000 (GMT)
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UfBmmjGsTFPyMHr=8NmMa-PV=F0u8zdsnWmOAoSta_Onw@mail.gmail.com>
+From: IBBoard <ibboard@ibboard.co.uk>
+Message-ID: <e34e6a83-1e7c-30fe-861c-21795ba9ef73@ibboard.co.uk>
+Date: Wed, 8 Nov 2017 19:57:46 +0000
+User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-GB; rv:1.8.1.23)
+ Gecko/20090817 SUSE/2.0.0.23-0.2.1 Lightning/0.9 Thunderbird/2.0.0.23
+ Mnenhy/0.7.6.666
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UfBmmjGsTFPyMHr=8NmMa-PV=F0u8zdsnWmOAoSta_Onw@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: en-GB
+Content-Transfer-Encoding: 7bit
+
+No problem:
+
+
+
+I, IBBoard, hereby make all my contributions made to Quod Libet [1] 
+available under the terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+
+
+On 08/11/17 18:51, Christoph Reiter wrote:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+> 
+> =========
+> 
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+> 
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+> 
+> thanks!
+> 

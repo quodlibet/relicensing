@@ -1,0 +1,66 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1928995wrc;
+        Wed, 8 Nov 2017 11:28:38 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+TVjP9D8TnQmOILls5mpNqyBmL4m2I5bVMhAMWSSxAu8AOXhIu73vlUmBXShEvOdeFKUQ8B
+X-Received: by 10.223.182.158 with SMTP id j30mr1278639wre.242.1510169318079;
+        Wed, 08 Nov 2017 11:28:38 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510169318; cv=none;
+        d=google.com; s=arc-20160816;
+        b=RPB0bJa7fOTowOasRLyWCTWJNBVlThjYT6JKnZm09nUf+9I5RX9WMN5OT9LTsXLQ/I
+         7HZX4nWnTy6TRPPHJdnpd1k4fTORHoO/OTJcj4s0MomFPzFe383lskgwibu8eJwIdg75
+         0l0KKLhucd4jg6pPuQ4zF3aWjAl7R8uoH+uCRquIq0bhXoxC6NeAvFStiWYu484XXa+J
+         BN5aLuklaPNy0ZHOesK6H4qH3SGCQ0kiE8UKxeQsCTIpAe/AbCdQz0DqSm9Jd+fZDCdW
+         B6B70GoG66MJDEgWvPMmGJZCP/8lfmyzwS4lejVI2mWv5L/6XVTTcWWQQ4heTOi/Sjw1
+         xMHA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:content-language:in-reply-to:mime-version
+         :user-agent:date:message-id:from:references:to:subject
+         :arc-authentication-results;
+        bh=xOdsBAX7SSr+62XrvFu0yny+nDMecLsqNG6XtJQgaPw=;
+        b=a0BD62DXcS81RgN95l5h8I60vWXDFxnJOz1LLD5S6EGgnJtEnLis7TgJYEJSUJ1e8D
+         7mCo3uQx1Kacs/He54oqrsYoG5XwlxDJ3AXbzpEODihVNngURBZVajPJIoNjQHdwnE1b
+         Ae6G9YVm5D0xmWuw4L0EaNz9yppcL06BFYc0YULvDaEpVqM4/l5M7cf45IBenCGputxr
+         AonMgpFFp3dpHP1RS1/AfOqkMRQRvUlnCjsWdGyUbzWBS32Kz6beA2XygdpV6tXvg9Uz
+         DXpDzlietE5OOEat6SEpfV4paovAIGscbUpIrG9dkmgw5PdNIBjrpf4/iHDyP81vmdo0
+         89ZA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.26.156.38 is neither permitted nor denied by best guess record for domain of thomas.vogt@tovotu.de) smtp.mailfrom=thomas.vogt@tovotu.de
+Return-Path: <thomas.vogt@tovotu.de>
+Received: from regulus.uberspace.de (regulus.uberspace.de. [185.26.156.38])
+        by mx.google.com with ESMTPS id f7si3968971wmd.196.2017.11.08.11.28.37
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 11:28:37 -0800 (PST)
+Received-SPF: neutral (google.com: 185.26.156.38 is neither permitted nor denied by best guess record for domain of thomas.vogt@tovotu.de) client-ip=185.26.156.38;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.26.156.38 is neither permitted nor denied by best guess record for domain of thomas.vogt@tovotu.de) smtp.mailfrom=thomas.vogt@tovotu.de
+Received: (qmail 31102 invoked from network); 8 Nov 2017 19:28:36 -0000
+Received: from localhost (HELO ?IPv6:2003:e7:bbcb:5c00:1fa5:5fe0:6970:ae38?) (127.0.0.1)
+  by regulus.uberspace.de with SMTP; 8 Nov 2017 19:28:36 -0000
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+Udq-TBrkzZjyO_17rn=NQnL21rH7O8H-4DmUJq9Os8oHg@mail.gmail.com>
+From: Thomas Vogt <acc-github@tovotu.de>
+Message-ID: <45ba456c-205d-e176-4026-42372adc8dbb@tovotu.de>
+Date: Wed, 8 Nov 2017 20:28:34 +0100
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ Thunderbird/52.4.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+Udq-TBrkzZjyO_17rn=NQnL21rH7O8H-4DmUJq9Os8oHg@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8
+Content-Language: de-DE
+Content-Transfer-Encoding: 7bit
+
+Hey Christoph,
+
+I, Thomas Vogt, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+By the way, your efforts for QuodLibet are greatly appreciated - my
+favorite audio player since 2010 or so. Thanks! :)
+
+Thomas

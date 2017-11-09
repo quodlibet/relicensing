@@ -1,0 +1,81 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2145038wrc;
+        Wed, 8 Nov 2017 15:30:14 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+Rmfi0GQjllU7HWfh29rn4RU8MM05XRTJOAAEaA0D5yt/PvhJKyL/oa865C3Gctn97L9MOO
+X-Received: by 10.223.153.20 with SMTP id x20mr1654299wrb.219.1510183814275;
+        Wed, 08 Nov 2017 15:30:14 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510183814; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dgz77bMHZoKXR1GlnT1ih0PZ8rgDhEN0M4BtSw6ZbJ/3PVsUUbwnebu4U8qt0s/e9p
+         e+BOqPEe9jmbzSMPxHsxkE+bf9cwhchVAyipSvIlQM/QamRlps1DS9gFDxu4UJxAMJ39
+         QgfKQ4TnlD68jAFNFML/qmKg91jZWoXJUsrNgtgzU0lAQSTw3PZoYCpTQ3xLKkylWhQD
+         KnLEKVAO4TkfcgpHQMZeV8DmQQcD533rXMiA2HWM9l+LIw8wYrQgFO36TgCNtzdeQJp9
+         IcD3EvqhF9K9ZTfPlnf2VuE79tBzy4ftvv7kyEb6V3etroGJAqPQYFCHAo9/khhQwLzk
+         WtAg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=user-agent:in-reply-to:content-transfer-encoding
+         :content-disposition:mime-version:references:message-id:subject:to
+         :from:date:arc-authentication-results;
+        bh=Fi9e3EHtEqdoo0I2x1iw3w1nPkN5xw6NBIGGgFNCNnE=;
+        b=yhdIHqnnyKFvIHpwEgg7uxRISJBncoGSJ0br0S0fgspvJU/H1leONjEgDZ7OBB2teR
+         BoZnYQ4Xp5pqMEUobtuGR1cxgXzQUhYLPLyiH40m3A0dsiFlaoM2gwQoN1Uz0ojPT2pH
+         OyyUZlZ0nOZocWm+Y185o6LgVCbjCM5fAK8o2OPKUpX1Hqm+fEjdfaNJ3Y3KGnoZ+Dxc
+         /DIQVHcIg+VBc9Ft6lIg2zXRTxSBYRfzbJ237NYJVKPzeQURd3/xkEvaaFii4ucLnL9W
+         hq1waNzDeIu26gvM81eqpaQwf/7W2dg0msoD/FGWKlEGQ9TXfNbYT9dDjNcyUVx1olj4
+         mtIw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of ondra@mistotebe.net designates 46.229.238.185 as permitted sender) smtp.mailfrom=ondra@mistotebe.net
+Return-Path: <ondra@mistotebe.net>
+Received: from moya.mistotebe.net (moya.mistotebe.net. [46.229.238.185])
+        by mx.google.com with ESMTP id y2si3070134wrd.181.2017.11.08.15.30.14
+        for <reiter.christoph@gmail.com>;
+        Wed, 08 Nov 2017 15:30:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of ondra@mistotebe.net designates 46.229.238.185 as permitted sender) client-ip=46.229.238.185;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of ondra@mistotebe.net designates 46.229.238.185 as permitted sender) smtp.mailfrom=ondra@mistotebe.net
+Received: from mistotebe.net (160.179.broadband5.iol.cz [88.100.179.160])
+	by moya.mistotebe.net (Postfix) with ESMTPA id B9B8D2A0464
+	for <reiter.christoph@gmail.com>; Wed,  8 Nov 2017 23:30:13 +0000 (UTC)
+Received: by mistotebe.net (Postfix, from userid 1000)
+	id 12969DC30; Thu,  9 Nov 2017 00:30:11 +0100 (CET)
+Date: Thu, 9 Nov 2017 00:30:10 +0100
+From: =?utf-8?B?T25kxZllaiBLdXpuw61r?= <ondra@mistotebe.net>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Message-ID: <20171108233010.GJ1055@mistotebe.net>
+References: <CAE6_+Ufv_U+FpsMNq1VPiA4KKodcoyWp3iLedK9WYN_ruEoXXw@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+In-Reply-To: <CAE6_+Ufv_U+FpsMNq1VPiA4KKodcoyWp3iLedK9WYN_ruEoXXw@mail.gmail.com>
+User-Agent: Mutt/1.5.23 (2014-03-12)
+
+On Wed, Nov 08, 2017 at 07:47:57PM +0100, Christoph Reiter wrote:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+
+Hi Lazka,
+happy to oblige:
+
+I, Ondřej Kuzník, hereby make all my contributions made to Quod Libet [1]
+available under the terms of the "GNU GPL version 2 or later" [2]
+
+Regards,
+Ondřej
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.

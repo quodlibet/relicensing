@@ -1,0 +1,115 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2270910wrc;
+        Wed, 8 Nov 2017 18:15:49 -0800 (PST)
+X-Received: by 10.202.81.18 with SMTP id f18mr1289233oib.306.1510193749248;
+        Wed, 08 Nov 2017 18:15:49 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510193749; cv=none;
+        d=google.com; s=arc-20160816;
+        b=QwfX3aDA5KvMex2+lF1qSXfSbqgTID1i3kyimcd3/BKtpqTO+LmzkP0uE9g76aS4ol
+         CvYFSk+hEk1UavkDw2j3OFqrAk3K+706w4+MMmds/FoTEvTP4BI/Vq3CWhSUwZEnDO6V
+         5XS1NYJR6v9Ih9/7eTofhhAyMlUM7HtvIm8968HSFBY96ksQOXHfT7E8Xgi2w9o1NtVE
+         rncARlREkISRQu6Lok9knXxXpzoKBSOwSFwSxcJl/FKG9GhMC58pwsb0jrRt6fe/XASJ
+         zOOxv3FthTPgEW/pBjg4yzrr7hbAYD30E9Wqg25W2oHMlYScQo/Xjp+gGNm+WBGmKZCa
+         5toA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=gh/yNXUKS/ZFFEChFhfp6VmsgfW6+9DIPF9N66hbtrA=;
+        b=LbJ0I1HikkSfZYW4bm8fe2twFHzoa2pe/n6JhIXQjTcGLJ2thvXfPhg4aMTlsVvXJQ
+         s1vq1MuwNxYupRtRcuPcI56ToGlCZn6SWnHtRB3V3x7VojcefflildlVLaqUtK6IQNMn
+         4zkpho8QyquSPa3xPRxAU516qL6TQxuybZOgA+osMXypPby8ymDCpidLe87hxYbKNBgf
+         BEt9yWuC3zRHPwLjMesaoH9UGs7QG3P/I7b/8QxMzFkw6BiOjC3nzrW5UuU/9kjm7PLR
+         JzNGTlZBtAhTzLkClxe2UOULahu5+P/L29CZwFcxC7/7gVVKfZYT6PKZcG+yEQU+Zd19
+         trhg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=EXd88NeB;
+       spf=pass (google.com: domain of pburt0@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pburt0@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <pburt0@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id o47sor1843849otc.151.2017.11.08.18.15.48
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Wed, 08 Nov 2017 18:15:49 -0800 (PST)
+Received-SPF: pass (google.com: domain of pburt0@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=EXd88NeB;
+       spf=pass (google.com: domain of pburt0@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pburt0@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=gh/yNXUKS/ZFFEChFhfp6VmsgfW6+9DIPF9N66hbtrA=;
+        b=EXd88NeBH9JFzNEC1njt2lCW1Y5ugJ0zKzcxklAYsE9fjLuhEBH6yGj+Y6l2b/sB2e
+         XMud/ajlylD62ObniUroSZwgThQmVzMhtSV9aj2y6UEQkEpbuCBR5Sw94I80U78MXw0x
+         dxacDShcXX4mGWy6AL3GbbBj+UVemhOink5OW4Gm+5DveX4LkLEGFUeYySbnbh1H9hN0
+         2Uo29G2xzurLavxMcVzHxvmO3wGh52HF/CbbUPsPb0jLYPdIh3Sho4e8vhO8y9+/9KFn
+         2Shv+RhzbFA552WetMiZEEfk/rWWR9SKvqIjlUjMcGQYrWjHwxjWmTFiJ81CQaP00zqK
+         1zQg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=gh/yNXUKS/ZFFEChFhfp6VmsgfW6+9DIPF9N66hbtrA=;
+        b=oTXu6txodxPFGDi42sHQvekgX30Yhb7NJjliZnVsXIvzL4Tlf5cyZShsxKlzSFtBEP
+         cae0oLeSJGsO4IrSrP//2WBIreXkiDqfMyASa3taLplcHIYg2AqdVGznN0JxwEpQ+Azv
+         KKjzXIzRJkTutav4RpDyhHzS/rMx9AyGC3+RtqlJnwPtc3t7aVogJdE9j2/0fdjs9zZp
+         S5ehS6TwuKTmNDaMIem3ZclfC0W1oblKr2HQkYhuAGUN132+NntdXPwOLxVi2JlL3f3O
+         hZN+ykSuewD/9P28Sh2U/RXw7TLXngwzgXslXszros45A9cPoJknAutLr/TCuZez47Ry
+         Fnuw==
+X-Gm-Message-State: AJaThX5DKNI4t7x9HIrtZ1EVGzR4Hg28xqi8l8BvSncswk4W3fr28FpL
+	EuS76ZUviutF8Tb2LqgzFp8zCNp7qun6w0ziGwnZbA==
+X-Google-Smtp-Source: AGs4zMZd9oqydaMJEySYaa9VwzRb4MLrhxN5SGYWgTSObuKOQltZflUKc0q7kl8uHHkfq6Th735GNDbPLNAdE6hjYBk=
+X-Received: by 10.157.44.168 with SMTP id p37mr1537607otb.65.1510193748598;
+ Wed, 08 Nov 2017 18:15:48 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.157.34.13 with HTTP; Wed, 8 Nov 2017 18:15:28 -0800 (PST)
+In-Reply-To: <CAE6_+Ucg_BBGwt573nZoi--b0nOPQeYRf-V7o36SZdL-w7EcQQ@mail.gmail.com>
+References: <CAE6_+Ucg_BBGwt573nZoi--b0nOPQeYRf-V7o36SZdL-w7EcQQ@mail.gmail.com>
+From: "Burt P." <pburt0@gmail.com>
+Date: Wed, 8 Nov 2017 20:15:28 -0600
+Message-ID: <CACW5eheaSHFFwEGarU_bsT3j9Cwy_iWMyUh-y61sRFeKCVYxNA@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+I, bp0, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+On Wed, Nov 8, 2017 at 12:57 PM, Christoph Reiter
+<reiter.christoph@gmail.com> wrote:
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+
+
+
+-- 
+Burt

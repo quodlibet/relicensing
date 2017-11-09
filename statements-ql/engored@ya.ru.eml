@@ -1,0 +1,102 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2343068wrc;
+        Wed, 8 Nov 2017 19:55:46 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMYsFynB6f+qbQc6Xl/FaOjfIBWDqZXn7LelysWmI1bu/ZauLXQQAHSAvdbWYPu5xEOCMyrU
+X-Received: by 10.25.198.215 with SMTP id w206mr948329lff.11.1510199746440;
+        Wed, 08 Nov 2017 19:55:46 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510199746; cv=none;
+        d=google.com; s=arc-20160816;
+        b=M/kLB7/V2AjLVmbwm3nymdeg7YxwpaENwi51SX47QMIb/aGxB9uvRw4Rra0JUMbTfr
+         s6XKfBaZX8P979oTa570tF7VwmcKVHooCYS22r3bjqp+OmkUBTcc6bBbkU6C1LmeMQRn
+         /5MIt47PeIypoxpyPdqneiLw7gFtfsSJjKejQr1BJcQX9ieduZP81aB9g3XvB310vmR2
+         ImFmUKDkZ1GAvf+7HnbdDJnEXIRhkBIr+Y/P6Ala5dg2SWaUbAdmz0ASZh/X5Q+bfqF4
+         TMUIMeD7C+iVuK/EGAohX0M8jvLEcVU+tFE2Sudjh7t0dSyjulpprQmT9F5vZHvXIomZ
+         J2nQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:date:message-id:mime-version:subject
+         :references:in-reply-to:to:envelope-from:from:dkim-signature
+         :arc-authentication-results;
+        bh=1bdg5WiNRRaaAR3mqOENRgDMMokLG+v9IbrxHyEv4Gc=;
+        b=Tv7dUdYruKKelg85C8guPqAH1FqVl/8kXWft3irid4uJ5lT8SNTBhEJW732v7aRoBk
+         kO/UfgtaA/66mb6EGuSo+GrqXciqqktT/b/UbWuo2vzuqvLgvZHSHrR4eLubZsDOwaLi
+         FuVMNLcH0GysCjj2NAw9Quy/9U/6E0Uu6rMrkSleWyOOD/atN0ULffPQsw37u7Yv50YT
+         b1cs12G/QhksA0PZDx9t+bkp9l/pyauT2voC+alnH3fFyVzOAZS4GjrePNL1RvbhrVyb
+         jW3uZ4LTDZJ3Sb9xKz1E5HHx2ImT6OsTWpbO4Xmt6eBdWx6KCOVKWlBl66RR4pByZV8f
+         yb0Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ya.ru header.s=mail header.b=LKMnm4Um;
+       spf=pass (google.com: domain of engored@ya.ru designates 2a02:6b8:0:1630::15 as permitted sender) smtp.mailfrom=engored@ya.ru;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ya.ru
+Return-Path: <engored@ya.ru>
+Received: from forward2j.cmail.yandex.net (forward2j.cmail.yandex.net. [2a02:6b8:0:1630::15])
+        by mx.google.com with ESMTPS id o14si2781766lfg.348.2017.11.08.19.55.45
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 19:55:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of engored@ya.ru designates 2a02:6b8:0:1630::15 as permitted sender) client-ip=2a02:6b8:0:1630::15;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ya.ru header.s=mail header.b=LKMnm4Um;
+       spf=pass (google.com: domain of engored@ya.ru designates 2a02:6b8:0:1630::15 as permitted sender) smtp.mailfrom=engored@ya.ru;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ya.ru
+Received: from mxback1g.mail.yandex.net (mxback1g.mail.yandex.net [IPv6:2a02:6b8:0:1472:2741:0:8b7:162])
+	by forward2j.cmail.yandex.net (Yandex) with ESMTP id C071921158
+	for <reiter.christoph@gmail.com>; Thu,  9 Nov 2017 06:55:45 +0300 (MSK)
+Received: from web59j.yandex.ru (web59j.yandex.ru [2a02:6b8:0:1619::353])
+	by mxback1g.mail.yandex.net (nwsmtp/Yandex) with ESMTP id QPb2fgLswc-tjmeWQTL;
+	Thu, 09 Nov 2017 06:55:45 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ya.ru; s=mail; t=1510199745;
+	bh=1bdg5WiNRRaaAR3mqOENRgDMMokLG+v9IbrxHyEv4Gc=;
+	h=From:To:In-Reply-To:References:Subject:Message-Id:Date;
+	b=LKMnm4Umo+PNKlDBg4t3g/B1UaQpJdzL4+R5tsiaTPkwmZQAOMs4Zpt5os48jUIW2
+	 CyTSN2xPRtaqZxDEiFneZ+up/UrxqjvwxHOuQOkzC6CR0oJ+Pn47ABnxciE2eduhUD
+	 23+8D+4SF69hn5zlCWG85xg1SnOOePBWGzUaQHJE=
+Authentication-Results: mxback1g.mail.yandex.net; dkim=pass header.i=@ya.ru
+Received: by web59j.yandex.ru with HTTP;
+	Thu, 09 Nov 2017 06:55:44 +0300
+From: Anton Shestakov <engored@ya.ru>
+Envelope-From: engored@yandex.ru
+To: Christoph Reiter <reiter.christoph@gmail.com>
+In-Reply-To: <CAE6_+UdFi+hky65=PPQgwZVUojDSFLx8NxGWk7XBsJdXpR3Gng@mail.gmail.com>
+References: <CAE6_+UdFi+hky65=PPQgwZVUojDSFLx8NxGWk7XBsJdXpR3Gng@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+MIME-Version: 1.0
+Message-Id: <676291510199744@web59j.yandex.ru>
+X-Mailer: Yamail [ http://yandex.ru ] 5.0
+Date: Thu, 09 Nov 2017 11:55:44 +0800
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain
+
+09.11.2017, 02:42, "Christoph Reiter" <reiter.christoph@gmail.com>:
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+
+I, Anton Shestakov, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt

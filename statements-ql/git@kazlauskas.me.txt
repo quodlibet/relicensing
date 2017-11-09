@@ -1,0 +1,28 @@
+Proactively, this is a signed message (signed with my key
+F6397A4C840EAFD7637FFB80F53232F863457D26):
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+I, Simonas Kazlauskas, hereby make all my contributions made to Quod
+Libet [1] available under the
+terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE9jl6TIQOr9djf/uA9TIy+GNFfSYFAloDWFUACgkQ9TIy+GNF
+fSaHHhAAg19T+oBrGL/+ktZb/wtFbTS3Kxxni6kK4HY6TwJyKOC0/ccXGFFVs+/k
++/P5IjHbwi89hzXtIABrzNHds2swTdU8Sw65rGKMhMPNWMU40xcwp7OC0Rygbb/0
+i1UiQXp6a6I03LnqRkEGJxLoB0RTQoHVO2MLLBpIJhoITTchFq6z3a0TGlXBg2iv
+OlMZBhqklta1Ej7QF5MP7ZiBo+TL0KmDm9YmnlGWLMLdSmX4J3RdlY0eyElJh1mm
+JR8BCpgDEGSc4XiWswvHy8WDKl2bgKSCse0G62d9umeAXCSkaMzHNF32GdI1Zy0W
+AzJzoX7ptdO2urPhVdi5I8dn43enfMn2/vZyn1qvIg4sljMYwurPrcUxJRxia6RY
+BLtHwPQddHMo/ulzvJMR61lqsm64V6pIY5NPjW0rbReiC+per7Y+Iq61q1f1K3Se
+S3rr2F2wGXu5uK35byAyOWChE61RtQ9h7biXEtnhe1F3B8CnBGV1aoG+jcvWT9lU
+aaAfHWFMDjlWJ+rizj0gEdrklLlsVEXM2ZBBDByTvdS5BlhDVzmBDTAljZxviOdV
+rd19LbVUOLTz5wU7zCZ2psZPZmT5QUcaGBi3nptlPImbfE/TmBGBAkPQ3A9ubNMJ
+bAUKyGBmmzPuj/VX0gaOZO5QefhHeMWvbTM6+wACqcAZhi7axwM=
+=V0wj
+-----END PGP SIGNATURE-----

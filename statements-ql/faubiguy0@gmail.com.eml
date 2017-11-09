@@ -1,0 +1,95 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2212144wrc;
+        Wed, 8 Nov 2017 17:00:35 -0800 (PST)
+X-Received: by 10.200.43.252 with SMTP id n57mr3952740qtn.141.1510189235615;
+        Wed, 08 Nov 2017 17:00:35 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510189235; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qJ13w2YmCPP27MiLEQaE2sKvZOsMvZCk6t+sMChZXgNh1r/x5CvHuAQp+YqWwLp8lx
+         jd6iNOYW3vn6OUkDe3cFpSaFq+d5F58LNxfTHzYh8kFJHZapm6/WIyzXmU4ZgV72mFw7
+         yCEuw+WnrC9+MIt0SZ/mhsU5F16Nn7mgwVwmbVI+HN8CZqRPIgFiktTwFMvGxF9Nbo+x
+         2ZL6O/FqnQM2O8F1I6dL2uHYCh19kLFBWNtsA0gTQmsCKo6BqI52XR6hfXoBsjEeslux
+         K8FRY5tQwfppwOUQolo8D67Jd2S5fqX0kxdE5zRV5szlyMhI2jdgSbgfrds+3ucBDzIc
+         i/pw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:references:in-reply-to
+         :message-id:subject:to:from:date:dkim-signature
+         :arc-authentication-results;
+        bh=0Jb2dcs6ZFEhq09KEysE0HV0ub5DP/jH492AUH03sds=;
+        b=qxDqyepienB+nKjd/u33HSyY1zrMBQhRiI83s+CZyEnYP442Ue3TFV4UDb00C3XLx/
+         2FTlc16hLyW28F3ajYO/8xMLobTb/KqhfoorfVd9uVnWrxBeUcPTKvxSunvYT8txs5eY
+         wUHq8uZbJKmIpomAkoDM9BaYl7lbkHVRIeJ1axZa/rGf/oiIn+a5VxUdFJplEjc5T/Jc
+         pfyCh+9LD8wmKXWq1Xo7HIDOmRNJOmTrpM2xyPLfLj0ctucDZMHILOrddO2+vpZfRo4+
+         EIMIEEyHWDE40RlXJjxHT3EpWvvsywMimxGPNwMIzR9qPL+owk5hcscIU4X6WZ1aBm48
+         902Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=q0A4yQhH;
+       spf=pass (google.com: domain of faubiguy0@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=faubiguy0@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <faubiguy0@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id f123sor3460802qkc.139.2017.11.08.17.00.35
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Wed, 08 Nov 2017 17:00:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of faubiguy0@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=q0A4yQhH;
+       spf=pass (google.com: domain of faubiguy0@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=faubiguy0@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=date:from:to:subject:message-id:in-reply-to:references:mime-version
+         :content-transfer-encoding;
+        bh=0Jb2dcs6ZFEhq09KEysE0HV0ub5DP/jH492AUH03sds=;
+        b=q0A4yQhH1M5wT+IYWRt/EAFcSlt8rWWfc1BCJ1PN+hX7TQtNsE2c2SInFQiiZsTuke
+         pzBAOeNjGJ2K5M4q4mTdX8GUh5MPAdIJzROU9e7CZaHefSvE3NIyg+iBLk/xHne431sm
+         ek79G5XEUasi/YyiSyvLnioxP72EvJ4RsVvtqsu8/+icshhfxOFvVfTVsgrzsSNr9hc7
+         9PHx4HMhS1s+bQbMXHwxdIlVHDWu/mRx1KEde7YJ06SuzSDEUI8ndVNb7J5HK1hM6IPN
+         c54PSM6CRqnICcp4PEZ/wOcCNBAavpWsn7OIetBsQ2msctWaYPJH7gI5BfHZMTJcLBpZ
+         S/fw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:from:to:subject:message-id:in-reply-to
+         :references:mime-version:content-transfer-encoding;
+        bh=0Jb2dcs6ZFEhq09KEysE0HV0ub5DP/jH492AUH03sds=;
+        b=Gun6ztKkQY1ZgbGsCvMD2zmzBl2/GrMq81BSziUqHWo4KW3uaRJy9USe8VjB3QkPaV
+         YIL3gIcvkO2URDxkQ+NUltRVF7daWYVfRk1yov1tn6epF54D1DwhftLOgRuVywzFDmCY
+         s/i08ADb4+bpwaj8MqN4TXL+nwywPL2/dPMp9wIsgpfnHtUALvxShF35LRZ3Th322+dJ
+         n9FCMhXV1zwZt/0vxkSRJq0IgY4MHey5HQd4iLqMhqXyWkhlxN37D2L3Vhpue70tgStY
+         CnQSvFxKu8PGm+ltpHfZbw+dTmy5jdiFhaHnazcSfYxygBDCvvVvaZ7TI3Lyh7EGAUjP
+         Tp/Q==
+X-Gm-Message-State: AJaThX5RcMN96yxhjwtkfEoe7RDqS668sHCgM6cKHr02FyJSvTF3/jfi
+	c5iu3JaU7cLzwhS2cLcOOauOww==
+X-Google-Smtp-Source: AGs4zMZSVi7XcxW5+VkqAqoUC63ZMYRPcwk0aIleKd4FjKz+iKARbCgkd4+soinQbQ7RQAPswoad3g==
+X-Received: by 10.55.70.67 with SMTP id t64mr3887510qka.103.1510189234888;
+        Wed, 08 Nov 2017 17:00:34 -0800 (PST)
+Return-Path: <faubiguy0@gmail.com>
+Received: from localhost.localdomain ([64.189.1.68])
+        by smtp.gmail.com with ESMTPSA id t16sm3710790qtt.92.2017.11.08.17.00.33
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Wed, 08 Nov 2017 17:00:34 -0800 (PST)
+Date: Wed, 8 Nov 2017 19:00:31 -0600
+From: faubi <faubiguy0@gmail.com>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Message-Id: <20171108190031.5a8da319dd1eb45f1ea01c7d@gmail.com>
+In-Reply-To: <CAE6_+Uc-xukcKXavcRN3VKU6s=_YAS07Dz6wC--ufmFcXTT9Qw@mail.gmail.com>
+References: <CAE6_+Uc-xukcKXavcRN3VKU6s=_YAS07Dz6wC--ufmFcXTT9Qw@mail.gmail.com>
+X-Mailer: Sylpheed 3.6.0 (GTK+ 2.24.31; x86_64-unknown-linux-gnu)
+Mime-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+I am certainly fine with the relicensing.
+
+I, Ryan Dellenbaugh, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+-- 
+faubi <faubiguy0@gmail.com>

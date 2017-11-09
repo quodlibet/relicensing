@@ -1,0 +1,111 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2081006wrc;
+        Wed, 8 Nov 2017 14:09:54 -0800 (PST)
+X-Received: by 10.223.165.67 with SMTP id j3mr1538548wrb.271.1510178994727;
+        Wed, 08 Nov 2017 14:09:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510178994; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zAUDH4ZuHt2q2KXX+UabK6nbmFJMJVYq3Xss2nbPxfmdqmHgdZA33O5RfTcCTP8+Ri
+         Tky3aTUxsUFcRPSGRERgY+hDlmA19Z6R9ixIiEmMsw/ZvtY7ZhLr+L++KgJMf0HE0Jg4
+         sT2Bsy3clXouIuDqwZaIlOdDFmsrl1vZBOwIjzOm0cviChkEEZFJfBGCXLkf1/HQCFde
+         Xan+gNycqSLwfB6tXXJoWvHCqS0HsPxFw5MePsRTD4cwdRX4OPWqisH3/cLDccirxQUO
+         zROrcqmy2BvhyK80zRZWdbdqQVHwo1Ve1oqrqJegEvpcvD8axf0UqRd5ulRNlwLV0AW+
+         4LPQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=OFKWL5+tKwH++t+l749xtK+lNw8l2ngUX31TKM0a8gY=;
+        b=HFa6bRDFquZUivoSJJs8/wDOwEA0RkTrmHc0gTA5uBBh1ERIkh1IedrvdJ81jpZ37A
+         Xauf3m9pCz1qWmIcCPbpIndkqgliHtOWCDLqtVLfjzKh1V232/JcoA3dFiQE3PKBnvIy
+         gsAk176rHgH5KHvctAGmPoqmQSpChhTn0Cs/ezTOsV/V3kOzR3IWp6hbx4F4rQMQYVyh
+         IP+2dJjkGajhboTAJDued1hvDAPfOxpnZSMGZ6TLa9sfhmFLWENNLVgtt5lJkTnbUBLc
+         Dx0NItsqiNqlI3vZHXluGFHbpVFYwoWtm2T9V2iOKdQrjh0XNIG/+WnxTXzTlP7nAMo6
+         4u6w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=f74egwaN;
+       spf=pass (google.com: domain of ironbalden@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ironbalden@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <ironbalden@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id v1sor1371507wmc.26.2017.11.08.14.09.54
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Wed, 08 Nov 2017 14:09:54 -0800 (PST)
+Received-SPF: pass (google.com: domain of ironbalden@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=f74egwaN;
+       spf=pass (google.com: domain of ironbalden@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ironbalden@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=OFKWL5+tKwH++t+l749xtK+lNw8l2ngUX31TKM0a8gY=;
+        b=f74egwaNiJtND5ghCrRGfuHdo6sniSfB2XC0QcUZiZbcLURXkjg3uSQLUOrDiHXchE
+         2yz9LTvHG/Qk8TFpSUpXDnOVInNIDta6TBLo6PZoxnDmFLbylxIeU6vRuEpEy69aFWoR
+         5DWQ3BeY1u+GLAnD8Hmn0XN/Bv9fW79v8NnWWx8H2iRM04t3EeS/uQ3AVz94SbC52EA4
+         Lrm/W1A0R2tOQcC+FBUQSBjY5uKqtuV6YQ8ybxEiWOslmZx+jZ0Fvz2FtYyVccsy7FGl
+         s2d5jUPcO9CX96V8LIVX5dpUIPHuYQ5tYRyLQNMEoPzeIoLFR8VRcim4APVoZ5cz4W02
+         8Jkg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=OFKWL5+tKwH++t+l749xtK+lNw8l2ngUX31TKM0a8gY=;
+        b=GkNcFBPv0w23qmPhhleBf/wHtwzhh8oIfqdd5rUl4K8/3V4uUoqK/VSD1/5v4tTUrt
+         rJ1Z0FDSiJ+LZ1LMzp7IuiS+KLyjs2e99VwyfMB6bQxmVq3mfnvBFi49uwApDRrp2pZN
+         /sUgkJMgJDmNlrsKa4SxLakIDIiIskNvB8lajuZmyKmMOODL0pSw5nyppe2y6YDspihw
+         0cnURhCK3CnJRzbpwleKTZWxa7E4IwOMOKpSWCVUsxCM/YwAXuia5VgIv/ZkMwlxavAE
+         dlbKD4qv2AP7ZHDfgdap97ql5dWXS4JetG0wNSrToFRzEI+F8+eQCbAD1baCgbMEobvT
+         RPPg==
+X-Gm-Message-State: AJaThX4QgXoGXxlRmJxkkhQgoY7snme8ciFWoIOe5n3AJ5EbCXd4OewJ
+	c/OeErIo7mjuiGpHtAsW8bb46pxvEuw43qvBaO8XPq3Z
+X-Google-Smtp-Source: ABhQp+QNma2EptO0tqWJo8DsjbAT/BvNOTy2W5dFwe5to59SFIsvWh283JXylXymTAsFPSRV1258Wyf+9nLEEvZeHrg=
+X-Received: by 10.28.216.5 with SMTP id p5mr1600727wmg.155.1510178994136; Wed,
+ 08 Nov 2017 14:09:54 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.28.46.66 with HTTP; Wed, 8 Nov 2017 14:09:53 -0800 (PST)
+In-Reply-To: <CAE6_+Uc_ASGUH23wAF=Zaxae_xefoLXtrp4MvKWrTO5nUZt=cA@mail.gmail.com>
+References: <CAE6_+Uc_ASGUH23wAF=Zaxae_xefoLXtrp4MvKWrTO5nUZt=cA@mail.gmail.com>
+From: Emanuele Baldino <ironbalden@gmail.com>
+Date: Wed, 8 Nov 2017 23:09:53 +0100
+Message-ID: <CAPGAEVVJm15YO61n6KMos3QbVnu_b6+pcb4rS0-AWmqpem_2YQ@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+2017-11-08 20:01 GMT+01:00 Christoph Reiter <reiter.christoph@gmail.com>:
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+
+I, Emanuele Baldino, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Emanuele Baldino

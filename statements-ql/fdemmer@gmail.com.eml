@@ -1,0 +1,127 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1973367wrc;
+        Wed, 8 Nov 2017 12:12:22 -0800 (PST)
+X-Received: by 10.223.132.135 with SMTP id 7mr1539011wrg.74.1510171942024;
+        Wed, 08 Nov 2017 12:12:22 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510171942; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xopeh1iO0Y62frZ0uxgRbWovG8fvckWpItLZf+aQ6dWoZjagU55cv9+e7u46KCwqTj
+         02HqHhn6wxuq5+Q9Vdul4oObY8NRjjvE7o/EX44sI1Oef3/BhaYF6VUClV4iOQhkQP4f
+         uBV1ymGZyNgx7oJq/ofrGja6QG/048l2v9hIBmbdjoLTDnJ1s2joCHPgnhInEpPH0AxM
+         zqBmyo6nYpoXPkO0SexXeUDKxNkJrhVVbSoK8SbtkVl9sBvkJNs/vJN1W6RgcL8xMiEA
+         hAQSNIwR1c8MmLX1zXg3cJWeqKNHVCA3yYKLAsL5qplJHcMjqbvqSRyTnlD6SvoRqX+T
+         m7Hw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:content-language:in-reply-to:mime-version
+         :date:message-id:from:references:to:subject:dkim-signature
+         :arc-authentication-results;
+        bh=Ey/IX3ftWbQDpebof3s7CBnXPJjZKQf0jtrvV/jgibc=;
+        b=hbGJ1T79IukNWuFZkKvFPIPuHCf2pGBTZL4NEvy0lYIdgfvODUbRym2ZVLu74eM4ko
+         tpJGAMEQ5i9zWCFAbzzFWSLmhq5oFPA7+Fc1+U4OCSwOp+5F0w3MzYW6WFRG0ccBqyZg
+         /aNoQx8tTazr7hKE8I+qz4JabZ+JAOI6wbQlqLxfZ9a8Pi1KLATaFVW6S7D+vPWEt5Nq
+         UtgI7iMI6NdlrskoKDXvz6b2s3FxmIB57Ay6RPjZSTEByquqBpIDZLOaKUXs1smGclZC
+         bvNeRnToAs38kfFWqCdsiZWvPbwjsKmWTdy8Diyk26Y35u5QeJGnfr+qY+fZRGG701ks
+         /bJw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=k8BiALrr;
+       spf=pass (google.com: domain of fdemmer@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=fdemmer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <fdemmer@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id l25sor1287009wmc.73.2017.11.08.12.12.21
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Wed, 08 Nov 2017 12:12:22 -0800 (PST)
+Received-SPF: pass (google.com: domain of fdemmer@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=k8BiALrr;
+       spf=pass (google.com: domain of fdemmer@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=fdemmer@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=subject:to:references:from:message-id:date:mime-version:in-reply-to
+         :content-language:content-transfer-encoding;
+        bh=Ey/IX3ftWbQDpebof3s7CBnXPJjZKQf0jtrvV/jgibc=;
+        b=k8BiALrrH5Gbs6PmiajvyyQhNWnS530Z0UZ7ZTWOS3N9GJHO7pIVtmcjEqeQkeuW3e
+         fGLdrQjgG+jmkNscV42yfgVgmzwDFEtK6IM6MAJo+DztvD5rGVyclkBSr2rpy7cIFbh+
+         bkTfAIjp1Cu8nNg9716QwZMtIg5HA0UlGQ8Zrh+Rf6/Px/7MCWptb8zJ+diCOUAVBly5
+         OUNx4qxexERTKpMb7fnshrdUIaLJMvbtgxzHpAQpV34ApbO4x5Z8l3Z/g+chweEYpJa6
+         sZ5CkpeOV/kOkbDwweY8rVw0/Ux3CRCQ6+vxjIEBu66PcbioaeiwiOKGsV4BrLgavhce
+         7ODg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:subject:to:references:from:message-id:date
+         :mime-version:in-reply-to:content-language:content-transfer-encoding;
+        bh=Ey/IX3ftWbQDpebof3s7CBnXPJjZKQf0jtrvV/jgibc=;
+        b=a+SBY2t/G6xfgzt97zTQOdlJIGpJ8miuQHcIndUxm5FL3zDgHWRzpG/1R62cnWoODf
+         PWxoowXJZG8RzJqI3QBBTSJ4n4FQtB2ikJasR6CkjxsbAJlJ06qWf5t1HUecpGfojgCe
+         IdzAFKTA0lRLDqh3pQcUGNvryi/lVVyZtwmiqE+C9SX/gHej0kTR4CDVGsjLyZpYxz/9
+         aCHby8UkiQnAO8pwBRllea7TksfGM+ba3cY0jqLABDfIF6AXMW/OD9iXv/N7Fr1MD4HB
+         HQ4N7Ia5hB+EiZ+Fqo/hx9cWQMNtNWgH2ZpqH47s5o3Xk2AMwrYOyDvsrfSsqRQrPyUW
+         phpA==
+X-Gm-Message-State: AJaThX705T99b1ve4f6HmBxT0iTEKNYKviRgVm2YBLuLafUO5LVVbfRr
+	+zbXKo17zm2ami+5/VriqIQZmQ==
+X-Google-Smtp-Source: ABhQp+SR+AoAag1v1nCxB3JOhZKVPYHfWqPkTxuRB4hs/Mv2GByUbEadB73q5p3396Iwz79G4+LBpg==
+X-Received: by 10.28.9.197 with SMTP id 188mr1196321wmj.20.1510171941650;
+        Wed, 08 Nov 2017 12:12:21 -0800 (PST)
+Return-Path: <fdemmer@gmail.com>
+Received: from floriandemmer.com (84-113-119-204.cable.dynamic.surfer.at. [84.113.119.204])
+        by smtp.gmail.com with ESMTPSA id b76sm2833522wmg.9.2017.11.08.12.12.20
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 12:12:20 -0800 (PST)
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+Uf2iKdC5u6SccEQBW2Xa-JDHi-OBcDbt5-Xq7qk1ApiHw@mail.gmail.com>
+From: Florian Demmer <fdemmer@gmail.com>
+Message-ID: <f861996d-064d-bc76-2cf7-b625fe77f6a0@gmail.com>
+Date: Wed, 8 Nov 2017 21:12:18 +0100
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+Uf2iKdC5u6SccEQBW2Xa-JDHi-OBcDbt5-Xq7qk1ApiHw@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8
+Content-Language: en-US
+Content-Transfer-Encoding: 7bit
+
+I, Florian Demmer, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+On 2017-11-08 20:01, Christoph Reiter wrote:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+> 
+> =========
+> 
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+> 
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+> 
+> thanks!
+> 
+
+-- 
+Florian Demmer
+Kundratstrasse 6/12/13
+1100 Vienna, Austria
+
+mail: fdemmer@gmail.com

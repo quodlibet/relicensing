@@ -1,0 +1,133 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1979775wrc;
+        Wed, 8 Nov 2017 12:19:33 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+SHiPt2C2s3r48c5l46VOO7bXM5qYIYF2KdQ1rngWyi+vAp8LctLFKxvvbyMCGMuihploxG
+X-Received: by 10.200.25.112 with SMTP id g45mr2961320qtk.40.1510172372934;
+        Wed, 08 Nov 2017 12:19:32 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510172372; cv=none;
+        d=google.com; s=arc-20160816;
+        b=nBdlEssK6PaGye5qBkQBEZgprpFytK9dy72bvvKVcsrvJD2MbCGOcxHm/uzTET82cL
+         /0CPJGTN54P2cTxFdU+chsL/9oBrq8qklOfg1V3cJ9diIU40K60vjhuzJP9w6R5rFssd
+         MdmbpwrY9/vb9qkhNqwQc3qS+8ioM1vQt5G+8wRoBkdo89moc6gPjpRqXBE/iy+yc0Z7
+         ntjJh52KPgt1yygXwALkLvVNU1BeVVl8c0ZT6L2nXgZfPX4ujVyacZbew5tkug4HCBOJ
+         cxyJV0LKHEvGirq3NAne7mS9gVdbwroCHiOmljO8sMBQBwN9p/xoPfoi6x+Id69MPUE1
+         dO7g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:references:in-reply-to:subject:content-transfer-encoding
+         :mime-version:to:from:message-id:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=iaPNjOOQYGlAI+KWEq/ZewXH04FxBzqST7aioXlCk1w=;
+        b=suztRnBxlQHEXFbqQBHsBLAEvqY1E6cr24VolP2VmJvhsCBMiKQKp1/hQdb4W4JoJx
+         EpQX0s6yzcLdmUuwypJ41l/rbLt/cT7k3l4PnE8oS7ACAWfVRxTbEjZ10KCGpAExAFjx
+         T68VUD5Ry+BJ2ztHhevQ2w+5OcIk5O1IdahGnk94OxJHiZyaV/lLvXe7Zq6OG5JZOE+h
+         Z8+uUAHwNAKX1gwAryHRAwFWmlC+MzpEAvbIG9y2KuZnebMe+AVwbchDHa59LtD2D2OA
+         uj0YW5hdy1nUy0/ZPhB09eCTD/VUnMTj2B44rY5vZxdnuPRe/0TvQ1cPeUjub1qJiNHt
+         Rfpw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@fmail.co.uk header.s=fm1 header.b=woKkvnxK;
+       dkim=pass header.i=@messagingengine.com header.s=fm1 header.b=gfh5dAzu;
+       spf=pass (google.com: domain of j5lx@fmail.co.uk designates 66.111.4.28 as permitted sender) smtp.mailfrom=j5lx@fmail.co.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=fmail.co.uk
+Return-Path: <j5lx@fmail.co.uk>
+Received: from out4-smtp.messagingengine.com (out4-smtp.messagingengine.com. [66.111.4.28])
+        by mx.google.com with ESMTPS id v17si4427059qtf.378.2017.11.08.12.19.32
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 12:19:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of j5lx@fmail.co.uk designates 66.111.4.28 as permitted sender) client-ip=66.111.4.28;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@fmail.co.uk header.s=fm1 header.b=woKkvnxK;
+       dkim=pass header.i=@messagingengine.com header.s=fm1 header.b=gfh5dAzu;
+       spf=pass (google.com: domain of j5lx@fmail.co.uk designates 66.111.4.28 as permitted sender) smtp.mailfrom=j5lx@fmail.co.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=fmail.co.uk
+Received: from compute1.internal (compute1.nyi.internal [10.202.2.41])
+	by mailout.nyi.internal (Postfix) with ESMTP id 8CE0120D19
+	for <reiter.christoph@gmail.com>; Wed,  8 Nov 2017 15:19:32 -0500 (EST)
+Received: from web6 ([10.202.2.216])
+  by compute1.internal (MEProxy); Wed, 08 Nov 2017 15:19:32 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fmail.co.uk; h=
+	content-transfer-encoding:content-type:date:from:in-reply-to
+	:message-id:mime-version:references:subject:to:x-me-sender
+	:x-me-sender:x-sasl-enc; s=fm1; bh=iaPNjOOQYGlAI+KWEq/ZewXH04FxB
+	zqST7aioXlCk1w=; b=woKkvnxKwKdgCmZ/Rrr6XgU0f6NQ3DMEHkvus9Zsabeod
+	VwAZfnzhVMZBdbS5gZHAhNLonzbT6LCpX5M/aU0J70DxHw/VU9Hph2r396bTmvEy
+	ehl4vOtcAdQgBkNFVMRWeSQpQId9tAQxqMBUTjrSh9pIo2W3Y2agy3FCZmC82hqX
+	6Ff7Apo7ybhVg7NwDzwoT//tS+o/eUt/DVQo/RCtXRrMcrmAnodSTFDSIfMJrHkv
+	gpM45v+dHPgY92ck4NZOOfP3qvEViZDkFo9MDSLCAJ0S3uNw0TRAr4uDPnvGY9yR
+	YEFmNdoECqCDN5FjovctzwUAK1w2noB/ltaiVCkdw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=
+	messagingengine.com; h=content-transfer-encoding:content-type
+	:date:from:in-reply-to:message-id:mime-version:references
+	:subject:to:x-me-sender:x-me-sender:x-sasl-enc; s=fm1; bh=iaPNjO
+	OQYGlAI+KWEq/ZewXH04FxBzqST7aioXlCk1w=; b=gfh5dAzumg53gxg1muecYS
+	AK3zZamBZZLjRFVBdLyMSwU5bALz/zLZgLnvVkaqVuujGLfHIxUWQd3JABCFyupD
+	LQwDuWq5YnAyl99fxE7XV9w3nh7oTEIN70Vvxo2/kH+DNKz0zQ8Lfc9I6z7NiJ0c
+	k6+Y387Ml9rr/8KQpkhNIW1/okBu6sgxdngQiCsxdg7+nH2qHPDCx7oRLpOizZAM
+	kuFS2RxVSCieDGDNbCmqqYqSYURQQ9+p3yJD8B7tiyNbe/pWCgQkc72i2lWWGrgj
+	AwsU+kDxHTlZxY9IZJ4nfTFq+M3KD2Xc8lrC9AzAFX1fTD5VwXexfVK6RlcD66KQ
+	==
+X-ME-Sender: <xms:1GYDWrL-cftQ-z9z55wMnqcwT8YsfNP8JwE3_PqrNqpnphklI_ZlCg>
+Received: by mailuser.nyi.internal (Postfix, from userid 99)
+	id 18C1E48003; Wed,  8 Nov 2017 15:19:31 -0500 (EST)
+Message-Id: <1510172371.540160.1166158968.3C4A1E20@webmail.messagingengine.com>
+From: Jakob Gahde <j5lx@fmail.co.uk>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+X-Mailer: MessagingEngine.com Webmail Interface - ajax-f89283c9
+Subject: Re: quodlibet GPLv2+ relicensing
+In-Reply-To: <CAE6_+UdmQwiBqt0g2HE8t7Kw2qpcUJZfja0Q2ZG+9rcbM9MkiA@mail.gmail.com>
+References: <CAE6_+UdmQwiBqt0g2HE8t7Kw2qpcUJZfja0Q2ZG+9rcbM9MkiA@mail.gmail.com>
+Date: Wed, 08 Nov 2017 21:19:31 +0100
+
+Hi Christoph,
+
+I, Jakob Gahde, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Just out of curiosity, is there any particular software or library you=E2=
+=80=99d
+like Quod Libet to be compatible with or is this simply because you want
+the code to be more widely usable in general?
+
+Jakob
+
+On Wed, 8 Nov 2017, at 19:55, Christoph Reiter wrote:
+> Hey,
+>=20
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU
+> GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like
+> you
+> contributed to it under the "GNU GPLv2".
+>=20
+> Would you be willing to make your contributions to Quod Libet available
+> under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>=20
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D
+>=20
+> I, <insert-name-or-github-username>, hereby make all my contributions
+> made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+> later"
+> [2]
+>=20
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>=20
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D
+>=20
+> Your response will be published at
+> https://github.com/quodlibet/relicensing
+>=20
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>=20
+> thanks!

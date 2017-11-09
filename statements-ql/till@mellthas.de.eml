@@ -1,0 +1,109 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1981877wrc;
+        Wed, 8 Nov 2017 12:21:45 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMaf/y1hd+tUFKzv9kGqYhqlh1xv9WOEazlYXncZagcDVXgDdP4qRPp/wypodkqmWOxmedXz
+X-Received: by 10.28.143.212 with SMTP id r203mr1329614wmd.44.1510172505618;
+        Wed, 08 Nov 2017 12:21:45 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510172505; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CQSmmTFJYMv5OolY7XRaTXYattJA3xvqiig07XaFZhGAeonIyuPgybA4G1AJ4bdWxy
+         2r1uvW0AxkJDXVM/HMH2CWcF9nHovYtrFa2Idpk7/VfZvkNA/hldadt0PkyrcYd6yyzX
+         5GI26lzep4n6Z8U0nQhk6JpTIo4EJpFEkI4tAl7FxH+gSj7hEr4YwIyqAnrgMvY7ZZ9U
+         wVpHHOfLTnLc/Zp//DBGkwvcFzPy2x7XLL4BRoCEO4ECS/vmQZtlhwH/GIGSGNsh+258
+         /jooBmkKEwk7T61VQ61wAHy/dW3wDWRX8PqL316hgzKKXDQt79+PeEHuiA8RhPwXuyLi
+         VroQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:references:in-reply-to:date
+         :to:from:subject:message-id:arc-authentication-results;
+        bh=3pelcvcSC6o4YlF8oY5ZbQQC3SGm8LljcWY+khsbmnY=;
+        b=nfeEJZaDfNn4F3uialxU/9GFytpWt4rooUIr4uFRgsOt7EHpLI5q5l7GyjzasPnJaM
+         BJJK+YCDEBvq+7gR/OxlidtyL3pAmwy+XoGVjQSYCCHuV0ZvMKxwWsfL6HHAJtQGEOal
+         z6mczPD0fEOFXyB9XijVUw34JkhF5kNYimrk3iHurnZ4Y5R8Mq0oNLjZijf4g85Y7geS
+         VTn7Y6jHhCpUtcsyCtBwcOoBNRpdhR7tgZyLQtHzBnPNRJa3W7UXniVzzcPebJT4xrvV
+         kY0RvEW6mnnfY7vSahu//TrRw5W9YXMSFMWcCTxpNcwAUXujN+tb/LoGWXyhJgHx630B
+         v/+w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 212.227.126.131 is neither permitted nor denied by best guess record for domain of till@mellthas.de) smtp.mailfrom=till@mellthas.de
+Return-Path: <till@mellthas.de>
+Received: from mout.kundenserver.de (mout.kundenserver.de. [212.227.126.131])
+        by mx.google.com with ESMTPS id u68si4715998wrc.46.2017.11.08.12.21.45
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 12:21:45 -0800 (PST)
+Received-SPF: neutral (google.com: 212.227.126.131 is neither permitted nor denied by best guess record for domain of till@mellthas.de) client-ip=212.227.126.131;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 212.227.126.131 is neither permitted nor denied by best guess record for domain of till@mellthas.de) smtp.mailfrom=till@mellthas.de
+Received: from mellthasmac ([178.203.235.235]) by mrelayeu.kundenserver.de
+ (mreue003 [212.227.15.167]) with ESMTPSA (Nemesis) id
+ 0M944P-1eOK280NeX-00CTRX for <reiter.christoph@gmail.com>; Wed, 08 Nov 2017
+ 21:21:45 +0100
+Message-ID: <1510172504.2876.1.camel@mellthas.de>
+Subject: Re: quodlibet GPLv2+ relicensing
+From: Till Berger <till@mellthas.de>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Date: Wed, 08 Nov 2017 21:21:44 +0100
+In-Reply-To: <CAE6_+Ue9KbuX8pY0pLSWStExkCvjsPAs6-=n0JZDaSfZ5MhS8A@mail.gmail.com>
+References: 
+	<CAE6_+Ue9KbuX8pY0pLSWStExkCvjsPAs6-=n0JZDaSfZ5MhS8A@mail.gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+X-Mailer: Evolution 3.22.6-1ubuntu1 
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+X-Provags-ID: V03:K0:JtkQrvmzP+YzgoPKWn+/GH6Xv93L+pY1Of0uxuy/tmzso2AAg2H
+ FDmS6VCwHZU2ookoV/epn3zVamYlInt5HEvVJoJUWefYNS13isx2QSP/nBtWlEWe4xUdBCF
+ JgFC6MRJoHx+emh4lqIUaXR+ROAl4ghDlSjcBMa6Q+xvEc6TckGaKK1vf1X5Jvg96EkW3BD
+ FBaNsj99AhYxUjGYHTbvg==
+X-UI-Out-Filterresults: notjunk:1;V01:K0:xW7dzPevb24=:6YiFjMWudkgwgHXpLAuMyd
+ kuOysnL2G7rR7LRvQQAy1UT1MbGAVXLxTWqiu19xnP8CEPkNvHXLnrdF5bX93LKoxQ2E+xIYo
+ IOwQIDSGqWqf1HMMgWfe5BzDsQhJ/o5u68ADpfQUlkY5hibx0Nesc7AL/oVAkO2ETu4m2Qe5t
+ KeAgiP1f5nRij6TtXFybWUdYfDAhbYl47xyCJhbnecPSn17r63PWaZONlgvfYzecw+At2h8oo
+ 2HBb0PLBfRRIs4sZ1cLMNUfz0bUc4aYP6qiIe1wQMZL8uqCHdLC+/Ptcl0B7Tou1JWoPE81Io
+ bYsPTTIN8EVjhIaYdwOC08SI31HzxMYcdJaGvqJdPmZ/Eh5IHct27WGXlQPpYng77YSZksdZB
+ rvSkSwguijXw052SjtvBz3hTLStAx9o3atbjMUH3uTRNTQ0ijvTiuJH5mB9EB8o7MaUxOWoMn
+ 6w1RQaqb52DUmhWvy5r3PrNDaxus0b0my1M8tULdVwUM3pzxxM1YYuHJyVql3tCgNYMCPDkzU
+ zfr35p6cCWU/kMUi5tfVE8C4MKDGV7k7xTyPjsOnhwIjpXEuWgQVQd8qJbAYDI9azDf3g3Dxh
+ DiN/+ZI3vz4z81jEO0zTgX1hqRw9ofI3bMwUegi0wgdKRdf0VE24P+fnhWIb3LmvNETYmeW4M
+ swJo4AWxDnVz7Ji8GU0RRHdpNLAZS/545YOIRdeY1nM3SIlm+jMRJplsQfaj3EmFffFuVWYEG
+ 4rB6OSfrsh/Zk0ovQ1GWO54ta9l8XQfRHqlzb+JiRUqqoHqtyMJECCkVeqY=
+
+I, Till Berger, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Am Mittwoch, den 08.11.2017, 19:53 +0100 schrieb Christoph Reiter:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to
+> "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks
+> like you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet
+> available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+> 
+> =========
+> 
+> I, <insert-name-or-github-username>, hereby make all my contributions
+> made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+> later"
+> [2]
+> 
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relic
+> ensing
+> 
+> If you have any objections or questions regarding the relicensing or
+> your
+> contributions please tell me.
+> 
+> thanks!
