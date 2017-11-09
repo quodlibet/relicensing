@@ -1,0 +1,94 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3087647wrc;
+        Thu, 9 Nov 2017 09:08:29 -0800 (PST)
+X-Received: by 10.46.65.216 with SMTP id d85mr537377ljf.156.1510247309359;
+        Thu, 09 Nov 2017 09:08:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510247309; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OPSzrlewXZ+RlCB723EjfLkv7Q7YfHeA41ooXub4AvdeobFLVq7M+OeA2zSQEI2m1P
+         vaZk6jnCMXOGY2TNk2TCsmKAza/mSjH9Vj12SLRP8H1CrOAESmjtZU0P3ThBihWKYAKE
+         IKzIBh4WUJhKKYI4CUgUn9quVoiKzxio4PSMGnqTNMhfF1afcbSNI9qtzzO1817liOFy
+         /vHy4EDkM8q7Wbs9XxzFKx0KnuccNHv38JixaeOLWIJeRqMv1zV5zMSmKJ7J2mpOCD5g
+         S6uLLznkI1n55sKnbpWvz4y8gtU5ombQrJ5G+gvGK6cB9kaiSqscB9hFlwbcJk2fY3z9
+         AJdw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:content-language:in-reply-to:mime-version
+         :user-agent:date:message-id:from:references:to:subject
+         :dkim-signature:arc-authentication-results;
+        bh=GaiUTky9klSlSqyYDK0EaX4w+iKqgSbj3Fkm2CfCFik=;
+        b=Wdm4j7PEPL6vSU5rSgtkE8lPRAMHAtWx4povZcKU6qjimV8Sw+ChzUyAp7wVZD9xib
+         D2eVQo+32/kzlG4G5pFeytKlQ8JLZTXGda9mcMjCte4bnjxNBJkj0dvXLlRTPhxVrccE
+         VGpD3liwbsHAq7A8X9cnsV7l3Jof0VPfZiF0zl/CqpH7pJl2STz6Wk26pT2XF5GVtOPP
+         lKAg0ctNIFuT8fnllrWoNpmxH5BuM+LhSQx/svIx34wFDM1f6KKk06Ic2VT4Ls2I8HK8
+         l2XQnM635KYqBfScUQZkNNPZaIzDioWcVjS8PmOVr5F/PJ3Oo7kvC5PG6RBD5NiQMpWm
+         Lv2g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=j4lYk8+c;
+       spf=pass (google.com: domain of scootergrisen@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=scootergrisen@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <scootergrisen@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d13sor1268445lfb.107.2017.11.09.09.08.29
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Thu, 09 Nov 2017 09:08:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of scootergrisen@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=j4lYk8+c;
+       spf=pass (google.com: domain of scootergrisen@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=scootergrisen@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=subject:to:references:from:message-id:date:user-agent:mime-version
+         :in-reply-to:content-language:content-transfer-encoding;
+        bh=GaiUTky9klSlSqyYDK0EaX4w+iKqgSbj3Fkm2CfCFik=;
+        b=j4lYk8+c9FgB5tmMIcPIHO902hGNsDRfIdDRu1SwqWCV47WUPFPGTgeL+bqn11Cnql
+         HJnWFvm++dhbW+nycdtDCrzigbg2Jt+FsauNlJK1btirgAfSXPcq95e7/3ph2YLh+6O/
+         nuIHuXkfzRuJ0dwTkECvmqz9PfZiZ2LesWmBLVvFKcAUka4+hbOv8E7rwfvRXLU9bC2V
+         Qz1iPojOs+aaD4fGstsXBlgV/zY0yLrbnr1LgYAFe58/A7sz53bovboy+kEdu+F+L336
+         ho5C7v4ZelCPmRe1s/cT2qoTnVB7bo0Bpk3ohwWtsjq5jJF102EY3pYX8p4HFncCsb4s
+         f4WQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:subject:to:references:from:message-id:date
+         :user-agent:mime-version:in-reply-to:content-language
+         :content-transfer-encoding;
+        bh=GaiUTky9klSlSqyYDK0EaX4w+iKqgSbj3Fkm2CfCFik=;
+        b=qtXKB4qtAQZy4GmexWLcqRvKW9YNle6Gvxu3XDFRmmufRAgqXneGOlU684gZIYqUQz
+         FTFTA+8lHTLhtnWa7SIJTcOYHtn+rzK1EcGnU2OP6WP38KrKd5zPv6Ie4sfhpmR76DHQ
+         N9BqJmEV8fZO7aBdqJfXl473iafAYVl1GFxq2FWQh4ti28FsthGD+RAVSEsYbBD/WxSO
+         o0CCXmH0izRTM3fnp250w5AI7Lu8Plm17NmFNelTMI6IhH1ehtqsAXs0P5uAehi4fYeF
+         pIZo6/3qOyAoGdJ1zswlA3P7RmVEX8+YSAHoxhRND/YShZ3N+BQ0Y+mHojipstxzG+ot
+         LT8Q==
+X-Gm-Message-State: AJaThX7+EcDJcVdHbI/LfED1Pwn4yEp/ELIi808SxUp7kkwUUxZhEOcT
+	JVDClsfGlg0kv1r1sdZ/HUZc4w==
+X-Google-Smtp-Source: ABhQp+QWqLQtFvJPRKthwa6ozkw88e1Qn+o3R0tCuhONA5aPHKOv0zoUBrIuv+Si0mEcajsW9IR5OQ==
+X-Received: by 10.25.78.145 with SMTP id u17mr507862lfk.167.1510247308941;
+        Thu, 09 Nov 2017 09:08:28 -0800 (PST)
+Return-Path: <scootergrisen@gmail.com>
+Received: from [10.0.0.2] (0x5552d556.adsl.cybercity.dk. [85.82.213.86])
+        by smtp.gmail.com with ESMTPSA id n36sm16106lfi.78.2017.11.09.09.08.28
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Nov 2017 09:08:28 -0800 (PST)
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UddxNbO_mT38KzufuAeJ7_DbwJh0n7J_Zc+AMS4SrU6+A@mail.gmail.com>
+From: scootergrisen <scootergrisen@gmail.com>
+Message-ID: <9b1a4017-457c-5be5-aeb5-8f951de43e64@gmail.com>
+Date: Thu, 9 Nov 2017 18:08:41 +0100
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101
+ Thunderbird/52.4.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UddxNbO_mT38KzufuAeJ7_DbwJh0n7J_Zc+AMS4SrU6+A@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: da
+Content-Transfer-Encoding: 7bit
+
+I, scootergrisen, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+

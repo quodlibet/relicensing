@@ -126,3 +126,7 @@ Kristian Laakkonen
 Javier Kohen
     jkohen@gmail.com
     jkohen@github
+
+"scootergrisen@gmail.com"
+    scootergrisen@gmail.com
+    scootergrisen@github
