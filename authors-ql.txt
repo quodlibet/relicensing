@@ -1,0 +1,5 @@
+This is just a mapping from names to email addresses and usernames
+
+Steven Robertson
+    steven@strobe.cc
+    stevenrobertson@github
