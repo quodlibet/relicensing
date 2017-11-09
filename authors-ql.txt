@@ -122,3 +122,7 @@ Ivan Shapovalov
 Kristian Laakkonen
     kristian.laakkonen@gmail.com
     krisse7@github
+
+Javier Kohen
+    jkohen@gmail.com
+    jkohen@github
