@@ -1,0 +1,80 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3111440wrc;
+        Thu, 9 Nov 2017 09:30:09 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMZsrNC1iq6LyAs9FslRpTBdM7wy4AsQd3ae3Eg1JZaDjmc3qNs2WQpZKr1yaCZte3Hdb5zP
+X-Received: by 10.28.167.68 with SMTP id q65mr521203wme.52.1510248609898;
+        Thu, 09 Nov 2017 09:30:09 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510248609; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vZelRhgZXuElWAAvBBQoaK2ispscvuwOEwNHrZf9t/eN6Q5L8FTwfzihaGyPfRIYQp
+         uMdmRmY/kjNSB8zDMu3ZNNJPVFgdQ5oYhU6MsnbTVJpZZOSUuhRDBD4D1+RGK/GOOwt9
+         l2yHJxN10S1QJy3jyykD8Im/peL4Zlpe/9fFcZpitoA5JyL5Dn8E6pddeJmXILYYIoJG
+         ZVGjJdFKUcJb6I07giZgw/CdrFfYhhMhyUpIAwCB0RAWInsYN6tTepbhz+16wgP7xVsR
+         bN746gX5SOQ49xlDRrRIQP9bsd0SgoF6kfTC1sS1j9mb5GrGJ15qZqvrlGudj6O4WWIq
+         bEvw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=user-agent:message-id:references:in-reply-to:subject:to:from:date
+         :content-transfer-encoding:mime-version:arc-authentication-results;
+        bh=O6cHa+F/qxCXgEPCCMlTAgK9HWHzr/06tWYsOnExePA=;
+        b=IRhKEgDcdCLEwuSQ+VGQWsse6MutQH55tW/PpKR/IUU0hzn3e7abNmY2Bab9J07XA8
+         +yvAy+2TgpKW+V1XZ4Cz+O82voWMCg33x4VPvkPvWZsesrMhDhV13zua9JBUJ+of1Ssd
+         s8ssdw+SRQZk36gb0b+OLCwVagpB1e1s0lpWnH7vnvUO5ElJHdK0rfes42vtoi5PxYzS
+         Ki/JS2urdYjqOaG7bki2V7kepT4K4+kp+pKFY9siTMa0NpG28gLsGQ+EMoQBW97o9tDo
+         l5joRBuRt8LADV8wdBBfsl0NJbCMQJJ0ZPBb67wMm6dw6G+Fz6eW4U052Ct6bvgrQTyg
+         v6Mg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 89.107.189.26 is neither permitted nor denied by best guess record for domain of post@johannesrohrer.de) smtp.mailfrom=post@johannesrohrer.de
+Return-Path: <post@johannesrohrer.de>
+Received: from rd19.serverdomain.org (mail.rd19.serverdomain.org. [89.107.189.26])
+        by mx.google.com with ESMTPS id v2si5817466wrd.440.2017.11.09.09.30.09
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Nov 2017 09:30:09 -0800 (PST)
+Received-SPF: neutral (google.com: 89.107.189.26 is neither permitted nor denied by best guess record for domain of post@johannesrohrer.de) client-ip=89.107.189.26;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 89.107.189.26 is neither permitted nor denied by best guess record for domain of post@johannesrohrer.de) smtp.mailfrom=post@johannesrohrer.de
+Received: from rd19.serverdomain.org (localhost [127.0.0.1])
+	(Authenticated sender: wa9367p1)
+	by rd19.serverdomain.org (mail.rd19.serverdomain.org) with ESMTPA id 39ECC8032BDD8
+	for <reiter.christoph@gmail.com>; Thu,  9 Nov 2017 18:30:06 +0100 (CET)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII;
+ format=flowed
+Content-Transfer-Encoding: 7bit
+Date: Thu, 09 Nov 2017 18:30:06 +0100
+From: Johannes Rohrer <post@johannesrohrer.de>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+In-Reply-To: <CAE6_+Ueu2zQZ-55o=pndZJdboO0_spa25LwH7WM1CMHDOw9BnA@mail.gmail.com>
+References: <CAE6_+Ueu2zQZ-55o=pndZJdboO0_spa25LwH7WM1CMHDOw9BnA@mail.gmail.com>
+Message-ID: <3067ddfcea4f7a5e757e9693822e49e4@johannesrohrer.de>
+X-Sender: post@johannesrohrer.de
+User-Agent: Roundcube Webmail/1.2.5
+
+Hello Mr. Reiter,
+
+* 2017-11-09 17:34 +0100:
+> Would you be willing to make your contributions to Quod Libet available 
+> under
+> the "GNU GPLv2 or later"?
+
+Certainly, though as far as I remember they do not exceed one minimal 
+bugfix anyway. For the record:
+
+
+=========
+
+I, Johannes Rohrer, hereby make all my contributions made to Quod Libet 
+[1] available under the terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+=========
+
+
+Thank you for your work on free software.
+
+Best regards,
+
+Johannes Rohrer

@@ -130,3 +130,17 @@ Javier Kohen
 "scootergrisen@gmail.com"
     scootergrisen@gmail.com
     scootergrisen@github
+
+Johannes Rohrer
+    post@johannesrohrer.de
+    src@johannesrohrer.de
+
+Andrew Chadwick
+    a.t.chadwick@gmail.com
+    andrewc@nereid.ceu.ox.ac.uk
+    achadwick@github
+
+Eric Casteleijn
+    thisfred@gmail.com
+    thisfred@github
+    ec@trapit.com

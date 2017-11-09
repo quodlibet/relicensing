@@ -1,0 +1,122 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3113272wrc;
+        Thu, 9 Nov 2017 09:31:41 -0800 (PST)
+X-Received: by 10.25.199.149 with SMTP id x143mr566349lff.114.1510248701331;
+        Thu, 09 Nov 2017 09:31:41 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510248701; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aWLDKvBhqfoTHG6qFtIZvzsGmsxtg+xgu1GF83YQnthY1+OafpIgntHVluhWKJwsaE
+         z50sjlhSa6Hf5hSOiKFqPwsln1llR2TGJlEx/kvKS/whk0PqtGyTofBJgL/mJmTOmTNt
+         ZbVmwCSX/Vv2B45bnpJ4xgVd0QITmq/WVHRGkOJiXTNpF2ZDGovLVOQICVi/rcd3nre9
+         /lsjCKhEWhSKvzIpvaUry/W20PUZPBSbDp6rpOi7g3J0NqEKuMwVjYfeeNzeDwoX9Sbt
+         G8WViePBVoQtc8bPYtZcqNubkuebOmiDh7vyHNSWnL7tTvCIC/74mWgG2SagkVVM+u5S
+         +5lg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=vW5ysRs4n+HY6zoSXrTYk04dAL+Ad1dfF2/FMxOXAO0=;
+        b=ayL78iWqBPYp8l2iVPNOn5aw4qAodvCiNN2r/7h1FGgC9WLiYuI0UkXCg37+hqb3Sq
+         jSvas/ko7X+vL3pVcx+EVEodkT12B87iZi31PmYjwREXyHdfat67y3MtcXk2ancu/TFQ
+         MdmmOTd3fCtFO6YKpz+9D0eY0z+OCGy2pkVVGXx/9aFINlvowQ2fx/id/NcGOj+iFM2T
+         RYOxTDgluFj1dFaorzTA3eri5BExBagnLVSdU267efc7857TIDvp/sHtHF8iOxnWS0Fl
+         tkp3XG71bVOsez5bMOMmsAQizj4SPVpjyKCLFcMsLKnGeIo7834YfCPfWpN1eRap+lOC
+         PgGw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=LJYaRDnp;
+       spf=pass (google.com: domain of a.t.chadwick@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=a.t.chadwick@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <a.t.chadwick@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id m90sor1316883lfi.11.2017.11.09.09.31.41
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Thu, 09 Nov 2017 09:31:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of a.t.chadwick@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=LJYaRDnp;
+       spf=pass (google.com: domain of a.t.chadwick@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=a.t.chadwick@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=vW5ysRs4n+HY6zoSXrTYk04dAL+Ad1dfF2/FMxOXAO0=;
+        b=LJYaRDnpbh2hG+NgV8TOB9QFJideNTQ+y2ajtFOd4T0ll7NCZI2/errAsNaB095bsg
+         gD6o12BM+nOflnieKGpCkepAD85/7dT/dPvlHIbBr3uHLHbgR3t/qObauHgytSg5IJpq
+         /6j1Mq9h7fYrZZNku14kax1flYl3z30RDRvrL6U8TxQH73ijMMTdutQWBB0zsy4IsxNl
+         NTmubjxxUfVOi5xt4K4phbCEu/Pbd2RcU3eMC0YLlcK/H1bWLPw+83VXv4yslwmomsg0
+         SJj5AX1lEtZI8WPQyVYSz1k4LFCfkM8HVKfndTmNtqmuYcQ3Zp7Ywolp3pSgf82ZQOE0
+         DmwA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=vW5ysRs4n+HY6zoSXrTYk04dAL+Ad1dfF2/FMxOXAO0=;
+        b=mSQt63nIJ5DLIDIzEDOOKVKXyEkEXswBwAxV1IRweVvY8dbzPPc6cmlFnV+vpO6Lx8
+         yvlbxbnFvQiL4HNR3NeTxKNeeEY8HZSuYIU/QpcOW7nic7Gbs0oL0+t8WDK1JtvzEqSM
+         tRjVilXACs+G1G6kD6KzGV/S/53CaoNO2FiBQelgDq48TyVIKkMKJYs18iWCR80O/rmU
+         B1BdmjR/xEH/ep5uGiMvSm6zn6/ABmUJ5CrHxHXCE6o5j18u2IrsJNU3NIDF09i1PKiM
+         c1R2/riMgmhyY7g6+5x1WZyAGORcwqcikpmUrI8CVQXVjLmbaqvW/RE7OTfNKiN38dnF
+         NSGw==
+X-Gm-Message-State: AJaThX6zVE/8TdyTkpWqVGuI4L5LL+gJuhGwD2B7ROjmS0uC4HzFf2VY
+	8H5s1Lo8Fpll27pOK3dm09HjIeWEhTQBAj/1J71C3bCM
+X-Google-Smtp-Source: AGs4zMaISfs96b8Krt81yrZVyV/+lhw+4m88N8QnjexacBIfxxIrEOOOFHWoxwefPD7MeUhKRzpVtDaSFiBIhJYEEKA=
+X-Received: by 10.25.28.10 with SMTP id c10mr494739lfc.29.1510248700720; Thu,
+ 09 Nov 2017 09:31:40 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.25.110.70 with HTTP; Thu, 9 Nov 2017 09:31:39 -0800 (PST)
+In-Reply-To: <CAE6_+Ud58-rVPLNH8dyUzOizVQ0JNRb6oZL2k-69uAg0dPCNeg@mail.gmail.com>
+References: <CAE6_+Ud58-rVPLNH8dyUzOizVQ0JNRb6oZL2k-69uAg0dPCNeg@mail.gmail.com>
+From: Andrew Chadwick <a.t.chadwick@gmail.com>
+Date: Thu, 9 Nov 2017 17:31:39 +0000
+Message-ID: <CAPUiJ11QFb361nY6zWPE1Gmb6Obc27pveRDNgVPuZHu5wTsfsw@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Can't remember what I contributed, but NP.
+
+=========
+
+I, Andrew Chadwick, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+=========
+
+
+On 9 November 2017 at 17:08, Christoph Reiter
+<reiter.christoph@gmail.com> wrote:
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+
+
+
+-- 
+Andrew Chadwick
