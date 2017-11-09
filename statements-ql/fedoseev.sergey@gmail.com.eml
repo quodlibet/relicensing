@@ -1,0 +1,111 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2825551wrc;
+        Thu, 9 Nov 2017 05:24:30 -0800 (PST)
+X-Received: by 10.200.56.83 with SMTP id r19mr662363qtb.293.1510233870721;
+        Thu, 09 Nov 2017 05:24:30 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510233870; cv=none;
+        d=google.com; s=arc-20160816;
+        b=iDeL8DGwWAOYQXhjlrRlqabo1rtd+notZ7sTzxGmAJHVr7g7CNZeqnY9d4zxgRnZkq
+         9f5ktg8CeZgcL34GTQlj0p/MQ5GL9gtXtD4BZS04h2b/QHU9q5sIFcLSIT4DaJrG1zKc
+         q3ftqsVWSjtvafWi04mqURW4yvQul1vJtU39AdmUakgfIRV1aP8RTlTb5lAZvUdZ3JUQ
+         PjL/KerBj7cTiFOTSOc5CjyrT9R36WHfwZrC5xO/8erDfJnQxYfAdl9mFg5Dw8jH+0js
+         HJ+/Za44bAaQfEcOrsNx5kKv9d2Gcw0/dMCab9XePMSH3Gsq6CcNB3vEGSIPB9Hg2khp
+         Lfog==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=c5uhtb9yVlUgq8CkEq/MoMuBZ4f6lJnQu5FmxmCBAwA=;
+        b=Vf3G4VYHWZtZ4zEbjxwI0bdp8+2o9MdxjlR0Zeny7D+/kexJTY9LMvcPEdxCwVl/vw
+         g1APggsg2LhTF+tNzm5C9lj1fyGPmdrwMLWgJweVEGaSzVFA9IRZ+4j7xV/o2fY2HpOu
+         brdjWDdTc/z4gXP2rF3ZZtlFKx/Htys6pSOOwPmmPCUqD4TAPjuazkdf4mJ4N2d/cW8v
+         EhlHOw8c46sgCwhT0tbTvdk3rHaPNjozwboNHcAWadAhUR9PhvZv+30KpLbStfQoD4j7
+         +06C67//h3DUflw9wIvlUq0uvU4kezz5eqhMISByHmr3hNcwPk36xzzRGRTFb1NlKmlD
+         iY9Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=qplhTzuG;
+       spf=pass (google.com: domain of fedoseev.sergey@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=fedoseev.sergey@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <fedoseev.sergey@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e190sor4614315qkf.38.2017.11.09.05.24.30
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Thu, 09 Nov 2017 05:24:30 -0800 (PST)
+Received-SPF: pass (google.com: domain of fedoseev.sergey@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=qplhTzuG;
+       spf=pass (google.com: domain of fedoseev.sergey@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=fedoseev.sergey@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=c5uhtb9yVlUgq8CkEq/MoMuBZ4f6lJnQu5FmxmCBAwA=;
+        b=qplhTzuG3Y1jFE82WHgAdQdrYmPN5+9ZOOdGDJ2kU2Nuun9Gk6WkCAUSXTpb9plYKm
+         ebHcmVD6hRAIz8hAY1fle5cwpjHamCYsjJW5bGwWlfUcTgUPSu/CHPsx8k2jNlD0zaWF
+         K68Zxap/jE2m84QSLCB4gIEugIzLp/G1bC1NrdZ+gGn8Wql/U+mwd88agE+hZowfc486
+         o0A176IRLhX7r+o5d6RA4ljV2E8lIhp4nT1lTxat/HM88Z5iAvX3Ha1wkyAO7sy8Z1Ob
+         DyNuqCdh5SC1enM4uoGbGXI/WlgUvtMf7B+tz3LRvK4L9RXwJGUHE0GZRBqXvnYa46TF
+         Gx6g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=c5uhtb9yVlUgq8CkEq/MoMuBZ4f6lJnQu5FmxmCBAwA=;
+        b=a6f3h87dXGwIJX83IZ8HjizVGtKMSpbb5K3V3Uu8cxcVwHEf6TMa8dUg26v9RSWNMN
+         uKkCIUfYSNTur+2Izf2EOoHLa4LqBWQbItAk5yhT4q4qJjEf4uEkz8+n+u5ARV+J3j9n
+         W+EXQcR1fNOC6NyrGYegM2llTNVwZU4bYCi6Fzt8gP2vmwbqzH1JFBPoB7Asfsfzo/9z
+         CE0qilKKN8kbcFgbPhWaXKjAj+8PCXy8F7G7rsRgEm4BCDqaGxc+pVYIbsCSb0arOKax
+         QdbcFBeLgLYuiZNftVjZA+sR/mrYN2sBm5Rbd+nIJGkf12u/LoHye6mLU/VQTSlTi0Wn
+         7mOQ==
+X-Gm-Message-State: AJaThX5S1YkCMecdGlnabwJxDSgothHu0ASEvhzHRxKeFQcyRYIDen9i
+	N6q406E/lqc6sMZEqWTc41jv8QFA1tTGRq21Oj0KDT1I
+X-Google-Smtp-Source: AGs4zMbUs+EwnlPTBCTMV3rlrHiaBHd+nahiyiPiRGjRBvSUYbW7pmtyC5mqQ1Jxy5UipllzEkLY+vSnJtPqiDDCnAs=
+X-Received: by 10.55.103.138 with SMTP id b132mr723469qkc.50.1510233870191;
+ Thu, 09 Nov 2017 05:24:30 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.200.45.217 with HTTP; Thu, 9 Nov 2017 05:23:49 -0800 (PST)
+In-Reply-To: <CAE6_+UcMw5Cz9OtqQ2kbPUy9ii58jkTzdBPdqVvvTQ9RypBPzw@mail.gmail.com>
+References: <CAE6_+UcMw5Cz9OtqQ2kbPUy9ii58jkTzdBPdqVvvTQ9RypBPzw@mail.gmail.com>
+From: Sergey Fedoseev <fedoseev.sergey@gmail.com>
+Date: Thu, 9 Nov 2017 18:23:49 +0500
+Message-ID: <CAEiVnth7YJ=JEdWAuPODdCvd1r_eVeHxKcrYabHhWmZoysEgvw@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+Hi!
+
+I, Sergey Fedoseev, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+2017-11-08 23:45 GMT+05:00 Christoph Reiter <reiter.christoph@gmail.com>:
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!

@@ -1,0 +1,118 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2861706wrc;
+        Thu, 9 Nov 2017 05:59:19 -0800 (PST)
+X-Received: by 10.46.20.79 with SMTP id 15mr240225lju.125.1510235959598;
+        Thu, 09 Nov 2017 05:59:19 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510235959; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Vvy67NpMdzHGSLpSmirCipU2dePMTzNxsNLCAfiZkv2JorvVy3tfQtS4ih56ldUDd/
+         cUiFYwj1nyefcw7vCo/KeOo6xxi3Wkjf1/jz1DFESPNoKo8Rr9TNG+Lr6U9YuGne0NE6
+         LZVNxYL+i2FHOEVK8jd207TQboDP+G/v3J2kotJHWjSHCPsah9V3x/cwkOeHzdS73Wb9
+         rcR3B2aPYpViRZRtzUwkq04BFr1T3SG7dSf90DCfo0xySXz81XKu2UNMR+DHlpI8TqnB
+         zpa6AU2xdTbKDqXXMXxxAq/TJhiqFi3uIJWCRF4g0D12XoNCJoEkpzB3rhD60gKQ4oDp
+         3gCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:references:in-reply-to:date:to:reply-to:from:subject
+         :message-id:dkim-signature:arc-authentication-results;
+        bh=5eVWILe/vQ8AUFt5tgxNGawS4wsjfe8ow8A+4S8uMUw=;
+        b=oMNByVLMDzsj2tSbrKk4wb0SASmnfyB/awYLyajdB261H9hgf+XEvokDJPwclolGPJ
+         6u2jSsyPFPp2BA+vRvLdI8J6Ra3/wdNDYy6s8+xMLPYB40yLRVjM603FIeLX0SwWQqoa
+         go3taV2z7RbhGs/k3OfjMo40wt4cuHlYQvbvMcby6RN751DeJEZKg0qO5/9pXSgKJ+v3
+         4p4fpNG4vDzJnR4lcvDh07FIycA/0bRZ14B0KpCsTc+6GZjiKjwSnEjvIpRQZ71bs+2W
+         Pu3h6OXVo1mT+aDV1sOI7r2wrMpVaN3FBW0x0c6LkzUhWLBNk8VU3NxwCVcXZmdZT21/
+         cHRw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@intelfx.name header.s=google header.b=Q7UQ2Jpk;
+       spf=pass (google.com: domain of intelfx@intelfx.name designates 209.85.220.41 as permitted sender) smtp.mailfrom=intelfx@intelfx.name
+Return-Path: <intelfx@intelfx.name>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e10sor1117800ljb.9.2017.11.09.05.59.18
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Thu, 09 Nov 2017 05:59:19 -0800 (PST)
+Received-SPF: pass (google.com: domain of intelfx@intelfx.name designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@intelfx.name header.s=google header.b=Q7UQ2Jpk;
+       spf=pass (google.com: domain of intelfx@intelfx.name designates 209.85.220.41 as permitted sender) smtp.mailfrom=intelfx@intelfx.name
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=intelfx.name; s=google;
+        h=message-id:subject:from:reply-to:to:date:in-reply-to:references
+         :mime-version;
+        bh=5eVWILe/vQ8AUFt5tgxNGawS4wsjfe8ow8A+4S8uMUw=;
+        b=Q7UQ2JpkXbV0jx6nOXGmMIqwxKkPCqEwMJVXpo8shmlNLcrzXNQoO5StNIjldB3+MX
+         wPCk5d+b0ksKxGefz0nJt7SLEn4KrEiBpgzkYd6AYEOVjDXL+Qrcr/udVSS51nvldI10
+         ue958WooNwM7uLctgn+QwOQHziUAJ9rMJxw9k=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:subject:from:reply-to:to:date
+         :in-reply-to:references:mime-version;
+        bh=5eVWILe/vQ8AUFt5tgxNGawS4wsjfe8ow8A+4S8uMUw=;
+        b=Mz+z9kaHMl1+xyzFCNSHSOyCTcapaQkLh5edgWu4LpuNE3KsV3Ve3D22xDbYk9SVY8
+         MSNzqC+G0INIof0o2gnsTrUQNjzSI4igq/G53KdcmSJVi2RD5Ebfg+aEgKBQELU976eA
+         KZyfcyEbDgTsfClLXTm+Qn0tmTazV/2jbMuXRvIO1/2XIzrf92vH6m2/zruTViUpMhF7
+         MaJPWMm5PhW2JVmdvNQ6NqvrSxLAE13Vi96/+P8bBacBrD4d4V+5jjetyuy6nBoS+T5s
+         Px2l93UUF+IzeR1XjpiWwe2KVUhMrAsuqCOxHiHcIUD2pBc+MxnQz+dnIKb8ygZPh9xp
+         3/6g==
+X-Gm-Message-State: AJaThX5HE0Fl6fjrf1uAsVL5hk2U+7LRB1G0+vQ30rx8p9sap+no8+w4
+	tLioMYvE+zZ6fSXRAp5YsdqDRVAanD4=
+X-Google-Smtp-Source: AGs4zMZDbi6lALyyEhspiWOjnZQMenEgyBKmJJeTqbOseQgq2etLQFrj9JQxoRLElbgueptmSdQmTQ==
+X-Received: by 10.46.93.137 with SMTP id v9mr251428lje.39.1510235957994;
+        Thu, 09 Nov 2017 05:59:17 -0800 (PST)
+Return-Path: <intelfx@intelfx.name>
+Received: from intelfx-laptop-2.local ([2a02:2168:cce:eb00::476])
+        by smtp.gmail.com with ESMTPSA id 70sm1300634ljf.22.2017.11.09.05.59.16
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Thu, 09 Nov 2017 05:59:17 -0800 (PST)
+Message-ID: <1510235955.30428.7.camel@intelfx.name>
+Subject: Re: quodlibet GPLv2+ relicensing
+From: Ivan Shapovalov <intelfx@intelfx.name>
+Reply-To: intelfx@intelfx.name
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Date: Thu, 09 Nov 2017 16:59:15 +0300
+In-Reply-To: <CAE6_+UfaZ0EOLw5qU9BpEQWfF7zEA+CEJR+wVtw0evEhcHVwVQ@mail.gmail.com>
+References: 
+	<CAE6_+UfaZ0EOLw5qU9BpEQWfF7zEA+CEJR+wVtw0evEhcHVwVQ@mail.gmail.com>
+Content-Type: multipart/signed; micalg="pgp-sha256";
+	protocol="application/pgp-signature"; boundary="=-x5gIblSezFsJMaJrW32H"
+X-Mailer: Evolution 3.26.2 
+Mime-Version: 1.0
+
+
+--=-x5gIblSezFsJMaJrW32H
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+I, Ivan Shapovalov (https://github.com/intelfx), hereby make all my
+contributions made to Quod Libet [1] available under the terms of the
+GNU GPL license, version 2 or any later version [2].
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+--=20
+Ivan Shapovalov / intelfx /
+--=-x5gIblSezFsJMaJrW32H
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: This is a digitally signed message part
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAABCAAdFiEE5N8nvImcx2nJlFGce94XyOTjDp0FAloEXzMACgkQe94XyOTj
+Dp0JeA/9EzrKa9BaPUCaJ9jEeNOjpoBY+7HJyZIp7ILJa3lAPrpgRS+6y74u74Kw
+yGDHmbIXe8frz4/u3Ukau0edsfFbUftE025+wXVt98+t2hC7xdpyXf3a9dvC3R1H
+R0rxUijJkH5+zwbUyubgc/vG7M6EjbFONhnENxDC2PWQrNd8JLjGtm2ZQIKVZmaj
+YCEcy0okKC38R3pEYEeurS8PPuTZHfiQAu02jlW4GT2eYZRAHVu2wFm6dKlc98Re
+W0R6OJho3S2EomGQVpTPBo7K++PJVDUYdtczhnhxsYkWO9gwI8L4IqJ2x+oaMnQ2
+dWA6JZRg/M1jUPel2QRdX7tBo4V5LHVXxP8CHKKRnDXdktDA55ONaOgxmXKCROSb
+joVyjhxUmadhi0hrqAy8t7IopZwJWV/gof92OcnsiTHzxsUaGAm60g3FLBex//ni
+6vmWkxSUoaGQvNe6VrcpEEu2zxXv848u3Z8UekYGr2A2E8OVJrvVUjcCvo12ADzM
+CjPRI11adKv5cqAzJ6VwzsgIWBppYmNC18n1EMMg4Z6Rx4cWQHNoxwMCmTAvWTeM
+a3fdTYJ76nwRJg4tDnK7/Qs1nyGDJ+CRiWXmK2W1Jx4hZ8m9niv8BLMwHMRx/fRT
+wCY3CfG0QR5m0kpkaZ+SWg4Of+dKfKcyhSH3DSd8Gbp2HTmCBN0=
+=USOt
+-----END PGP SIGNATURE-----
+
+--=-x5gIblSezFsJMaJrW32H--
+

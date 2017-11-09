@@ -107,3 +107,14 @@ Burt P.
 Anton Shestakov
     engored@ya.ru
     antonv6@github
+
+Hans van Dok
+    dok@xs4all.nl
+
+Sergey Fedoseev
+    fedoseev.sergey@gmail.com
+    sir-sigurd@github
+
+Ivan Shapovalov
+    intelfx@intelfx.name
+    intelfx@github

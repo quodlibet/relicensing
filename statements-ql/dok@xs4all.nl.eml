@@ -1,0 +1,117 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2840915wrc;
+        Thu, 9 Nov 2017 05:38:41 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+QY64L5+hxp94dfY1Glx+u7WxGscK366AETpk7L82y1uJIFOcMPRjiidjA55PdIdoTkPaKH
+X-Received: by 10.80.134.111 with SMTP id 44mr718375edt.69.1510234721592;
+        Thu, 09 Nov 2017 05:38:41 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510234721; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jSSHeaNBXPK2amuNuj+i0kr7Z7TpM5rBNsfm2yVKsfAp7IdmgFUd1BRGxmNw5S/D/O
+         akk2wsZPT30dxEOqacOIL3h+ppcKlUJukoM9CAjzCZg/xZuH3nlD2WDRaR/9UaYtqMaD
+         SeRARZBxCI6PkCFHJBZdZFgAXDsfS6NaPH7CmLzvSJgej6c0gry3Qr4pN2vY33dEECg6
+         hV0i5cQ9S/Ucgwr6ZYahmGr8Qe8fN4RIKHU4scPEgHbppne+j0jVhrKwZV/iB0OxjOYg
+         JYfwuYEIvL4Wzh2FtWMkhdmLO1lMtWwnut5Q3UHwMx014SEd714qmgfrkdCtJ6dbT3Zs
+         o/Eg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:to:from:importance:subject:date:savedfromemail
+         :message-id:arc-authentication-results;
+        bh=OZ8A/Zr9B9zAaMxdFZMpwnhLdZu9bnB7YoAfJT82ggM=;
+        b=mGhhVFKhLQO1W5aIXx54NxytxF32HhZ7N7Gmlcyf4kGBsGlgGEEihgu7tUAaVk5J9A
+         VqPqmcPWsj4J5c5E3K/V5B7pcs7MG7mgOFG3W9uKddu++bE9H+t5PAPSbuHbaiROeAZE
+         stgTHm7diUWB+57MaiWhlH3q3cB/Yw3RpAfC+pB3UrfSVU/eQGdDuBhhx4+SZX+bwTi8
+         TcesdrAIXS3VjLthtCpG8gPwt/nxE15Hkaf/RrzHjU+Yte0TpkyMRCwlxUPQV8HKEZNr
+         JZxcRj1A1Q0fiMxUWs90xrKI/R6Vumx0roPzsmxvQ/LoE+8jwMxem5AwHklxj6AWHm7t
+         YtZQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of dok@xs4all.nl designates 194.109.24.31 as permitted sender) smtp.mailfrom=dok@xs4all.nl
+Return-Path: <dok@xs4all.nl>
+Received: from lb3-smtp-cloud7.xs4all.net (lb3-smtp-cloud7.xs4all.net. [194.109.24.31])
+        by mx.google.com with ESMTPS id x33si5505501ede.301.2017.11.09.05.38.41
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Nov 2017 05:38:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of dok@xs4all.nl designates 194.109.24.31 as permitted sender) client-ip=194.109.24.31;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of dok@xs4all.nl designates 194.109.24.31 as permitted sender) smtp.mailfrom=dok@xs4all.nl
+Received: from [172.30.250.108] ([95.97.152.235])
+	by smtp-cloud7.xs4all.net with ESMTPSA
+	id Cn2TeuvDnVNbYCn2VeeME1; Thu, 09 Nov 2017 14:38:41 +0100
+Message-ID: <e5455c5196e8560ac3ec330b8ed2da93@smtp-cloud7.xs4all.net>
+SavedFromEmail: dok@xs4all.nl
+Date: Thu, 09 Nov 2017 14:38:35 +0100
+Subject: Re: quodlibet GPLv2+ relicensing
+Importance: normal
+From: dok <dok@xs4all.nl>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.samsung.android.email_5424586139739590"
+X-CMAE-Envelope: MS4wfPTLN3CCeVYW8Sxb+ZZETZFTd/1umHYzjPA48UCprOiukil9dJfXJAv3RiFXlEwZb1128N1LvtG55dWBbSltqSu3GZWcyiBcb1f8UTKWLTQN8QBPCp2d
+ n2d58J+hFPqICII2g69CBlRHMg1BZTa0FOyAOJ5NBbg7GAAt92j6yKi6xiKHqdPuxwhbqNs9MtFa1w==
+
+----_com.samsung.android.email_5424586139739590
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+CgpJLCBIYW5zIHZhbiBEb2ssIGhlcmVieSBtYWtlIGFsbCBteSBjb250cmlidXRpb25zIG1hZGUg
+dG8KUXVvZCBMaWJldCBbMV0gYXZhaWxhYmxlIHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgIkdOVSBH
+UEwgdmVyc2lvbiAyIG9yIGxhdGVyIgpbMl0KClsxXSBodHRwczovL2dpdGh1Yi5jb20vcXVvZGxp
+YmV0L3F1b2RsaWJldApbMl0gaHR0cHM6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy9vbGQtbGljZW5z
+ZXMvZ3BsLTIuMC50eHQKClNlbnQgZnJvbSBteSBTYW1zdW5nIEdhbGF4eSBzbWFydHBob25lLgot
+LS0tLS0tLSBPcmlnaW5hbCBtZXNzYWdlIC0tLS0tLS0tRnJvbTogQ2hyaXN0b3BoIFJlaXRlciA8
+cmVpdGVyLmNocmlzdG9waEBnbWFpbC5jb20+IERhdGU6IDExLzgvMTcgIDIwOjAyICAoR01UKzAx
+OjAwKSBUbzogZG9rQHhzNGFsbC5ubCBTdWJqZWN0OiBxdW9kbGliZXQgR1BMdjIrIHJlbGljZW5z
+aW5nIApIZXksCgpJJ20gdHJ5aW5nIHRvIGNoYW5nZSB0aGUgbGljZW5zZSBvZiBRdW9kIExpYmV0
+IGZyb20gIkdOVSBHUEx2MiIgdG8gIkdOVSBHUEx2MgpvciBsYXRlciIgZm9yIGNvbXBhdGliaWxp
+dHkgd2l0aCBHUEx2MyBhbmQgQXBhY2hlIDIuMCBhbmQgaXQgbG9va3MgbGlrZSB5b3UKY29udHJp
+YnV0ZWQgdG8gaXQgdW5kZXIgdGhlICJHTlUgR1BMdjIiLgoKV291bGQgeW91IGJlIHdpbGxpbmcg
+dG8gbWFrZSB5b3VyIGNvbnRyaWJ1dGlvbnMgdG8gUXVvZCBMaWJldCBhdmFpbGFibGUgdW5kZXIK
+dGhlICJHTlUgR1BMdjIgb3IgbGF0ZXIiPyBJZiB5ZXMsIHBsZWFzZSByZXNwb25kIHdpdGggdGhl
+IGZvbGxvd2luZzoKCj09PT09PT09PQoKSSwgPGluc2VydC1uYW1lLW9yLWdpdGh1Yi11c2VybmFt
+ZT4sIGhlcmVieSBtYWtlIGFsbCBteSBjb250cmlidXRpb25zIG1hZGUgdG8KUXVvZCBMaWJldCBb
+MV0gYXZhaWxhYmxlIHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgIkdOVSBHUEwgdmVyc2lvbiAyIG9y
+IGxhdGVyIgpbMl0KClsxXSBodHRwczovL2dpdGh1Yi5jb20vcXVvZGxpYmV0L3F1b2RsaWJldApb
+Ml0gaHR0cHM6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy9vbGQtbGljZW5zZXMvZ3BsLTIuMC50eHQK
+Cj09PT09PT09PQoKWW91ciByZXNwb25zZSB3aWxsIGJlIHB1Ymxpc2hlZCBhdCBodHRwczovL2dp
+dGh1Yi5jb20vcXVvZGxpYmV0L3JlbGljZW5zaW5nCgpJZiB5b3UgaGF2ZSBhbnkgb2JqZWN0aW9u
+cyBvciBxdWVzdGlvbnMgcmVnYXJkaW5nIHRoZSByZWxpY2Vuc2luZyBvciB5b3VyCmNvbnRyaWJ1
+dGlvbnMgcGxlYXNlIHRlbGwgbWUuCgp0aGFua3MhCg==
+
+----_com.samsung.android.email_5424586139739590
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keT48ZGl2Pjxicj48L2Rpdj48ZGl2Pjxi
+cj5JLCBIYW5zIHZhbiBEb2ssIGhlcmVieSBtYWtlIGFsbCBteSBjb250cmlidXRpb25zIG1hZGUg
+dG88YnI+UXVvZCBMaWJldCBbMV0gYXZhaWxhYmxlIHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgIkdO
+VSBHUEwgdmVyc2lvbiAyIG9yIGxhdGVyIjxicj5bMl08YnI+PGJyPlsxXSBodHRwczovL2dpdGh1
+Yi5jb20vcXVvZGxpYmV0L3F1b2RsaWJldDxicj5bMl0gaHR0cHM6Ly93d3cuZ251Lm9yZy9saWNl
+bnNlcy9vbGQtbGljZW5zZXMvZ3BsLTIuMC50eHQ8L2Rpdj48ZGl2Pjxicj48L2Rpdj48ZGl2Pjxi
+cj48L2Rpdj48ZGl2IGlkPSJjb21wb3Nlcl9zaWduYXR1cmUiPjxkaXYgc3R5bGU9ImZvbnQtc2l6
+ZTo4NSU7Y29sb3I6IzU3NTc1NyIgZGlyPSJhdXRvIj5TZW50IGZyb20gbXkgU2Ftc3VuZyBHYWxh
+eHkgc21hcnRwaG9uZS48L2Rpdj48L2Rpdj48ZGl2Pjxicj48L2Rpdj48ZGl2IHN0eWxlPSJmb250
+LXNpemU6MTAwJTtjb2xvcjojMDAwMDAwIj48IS0tIG9yaWdpbmFsTWVzc2FnZSAtLT48ZGl2Pi0t
+LS0tLS0tIE9yaWdpbmFsIG1lc3NhZ2UgLS0tLS0tLS08L2Rpdj48ZGl2PkZyb206IENocmlzdG9w
+aCBSZWl0ZXIgJmx0O3JlaXRlci5jaHJpc3RvcGhAZ21haWwuY29tJmd0OyA8L2Rpdj48ZGl2PkRh
+dGU6IDExLzgvMTcgIDIwOjAyICAoR01UKzAxOjAwKSA8L2Rpdj48ZGl2PlRvOiBkb2tAeHM0YWxs
+Lm5sIDwvZGl2PjxkaXY+U3ViamVjdDogcXVvZGxpYmV0IEdQTHYyKyByZWxpY2Vuc2luZyA8L2Rp
+dj48ZGl2Pjxicj48L2Rpdj48L2Rpdj5IZXksPGJyPjxicj5JJ20gdHJ5aW5nIHRvIGNoYW5nZSB0
+aGUgbGljZW5zZSBvZiBRdW9kIExpYmV0IGZyb20gIkdOVSBHUEx2MiIgdG8gIkdOVSBHUEx2Mjxi
+cj5vciBsYXRlciIgZm9yIGNvbXBhdGliaWxpdHkgd2l0aCBHUEx2MyBhbmQgQXBhY2hlIDIuMCBh
+bmQgaXQgbG9va3MgbGlrZSB5b3U8YnI+Y29udHJpYnV0ZWQgdG8gaXQgdW5kZXIgdGhlICJHTlUg
+R1BMdjIiLjxicj48YnI+V291bGQgeW91IGJlIHdpbGxpbmcgdG8gbWFrZSB5b3VyIGNvbnRyaWJ1
+dGlvbnMgdG8gUXVvZCBMaWJldCBhdmFpbGFibGUgdW5kZXI8YnI+dGhlICJHTlUgR1BMdjIgb3Ig
+bGF0ZXIiPyBJZiB5ZXMsIHBsZWFzZSByZXNwb25kIHdpdGggdGhlIGZvbGxvd2luZzo8YnI+PGJy
+Pj09PT09PT09PTxicj48YnI+SSwgJmx0O2luc2VydC1uYW1lLW9yLWdpdGh1Yi11c2VybmFtZSZn
+dDssIGhlcmVieSBtYWtlIGFsbCBteSBjb250cmlidXRpb25zIG1hZGUgdG88YnI+UXVvZCBMaWJl
+dCBbMV0gYXZhaWxhYmxlIHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgIkdOVSBHUEwgdmVyc2lvbiAy
+IG9yIGxhdGVyIjxicj5bMl08YnI+PGJyPlsxXSBodHRwczovL2dpdGh1Yi5jb20vcXVvZGxpYmV0
+L3F1b2RsaWJldDxicj5bMl0gaHR0cHM6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy9vbGQtbGljZW5z
+ZXMvZ3BsLTIuMC50eHQ8YnI+PGJyPj09PT09PT09PTxicj48YnI+WW91ciByZXNwb25zZSB3aWxs
+IGJlIHB1Ymxpc2hlZCBhdCBodHRwczovL2dpdGh1Yi5jb20vcXVvZGxpYmV0L3JlbGljZW5zaW5n
+PGJyPjxicj5JZiB5b3UgaGF2ZSBhbnkgb2JqZWN0aW9ucyBvciBxdWVzdGlvbnMgcmVnYXJkaW5n
+IHRoZSByZWxpY2Vuc2luZyBvciB5b3VyPGJyPmNvbnRyaWJ1dGlvbnMgcGxlYXNlIHRlbGwgbWUu
+PGJyPjxicj50aGFua3MhPGJyPjwvYm9keT48L2h0bWw+
+
+----_com.samsung.android.email_5424586139739590--
+
