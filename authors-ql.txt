@@ -118,3 +118,7 @@ Sergey Fedoseev
 Ivan Shapovalov
     intelfx@intelfx.name
     intelfx@github
+
+Kristian Laakkonen
+    kristian.laakkonen@gmail.com
+    krisse7@github

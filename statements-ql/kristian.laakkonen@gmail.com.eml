@@ -1,0 +1,122 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp2985309wrc;
+        Thu, 9 Nov 2017 07:41:36 -0800 (PST)
+X-Received: by 10.25.20.37 with SMTP id k37mr365481lfi.163.1510242096629;
+        Thu, 09 Nov 2017 07:41:36 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510242096; cv=none;
+        d=google.com; s=arc-20160816;
+        b=BHYQAlG/9wPIfzatCLhWYAW3e3NmpPEqjn5noI71Ck48b+kSd+1nwZZ0kWQLtd+BIA
+         dlSNlTUxaUgl9Uw7/HXL85U1V6dk9bxNbHTEQakVwYuU13/c20kFhTVpfXWInrFA6zlU
+         3d5MdFzfxZfdrFORFiuTwDcKaBd92zbqFvFulY8vVG3LmDHkXfWGdY/i/wzUZk1Lkbm+
+         Py1c4SV3/o2iMbXVmQyIqiK3l88vv0lykqGDyVUF4fKr4lQdu3g4R9jUVDUTnPEXwFNf
+         INk3wi8xd9w8iqReYIqGqrtF2t31YkXuL1eSsC3DdzlhMJOWZTE8rjxpV00eMnyDfPWD
+         eDMg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:content-language:in-reply-to:mime-version
+         :user-agent:date:message-id:from:references:to:subject
+         :dkim-signature:arc-authentication-results;
+        bh=SgxUiBJgwaLFIdNl7XqzUVl26TeSgusnsG4bXodrWiY=;
+        b=LyojuRTqOqBzj2L4/43r+H2n06g0sbJlNQk8lpMs8nVgO2sVXjmNrmrIS9QUdkkFRM
+         bzkFDPiAf6F+/TfscvCcqHIiD8FhRrCa+1AmY51/H85NUqy4LphJrCvJxbJ1fnUmiOdH
+         xIaH2N9r8GaQ9LGWClNVXb+taC6JJclwbZeBqLqGI0c9Z0D+jm80/Mdk5I3syTlWCPYH
+         RfGnD7DVdHRXSz+T2dp/hySb56FzhIcWbvmW2jprJhX4F+pwV0dSB5rBiYeDWvOR1ulA
+         n4PnqVCVnU5SwHb3c7VIwogJ3qYmdYXPr6JXJGapMSaQcpifYGNIotgl5an5VF/9LmLi
+         unAQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=VXs7ilx8;
+       spf=pass (google.com: domain of kristian.laakkonen@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kristian.laakkonen@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <kristian.laakkonen@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id n24sor1160576lfi.67.2017.11.09.07.41.36
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Thu, 09 Nov 2017 07:41:36 -0800 (PST)
+Received-SPF: pass (google.com: domain of kristian.laakkonen@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=VXs7ilx8;
+       spf=pass (google.com: domain of kristian.laakkonen@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kristian.laakkonen@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=subject:to:references:from:message-id:date:user-agent:mime-version
+         :in-reply-to:content-language:content-transfer-encoding;
+        bh=SgxUiBJgwaLFIdNl7XqzUVl26TeSgusnsG4bXodrWiY=;
+        b=VXs7ilx8XLTfKdlwyVMiVOLRd9XlX9XkTeTvAX7f/Dfh1wQDdeNfjejLKY8hn5PC34
+         EciNNITS4ui0fglkH2WUDdMliVAdHmgAA49g0B7TURkNBX1S8/2S75r6shkctWzPTHXW
+         NmqaeQwHsov4Q9bB1G8sLH/5poQN38Hz98h2zi8UptRxCiGN4xGAXtBc5u0vJn/Pmz1e
+         14FJcRoiMlzdbjME/qUIRf+9gxezmoGHMkrNAATY1cn4fKHAAdYZ1Ru34pQI1wYME1NF
+         kMMeEVhpZ7/s6y3Ojls1u4DNfktJGcJY7lDVMjJP5KFVRsCHwhAVB294vSeIdx7WXB93
+         GoOg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:subject:to:references:from:message-id:date
+         :user-agent:mime-version:in-reply-to:content-language
+         :content-transfer-encoding;
+        bh=SgxUiBJgwaLFIdNl7XqzUVl26TeSgusnsG4bXodrWiY=;
+        b=TAETYyEMFvP3XlqhyjDABFeqtgTTXaBVL6pMHh+stYSSHO5KJKwkPB7fv4+Hp+9A7R
+         ha7UWWEL/i2/JbRgwsjekfXbvD6vpbGbbP/9pmSs8FgYhTQE4Jg6UySVPDRU/prK+HPG
+         AsEFCJ7u3/bhDMA23cfVt51uMIA5/RS492ti+UyHk/AQC2LwGgIPCZVSsfYC0sv2yo75
+         5lGuDW1kQSCuGfNAyltneF2B+FEHE1AlOFd1lt9fON/v3ji4rNa8e4Hu0ZROLZoN+2JB
+         ulvrZmYVVPe2ADaN4DVSY7zozKJikpV28NHgbCXUs5wEe+pNDi0+AxbYEVWKRyWfn8FL
+         Qh7A==
+X-Gm-Message-State: AJaThX5/A/wXUduuBek/PTlcrQ56VFkWdlvBRK5eyN8QiDphEIRxk7EP
+	3aP4r7bU/TxSseuFlhvCwcS9Bw==
+X-Google-Smtp-Source: AGs4zMbcrlMun0ITeDHyirW9ulS7vbgljUlPW3qjKb3d7WyYuHbStCVgMBHk1ej9zIvqH6CJrQe4GA==
+X-Received: by 10.25.181.65 with SMTP id e62mr378997lff.248.1510242096055;
+        Thu, 09 Nov 2017 07:41:36 -0800 (PST)
+Return-Path: <kristian.laakkonen@gmail.com>
+Received: from [192.168.0.100] (dsl-hkibng42-5673cd-141.dhcp.inet.fi. [86.115.205.141])
+        by smtp.googlemail.com with ESMTPSA id u11sm1372476lju.83.2017.11.09.07.41.35
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Nov 2017 07:41:35 -0800 (PST)
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UeoDD9Z740rASMNS6BDXbYecr1mBW0R7q0fLbVr4iB2rg@mail.gmail.com>
+From: Kristian Laakkonen <kristian.laakkonen@gmail.com>
+Message-ID: <3bcf980f-5775-f6ca-3bfd-6611d606fd81@gmail.com>
+Date: Thu, 9 Nov 2017 17:41:34 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ Thunderbird/52.3.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UeoDD9Z740rASMNS6BDXbYecr1mBW0R7q0fLbVr4iB2rg@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: en-US
+Content-Transfer-Encoding: 7bit
+
+I, Kristian Laakkonen, hereby make all my contributions made to Quod 
+Libet [1] available under the terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Christoph Reiter wrote on 08.11.2017 20:51:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+> 
+> =========
+> 
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+> 
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+> 
+> thanks!
+> 
+
