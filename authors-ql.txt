@@ -3,3 +3,11 @@ This is just a mapping from names to email addresses and usernames
 Steven Robertson
     steven@strobe.cc
     stevenrobertson@github
+
+"Meriipu"
+    Meriipu@users.noreply.github.com
+    Meriipu@github
+
+"elfalem"
+    elfalem@users.noreply.github.com
+    elfalem@github
