@@ -1,0 +1,101 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1896552wrc;
+        Wed, 8 Nov 2017 10:55:55 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMZUCnEX9GZpVSif7qrkRLKYJAj8pCduaBy/V/4osEq/qNxeCjiIxChtKu4el3KFEDs8l7wc
+X-Received: by 10.25.223.83 with SMTP id q19mr473865lfj.94.1510167355192;
+        Wed, 08 Nov 2017 10:55:55 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510167355; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aIoaKywxzZ1p701AGtpI5qbGZZg+xcPaTZNhITPlYbIStUVEKWQyUrO0nngRQE5FHH
+         euQWISpEJNFZnBKwi9k+QqTkJqs5e3oNJJ0bPTRtj8MwRKSNCE+1E89xUE4TsdsOygsw
+         Yirlrebah1CxZUnn2we06ArIoFHiLke/gwIaPokHTfxd9to6L3p2kvW+3bNlHFAiditC
+         t0mMCeX2LkrTK6DMgWtWXq3LqRG96MXYnUWTxwtsugh3N5C7rEVldEJbOcS07pjVqbKr
+         vgBa76vSY6wyblhHCpJiwi81Hw2Tqy43X9Fkh36fxJWxsOsgqk7tOxg8S0uwbMEO/7io
+         mqgA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:content-transfer-encoding:in-reply-to:mime-version
+         :user-agent:date:message-id:from:references:to:subject
+         :arc-authentication-results;
+        bh=iqEOCWvIb6tkb06kjNAXrWgs/eKzavZeZow1n9QezA0=;
+        b=S7PtsGrWCjs2LDs1IJr8aWxxqXZ2ZXC2Eq61jOcGLhaGx43tuhzRTgRHjbqyGFjtLI
+         hlEdkuw0CxuySGl/hkEM2mkza7lAOnTmGvzJNKC4Msrl9JIczLYAgZimIriCH6b3h5wa
+         DRP3NBlVehJT+G3eEf3I44DVtWZYL/6p0xCfKY+IVoHqXhE76m0NTLna/AmY5j0zgvTt
+         wartXtQxo2upBcrYyRQYzjDKXo0LkHtR2W24xuZlbbyFBe2d4uhUnMJ53tAL1Zejv6LN
+         od/9CB4OWDOkiuGyFz30rhbjSop8nchhbeuU7E9iraX9lwYe2HROYrwa52wG12vB0Ipf
+         xBuA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of fredrik@strupe.net designates 91.220.196.211 as permitted sender) smtp.mailfrom=fredrik@strupe.net
+Return-Path: <fredrik@strupe.net>
+Received: from aibo.runbox.com (aibo.runbox.com. [91.220.196.211])
+        by mx.google.com with ESMTPS id q123si2153818ljq.261.2017.11.08.10.55.54
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 10:55:55 -0800 (PST)
+Received-SPF: pass (google.com: domain of fredrik@strupe.net designates 91.220.196.211 as permitted sender) client-ip=91.220.196.211;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of fredrik@strupe.net designates 91.220.196.211 as permitted sender) smtp.mailfrom=fredrik@strupe.net
+Received: from [10.9.9.212] (helo=mailfront12.runbox.com)
+	by mailtransmit03.runbox with esmtp (Exim 4.86_2)
+	(envelope-from <fredrik@strupe.net>)
+	id 1eCVVy-0003Co-Jo
+	for reiter.christoph@gmail.com; Wed, 08 Nov 2017 19:55:54 +0100
+Received: from 80.67.10.139.adsl.inet-telecom.org ([80.67.10.139] helo=[10.40.16.6])
+	by mailfront12.runbox.com with esmtpsa  (uid:869022 )  (TLS1.2:DHE_RSA_AES_128_CBC_SHA1:128)
+	(Exim 4.82)
+	id 1eCVVy-00044P-3a
+	for reiter.christoph@gmail.com; Wed, 08 Nov 2017 19:55:54 +0100
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+Ud4cXmTnKvS3aHXXy7LaiWikSwL_fRzkkQJkh6gndX37g@mail.gmail.com>
+From: Fredrik Strupe <fredrik@strupe.net>
+Message-ID: <d91ab599-6548-a09e-f513-f837d9d8fd80@strupe.net>
+Date: Wed, 8 Nov 2017 19:55:53 +0100
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ Thunderbird/52.4.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+Ud4cXmTnKvS3aHXXy7LaiWikSwL_fRzkkQJkh6gndX37g@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+Content-Language: en-US
+
+Sure, no problem.
+
+I, Fredrik Strupe, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Fredrik
+
+
+On 08. nov. 2017 19:42, Christoph Reiter wrote:
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+

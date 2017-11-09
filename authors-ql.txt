@@ -11,3 +11,32 @@ Steven Robertson
 "elfalem"
     elfalem@users.noreply.github.com
     elfalem@github
+
+Alexandre Passos
+    alexandre.tp@gmail.com
+    alextp@github
+
+Fredrik Strupe
+    fredrik@strupe.net
+    frestr@github
+
+Peter F. Patel-Schneider
+    pfpschneider@gmail.com
+    pfps@github
+
+Victoria Hayes
+    victoria.hayes@mymail.champlain.edu
+    victoriahayes@github
+
+Christine Spang
+    christine@spang.cc
+    spang@mit.edu
+    spang@github
+
+Uriel Zajaczkovski
+    uriel.zaja@gmail.com
+    urielz@github
+
+Didier Villevalois
+    ptitjes@free.fr
+    ptitjes@github

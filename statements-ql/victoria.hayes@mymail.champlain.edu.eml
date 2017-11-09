@@ -1,0 +1,212 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1898143wrc;
+        Wed, 8 Nov 2017 10:57:48 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+TIiLi5hvSxvLbVcRurX1DEsTVduE34ftIxf6UobgYM5iRN4NvOx8//LVLSpnfBvIaL7AYV
+X-Received: by 10.237.55.200 with SMTP id j66mr2509258qtb.210.1510167467980;
+        Wed, 08 Nov 2017 10:57:47 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510167467; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dIMziKzcZZids6yF+GlyFrJYjgomrB99dFbZMdtLVq2AcgxvBfIf1FIbS+72JdN49z
+         qbFe7JqPXHmfgllYCBqe7CpNPYjvq9kNizoFSnSpNO33m9FyR4hKlcoixFjnhHrOUeqD
+         ellnGmYhDIST7Q2tfyzrgI8SfnGCDnbjyk+Ej9R9lZyR4D3Gy6YuzLnd5O8r9o/8dFjL
+         vfdfIRAgkgnDfNk9wroseLmjRweG6qeBiv+uRcelPl5XNR+ie64hpZEC04gOXXv88IlD
+         U51sINs2DjLf8ThIAFxHaNKkmY4q88hHfQTIMwyc+hXZmR/r/omCJDQU3Fhy+x/K/lkE
+         Cqhw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=ky6T2a6hxKgJamMkG1zjBNUzOXAkz5jwzkU5GG1T21A=;
+        b=1CrqyNX3i74oTfg4HOxkXLBmDIRqnDjNiVFol0g9E4JhJ/33yA8ly05A410HMJ6uLI
+         fvfol/slaJ5CMIwoM2UK/uJo80DY3ubQSyUb+O3kv4lTUVPLxXmAlKL0LJMZY8+8WD1z
+         BMALK0xbp9nHVWju2JeAHwSPcEpB6MRRKq6THxsgzdl9C/nBPFqs9fMis/4H+4UTYcUa
+         eIi8ALhbCdtXkWvRkGGqJzDIDZgR/XSup/onEhi4IUYKsObH8nqCQeNDObDYL2boGR3W
+         QFw5YFC9v5fcJQlJ1j0597yIlbrI0WnV7CNQEAZC3lukbCCUxz04ssMs7CGvLh9onCwL
+         CE+Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mymail-champlain-edu.20150623.gappssmtp.com header.s=20150623 header.b=mx061XXE;
+       spf=softfail (google.com: domain of transitioning prvs=848508ade2=victoria.hayes@mymail.champlain.edu does not designate 216.93.159.35 as permitted sender) smtp.mailfrom=prvs=848508ade2=victoria.hayes@mymail.champlain.edu;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=champlain.edu
+Return-Path: <prvs=848508ade2=victoria.hayes@mymail.champlain.edu>
+Received: from dime.champlain.edu (dime.champlain.edu. [216.93.159.35])
+        by mx.google.com with ESMTPS id f190si4385684qkd.166.2017.11.08.10.57.47
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 10:57:47 -0800 (PST)
+Received-SPF: softfail (google.com: domain of transitioning prvs=848508ade2=victoria.hayes@mymail.champlain.edu does not designate 216.93.159.35 as permitted sender) client-ip=216.93.159.35;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mymail-champlain-edu.20150623.gappssmtp.com header.s=20150623 header.b=mx061XXE;
+       spf=softfail (google.com: domain of transitioning prvs=848508ade2=victoria.hayes@mymail.champlain.edu does not designate 216.93.159.35 as permitted sender) smtp.mailfrom=prvs=848508ade2=victoria.hayes@mymail.champlain.edu;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=champlain.edu
+Received: from pps.filterd (dime.champlain.edu [127.0.0.1])
+	by dime.champlain.edu (8.16.0.21/8.16.0.21) with SMTP id vA8IuV7L023987
+	for <reiter.christoph@gmail.com>; Wed, 8 Nov 2017 13:57:47 -0500
+Authentication-Results: champlain.edu;
+	spf=pass smtp.mailfrom=victoria.hayes@mymail.champlain.edu
+Received: from mail-pg0-f71.google.com (mail-pg0-f71.google.com [74.125.83.71])
+	by dime.champlain.edu with ESMTP id 2e1tfmw0bf-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NOT)
+	for <reiter.christoph@gmail.com>; Wed, 08 Nov 2017 13:57:47 -0500
+Received: by mail-pg0-f71.google.com with SMTP id l19so3427997pgo.4
+        for <reiter.christoph@gmail.com>; Wed, 08 Nov 2017 10:57:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=mymail-champlain-edu.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=ky6T2a6hxKgJamMkG1zjBNUzOXAkz5jwzkU5GG1T21A=;
+        b=mx061XXEvr9mejGw3XebqOc+vS6l6UJ5zZ1k7/lq1ZDmuYboTns6ZJMK8J7QyCDhXt
+         vFJwcrjex32OzBCzt5qfU+EtM+Z4mOXb5mt6rjxAYLQxBMyaqbAcYDmCgrzE6e4xgVuu
+         uVOEFcjQRbX/sG84YTF2zOxjKs0ayIa2GlHZ80qP0sovpPRp2YhTM933ImIXN7puNLbH
+         tXOQZG4p9WOIUkzza8EcSrLxZxTVZzvvjUy7AH0Fo/+wkwBTl+AyBmrbc/tHnmAtVgEV
+         NnRalfhTxveblNJthuD3O72To7Te4ONHFovYkoph6tzn9Ywp4WpwY96cWz4zEF+T2JUV
+         m6KA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=ky6T2a6hxKgJamMkG1zjBNUzOXAkz5jwzkU5GG1T21A=;
+        b=S0g70igLZFQkAkoAzPOg0+REccOcE9z73xprACdVtQzEiIo1b0Y+2taOmL0Sy8nsAt
+         T2VTd45rUp943U5MAVQ+3GyeuPLHnMSDRqxBEthGKb1w/n7Gx8vONJm6FZhc4ag/lIQZ
+         5JbrDfRfHT61GhgH/CV2PuiqKIKy1228XSAUJbJMK/MLQ/Ue3JXkc+uM/j5ghDeA38Yr
+         BdE0SdmuRPOwawKEMznpXoL2HDjaGlwKTYR6i84Y/NhDGfWveV7RUVHx+HIK2VCkEHlU
+         Vs0w2mG0uuJYWvjDOdsfzfWzWpv5EO5BwX5rmBs3VEm0rjLw/2ecg9JGUEe1JgRbhxs4
+         yXuQ==
+X-Gm-Message-State: AJaThX6TKxc8MpXQ3umPZ0f8j7Txw35HdqG12AU+fRmcD6ephCTMlwJd
+	uUAW9h+56H5ZEjT+xvuEtSV/AhFzVsiiIpAhPfbIN0xmuOaB/EFKAQE2XB1qSAusWyPVDY3ZROZ
+	Pk6JPF73ilBk0v08lmjjucc7tUDv8LUNbZA==
+X-Received: by 10.84.197.131 with SMTP id n3mr1311816pld.227.1510167465994;
+        Wed, 08 Nov 2017 10:57:45 -0800 (PST)
+X-Received: by 10.84.197.131 with SMTP id n3mr1311808pld.227.1510167465547;
+ Wed, 08 Nov 2017 10:57:45 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.100.183.234 with HTTP; Wed, 8 Nov 2017 10:57:45 -0800 (PST)
+Received: by 10.100.183.234 with HTTP; Wed, 8 Nov 2017 10:57:45 -0800 (PST)
+In-Reply-To: <CAE6_+Uf3apB3Lm22pPiFt__yi8+PX3v5aYXEOd-uPTxQff8Fyg@mail.gmail.com>
+References: <CAE6_+Uf3apB3Lm22pPiFt__yi8+PX3v5aYXEOd-uPTxQff8Fyg@mail.gmail.com>
+From: "Hayes, Victoria" <victoria.hayes@mymail.champlain.edu>
+Date: Wed, 8 Nov 2017 13:57:45 -0500
+Message-ID: <CABC=i6yG6GWFMj_fStvPk-BFgzW9bJoonKshQGwxjCZstAHyQg@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary="94eb2c18975a55eaf9055d7d4302"
+X-Proofpoint-SPF-Result: pass
+X-Proofpoint-SPF-Record: v=spf1 include:_spf.google.com ip4:216.93.144.64/27 ip4:216.93.150.0/24
+ ip4:216.93.145.224/27 ip4:216.93.159.9/29 ip4:216.93.159.39/32 a ~all
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,, definitions=2017-11-08_03:,,
+ signatures=0
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 spamscore=0 suspectscore=1
+ malwarescore=0 phishscore=0 adultscore=0 bulkscore=0 classifier=spam
+ adjust=-40 reason=mlx scancount=1 engine=8.0.1-1707230000
+ definitions=main-1711080252
+
+--94eb2c18975a55eaf9055d7d4302
+Content-Type: text/plain; charset="UTF-8"
+
+I, victoriahayes, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+On Nov 8, 2017 1:56 PM, "Christoph Reiter" <reiter.christoph@gmail.com>
+wrote:
+
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU
+> GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available
+> under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions
+> made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+> later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/
+> relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+
+--94eb2c18975a55eaf9055d7d4302
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><br style=3D"font-family:sans-serif;font-size:13.696px"><=
+span style=3D"font-family:sans-serif;font-size:13.696px">I, victoriahayes</=
+span><span style=3D"font-family:sans-serif;font-size:13.696px">, hereby mak=
+e all my contributions made to</span><br style=3D"font-family:sans-serif;fo=
+nt-size:13.696px"><span style=3D"font-family:sans-serif;font-size:13.696px"=
+>Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or=
+ later&quot;</span><br style=3D"font-family:sans-serif;font-size:13.696px">=
+<span style=3D"font-family:sans-serif;font-size:13.696px">[2]</span><br sty=
+le=3D"font-family:sans-serif;font-size:13.696px"><br style=3D"font-family:s=
+ans-serif;font-size:13.696px"><span style=3D"font-family:sans-serif;font-si=
+ze:13.696px">[1]=C2=A0</span><a href=3D"https://github.com/quodlibet/quodli=
+bet" style=3D"text-decoration-line:none;color:rgb(66,133,244);font-family:s=
+ans-serif;font-size:13.696px">https://github.com/quodlibet/<wbr>quodlibet</=
+a><br style=3D"font-family:sans-serif;font-size:13.696px"><span style=3D"fo=
+nt-family:sans-serif;font-size:13.696px">[2]=C2=A0</span><a href=3D"https:/=
+/www.gnu.org/licenses/old-licenses/gpl-2.0.txt" style=3D"text-decoration-li=
+ne:none;color:rgb(66,133,244);font-family:sans-serif;font-size:13.696px">ht=
+tps://www.gnu.org/licenses/<wbr>old-licenses/gpl-2.0.txt</a></div><div clas=
+s=3D"gmail_extra"><br><div class=3D"gmail_quote">On Nov 8, 2017 1:56 PM, &q=
+uot;Christoph Reiter&quot; &lt;<a href=3D"mailto:reiter.christoph@gmail.com=
+">reiter.christoph@gmail.com</a>&gt; wrote:<br type=3D"attribution"><blockq=
+uote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc =
+solid;padding-left:1ex">Hey,<br>
+<br>
+I&#39;m trying to change the license of Quod Libet from &quot;GNU GPLv2&quo=
+t; to &quot;GNU GPLv2<br>
+or later&quot; for compatibility with GPLv3 and Apache 2.0 and it looks lik=
+e you<br>
+contributed to it under the &quot;GNU GPLv2&quot;.<br>
+<br>
+Would you be willing to make your contributions to Quod Libet available und=
+er<br>
+the &quot;GNU GPLv2 or later&quot;? If yes, please respond with the followi=
+ng:<br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+I, &lt;insert-name-or-github-<wbr>username&gt;, hereby make all my contribu=
+tions made to<br>
+Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br>
+[2]<br>
+<br>
+[1] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" t=
+arget=3D"_blank">https://github.com/quodlibet/<wbr>quodlibet</a><br>
+[2] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" target=3D"_blank">https://www.gnu.org/licenses/<wbr>old-lic=
+enses/gpl-2.0.txt</a><br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" target=3D"_blank">https://github.com/quodli=
+bet/<wbr>relicensing</a><br>
+<br>
+If you have any objections or questions regarding the relicensing or your<b=
+r>
+contributions please tell me.<br>
+<br>
+thanks!<br>
+</blockquote></div></div>
+
+--94eb2c18975a55eaf9055d7d4302--

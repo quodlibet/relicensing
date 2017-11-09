@@ -1,0 +1,127 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1897905wrc;
+        Wed, 8 Nov 2017 10:57:32 -0800 (PST)
+X-Received: by 10.200.33.211 with SMTP id 19mr2531362qtz.236.1510167452117;
+        Wed, 08 Nov 2017 10:57:32 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510167452; cv=none;
+        d=google.com; s=arc-20160816;
+        b=M3disqBZSteAa7q1MkWUUBcSkuj77GcLecPNEcmNGU9r15+KmFqHyQutLrfacqxrk/
+         Q9bziFM3Ln++QRoQGrMi6zKV7y1kqlV07+ePVRSZflJ5iOcwMboTWkfjzUU81GtfMIMw
+         vZm6jvOJhfET3PCA3pjUeTsgcK4CERiXwaYx0rOBQrO8yLwV5xSN/sgu9aXAJ626QjWD
+         TVUd7pID43tFkLieCGY8wg64eMfCYiuMR/l21hHCxsbXS0VL4Gr7CqeejCN7oPsKVslw
+         Ezph2TgExIu7n/dK6hqbpTB4OKMAp09hf4UQqu0z8llfPEz1dxaVF/ftxTrker2aPWsW
+         AO/Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:content-transfer-encoding:in-reply-to:mime-version
+         :user-agent:date:message-id:from:references:to:subject
+         :dkim-signature:arc-authentication-results;
+        bh=8HKR786cx+0qxxpawYDkSEL763Pst+cUKv6oMW+SnQU=;
+        b=IyrbDzyikaZGH44TQNv3roxNZRQWMkV5vsgMLIQdQ+MnUhhqXL1xQV9iXNfCYKjWYy
+         Nue1iv5EPWt++p8vrNnFuqKvhZ9gwc1J2mkZrLLL9WgAb5IqAQB3EXl9ONpQGsXJkuGg
+         fEVu6ikuvUPhi9SWiHKK5gbbd/q6CrcjqCOluNE72x+ViAWscvYa+6a1yJdqOHx3jPFh
+         R9heRtzA4h7rAbMUcSugzoDZxKW+NxBLlbe1NKA73Z76wDS3j3GGA13WIkPRFWS7/bdT
+         HxOiBh7oxR3Ck2pR0y0iq4leuK6BapBkrzdXQQy114a0IYKnuZp7lSoUoJxSYZCu/yCr
+         meDw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=o22nrgK6;
+       spf=pass (google.com: domain of pfpschneider@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pfpschneider@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <pfpschneider@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 18sor3052404qtn.146.2017.11.08.10.57.32
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Wed, 08 Nov 2017 10:57:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of pfpschneider@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=o22nrgK6;
+       spf=pass (google.com: domain of pfpschneider@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=pfpschneider@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=subject:to:references:from:message-id:date:user-agent:mime-version
+         :in-reply-to:content-transfer-encoding:content-language;
+        bh=8HKR786cx+0qxxpawYDkSEL763Pst+cUKv6oMW+SnQU=;
+        b=o22nrgK6PQNTnUOmP+Q0uaYjuBZKX4iMkyw2qxI0Llg6MsVi31GYElO6WMTPmN3o6C
+         cknhI3x/8I3GnpJD9nSRMVSg1rgapJGymKjrdrovF2QIXmdqSNKiWOFVOLc6pMhZeXsP
+         8FV2c87iyODYguEcf64lYngjMph2jwj996Hq6QZ6K2XS6hd2rQcZPWQp9FFa7q4VnsQ9
+         wZLcbGxe+/bx5LQ1RBme9cojFBirfu0K1YQhrGr+ugPoNJMUNG5DqNbxuj9QBoj3/Bb2
+         W1rfD57xUnXzahpHjiqoK3HTQAAeSx3f64JHR1VJx5B1tviDEufxIG+MeYNrog+oRSxi
+         MAPQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:subject:to:references:from:message-id:date
+         :user-agent:mime-version:in-reply-to:content-transfer-encoding
+         :content-language;
+        bh=8HKR786cx+0qxxpawYDkSEL763Pst+cUKv6oMW+SnQU=;
+        b=iKT6zxcYK36xpuI3js+qm0o9tz0xmEbkBlRWInbxWoHB/eXhZUj1tDOEl9wJfPNOTd
+         ki4MRGod9ihe7g1bnnksEgTscRpreqH0dpkNK+Ry1PluhISJyGEtgpCmw4h80dLoSpmp
+         BD+vYDrpEBjNEF4mq75lPfrvfolCGY6jWFSCXVFs4n/cnX9oSQoj/iZDuSVJZNYIbPdW
+         vY+VSMDBPfhwGdODAfc7ZfeC2p5tXay131Ft3Cdzaj7+RdK9jIknAMYHkGJcmXvlR1mJ
+         jy4/8/O6hPMgi9krG/tEHVYKZ7qs2bBgGIIZ+RFirbRqxTkraHPHgwpooJZE7eOiyGh5
+         5hJQ==
+X-Gm-Message-State: AJaThX5HnyEiRXuQOz0gimbbln6uok70WIEFap8RWm5fXR/+iAgU9V2A
+	e9HF1uT6LenenjlrtHXvPJnM1Q==
+X-Google-Smtp-Source: ABhQp+TLvG2ruTpEqeixFcf6XVVTw1BrUkDIMAzaP++noWRpYnEpmB9qSP4iuqV8f6gZg869SBSCBA==
+X-Received: by 10.200.25.46 with SMTP id t43mr2543084qtj.204.1510167451510;
+        Wed, 08 Nov 2017 10:57:31 -0800 (PST)
+Return-Path: <pfpschneider@gmail.com>
+Received: from [10.0.0.9] (pool-100-1-249-219.nwrknj.fios.verizon.net. [100.1.249.219])
+        by smtp.gmail.com with ESMTPSA id q82sm3202947qki.34.2017.11.08.10.57.30
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Nov 2017 10:57:30 -0800 (PST)
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UedWapSu1MMhfD0Vrn-yB5r_Luwd4A=vsPz0xjUP_TmZg@mail.gmail.com>
+From: "Peter F. Patel-Schneider" <pfpschneider@gmail.com>
+Message-ID: <f86e31df-bacd-5503-dcfb-f9135d49e3d6@gmail.com>
+Date: Wed, 8 Nov 2017 10:57:29 -0800
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ Thunderbird/52.4.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UedWapSu1MMhfD0Vrn-yB5r_Luwd4A=vsPz0xjUP_TmZg@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+Content-Language: en-CA
+
+I, Peter F. Patel-Schneider, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+peter
+
+PS:  Ughh!
+
+
+On 11/08/2017 10:44 AM, Christoph Reiter wrote:
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+
