@@ -1,0 +1,101 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3849821wrc;
+        Thu, 9 Nov 2017 23:48:11 -0800 (PST)
+X-Received: by 10.223.129.247 with SMTP id 110mr315687wra.208.1510300091222;
+        Thu, 09 Nov 2017 23:48:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510300091; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jqFd8XiO/ZQxkT4+jkjHbotSDTz5ifw4QGiNDSkAQh10CG2rLdzaFatf64myLwj0n0
+         6ljy5526FpEbA1YSzUZSwKKD/4m9mwh3lJ5b9u7Prl/I1YQktTGSSVnh224TUJAHakKP
+         a3GZzCARU0kfvr1W13NGFdnsFgsI0NDU2wcSHPiXIZn2NdRiVM9WlkDeJ7l1InfnYbnB
+         BfqK0bxtMU/AOqY5T00TG0rGvkrBJvnF5JVo1imbkG7AgDbl8fj2RIFWCsEajG5hDTnk
+         sCMtRjGqk54b+jjy8LfZdzOdzeOj9wwqsae5/cbwmIBm3HZeQLSYElVh5yUEIf3LSxHG
+         SiJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=references:in-reply-to:to:subject:from:message-id
+         :content-transfer-encoding:date:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=d9Lk6ix97U1gNpmiFZWlewZVPbqMFyWwycETErxeweI=;
+        b=YVZY31COGPQZISXLHXxC1qnFXzOmAvG1NBwt96ReJjb+xt6X2i9koyHp1h5sO8Qwg7
+         m1E9nPfNIsBXo0sYNVeY+Adrt5uTTEg0S+yd6b/jl6dKjurheqvIbUpP9zEt6c8W3n1J
+         WwiRsbsRoEBC1QjeEu3DuIXypKrIFr22maLTb1etBCUvVheww2HltIyYuTI8yEmMDHyU
+         jfAnO2yJe+zfoouiwxnkMXOwR6nWyhZehAKOq60ZDzNdLyaKaGlnm5KWVgKgcLafBd9H
+         653rKZYcO9Ym0xgm1gcKJ68PZOSnBTzu3oP0Myw/IIotDIO+r5DCOT/dPnF4MOw8DckH
+         xw1A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GvBb+3a8;
+       spf=pass (google.com: domain of inigoserna@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=inigoserna@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <inigoserna@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y66sor209726wmb.29.2017.11.09.23.48.11
+        (Google Transport Security);
+        Thu, 09 Nov 2017 23:48:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of inigoserna@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=GvBb+3a8;
+       spf=pass (google.com: domain of inigoserna@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=inigoserna@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:date:content-transfer-encoding:message-id:from:subject
+         :to:in-reply-to:references;
+        bh=d9Lk6ix97U1gNpmiFZWlewZVPbqMFyWwycETErxeweI=;
+        b=GvBb+3a8UXL4ga6RHDoPesQOV5/K/2hIVp+rya/12qY55Z+EyaushNWuUhmGMyGbTK
+         wj5zhuNXdBOQxp7pG3tGUFR/V3xOKi+35OCfvH6Ghz4admYWk8YSwBdrbrdl6G8OEylZ
+         VUhRJylCFcA1zN1pmaMNYQ8TeO+ylrNjLRxSVEew4selPkMn3Gq9iiha9w9+3u2d3w7f
+         aPOIRIx1r5fBBfzJ0HFERPjGUdDNvIIggQOhctIE0eEzEjym+a9aLUgeYyPRL2aeO7wa
+         bjMLN6Wpm680HHPLF/3llavvkHj0m3NdH2U8CWYvk6BAjkVMPwyEloV3guB7Q3b0PDxu
+         TdoQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:content-transfer-encoding
+         :message-id:from:subject:to:in-reply-to:references;
+        bh=d9Lk6ix97U1gNpmiFZWlewZVPbqMFyWwycETErxeweI=;
+        b=pi3qc8awNtnjb13oQ7+ZnwbB+ll5UMtyZDmJ/ifGqOK82gsXxp+y/H01EzpZqi5DSS
+         AdyLnYF9MQNOUx5vYc61+aGrnBeM1vktW0Ehaa8MYJ9vF4XBsAA5cJXDe2A/ritINvCD
+         H/6/lZCKSRPUxBpbeiiTMAeYW9cm/p4+wnJSNwVPjFoC/U9t49gm2b5A21KLysRzUfcr
+         R8vDAqcPxlhbfh+uqZUQwhquGfaWdB/PeNWOdj14SzIUVobpjB6FLlHMDsp49UdBK8c9
+         3sfCO5OYqQ1WNf5NuUeXQNU0K2COFciv/b7k4tBtNK5YvPDNVcNH2W1U1HAOiHzUjLxF
+         GqAw==
+X-Gm-Message-State: AJaThX7W49rptDJ8o6NWFzkig4cxh9UcxGiwFrhUavDpqaQT4LycMo2B
+	RQWRC4EBNtFbrsISA5Gsob8CEAP2RA==
+X-Google-Smtp-Source: AGs4zMZFvt3cph0pli0uqMvOTbvG7YCB2EHy91nKJdJE26w8WqGHN0cn9LwvRG1hoq3WL1SLmv2Z5Q==
+X-Received: by 10.28.100.212 with SMTP id y203mr445040wmb.100.1510300090625;
+        Thu, 09 Nov 2017 23:48:10 -0800 (PST)
+Return-Path: <inigoserna@gmail.com>
+Received: from rainloop (alt.serna.eu. [212.47.247.41])
+        by smtp.gmail.com with ESMTPSA id x63sm1249494wma.39.2017.11.09.23.48.08
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Nov 2017 23:48:09 -0800 (PST)
+Mime-Version: 1.0
+Date: Fri, 10 Nov 2017 07:48:08 +0000
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <a9d977de90c71cefbe644e7c1e18771d@rainloop>
+X-Mailer: RainLoop/1.9.3.363
+From: inigoserna@gmail.com
+Subject: Re: quodlibet GPLv2+ relicensing
+To: "Christoph Reiter" <reiter.christoph@gmail.com>
+In-Reply-To: <CAE6_+UcApPqesKrOJhzdv6o_BBhoB4yuivaoWXoFAVdYj1DFzg@mail.gmail.com>
+References: <CAE6_+UcApPqesKrOJhzdv6o_BBhoB4yuivaoWXoFAVdYj1DFzg@mail.gmail.com>
+
+Of course!=0AAnd thanks for your work in QuodLibet!=0A=0AI=C3=B1igo=0A=0A=
+=0AI, I=C3=B1igo Serna, hereby make all my contributions made to Quod Lib=
+et [1] available under the terms of the "GNU GPL version 2 or later" [2]=
+=0A=0A[1] https://github.com/quodlibet/quodlibet=0A[2] https://www.gnu.or=
+g/licenses/old-licenses/gpl-2.0.txt=0A=0A=0A=0ANovember 10 2017 8:19 AM, =
+"Christoph Reiter" <reiter.christoph@gmail.com> wrote:=0A> Hey,=0A> =0A> =
+I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU G=
+PLv2=0A> or later" for compatibility with GPLv3 and Apache 2.0 and it loo=
+ks like you=0A> contributed to it under the "GNU GPLv2".=0A> =0A> Would y=
+ou be willing to make your contributions to Quod Libet available under=0A=
+> the "GNU GPLv2 or later"? If yes, please respond with the following:=0A=
+> =0A> =3D=3D=3D=3D=3D=3D=3D=3D=3D=0A> =0A> I, <insert-name-or-github-use=
+rname>, hereby make all my contributions made to=0A> Quod Libet [1] avail=
+able under the terms of the "GNU GPL version 2 or later"=0A> [2]=0A> =0A>=
+ [1] https://github.com/quodlibet/quodlibet=0A> [2] https://www.gnu.org/l=
+icenses/old-licenses/gpl-2.0.txt=0A> =0A> =3D=3D=3D=3D=3D=3D=3D=3D=3D=0A>=
+ =0A> Your response will be published at https://github.com/quodlibet/rel=
+icensing=0A> =0A> If you have any objections or questions regarding the r=
+elicensing or your=0A> contributions please tell me.=0A> =0A> thanks!

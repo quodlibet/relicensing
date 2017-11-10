@@ -83,6 +83,7 @@ Till Berger
 "0x1777"
     syc153@gmail.com
     0x1777@github
+    mail@0x7.org
 
 Emanuele Baldino
     ironbalden@gmail.com
@@ -170,3 +171,7 @@ Pete Beardmore
 Andreas Bombe
     aeb@debian.org
     andreasbombe@github
+
+Iñigo Serna
+    inigoserna@gmail.com
+    inigoserna@github
