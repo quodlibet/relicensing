@@ -1,0 +1,113 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp4575103wrc;
+        Fri, 10 Nov 2017 11:45:10 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMa/5oylcltG+yG87OOsejuJH3TnKLuqgaWQGD6IYiwzyZfvOOFdGUkHo1Z/fh5G9hTtVb0N
+X-Received: by 10.157.33.131 with SMTP id s3mr943530otb.36.1510343110884;
+        Fri, 10 Nov 2017 11:45:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510343110; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hqJ7sGSjcbpR288Onbc/rUH4CTKXoaoHAr+v+MQ+uIjofXwU9w8WosUBPnG+L7TW77
+         VVt37SnbSzYjcdL1nJBKTOMklzc19bG8BcgdpYJPvBRlAROuGEfJOBlJXo/3hSF4KcnJ
+         B5Deo2+MHO7EcrOlRq88Nf7ITQ3YJ1u4CQBkekR/tqY6CM2Gv9c6+Y/LKW2o2Q/DC24J
+         FIdIOMvWLrq+j027/d5bncBqCD9N+wlgXpOJnndE9uYDUw9lgQEnSc2I2TgQosOMnA83
+         u8hqtl6Jioi/uuN+/7670XF/iKf2gxliwUwFUIVly2DvaFS12awum9bO3B1IVQAtrgp6
+         LOLA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:references:in-reply-to:date:content-transfer-encoding
+         :mime-version:to:from:message-id:dkim-signature
+         :arc-authentication-results;
+        bh=AgTvQusi+jCacqAJE1qida0n7IAUljXOsEvQt7orzRg=;
+        b=YanMwD/a2MwEj9pSv0bz554HrjOtS4wzmXL4qiEAuLOX4WKmL0eUJHleNmKNfLEdw7
+         8R4XNkOnngpxLNKtTc5A8XD1/V1ylJeUx1a7XbYlwQd+zbWFJRDK+Sq8MGhLxkPczEjh
+         D8jkM9Mt1uVZiwlxlHE4XyC4mWxTiFiJNCeQLuRdg32W31YBeeryVOHSxyrjgcW/ynK/
+         nD93riNt7r7xvdpTUGx8eYyLl/8g32m781hTKp+eK0Cd2njhxO5yexlBDbKJNKw4JmHj
+         3ohd92fmxB55otsjIdN7m0EfYz8AQmKTch3vxkafRkzXwS8ESSfbCJjHK/qk4ISZbQV9
+         S3KA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@messagingengine.com header.s=fm1 header.b=EyGNRHWl;
+       spf=neutral (google.com: 66.111.4.28 is neither permitted nor denied by best guess record for domain of sjm@sjm.io) smtp.mailfrom=sjm@sjm.io
+Return-Path: <sjm@sjm.io>
+Received: from out4-smtp.messagingengine.com (out4-smtp.messagingengine.com. [66.111.4.28])
+        by mx.google.com with ESMTPS id q201si1357603oic.44.2017.11.10.11.45.09
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 10 Nov 2017 11:45:10 -0800 (PST)
+Received-SPF: neutral (google.com: 66.111.4.28 is neither permitted nor denied by best guess record for domain of sjm@sjm.io) client-ip=66.111.4.28;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@messagingengine.com header.s=fm1 header.b=EyGNRHWl;
+       spf=neutral (google.com: 66.111.4.28 is neither permitted nor denied by best guess record for domain of sjm@sjm.io) smtp.mailfrom=sjm@sjm.io
+Received: from compute4.internal (compute4.nyi.internal [10.202.2.44])
+	by mailout.nyi.internal (Postfix) with ESMTP id AB8C020A81
+	for <reiter.christoph@gmail.com>; Fri, 10 Nov 2017 14:45:09 -0500 (EST)
+Received: from web1 ([10.202.2.211])
+  by compute4.internal (MEProxy); Fri, 10 Nov 2017 14:45:09 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=
+	messagingengine.com; h=content-transfer-encoding:content-type
+	:date:from:in-reply-to:message-id:mime-version:references
+	:subject:to:x-me-sender:x-me-sender:x-sasl-enc; s=fm1; bh=AgTvQu
+	si+jCacqAJE1qida0n7IAUljXOsEvQt7orzRg=; b=EyGNRHWlkrH1Wkz9uyTN+Z
+	DGlCQltptn+ced1yK4PdnIwAfjaLx6JIDQCplnfqb5TKa/pF9utjkSHBrYAbjUKf
+	Hb9iQVpzo8lUrYIrGyLV8cSfA/ROjGVPn4xLIcWKJ3UkhmsWEMDaaRH10Kwf7GTk
+	DAj3g4Z3nkHSi2KLiPuNAa/haQcezU+XqDmkKllaCqMsp/1K9Qf7Ing2fOAIyKrM
+	Awdi7XuG6UWyjnSNBFIzcSoZ8ZcKpWEL/u73dr/XAmWM4/bee3+TmxU+yu0/pEvu
+	+gFN3VMfnGFl45IzrBro6GcO6cHoIZv1AOA6OG4klnC/vc7eUmnxFyQ5Pbm4KLyg
+	==
+X-ME-Sender: <xms:xQEGWlOWwB---eLZI0xuBDPfo26n7cb4nFttXMPI8V7dGGQwK9SXBw>
+Received: by mailuser.nyi.internal (Postfix, from userid 99)
+	id 912DE9576E; Fri, 10 Nov 2017 14:45:09 -0500 (EST)
+Message-Id: <1510343109.3498705.1168556600.1E4ADB47@webmail.messagingengine.com>
+From: Simon Morgan <sjm@sjm.io>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="utf-8"
+X-Mailer: MessagingEngine.com Webmail Interface - ajax-f89283c9
+Date: Fri, 10 Nov 2017 19:45:09 +0000
+In-Reply-To: <CAE6_+Udh2+W=r+QsON4JuAwaqDhX-jd-O4xPeQ_qPA+XLs2oJQ@mail.gmail.com>
+References: <CAE6_+Udh2+W=r+QsON4JuAwaqDhX-jd-O4xPeQ_qPA+XLs2oJQ@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+
+I, Simon Morgan, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+-- 
+https://sjm.io/
+
+On Fri, 10 Nov 2017, at 04:52 PM, Christoph Reiter wrote:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU
+> GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like
+> you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet available
+> under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+> 
+> =========
+> 
+> I, <insert-name-or-github-username>, hereby make all my contributions
+> made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+> later"
+> [2]
+> 
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at
+> https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+> 
+> thanks!
