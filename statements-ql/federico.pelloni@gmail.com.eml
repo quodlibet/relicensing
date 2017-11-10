@@ -1,0 +1,197 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp4385224wrc;
+        Fri, 10 Nov 2017 08:39:38 -0800 (PST)
+X-Received: by 10.31.80.195 with SMTP id e186mr725425vkb.175.1510331978270;
+        Fri, 10 Nov 2017 08:39:38 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510331978; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aaWsQpO/K++yfONUUiUgJgCULPPJj3A72ZAQpx9yX1qoF4Mqui+9zZ075JZZVPxfS5
+         FKr8D4HWSIZK/ouYuFjzxArXS9eK4SLnCPFidH3TCctGOVSkht5yuGZJIvjyFzVdDzmx
+         p76oj0htOH6OzMLBlUvx0GIrWXPCQuqYB8SalAKLCiE/BKaXvsYmQFDrhENiXdBxIkxF
+         KkHCM9V+UKoG6Jruso5AVSE76kIwHBIiAq5+eqGkfyUVZzF7IlcZuZGQ/BFHlZ88lNaN
+         M3N4TrnwsxZTJrhQ9yLBdiqMK2IE6bvNLkIDTRM3yGfFSuGn2tuQcn1Z/7cvoHTjDff1
+         lK/A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=Q3fmlld7Thr4JZaA/SlFKMcvljB5oRSaarr4gqFqgjw=;
+        b=rtQd1fq41o0Bmg9c8VAMPq28hzEpo4smzPlLA+suq0x1Msom0VAHkuVwHguKVxnal/
+         GU+FDmqVk7N3LpO3okcUMrheQHoRQc5jpCStEwYR7eCShypz7hXULM6dgydXkgwAy7nV
+         z4lj83C0oF3cD6ziT3//+SKN1sj4muCLhu0fRtSx4aWJN2F43cTJEqGWyMY/yVhv2LY/
+         7Qq/NWKqbe8Dfd0iG4cAEXY2fFCTTpC7+7/OtmSBU4vw5IDzgfmda8C0+d8eJ9KyKYCd
+         kNi5qBu/qBzV9qgBSB3dGVKzSUKV1mtxwYk+HI4cgTBkniRVQChA0Jw/EMpDa8GW31/i
+         5CqA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=UG3AEnuf;
+       spf=pass (google.com: domain of federico.pelloni@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=federico.pelloni@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <federico.pelloni@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id t48sor3422583uad.252.2017.11.10.08.39.38
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Fri, 10 Nov 2017 08:39:38 -0800 (PST)
+Received-SPF: pass (google.com: domain of federico.pelloni@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=UG3AEnuf;
+       spf=pass (google.com: domain of federico.pelloni@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=federico.pelloni@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Q3fmlld7Thr4JZaA/SlFKMcvljB5oRSaarr4gqFqgjw=;
+        b=UG3AEnufLIPr+N+yjxRahdAwdL33mWRHFr/VxHBlkXnm5fBllaKNN8V50saEbQpP2R
+         2FBgg+90JUvN9NRCbMNXow4KWr8tzQ4xFDy3qbFva9mRmLOnz68xexh/0zfbHHJSdWLo
+         5OqI1jV9a1/f0GYCzROcxwMIdpM/N7SqZA0p3Ve0UWaAQU7IkQYBklsK5toDUhlFdi4S
+         dDbKky20JUu474c9cTWpzFzWr9lIFfmZXnWOnbeIJNjxYcmhRquj8A/wekDA9UG/UZYI
+         prd8hmg5R9INVCUuQxLZuaTh3JhAs5VSHxm8tlViAnHNr7onyde9cBCAtDufT+/6PdAh
+         9JLg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Q3fmlld7Thr4JZaA/SlFKMcvljB5oRSaarr4gqFqgjw=;
+        b=pSnEQIczb5HBSMo6WxYc/Hk63F6DiSiDFuz4L7NC6L9k9zHDGFSgGSwl+HK19saQY8
+         STXyALwpd/2jHu4ux9aSgArPK7TMspeMd2bE3JJkMTD2J1j7EJCFm6ambw5DBHbXvchm
+         WlmGAhE43rPEOntsmEu5ysYgQMAD+dim+zxGscAdvuwi42OksDatg0y293PV60WslJrz
+         vY+jtcsvmuUCEMNNLn7Zr4uaFzI4d3+Dwvv4XkVkpzTwca+QdPHQ9AkOUxrrqA8oK+Pa
+         1XLrE8hs7C7kK3i3k9yorE2Xw0NyClgIAmymmo0N/FDTgoG13X9d5B7VzywltrZgAB4+
+         6/sw==
+X-Gm-Message-State: AJaThX7oNA4UK/FF2EwNEWI9CpYQHwkqLZifniXKmeSvqG3rjLkAVaJM
+	9Am1iBaUrkK+ot1MBCACz+i23fUjAxBCWiBy4ofwAenI
+X-Google-Smtp-Source: AGs4zMYSXWVlRS0AbDUfQHr3iovKseKKAI/nibMC/mYFRUf03SXM2V2IsMHDjr0UaJO56+OeKcGQBML8gOiOfw3J22E=
+X-Received: by 10.176.20.49 with SMTP id b46mr844331uae.2.1510331977691; Fri,
+ 10 Nov 2017 08:39:37 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.176.0.131 with HTTP; Fri, 10 Nov 2017 08:39:07 -0800 (PST)
+In-Reply-To: <CAE6_+Uc3ov14gFC+90iJUjF_6jn8aROaMnyQOvSTimqEix4veQ@mail.gmail.com>
+References: <CAE6_+Uc3ov14gFC+90iJUjF_6jn8aROaMnyQOvSTimqEix4veQ@mail.gmail.com>
+From: Federico Pelloni <federico.pelloni@gmail.com>
+Date: Fri, 10 Nov 2017 17:39:07 +0100
+Message-ID: <CAB+iTtFxzDGhQVfOX1BES-_Sw1_ZqtKOU+jp7q6tr6fCt4x7OQ@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary="001a11454a0e05f952055da391da"
+
+--001a11454a0e05f952055da391da
+Content-Type: text/plain; charset="UTF-8"
+
+Hi, I definitely don't remember what I contributed, it must have been like
+50 years ago, but nonetheless:
+
+
+I, Federico Pelloni, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+Best,
+Federico
+
+
+Il 10 nov 2017 4:27 PM, "Christoph Reiter" <reiter.christoph@gmail.com> ha
+scritto:
+
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU
+> GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available
+> under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions
+> made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+> later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/r
+> elicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+
+--001a11454a0e05f952055da391da
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Hi, I definitely don&#39;t remember what I contribute=
+d, it must have been like 50 years ago, but nonetheless:</div><div><br></di=
+v><div><span style=3D"font-size:12.8px"><br></span></div><div><span style=
+=3D"font-size:12.8px">I, Federico Pelloni</span><span style=3D"font-size:12=
+.8px">, hereby make all my contributions made to</span><br style=3D"font-si=
+ze:12.8px"><span style=3D"font-size:12.8px">Quod Libet [1] available under =
+the terms of the &quot;GNU GPL version 2 or later&quot;</span><br style=3D"=
+font-size:12.8px"><span style=3D"font-size:12.8px">[2]</span><br style=3D"f=
+ont-size:12.8px"><br style=3D"font-size:12.8px"><span style=3D"font-size:12=
+.8px">[1]=C2=A0</span><a href=3D"https://github.com/quodlibet/quodlibet" re=
+l=3D"noreferrer" target=3D"_blank" style=3D"font-size:12.8px">https://githu=
+b.com/quodlibet/<wbr>quodlibet</a><br style=3D"font-size:12.8px"><span styl=
+e=3D"font-size:12.8px">[2]=C2=A0</span><a href=3D"https://www.gnu.org/licen=
+ses/old-licenses/gpl-2.0.txt" rel=3D"noreferrer" target=3D"_blank" style=3D=
+"font-size:12.8px">https://www.gnu.org/licenses/<wbr>old-licenses/gpl-2.0.t=
+xt</a><br></div><div><br></div><div><br></div><div>Best,</div><div>Federico=
+</div><div><br></div><div><br></div><div class=3D"gmail_extra"><div class=
+=3D"gmail_quote">Il 10 nov 2017 4:27 PM, &quot;Christoph Reiter&quot; &lt;<=
+a href=3D"mailto:reiter.christoph@gmail.com" target=3D"_blank">reiter.chris=
+toph@gmail.com</a>&gt; ha scritto:<br type=3D"attribution"><blockquote clas=
+s=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid r=
+gb(204,204,204);padding-left:1ex">Hey,<br>
+<br>
+I&#39;m trying to change the license of Quod Libet from &quot;GNU GPLv2&quo=
+t; to &quot;GNU GPLv2<br>
+or later&quot; for compatibility with GPLv3 and Apache 2.0 and it looks lik=
+e you<br>
+contributed to it under the &quot;GNU GPLv2&quot;.<br>
+<br>
+Would you be willing to make your contributions to Quod Libet available und=
+er<br>
+the &quot;GNU GPLv2 or later&quot;? If yes, please respond with the followi=
+ng:<br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+I, &lt;insert-name-or-github-usernam<wbr>e&gt;, hereby make all my contribu=
+tions made to<br>
+Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br>
+[2]<br>
+<br>
+[1] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" t=
+arget=3D"_blank">https://github.com/quodlibet/q<wbr>uodlibet</a><br>
+[2] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" target=3D"_blank">https://www.gnu.org/licenses/o<wbr>ld-lic=
+enses/gpl-2.0.txt</a><br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" target=3D"_blank">https://github.com/quodli=
+bet/r<wbr>elicensing</a><br>
+<br>
+If you have any objections or questions regarding the relicensing or your<b=
+r>
+contributions please tell me.<br>
+<br>
+thanks!<br>
+</blockquote></div></div>
+</div>
+
+--001a11454a0e05f952055da391da--
