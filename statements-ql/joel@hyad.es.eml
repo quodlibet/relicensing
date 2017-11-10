@@ -1,0 +1,131 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp4248072wrc;
+        Fri, 10 Nov 2017 06:35:01 -0800 (PST)
+X-Received: by 10.55.198.80 with SMTP id b77mr833988qkj.138.1510324501003;
+        Fri, 10 Nov 2017 06:35:01 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510324500; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ZQPi3smvDaYXjnXzEFHSMHUHNIRG+50n4YNYZHdSq91oapu3fN/OahlAnWs29vuIiG
+         +Tq2gsdl8otGZ5yI3rYKzEAHKoMHjGyoIUHli9zlQfYqMfnA0wvRynFSm0U9TT9kF94n
+         jv0ymew3kqe4TqmMdNNMPbyHadVcIFmYZHDO7b+B718Cn2/i+HeoQ11iiiIeBu4bhERy
+         K2p2eGYkCz0KXZYu5mJGuOSd6nqMv37q0XNhZQXftpvI/ulkQn3sRBaCpm80w6fUr2AG
+         5TGRX5cPp02yeAM9RJzGFEYi8g5VWcyip3HHmWVz8IDwCfPXhP73eGYMT3lpCjTk1jOZ
+         tQyg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:references:in-reply-to:message-id:to:subject:from:date
+         :dkim-signature:arc-authentication-results;
+        bh=EUiCP0/MBSq2M7HXPvuh08w/XKSnkl13wLl84jdd0bk=;
+        b=uJRLZ4iCfPsV9LcLJEOjQf0PctIZQUXnIOU3hjV7x38VgWmsx9BgWSHJzds8dT5ydr
+         YtQ9Km8eFHYF2gH2kbEFcPc77Jf7bl1OfzfKhHVWPrZcTuFVVEKQGtDogNWbmLtXg3mt
+         /hMQ2cLhQERk1hZGZaELH7OySCp+GA9q38m2Yxb2g/NOjDUnU3t14diakhkq/z4Msyu0
+         9wQ0DStoNGTfRAzKiCK7pDNLvrK8unmaqOOb00/xP/3/vfr0WLmfm0JR1gcd02Ew93jf
+         Xq4dKWDocBel0SomCwLQiie6FoPXLEReclVGZqkAYZe3GF8VsO+u6//YuwPzB0YQSsfZ
+         ifvQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@hyad-es.20150623.gappssmtp.com header.s=20150623 header.b=TfHmiN/4;
+       spf=pass (google.com: domain of joel@hyad.es designates 209.85.220.41 as permitted sender) smtp.mailfrom=joel@hyad.es
+Return-Path: <joel@hyad.es>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id r66sor6699528qkc.104.2017.11.10.06.35.00
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Fri, 10 Nov 2017 06:35:00 -0800 (PST)
+Received-SPF: pass (google.com: domain of joel@hyad.es designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@hyad-es.20150623.gappssmtp.com header.s=20150623 header.b=TfHmiN/4;
+       spf=pass (google.com: domain of joel@hyad.es designates 209.85.220.41 as permitted sender) smtp.mailfrom=joel@hyad.es
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=hyad-es.20150623.gappssmtp.com; s=20150623;
+        h=date:from:subject:to:message-id:in-reply-to:references:mime-version;
+        bh=EUiCP0/MBSq2M7HXPvuh08w/XKSnkl13wLl84jdd0bk=;
+        b=TfHmiN/4ZjyTE3NUXC6N/zW/wO3Oincuc7lwTt7RqK9ODJcoRE2SAcx2BcqK/4oLlQ
+         pGqpAAjQQ9cMB+kIY2RcCb+LJuJTb4CQ2SMlAVQ5akOsW548HW5dg8Gmgbct2EtcEWqd
+         Q3o9uzociY8r5VmNL1fmtwvpBQPQoH3D/LAqDADK8eDS6PfJ6w2MiJEQdT/SnAW1llqK
+         dMD97THMpfKYnzkxlA+d0axpTgyeHiu0gofmjsexyQV3VSNyAbCm3yWbu2mqGq4Zh0zQ
+         bXJhE/CNbBc5KD04xRC9aIJlhMMcYVNWKlxSoIwJf0bYZ89XUe2iiAjQjQkkGv6AHR/H
+         0DYw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:from:subject:to:message-id:in-reply-to
+         :references:mime-version;
+        bh=EUiCP0/MBSq2M7HXPvuh08w/XKSnkl13wLl84jdd0bk=;
+        b=DCGzxQZA2hWvSzSZ3Ajg4hYzXNWwiattYqEhcn907xfX4lPGmMK/gC/qEFbOJUe4d1
+         xJAqKGjzTNKqlsQWAult2MbvPqNS43KgQBibSat3uepLaDNb/WVm4vqlAHExNawbC9r+
+         zJ8FzucD887NwFbMi6oqkLZruO0xje5mRxjij0LBkswIb3PgEQk+eYlzRgo6nRYHRU66
+         A9+k/g7zYsKGozTu6KY3iC8yax9IpEWQjjgrG8SIg65cVuoxAfZGeYbExNl9X2JQXYvY
+         nYKmIfzIdMx2rlzCjKZaSOTxtS2kBjiRK+ST5jLYgcdSblW3N6lWuMn9MI5+UF+kLeXh
+         kyzA==
+X-Gm-Message-State: AJaThX5Cp62JQP328Sw5DBFQgYDW0+XAYhmbTMWuy4brCQbI32Q44Off
+	JlDqEBhDfhMKUfFCXMB1ZAk7D1wA
+X-Google-Smtp-Source: AGs4zMY2kakAALt0p8dWWrhI7ygvcQ3VGt9pignH5MjVz7p7oQckj0WRu+3w5t0zmhzXjFkkYVZufA==
+X-Received: by 10.55.187.199 with SMTP id l190mr809161qkf.149.1510324500196;
+        Fri, 10 Nov 2017 06:35:00 -0800 (PST)
+Return-Path: <joel@hyad.es>
+Received: from [172.27.145.169] (nat-130-132-173-232.central.yale.edu. [130.132.173.232])
+        by smtp.gmail.com with ESMTPSA id d9sm1640777qti.51.2017.11.10.06.34.58
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Fri, 10 Nov 2017 06:34:59 -0800 (PST)
+Date: Fri, 10 Nov 2017 09:34:57 -0500
+From: Joel Ong Jia Mian <joel@hyad.es>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Message-Id: <1510324497.30709.0@smtp.gmail.com>
+In-Reply-To: 
+ <CAE6_+Ud7vcbGTSJGm-MBnfB1e7arjN8x7ijt50n3xB2RFWc0OA@mail.gmail.com>
+References:
+	<CAE6_+Ud7vcbGTSJGm-MBnfB1e7arjN8x7ijt50n3xB2RFWc0OA@mail.gmail.com>
+X-Mailer: geary/master~gb1e1d4c4
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+
+Hi Christoph,
+
+Certainly!
+
+I, Joel Ong, hereby (gladly) make all my contributions to Quod Libet 
+[1] available under the terms of the "GNU GPL version 2 or later"
+[2].
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Regards,
+Joel Ong
+
+On Wed, 8 Nov, 2017 at 1:43 PM, Christoph Reiter 
+<reiter.christoph@gmail.com> wrote:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to 
+> "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks 
+> like you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet 
+> available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+> 
+> =========
+> 
+> I, <insert-name-or-github-username>, hereby make all my contributions 
+> made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or 
+> later"
+> [2]
+> 
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at 
+> https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or 
+> your
+> contributions please tell me.
+> 
+> thanks!
+

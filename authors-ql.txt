@@ -175,3 +175,7 @@ Andreas Bombe
 Iñigo Serna
     inigoserna@gmail.com
     inigoserna@github
+
+Joel Ong
+    joel@hyad.es
+    darthoctopus@github
