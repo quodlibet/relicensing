@@ -186,3 +186,7 @@ Federico Pelloni
 "CreamyCookie"
     CreamyCookie@users.noreply.github.com
     CreamyCookie@github
+
+Mice Pápai
+    gothart.hu@gmail.com
+    qwhex@github
