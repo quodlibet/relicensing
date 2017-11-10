@@ -1,0 +1,245 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3408338wrc;
+        Thu, 9 Nov 2017 14:25:33 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMbFquiQREiNwTFeUYfhraqRonwzHdxcEEfOmYVpjmi5lZmE4j7QDtmDTLex5P5UXaySmEzm
+X-Received: by 10.36.16.66 with SMTP id 63mr1810235ity.105.1510266333289;
+        Thu, 09 Nov 2017 14:25:33 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510266333; cv=none;
+        d=google.com; s=arc-20160816;
+        b=s8B9dGPCoW7drOjikIXPxJk8ZXWnlrtVabjrJODbEe+2Pys5N2ao7OgAfHw3XLN3io
+         TVj1KKDE/TUchO1NalpPakOKtWPZHs+xokemN52CbEOkP4Kv56OCjpGTRDMxr9b+j9r/
+         E03dUd3Krg1mJmGuWM/jyzCHM0hHukp+TyJP8D9k8lHsIqnIqu8UST4t+ga8CMcR+uA9
+         1m5bU4AJppJBuApbT0+bd95gdtiEkrNn7d14zXfvKscxsIuvV8Pl3Gx40qe2e2shulZ4
+         xEakeBRNZEglTFVPWDftiCtAM84XO3QpuWtAJU+FxBX+P96E2bAi3PccTQsPfi+c7D8E
+         gB4w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:spamdiagnosticmetadata:spamdiagnosticoutput
+         :content-language:accept-language:in-reply-to:references:message-id
+         :date:thread-index:thread-topic:subject:to:from:dkim-signature
+         :arc-authentication-results;
+        bh=Le+gmtAACygM6MjWNWdjmlFlrzwLFThqaSUg9FWrhbw=;
+        b=zmoQLuuI1fXC3oOm9xHS8ValBa5FQC3M+6oRfA0f8MIJ1QKMxyFhmh73cw5qK1Hb4z
+         T36/WfmnrvUYnMOVFww1d+/Zaeosb9TW/eTkKb+uxs7PG7my6y8CGWKGE2Eh7uEhlO4i
+         trxDJblY45Tivl5PlmaQFcjQX01BgGw0Vg/PmPt7dwmzuFYtDu9ktoMb5UuxXv4ftweF
+         tPXG++055cw1zKmrUHAOgOs8jjUcFHJiHtMlvI0IlKYx8fxCPupQAWk29DSnrSPUN2xt
+         Cu09Ihlo6803VFYfqcQsUOzCzkWTWy/MIdFsL8dQKhh5ogDfQm5U32IzF7CCHDDRVK7V
+         0mJg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@msn.com header.s=selector1 header.b=OydN+PV6;
+       spf=pass (google.com: domain of pete.beardmore@msn.com designates 40.92.69.75 as permitted sender) smtp.mailfrom=pete.beardmore@msn.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=msn.com
+Return-Path: <pete.beardmore@msn.com>
+Received: from EUR02-VE1-obe.outbound.protection.outlook.com (mail-oln040092069075.outbound.protection.outlook.com. [40.92.69.75])
+        by mx.google.com with ESMTPS id y74si7335234itc.72.2017.11.09.14.25.32
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 09 Nov 2017 14:25:33 -0800 (PST)
+Received-SPF: pass (google.com: domain of pete.beardmore@msn.com designates 40.92.69.75 as permitted sender) client-ip=40.92.69.75;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@msn.com header.s=selector1 header.b=OydN+PV6;
+       spf=pass (google.com: domain of pete.beardmore@msn.com designates 40.92.69.75 as permitted sender) smtp.mailfrom=pete.beardmore@msn.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=msn.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=msn.com; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=Le+gmtAACygM6MjWNWdjmlFlrzwLFThqaSUg9FWrhbw=;
+ b=OydN+PV6hnT3WsT0HLs/AgHVW+lTbsH3fF9HoY5uMR87WaTEDy2RBrQa3lZFBLXZdGz3JwLNtpGxP+mF2jjk4gDWZWSigqc8Ou+2eWZUXHWkUVMvISiHcxRZZN7A5WMJOUG36d4jHQHZuftvfG+5G4Z9KN0k8Dc6OObbyOnJfhttcViXRxtV/+mH1AgYaGooOtS7Y74zXvQmEW5Ecx7ebJmU1vI536/YBBEzA1Jwkl+trVLERYxUeUeNO75FDCDecFf+/SjxQTC8ccCfD8XzfXX9AXNoGAo+IuliI2C640L+deIZEf2Bzy1xhn66fB+3BnGdLYGFWHN17eibc3dqig==
+Received: from AM5EUR02FT009.eop-EUR02.prod.protection.outlook.com
+ (10.152.8.51) by AM5EUR02HT027.eop-EUR02.prod.protection.outlook.com
+ (10.152.9.235) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.20.197.9; Thu, 9 Nov
+ 2017 22:25:30 +0000
+Received: from VI1PR04MB3278.eurprd04.prod.outlook.com (10.152.8.60) by
+ AM5EUR02FT009.mail.protection.outlook.com (10.152.8.145) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.20.197.9 via Frontend Transport; Thu, 9 Nov 2017 22:25:30 +0000
+Received: from VI1PR04MB3278.eurprd04.prod.outlook.com
+ ([fe80::1925:d1c5:bd77:832f]) by VI1PR04MB3278.eurprd04.prod.outlook.com
+ ([fe80::1925:d1c5:bd77:832f%13]) with mapi id 15.20.0197.013; Thu, 9 Nov 2017
+ 22:25:30 +0000
+From: Pete Beardmore <pete.beardmore@msn.com>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Thread-Topic: quodlibet GPLv2+ relicensing
+Thread-Index: AQHTWMF7KFDFFxzUk0WWFsP4huYUo6MMocnb
+Date: Thu, 9 Nov 2017 22:25:30 +0000
+Message-ID: <VI1PR04MB32789BF838B451F52670A8D98A570@VI1PR04MB3278.eurprd04.prod.outlook.com>
+References: <CAE6_+UdCBJWNgVkxWgxteFLX5nK2y+SmaPbs78SKNwAjrGUo=g@mail.gmail.com>
+In-Reply-To: <CAE6_+UdCBJWNgVkxWgxteFLX5nK2y+SmaPbs78SKNwAjrGUo=g@mail.gmail.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: gmail.com; dkim=none (message not signed)
+ header.d=none;gmail.com; dmarc=none action=none header.from=msn.com;
+x-incomingtopheadermarker: OriginalChecksum:3439D158ABF92F2292362057871071E0C0BD20C5DAFF8F8D9EA1AB6376E9D3D0;UpperCasedChecksum:FF681B8AA37B7A6E40AC1BBB34BF700295726A9EB06FBE59DB797C348EFCBA2E;SizeAsReceived:7026;Count:46
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [NTRS9vp4XyPoewvqtKw+C2dWIWCx1wsx]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1;AM5EUR02HT027;6:1aeLZuMv4tUZjlp4Wyl8Au2SE2oaK/s90NzPTgC79vbldy/GT+AG9ezK8+YM/i93YEK7qKuzy6PxQF76j5dWwxzKULaXo4nPjxk+dtX4li/UILP7QHLo+KZGKMwPTbA8Ra6vl0c5/gVFE3YEOTYPnKnrCcsRBvBF8UddVHKrWsLkw4P0gBaQgvRTBUsAyek0niYfSPtus1ZiyCtiS2Tr7daOvVoG1GHS6lNXgGjXjnFQ9Km6YvgCGcsNcB9zEaxIwrTdwr8It82eZfV6wGrhNLyXhXRCEN/fQptznf8k6/DSTWBrONhrDucBZwjO44D68wmQAJEc6azJToJhL7W9JaBphEWeNB7yC8PkOuUcpt0=;5:aeEGX1cutvSExLUs5hXE6B3R1xqwZT3gs1VvA+BxhUV8j0LzDMYXk+gsP2E7F3aZIN7YtR42gZTtgvxQAXCAuSZnEnXKMJYUcj9HzsOIxNhrzokRhDKAGVCRBiSmEnCCf7bwNU4PZUIjtGk0ke80oK1gmiekL+50XatNj2aHrwE=;24:OqeTDKHaw3kojcz+S2nAtjyJ1cUZ1kRWfhw0oN2+bz71ORS+xkekcPulxq2CZOhQKv3rBwfYDg5lsDzejcKVdvaiRnhIl02ba4dKGnEZAxk=;7:rW6TSxgx+RJvP7vq0YPXk6Z+r5BsHFbAfnvjfLaitdCqB6H0tOe4Nb/8vkvlpTIQ2DT2wkrBCy9XRpEazfVfR/6suIEhSrRKg72hJx0WH2MwMy16MaKS/BUn8yGT8gU0GpyukCP06XxrlPICpHqT83m9wUnPCGzzrfmR4rQ8E8Fd48zRZGz9Nls1rqEP+Jm7sbHybwKVkBZpX8QtimLyeW8UdFCYmWnc22qgE1IGVMDiv634ydM5eik7ZhFs1+VS
+x-incomingheadercount: 46
+x-eopattributedmessage: 0
+x-ms-office365-filtering-correlation-id: 22fed2cf-205c-4c31-d734-08d527c0c924
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:(22001)(201702061074)(5061506573)(5061507331)(1603103135)(2017031320274)(2017031324274)(2017031323274)(2017031322404)(1603101448)(1601125374)(1701031045);SRVR:AM5EUR02HT027;
+x-ms-traffictypediagnostic: AM5EUR02HT027:
+x-exchange-antispam-report-test: UriScan:(219297518888565)(250305191791016)(158342451672863)(22074186197030)(166708455590820);
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(444000031);SRVR:AM5EUR02HT027;BCL:0;PCL:0;RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095);SRVR:AM5EUR02HT027;
+x-forefront-prvs: 0486A0CB86
+x-forefront-antispam-report: SFV:NSPM;SFS:(7070007)(98901004);DIR:OUT;SFP:1901;SCL:1;SRVR:AM5EUR02HT027;H:VI1PR04MB3278.eurprd04.prod.outlook.com;FPR:;SPF:None;LANG:;
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative;
+	boundary="_000_VI1PR04MB32789BF838B451F52670A8D98A570VI1PR04MB3278eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 22fed2cf-205c-4c31-d734-08d527c0c924
+X-MS-Exchange-CrossTenant-originalarrivaltime: 09 Nov 2017 22:25:30.4007
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM5EUR02HT027
+
+--_000_VI1PR04MB32789BF838B451F52670A8D98A570VI1PR04MB3278eurp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+I, Pete Beardmore, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later=
+"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+________________________________
+From: Christoph Reiter <reiter.christoph@gmail.com>
+Sent: Wednesday, November 8, 2017 6:43:28 PM
+To: pete.beardmore@msn.com
+Subject: quodlibet GPLv2+ relicensing
+
+Hey,
+
+I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPL=
+v2
+or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+contributed to it under the "GNU GPLv2".
+
+Would you be willing to make your contributions to Quod Libet available und=
+er
+the "GNU GPLv2 or later"? If yes, please respond with the following:
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+I, <insert-name-or-github-username>, hereby make all my contributions made =
+to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later=
+"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Your response will be published at https://github.com/quodlibet/relicensing
+
+If you have any objections or questions regarding the relicensing or your
+contributions please tell me.
+
+thanks!
+
+--_000_VI1PR04MB32789BF838B451F52670A8D98A570VI1PR04MB3278eurp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Exchange Server">
+<!-- converted from text --><style><!-- .EmailQuote { margin-left: 1pt; pad=
+ding-left: 4pt; border-left: #800000 2px solid; } --></style>
+</head>
+<body>
+<div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black; background-color:white">
+I, Pete Beardmore, hereby make all my contributions made to <br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black; background-color:white">
+Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot; <br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black; background-color:white">
+[2] <br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black; background-color:white">
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black; background-color:white">
+[1] <a href=3D"https://github.com/quodlibet/quodlibet">https://github.com/q=
+uodlibet/quodlibet</a>
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black; background-color:white">
+[2] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt">https=
+://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</a>
+<br>
+</div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" =
+color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> Christoph Reiter &l=
+t;reiter.christoph@gmail.com&gt;<br>
+<b>Sent:</b> Wednesday, November 8, 2017 6:43:28 PM<br>
+<b>To:</b> pete.beardmore@msn.com<br>
+<b>Subject:</b> quodlibet GPLv2&#43; relicensing</font>
+<div>&nbsp;</div>
+</div>
+</div>
+<font size=3D"2"><span style=3D"font-size:10pt;">
+<div class=3D"PlainText">Hey,<br>
+<br>
+I'm trying to change the license of Quod Libet from &quot;GNU GPLv2&quot; t=
+o &quot;GNU GPLv2<br>
+or later&quot; for compatibility with GPLv3 and Apache 2.0 and it looks lik=
+e you<br>
+contributed to it under the &quot;GNU GPLv2&quot;.<br>
+<br>
+Would you be willing to make your contributions to Quod Libet available und=
+er<br>
+the &quot;GNU GPLv2 or later&quot;? If yes, please respond with the followi=
+ng:<br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+I, &lt;insert-name-or-github-username&gt;, hereby make all my contributions=
+ made to<br>
+Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br>
+[2]<br>
+<br>
+[1] <a href=3D"https://github.com/quodlibet/quodlibet">https://github.com/q=
+uodlibet/quodlibet</a><br>
+[2] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt">https=
+://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</a><br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing">
+https://github.com/quodlibet/relicensing</a><br>
+<br>
+If you have any objections or questions regarding the relicensing or your<b=
+r>
+contributions please tell me.<br>
+<br>
+thanks!<br>
+</div>
+</span></font>
+</body>
+</html>
+
+--_000_VI1PR04MB32789BF838B451F52670A8D98A570VI1PR04MB3278eurp_--

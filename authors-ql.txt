@@ -144,3 +144,29 @@ Eric Casteleijn
     thisfred@gmail.com
     thisfred@github
     ec@trapit.com
+
+Michaël Ball
+    michael.ball@gmail.com
+    michael-ball@github
+
+Sauyon Lee
+    s@uyon.co
+    sauyonl@sauyon.com
+    sauyon@github
+
+Queen Wenceslas
+    queenwenceslas@gmail.com
+    queen.wenceslas@gmail.com
+    qwence@github
+
+Eric Le Lay
+    dev@elelay.fr
+    elelay@github
+
+Pete Beardmore
+    pete.beardmore@msn.com
+    elbeardmorez@github
+
+Andreas Bombe
+    aeb@debian.org
+    andreasbombe@github

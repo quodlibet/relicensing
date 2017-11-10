@@ -1,0 +1,91 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3421882wrc;
+        Thu, 9 Nov 2017 14:41:52 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+RecxM1UuDXSUNfdbzWE6ATBkyy6JWSE3APqKJTsjnxg74mGOwRkw8TKfC32bO+Tk0rrH9y
+X-Received: by 10.28.91.130 with SMTP id p124mr895244wmb.81.1510267312898;
+        Thu, 09 Nov 2017 14:41:52 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510267312; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XpAsYSbyR8tYHo5xdX16/lTXuF832Xx6HM3pw1GKZahZD8DmHhxXwkUX5K+tA138kC
+         CnyEbYuckWOlqLs/lWb/cUEdKcXQTU+AYA+GM+P4Hi28ea5krE89OqzmjGBCrpPKvBbU
+         JgvTJUMkwcOWi43GgS5xUq5WBs7UIeQuy8ras+E2/GNhPc1vQjs2faAu0wu/0TNb6Rsm
+         fDm7NsrX8ZzmFMT+InLc4oSuGS1vbs0/NPIpB9Zn4imF/OOQNyrXgp/ayosAa55sfwju
+         TsSkG17Ffmg74R7bigFWV7tb92f/qToAwDGa2NkXLD6jVoaTBHk80HEkPJ2pLMT3VaFf
+         g7tQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=user-agent:in-reply-to:content-disposition:mime-version:references
+         :message-id:subject:to:from:date:arc-authentication-results;
+        bh=CRtTJDNubg1DbNDff3Uw/jvCwNNG6sQEoPeRaVcgb1s=;
+        b=UEIcvjoUkjStfhI7EVPGwVGBGit84X8lf/6OmnLWu4qtQTyjI9DopT97oS8ByiITw5
+         yfhQ4MXNe63vwqbLZZxZw55B4ND8+McbmDeZHprGpjHbXvH6qySHj6hXvAO5pV9AeZv5
+         ava6/zI+tGQoba9za7Pmng1/90BBCSCoF+DEu8xHKEcqIVW/+MQ+uRLEPT7jU9q7X3fB
+         TGb7PyFqgAXuHci6JN8dsfhh2tvB1hGk1byQo29MWJWqXgmk/FtGgkztY/hGIJ8QaOsv
+         e04FWc21GK0q0R1mZ36l7qlTg1h9xWY1dIsqTOkTtDiXk7zqHtWUWluGTTWT/MIxYD8j
+         d5sA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: best guess record for domain of andreas@infernal.debian.net designates 2a01:488:66:1000:53a9:117b:0:1 as permitted sender) smtp.mailfrom=andreas@infernal.debian.net
+Return-Path: <andreas@infernal.debian.net>
+Received: from infernal.debian.net (infernal.debian.net. [2a01:488:66:1000:53a9:117b:0:1])
+        by mx.google.com with ESMTPS id g25si6929296wrc.509.2017.11.09.14.41.52
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Thu, 09 Nov 2017 14:41:52 -0800 (PST)
+Received-SPF: pass (google.com: best guess record for domain of andreas@infernal.debian.net designates 2a01:488:66:1000:53a9:117b:0:1 as permitted sender) client-ip=2a01:488:66:1000:53a9:117b:0:1;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of andreas@infernal.debian.net designates 2a01:488:66:1000:53a9:117b:0:1 as permitted sender) smtp.mailfrom=andreas@infernal.debian.net
+Received: from [2001:a61:31a5:d001:6a05:caff:fe16:d377] (helo=amos)
+	by infernal.debian.net with esmtpsa (TLS1.2:ECDHE_RSA_AES_256_GCM_SHA384:256)
+	(Exim 4.89)
+	(envelope-from <andreas@infernal.debian.net>)
+	id 1eCvWC-0003Ly-Fr
+	for reiter.christoph@gmail.com; Thu, 09 Nov 2017 23:41:52 +0100
+Received: from andreas by amos with local (Exim 4.89)
+	(envelope-from <andreas@amos.fritz.box>)
+	id 1eCvWC-0003uY-8q
+	for reiter.christoph@gmail.com; Thu, 09 Nov 2017 23:41:52 +0100
+Date: Thu, 9 Nov 2017 23:41:52 +0100
+From: Andreas Bombe <aeb@debian.org>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Message-ID: <20171109224152.5cay2gdgjphmou45@amos.fritz.box>
+References: <CAE6_+UeWQwAE5N0KsrNboprCkwRRtc65pq0=8KZpgog+jmcfMw@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha512;
+	protocol="application/pgp-signature"; boundary="q565wxf5cuqvcwnk"
+Content-Disposition: inline
+In-Reply-To: <CAE6_+UeWQwAE5N0KsrNboprCkwRRtc65pq0=8KZpgog+jmcfMw@mail.gmail.com>
+User-Agent: NeoMutt/20170609 (1.8.3)
+
+
+--q565wxf5cuqvcwnk
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+I, Andreas Bombe, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+--q565wxf5cuqvcwnk
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAABCgAdFiEE/fJ3FAtt+ejNyKmCMWRwWx2jHUwFAloE2agACgkQMWRwWx2j
+HUw+MBAAyhAPUxlVIuYdDwjiz9tjArUf2F8m9f28bX862fJzBUkyAwTDHEGKIGbf
+LpA4IlR5wl3wLGUIjsgXHIhNOR2Fyp5smK+2R6lWb7a/Gq4c26SWrK91AO06m2rp
+klrlAWaBxFPuCLOFkaAkGZpNPQRKMzbfhMufrNKu96TZ7M9zmXCHukU143lm5DAG
+Yw0m+z3G7hjv7FRm+yYsVYL8VtO/REZjsEXoJ7eWnvF4CYGJ77u3360sE+VSeoRZ
+frPPCe6M/XWxVRNk/ehC+DilIBgSMpYVXIiGmvnS+x8lOIUae7KF1hE/QjVRzf/n
+wpAZCMqstYCPB4UzYEu7BC28eQnPxGzHxnH+MRxudIw5+d2djasWeNmZwfVGAx3R
+CocjzITFSU35ca+4MmUmW92pO31vjT0q2TbxIHaovSXvVHGdkIOkx4TQHKZ3cba7
+gjKW4E/Q/LwN1ozbB4Vs5vW6W6EWixKWCjX668I5baW7ml/dnLAsrLixQ+a5Jsm3
+krg/IAK4hWRAllLL2z9KaiGXExzvFqJ+hN/NW5HWyN3AmVlxJETmuE4vBLVTjaEQ
+XcsniuczlJq0iSiOuvzbYPrgwq4boGRL7Hw+DrwTvSuUEjbUu10BbCPuPpPePGmL
+gJ1cBWE/uEXOaAe/i/YHlh3Cwah7muNu9t4PSNOkeLBmm+esABg=
+=UyTB
+-----END PGP SIGNATURE-----
+
+--q565wxf5cuqvcwnk--

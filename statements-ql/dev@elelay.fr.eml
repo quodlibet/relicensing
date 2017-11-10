@@ -1,0 +1,75 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3317155wrc;
+        Thu, 9 Nov 2017 12:48:22 -0800 (PST)
+X-Google-Smtp-Source: ABhQp+TirwCAYWy39DLoBxMZLkl8jSM6MzD8b/5Vq/xQbpnDPZmAocB54gyQUbAtQ0ZlSPeVPJkJ
+X-Received: by 10.223.191.17 with SMTP id p17mr1451245wrh.184.1510260502759;
+        Thu, 09 Nov 2017 12:48:22 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510260502; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wHO8eDr+X0M6731P0xlTWOEGGoAHgfyWFIo3NA/q73T4e4URgokeuSCI1SSMbfvRzH
+         GubyZlfLlRAa5eDexfT+b8Y6ry4Q/0iyhIh00Q7/j0VXkEVGCd2mAhEfVCTIISklRrbJ
+         k3FfcBzOcV0aIvSB1oVVTtdr3zsIOEY9EagFUmiInw/7bCX3FY69NGbxRrYN/U/Ji2kb
+         2E1pIsOVAy+kOb1rgLKrucRiTMiaK3E6TKdc2xbJDfzsawu4or5b5Ot7KHirJQaSRxXq
+         HMQ57OVra0g14KmtWlAXaoUJYZaL3DCsx8CSFc6RkV+B4DG5xf9XrwM+uVQov2aGT3mD
+         DFxg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:references:in-reply-to
+         :message-id:subject:to:from:date:dkim-signature
+         :arc-authentication-results;
+        bh=fejMjkJzV6Eslb/pJC0iaMSdUue2SkrZc/WMcul7qZQ=;
+        b=FIYieNGv33SuHOXL4czI7zTawOvDA9MFDAyMRUc+PcfApHjuPQkpYxxrp4F4kFB3p/
+         Bjc3TJuaOCFVionnBkObMi4l/3PK3EudQnaZRAzGO00E2Z6wH92OrHmVwbjvRXn4I7Q+
+         0SBjmeWmIUyFl1i0B79QMcGs6Xczgo2pl/Hwz4iSvAxDs+WDqT8lX4N7Pd/ITC0o8eng
+         qY3MZlOR5Xq6mtNmk2D/E6D+LgfN+MKhB97ESnoahlS+yuU2Se9sdaM9479XKbTjGMeb
+         c98IXIpZwVNHHffPFOhbFU23XW50J0ougeTpXj9ae0Q+XHlphHjsa3NFf4Zf0KHTTV61
+         kVzw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@elelay.fr header.s=default header.b=hR1PifYv;
+       spf=pass (google.com: domain of dev@elelay.fr designates 2a00:b6e0:1:40:1:0:10:1 as permitted sender) smtp.mailfrom=dev@elelay.fr
+Return-Path: <dev@elelay.fr>
+Received: from r0.smtpout1.paris1.alwaysdata.com (r0.smtpout1.paris1.alwaysdata.com. [2a00:b6e0:1:40:1:0:10:1])
+        by mx.google.com with ESMTPS id r20si6102391wmg.233.2017.11.09.12.48.21
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 09 Nov 2017 12:48:22 -0800 (PST)
+Received-SPF: pass (google.com: domain of dev@elelay.fr designates 2a00:b6e0:1:40:1:0:10:1 as permitted sender) client-ip=2a00:b6e0:1:40:1:0:10:1;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@elelay.fr header.s=default header.b=hR1PifYv;
+       spf=pass (google.com: domain of dev@elelay.fr designates 2a00:b6e0:1:40:1:0:10:1 as permitted sender) smtp.mailfrom=dev@elelay.fr
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=elelay.fr;
+	 s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:References:
+	In-Reply-To:Message-ID:Subject:To:From:Date:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=fejMjkJzV6Eslb/pJC0iaMSdUue2SkrZc/WMcul7qZQ=; b=hR1PifYvfTUmCXKze5OjgMBVHu
+	WzL/QtF/2kM7j4SjxQOBFhZwXH0f5HBXdYU0NBrv+PM4AZt/RrjyQ+1SYSM//smMx4GR4sjX0QJlU
+	m0DFCWxxjOsCIcWDj0PaL/maVlEeJ0o8tpTyGqow15/F9TAKU5UBTBldN3fGrfUwimqO5rdj9uNxe
+	67T7z4rtRsayfKwtO8rwCRgcq+kUVwyiRqsUl8jZuED+8NovSrsfQehh7dhgTg2bHO0h9NXRwItCt
+	huPjPrOmwjVSfud6bpK2rj+U9AFgtNkUln6dr9ewyD1TWYgezRasfmFnFG2xVvaZgo3HbTyDbYU0r
+	GWUlNXPw==;
+Received: from 122.222.8.109.rev.sfr.net ([109.8.222.122] helo=dulcinea.localdomain)
+	by smtpout1.paris1.alwaysdata.com with esmtpsa (TLS1.2:ECDHE_RSA_AES_256_GCM_SHA384:256)
+	(Exim 4.89)
+	(envelope-from <dev@elelay.fr>)
+	id 1eCtkL-0003Nz-Lf
+	for reiter.christoph@gmail.com; Thu, 09 Nov 2017 21:48:21 +0100
+Date: Thu, 9 Nov 2017 21:48:10 +0100
+From: Eric Le Lay <dev@elelay.fr>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Message-ID: <20171109214810.4fcaedaa@dulcinea.localdomain>
+In-Reply-To: <CAE6_+UfFFmdma5gNhFmJqoSAGnn=fc=w4yzxsK3mMRVEqthMig@mail.gmail.com>
+References: <CAE6_+UfFFmdma5gNhFmJqoSAGnn=fc=w4yzxsK3mMRVEqthMig@mail.gmail.com>
+X-Mailer: Claws Mail 3.15.1-dirty (GTK+ 2.24.31; x86_64-pc-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-alwaysdata-ID: 282499655
+
+I, elelay, hereby make all my contributions
+made to Quod Libet [1] available under the terms of the "GNU GPL
+version 2 or later" [2]
+ 
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
