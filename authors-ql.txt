@@ -195,3 +195,7 @@ Simon Morgan
     sjm@sjm.io
     zen84964@zen.co.uk
     drguildo@github
+
+Felix Krull
+    f_krull@gmx.de
+    fkrull@github
