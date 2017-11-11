@@ -1,0 +1,169 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp5222298wrc;
+        Sat, 11 Nov 2017 03:10:55 -0800 (PST)
+X-Received: by 10.25.76.7 with SMTP id z7mr903693lfa.243.1510398655821;
+        Sat, 11 Nov 2017 03:10:55 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510398655; cv=none;
+        d=google.com; s=arc-20160816;
+        b=e1s58gnOmqe42gIOEYCBCHCz93SituNhLOnnnPbAr0oJM3S7KplW+Zvh6KjhgZvagh
+         okkAYgWElVoKtzA9Q6xdg4bMdmEUEo82ZGFbjdhWEEeQSeIaRuz+jfCjUrW0fwBN5lGV
+         TGUHMAtA0HEVlgyx+f9P7n2vA0sGDkRg7NBnU56WQdCLuUU3kLdHHiI2gA4A+R9UFPXc
+         Dd2mF3nr84Ctd2XGB+1nBgaMTgkLla7wnrJbNeeX/BTETMcwN53N+e3OzovshUV6dMXa
+         J8cjtZmse/WKqD2D5Wu8mOsgaMsQqOwZz76u7UZJwnXOJcKJjR2q4BlR7LeuRQvoRpbv
+         EglA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=pSEAps3eugCo2/PLUScRDmU7dG0Wi03q27FiPlvttkQ=;
+        b=IEee4kqcs5o2qCppRN1ZT0x1RE0yxCSXHGTDupvpBewSzPwm8Vx7pkHvOOUuxHTL9V
+         w3oxpVrajtLaIYSNpzz/dZsMb0UcegA03PjrzvaaKOfQecJtrwrHqAqALHNcIp6HPg7Q
+         MLMsQTSAPmcsvX+hLOdSTwrET4Y5UilcOU+TCduZYPZ5XofMOJGYQGvn9v5JcWAKJXXJ
+         jl7j4uPnqFQJnYqb14myYRabbsddn5KHkWs1v8zM4NwBrLh43XRf+5S9XXywsIGhRZby
+         HShlUAs7nUXY79kP6b5X0Rbgfpoz6ninEaHCbLyoRE3G7jpCSdjhGQ6hH6DYMcd6Mkiy
+         JY1w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=JHaxdEkM;
+       spf=pass (google.com: domain of draxil@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=draxil@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <draxil@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id p62sor1967582lfd.76.2017.11.11.03.10.55
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Sat, 11 Nov 2017 03:10:55 -0800 (PST)
+Received-SPF: pass (google.com: domain of draxil@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=JHaxdEkM;
+       spf=pass (google.com: domain of draxil@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=draxil@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=pSEAps3eugCo2/PLUScRDmU7dG0Wi03q27FiPlvttkQ=;
+        b=JHaxdEkMWcpB/yMFtbeQ6Ldi69P+5bul8Qwrb4xmlpTyWC6JSS7sw8hmgSs4KQbFod
+         sHBz6pnpoCtUFH1e4Pffjd25Max+aaGBTXkyafRwJP0Y+t19H13tpNPHrr/b/rE5nsy+
+         lrom9pukE78tMQgABko+DaNrqsfgOIfzuA6GF8eNAdLdLefXz8nKXSCPuG8Qn2fq5I5M
+         9eqEqVHNcryTN8W06tYrmPxre2wyxL4b0cNfs6w/eDOUEBsST6bS3rzk0lYGfgd3eqp1
+         5HUjbOXMvbm5Sk8Q5S3m3LaCCiA+GaIKrJdpc2bYLdIl9OZZkaQ3yvmlmxCEMKxurFCL
+         5Vyg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=pSEAps3eugCo2/PLUScRDmU7dG0Wi03q27FiPlvttkQ=;
+        b=he9cOhdgckAgWW4hUqQqXgOweXD5e9NY/aRUMhBbPRwHtASAkqR+0XVDaP+3D4Ir0k
+         xOqVOc/eyEW+by8PNk7F9UkFhVB2SesSCvMpY4EVKeg1tllBWX13dlbhlpZVToPIBq3w
+         f/GziFvlK5Vb92LNYiD0rp5l7fh3VSxNjLv3o5P/F96gIE2oowkscX0m1Qgan8ycGWru
+         E8e+SrY8sesaBL3/TZoo/ltziwcGffFBAVdaHGarVuqXjz7DoB09XGZAFOVvicmY20V9
+         p/nIjOC0X8dW6O9lYWkC1yWoE/Fo6mEwRVULmB2iWdxGIKAH9ed/fhmxJrDQK77zfW9X
+         tIJQ==
+X-Gm-Message-State: AJaThX5+lrVYoZq29Wl3AFp8FmDyQsIXfgI0zCjcvRPnJGPObFkv1gVf
+	c6DPawg3llCFqECgEnPZ1ZuxFGXOm9eaNjVOsMrfSA==
+X-Google-Smtp-Source: AGs4zMZSCymxXVKEAXmXVTJsDDH1YE4GxqVHNeopUQ4aSE4IfEKcG/ptokWq9jA9DW6gvFvq+ObXVlADd+zIuMvJkE0=
+X-Received: by 10.25.115.196 with SMTP id h65mr1072598lfk.203.1510398655156;
+ Sat, 11 Nov 2017 03:10:55 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.25.229.19 with HTTP; Sat, 11 Nov 2017 03:10:34 -0800 (PST)
+In-Reply-To: <CAE6_+UeVH9HrYesyiCHmDwENvUC=LfMjmicbMkyXYiJRFM4m_g@mail.gmail.com>
+References: <CAE6_+UeVH9HrYesyiCHmDwENvUC=LfMjmicbMkyXYiJRFM4m_g@mail.gmail.com>
+From: joe higton <draxil@gmail.com>
+Date: Sat, 11 Nov 2017 11:10:34 +0000
+Message-ID: <CABfa3QtDYK8HxQVPYxs9t_nfjzUVSsPBCy+8ShVEyfJqgecy8g@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary="001a113c46a24f572a055db31756"
+
+--001a113c46a24f572a055db31756
+Content-Type: text/plain; charset="UTF-8"
+
+I, Joe Higton (draxil on github), hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+
+On 8 November 2017 at 18:58, Christoph Reiter <reiter.christoph@gmail.com>
+wrote:
+
+> Hey,
+>
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU
+> GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+>
+> Would you be willing to make your contributions to Quod Libet available
+> under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+> =========
+>
+> I, <insert-name-or-github-username>, hereby make all my contributions
+> made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+> later"
+> [2]
+>
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>
+> =========
+>
+> Your response will be published at https://github.com/quodlibet/
+> relicensing
+>
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+>
+> thanks!
+>
+
+--001a113c46a24f572a055db31756
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I, Joe Higton (draxil on github), hereby make all my contr=
+ibutions made to<br>
+Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;</div><div class=3D"gmail_extra"><br><div class=3D"gmail_quote">=
+On 8 November 2017 at 18:58, Christoph Reiter <span dir=3D"ltr">&lt;<a href=
+=3D"mailto:reiter.christoph@gmail.com" target=3D"_blank">reiter.christoph@g=
+mail.com</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Hey,<br>
+<br>
+I&#39;m trying to change the license of Quod Libet from &quot;GNU GPLv2&quo=
+t; to &quot;GNU GPLv2<br>
+or later&quot; for compatibility with GPLv3 and Apache 2.0 and it looks lik=
+e you<br>
+contributed to it under the &quot;GNU GPLv2&quot;.<br>
+<br>
+Would you be willing to make your contributions to Quod Libet available und=
+er<br>
+the &quot;GNU GPLv2 or later&quot;? If yes, please respond with the followi=
+ng:<br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+I, &lt;insert-name-or-github-<wbr>username&gt;, hereby make all my contribu=
+tions made to<br>
+Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br>
+[2]<br>
+<br>
+[1] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" t=
+arget=3D"_blank">https://github.com/quodlibet/<wbr>quodlibet</a><br>
+[2] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" target=3D"_blank">https://www.gnu.org/licenses/<wbr>old-lic=
+enses/gpl-2.0.txt</a><br>
+<br>
+=3D=3D=3D=3D=3D=3D=3D=3D=3D<br>
+<br>
+Your response will be published at <a href=3D"https://github.com/quodlibet/=
+relicensing" rel=3D"noreferrer" target=3D"_blank">https://github.com/quodli=
+bet/<wbr>relicensing</a><br>
+<br>
+If you have any objections or questions regarding the relicensing or your<b=
+r>
+contributions please tell me.<br>
+<br>
+thanks!<br>
+</blockquote></div><br></div>
+
+--001a113c46a24f572a055db31756--

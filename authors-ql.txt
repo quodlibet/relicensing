@@ -207,3 +207,7 @@ Jason Heard
 Thomas Leberbauer
     slosd@posteo.net
     slosd@github
+
+Joe Higton
+    draxil@gmail.com
+    draxil@github
