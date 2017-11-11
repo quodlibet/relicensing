@@ -222,3 +222,7 @@ Jan Path
     mail@jpath.de
     jan.path@linux.com
     janpath@github
+
+Jakub Wilk
+    jwilk@jwilk.net
+    jwilk@github

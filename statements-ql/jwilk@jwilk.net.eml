@@ -1,0 +1,66 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp5637619wrc;
+        Sat, 11 Nov 2017 12:11:12 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMbWid+UXKa09v0zU5pU70km4PNtCX6sxnjVH8nI+Lr02h4P/5wgtcLeh7hlgiBjX/3WrzIO
+X-Received: by 10.200.27.171 with SMTP id z40mr7359642qtj.151.1510431072199;
+        Sat, 11 Nov 2017 12:11:12 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510431072; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jFMuoXmEo0NJ1SKaHUs13tzY7E9bMDq0Xjg1GKc86RSgpsOUMKMlsiYR2ioht8AbU3
+         6wd775Ec/lmthM6bhZqJjSNi+M/9O89ow032NTjM0n8C8AnnuXetK1B3NqXHx2PjaYqb
+         liTd2v/o70Ztvm3I7O5GFQNIaAGKT4RiygaNE9qQu5BPx0VGB/SbhZajZGhS3Do3LbaN
+         z7q/N0ISVoxLX3UbPLtdByo89wqlAHjoMSHuqVyz0t/V3qrQIs5w1YP2AnF4Aeed62nW
+         qfOamrU3rxQouua7wHlTgTwXs6fhG1S7JXIjXS29pPLucJT8yXULFA2RXFsLlSEicczp
+         FB7A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=user-agent:in-reply-to:content-disposition:mime-version:references
+         :message-id:subject:to:from:date:arc-authentication-results;
+        bh=F1HtWqsi5obo0Qac9fDB7E7p6FGcJIeVAar0b8yBX3M=;
+        b=x1fK8ILZReJ8pXd9UeQ1JzkqBnLB2rsl+OxO3bPGqzZlfx/WPn6lAdot0VBRPUIowp
+         OwBNt8RNLEAtCSBIWzAi5TZu8OQbC6Xpi8YPUx17GVDe/BmbONdX1JhL21Om08uq2NjI
+         MusLRg6adEqDJwCvmhZVFR0eGY+liicpk7iAP4WZJuS5XiGgbflkDZaEuorgAEfqcgaz
+         Gx4qtatNdcbKqz3e7PJCoQF/nusXsOXiCGdMwSazeumIjdE2nigdZ1jTJmOqJNbWYvIU
+         diUhdEXbYvD98NqSfmpYqzG5LZv2ZI2vUwxUzRa2mcsoB4m+dbYBJcxeSOhSMLgzzoOZ
+         MRYQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of jwilk@jwilk.net designates 178.33.255.223 as permitted sender) smtp.mailfrom=jwilk@jwilk.net
+Return-Path: <jwilk@jwilk.net>
+Received: from 16.mo35.mail-out.ovh.net (16.mo35.mail-out.ovh.net. [178.33.255.223])
+        by mx.google.com with ESMTPS id g24si299865qtf.409.2017.11.11.12.11.11
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 11 Nov 2017 12:11:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of jwilk@jwilk.net designates 178.33.255.223 as permitted sender) client-ip=178.33.255.223;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of jwilk@jwilk.net designates 178.33.255.223 as permitted sender) smtp.mailfrom=jwilk@jwilk.net
+Received: from player693.ha.ovh.net (b9.ovh.net [213.186.33.59])
+	by mo35.mail-out.ovh.net (Postfix) with ESMTP id 5FBA513BB31
+	for <reiter.christoph@gmail.com>; Sat, 11 Nov 2017 21:11:10 +0100 (CET)
+Received: from jwilk.net (unknown [5.172.255.32])
+	(Authenticated sender: jwilk@jwilk.net)
+	by player693.ha.ovh.net (Postfix) with ESMTPSA id F0A4E44006A
+	for <reiter.christoph@gmail.com>; Sat, 11 Nov 2017 21:11:09 +0100 (CET)
+Date: Sat, 11 Nov 2017 21:11:07 +0100
+From: Jakub Wilk <jwilk@jwilk.net>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Message-ID: <20171111201107.7ukv6d4edxcrytge@jwilk.net>
+References: <CAE6_+UeLmLuitZ7zCyikgsxsfRAf9Abi_eZcu=6wqHOKwXGvqA@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Disposition: inline
+In-Reply-To: <CAE6_+UeLmLuitZ7zCyikgsxsfRAf9Abi_eZcu=6wqHOKwXGvqA@mail.gmail.com>
+User-Agent: NeoMutt/20170609 (1.8.3)
+X-Ovh-Tracer-Id: 6439584517967763268
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: -100
+X-VR-SPAMCAUSE: gggruggvucftvghtrhhoucdtuddrgedttddrieehgddufeehucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecuqfggjfdpvefjgfevmfevgfenuceurghilhhouhhtmecufedttdenucesvcftvggtihhpihgvnhhtshculddquddttddm
+
+I, Jakub Wilk, hereby make all my contributions made to Quod Libet [1] 
+available under the terms of the "GNU GPL version 2 or later"[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+-- 
+Jakub Wilk
