@@ -1,0 +1,116 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp5346009wrc;
+        Sat, 11 Nov 2017 05:50:04 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMbwg6u99r9XrBjst+rA7nvlSVkEog2+wGFJCG0006qFMMscIKw63/0Dqeu8YDc/7r/Q6MTg
+X-Received: by 10.223.134.157 with SMTP id 29mr2773297wrx.72.1510408204883;
+        Sat, 11 Nov 2017 05:50:04 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510408204; cv=none;
+        d=google.com; s=arc-20160816;
+        b=mh7Qs40KiCwuFrrYg3CTl6Qan+45CnnhkzABhIjAkYZW/4y9y1As17l825wUNisJva
+         U08LvEpNzfETrrJmrRKurJ0h0Fe+9OJRU68iAqgFkbmC1L9C5paGAYLs7E8D7Ye4l5m4
+         /XWLpzQWXBTP2dWWeuwRzgXpw2Pw/uiMs+Q7gz2l+bFaR64IEek40zObPGNVjTpNWFQ1
+         59cEKGUThy5rEqoAEDGOM4UbEOgA1J/46b4l5U7y4QApUoY6eHtWRu/h2vhZRQb31Cob
+         aaMMCV90w+mTD3fVF27cbhQ9JGstHgx8Y36s4lnIi6gZeTL97s4Akwmh46nehSf/WJix
+         iEDg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=in-reply-to:mime-version:user-agent:date:message-id:from:references
+         :to:subject:arc-authentication-results;
+        bh=kYkYkXsAZo4rtqRgaOworRDEjnwq5GaOwi2pq6gVq4U=;
+        b=fA+tUz4yLFxbCwObUS5jN7l1Advok69YPF+ykuWrvYgMzKZg8/8D6fjuM8XVcogH1y
+         /qQgMk80O70zHWdK3a29t5JSpkAA5iJTRnqeJvl02M4q1FFU3WEtZC/qG4I/W4ySvRK4
+         P1jxsIr5wBAK7TH34LWv9wJKVGe6IAPPIYsw5cUvIEfviD5u+v0jvvOGYTQw8mO/diRU
+         5p7s3UUwn4qttqSaoCzSYFzwdIXp1aqeo0vc/hRSP8XV2/6Le9QDVAxRxJ42SR/C8BvD
+         RnuKYU0QAhROKdFTK6QbzspjlMM4UAYsbx8ySN84xsu9pYq2+BSHaD2n2C+P+XM7VqEp
+         OB7Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of pschwede@posteo.de designates 185.67.36.66 as permitted sender) smtp.mailfrom=pschwede@posteo.de
+Return-Path: <pschwede@posteo.de>
+Received: from mout02.posteo.de (mout02.posteo.de. [185.67.36.66])
+        by mx.google.com with ESMTPS id s19si3157798wmb.177.2017.11.11.05.50.04
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 11 Nov 2017 05:50:04 -0800 (PST)
+Received-SPF: pass (google.com: domain of pschwede@posteo.de designates 185.67.36.66 as permitted sender) client-ip=185.67.36.66;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of pschwede@posteo.de designates 185.67.36.66 as permitted sender) smtp.mailfrom=pschwede@posteo.de
+Received: from submission (posteo.de [89.146.220.130]) 
+	by mout02.posteo.de (Postfix) with ESMTPS id 557F620804
+	for <reiter.christoph@gmail.com>; Sat, 11 Nov 2017 14:50:04 +0100 (CET)
+Received: from customer (localhost [127.0.0.1])
+	by submission (posteo.de) with ESMTPSA id 3yYyvb10NWz10Ht
+	for <reiter.christoph@gmail.com>; Sat, 11 Nov 2017 14:50:03 +0100 (CET)
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+Ue2HaAXhoHGqAoVBOyqobPkU1Rmo6YFMdhhWLoGKKGOaw@mail.gmail.com>
+From: Peter Schwede <pschwede@posteo.de>
+Message-ID: <cdb894d9-6345-f582-1443-3dcc6d5b7ccf@posteo.de>
+Date: Sat, 11 Nov 2017 14:50:01 +0100
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ Thunderbird/52.4.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+Ue2HaAXhoHGqAoVBOyqobPkU1Rmo6YFMdhhWLoGKKGOaw@mail.gmail.com>
+Content-Type: multipart/signed; micalg=pgp-sha512;
+ protocol="application/pgp-signature";
+ boundary="BOHbTLnecJ8gfKU9I4RiXqMEdwwEuwvAA"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--BOHbTLnecJ8gfKU9I4RiXqMEdwwEuwvAA
+Content-Type: multipart/mixed; boundary="AhrJp3dALLwUwF1Gamos7eWhBp9GCvxr6";
+ protected-headers="v1"
+From: Peter Schwede <pschwede@posteo.de>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Message-ID: <cdb894d9-6345-f582-1443-3dcc6d5b7ccf@posteo.de>
+Subject: Re: quodlibet GPLv2+ relicensing
+References: <CAE6_+Ue2HaAXhoHGqAoVBOyqobPkU1Rmo6YFMdhhWLoGKKGOaw@mail.gmail.com>
+In-Reply-To: <CAE6_+Ue2HaAXhoHGqAoVBOyqobPkU1Rmo6YFMdhhWLoGKKGOaw@mail.gmail.com>
+
+--AhrJp3dALLwUwF1Gamos7eWhBp9GCvxr6
+Content-Type: text/plain; charset=utf-8
+Content-Language: en-US
+Content-Transfer-Encoding: quoted-printable
+
+I, pschwede, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or lat=
+er"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+On 08.11.2017 19:57, Christoph Reiter wrote:
+> I, <insert-name-or-github-username>, hereby make all my contributions m=
+ade to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or l=
+ater"
+> [2]
+>=20
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+--AhrJp3dALLwUwF1Gamos7eWhBp9GCvxr6--
+
+--BOHbTLnecJ8gfKU9I4RiXqMEdwwEuwvAA
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJHBAEBCgAxFiEEiMe6F7eTv0fYLzJt77wA/zY2j9sFAloHAAkTHHBzY2h3ZWRl
+QHBvc3Rlby5kZQAKCRDvvAD/NjaP27TdEACDMrfvsyI1Y6UmXKyi4QxsInVKzAcl
+dePSURQ6t1ulEX08I745yrWmwC3uTO2seMK8fzY1TZ5QxVyLtt/dFp9QXPSFmDQ7
+sTpAiZuQVWoiJmruVgbbHAXt96ISezfdCGlhBNwNl7s+xgDVKi4attvOueiLEMtP
+SUY4KthbXCPGcj0WLC0ax9CHSuVMgjiOoYtQV3PsmkQD8YI4ecISTZU4HFyhxQuy
+xhtOhVUgAH1NEGFfN2Xjc5bAlXLkAym1nau2aDlLrPiWDmhpc2TBGwbaeMlrQu75
+c201K4qiYw3DsCsUy/+QMEj0e1ijuFWKTw9+T8/uxgY/e6ZN1T+E+LnxEYs58dOa
+WTwm7fB8u0jYuYb4In1iRltS/oEhyw4CGihgzGdRdCxeDGGvG74UJPSG+xKRfE57
+wgUhXFJgqfBTp4Do+IbIVKnFmRC/1/Z46ZuWwgAFGJl0Pv6uUSFstnPb0wO5KbUO
+VlYquPNrhBUHrxsFczGZ8vDxBcHMQ8dsL4T3IHvbh2ThP2jYhrOdtBdZOiKumR7L
+Cvxp4crIA6bssrUdWvtXeTcGa2lw1iP9Ra9I0wVpMX+1TO8JrADZdkLvsBsTH+uE
+eGC1+v/gWK0CIVTrh9tl0xdNP5USREbkXKPOri2V9GDbpvB9OeTgV2+Fhp4JvKnz
+7QPv3nr9jj9ZsQ==
+=pErD
+-----END PGP SIGNATURE-----
+
+--BOHbTLnecJ8gfKU9I4RiXqMEdwwEuwvAA--

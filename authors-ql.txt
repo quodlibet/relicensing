@@ -211,3 +211,8 @@ Thomas Leberbauer
 Joe Higton
     draxil@gmail.com
     draxil@github
+
+Peter Schwede
+    pschwede@posteo.de
+    pschwede@github
+    Peter.Schwede@gmx.net
