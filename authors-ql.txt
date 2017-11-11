@@ -216,3 +216,9 @@ Peter Schwede
     pschwede@posteo.de
     pschwede@github
     Peter.Schwede@gmx.net
+
+Jan Path
+    jan@jpath.de
+    mail@jpath.de
+    jan.path@linux.com
+    janpath@github

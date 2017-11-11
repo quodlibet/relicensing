@@ -1,0 +1,107 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp4301752wrc;
+        Fri, 10 Nov 2017 07:23:02 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMZI3jCJ6Mxsj4Rqn8X1Diw1D3z+z/zwq+LVBpSfMcjpoqVGW2oK2DGJWA5QHOzYNyWnbO7c
+X-Received: by 10.223.184.47 with SMTP id h44mr576769wrf.11.1510327382883;
+        Fri, 10 Nov 2017 07:23:02 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510327382; cv=none;
+        d=google.com; s=arc-20160816;
+        b=V/NK9qlkefftNNSOPuGCDRcNBbbETab5CaT9zf1fcjPb558y8r1PVIo240h/ynXoyG
+         3k31DBpOEpJ8kakj55/PLuuMrwKzgKuxBqBSkv7QnKW2ght+t8XDQ4lCkVf25PQB68Vz
+         nPVyKg0MHOmsgQXsDywo2RLM6ayJDzDeVPxxWnuhkt2oHltkizFze4XfIwhp+IGvudHP
+         3bGF/2pSKYpTqptkMTwLsmQfbcoC1mh9/Ei8WTKcEGEpxCue3nwBDOaZXv+IlB0esWt+
+         2N/nTo7PT/W/vVX29GVIjB08v/aQvfKLXY73cl0bPUZE9/rihDVpCQFjjhruHzCQ5Fsv
+         l8Aw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:user-agent:message-id:in-reply-to:date:references
+         :subject:to:from:dkim-signature:arc-authentication-results;
+        bh=JbJAvVLqahIpFDK+dembZaANRSnb5HhoNUtQmSLWszA=;
+        b=N/+xToVBOWRwBTDk7Rf89a3iG5xq6zt9KOuzSPrUo0RFkhK2hTZQIPnWeEUAH/BVUj
+         LGwIUuQPOoRTkjHm/Iu771w6BckPsMRcaDSpm2oFvXPRAtXDsx99/cdULC3SVkf3I6HC
+         8cfP+fIsvCboTgJegTY5Ddq42yc7M5ccw8Mf4ANKmw63PIQPFbNChEzLl7ketUpgBbaO
+         ngoV4xWw4JC+LStoGZ4uhqzIrbq8+LLDzf/2eYEhE4qS5dp9ymYSr3fs63VXHf3ypuK4
+         2H9WnrWsW6+jXR2WSVXTToP3AMuSq8ddoUb39u/ILd0Z8MlaojdUpqCP4VRGxXifAu7c
+         VhSA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@jpath.de header.s=jpathde header.b=LiceEg6d;
+       spf=pass (google.com: domain of jan@jpath.de designates 37.120.160.12 as permitted sender) smtp.mailfrom=jan@jpath.de
+Return-Path: <jan@jpath.de>
+Received: from srv1.jpath.de (srv1.jpath.de. [37.120.160.12])
+        by mx.google.com with ESMTP id 186si1453077wmj.77.2017.11.10.07.23.02
+        for <reiter.christoph@gmail.com>;
+        Fri, 10 Nov 2017 07:23:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of jan@jpath.de designates 37.120.160.12 as permitted sender) client-ip=37.120.160.12;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@jpath.de header.s=jpathde header.b=LiceEg6d;
+       spf=pass (google.com: domain of jan@jpath.de designates 37.120.160.12 as permitted sender) smtp.mailfrom=jan@jpath.de
+Received: by srv1.jpath.de (Postfix, from userid 182)
+	id 154652C12EF; Fri, 10 Nov 2017 16:23:02 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=jpath.de; s=jpathde;
+	t=1510327382; bh=JbJAvVLqahIpFDK+dembZaANRSnb5HhoNUtQmSLWszA=;
+	h=From:To:Subject:References:Date:In-Reply-To;
+	b=LiceEg6dMlcfCH9GDc3KJ9/Gwb9OBkuS0gCLbTkd4qAd8XibV/WgVtDMlMzT5qR/9
+	 pv6WRpYuni/v9rDrTMxN0ew/mpUvTBOMYKyP/H2lu2QO8sYE3bmRJB6VR2poRAijgN
+	 vujYpZB+JFNiY2xKGQtMSH68tnCq71BruJIwagzo=
+X-Spam-Checker-Version: SpamAssassin 3.4.1 (2015-04-28) on srv1.jpath.de
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=3.0 tests=ALL_TRUSTED,BAYES_00,
+	URIBL_BLOCKED autolearn=ham autolearn_force=no version=3.4.1
+X-Spam-Report: 
+	*  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+	*       See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+	*      for more information.
+	*      [URIs: gnu.org]
+	* -1.0 ALL_TRUSTED Passed through trusted hosts only via SMTP
+	* -1.9 BAYES_00 BODY: Bayes spam probability is 0 to 1%
+	*      [score: 0.0000]
+Received: from ptb1.jpath.de (unknown [10.8.1.6])
+	by srv1.jpath.de (Postfix) with ESMTP id ABC7C2C01B0
+	for <reiter.christoph@gmail.com>; Fri, 10 Nov 2017 16:22:27 +0100 (CET)
+Received: from ptb1.jpath.de (localhost.localdomain [127.0.0.1])
+	by ptb1.jpath.de (Postfix) with ESMTP id 68CB7363C84
+	for <reiter.christoph@gmail.com>; Fri, 10 Nov 2017 16:22:26 +0100 (CET)
+From: Jan Path <jan@jpath.de>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+References: <CAE6_+UdiFdphWzcuqKSeCC=rDWPGniaFnFo5q4N-YGrhXdAmdA@mail.gmail.com>
+Date: Fri, 10 Nov 2017 16:22:20 +0100
+In-Reply-To: <CAE6_+UdiFdphWzcuqKSeCC=rDWPGniaFnFo5q4N-YGrhXdAmdA@mail.gmail.com>
+	(Christoph Reiter's message of "Fri, 10 Nov 2017 15:59:37 +0100")
+Message-ID: <878tferwer.fsf@ptb1.jpath.de>
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/25.3 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha512; protocol="application/pgp-signature"
+
+--=-=-=
+Content-Type: text/plain
+
+
+I, Jan Path, hereby make all my contributions made to Quod Libet [1]
+available under the terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQKTBAEBCgB9FiEE1DK576fncKYFAt8ZU0enHzuSC+MFAloFxCxfFIAAAAAALgAo
+aXNzdWVyLWZwckBub3RhdGlvbnMub3BlbnBncC5maWZ0aGhvcnNlbWFuLm5ldEQ0
+MzJCOUVGQTdFNzcwQTYwNTAyREYxOTUzNDdBNzFGM0I5MjBCRTMACgkQU0enHzuS
+C+NwGxAAkO65HIvs8m0dkRvvjjX5+/ZwmB3T5ORJEaNbaUdxV2GTVBPM+A91Biut
+4rI8yRtjge4VBXQ2HrELy56hS6pAf7WJlbufI4NJwNNQEWH1RnPGbT1jpZNvzqhL
+k5UFiAu8s24UtoYhrYJKKVLOCh8n1EpkNwdcPG/zhIC0vuD3jr6MuoAWgs+fnZh+
+ZtlJ3PzNiTmHR3SWVTyhnu+8vTCBJ0sgNCKkazRfi3l34ASnsLOMslxvIJIa18MV
+lyJcuTIlfSzXiTekwdLN/jkDKf0InvfVPfdaIuWMOB/lXBbmkrkFEknTVy3QdPAh
+ksvEAdFu77PqHO8KBbpUXgbyC9KJHHGUjDZR49d0lm5+zD8truiZR4VrHanQS0lo
+XEasHjF+9xx7D2USsZgOs1tVL1dYE741egeIT7N4le1lpLumK+oKIm55By37DdTb
+W4MbczmXrli+4c5SrCxpkCYoW160Xc4gSs0ZD13NPfYxFKtLnmYzY+VMmtm2lE9M
+0MuhIBntoIH44xVew5tvPlbW/jC/B4dFHo/ycuT4DJqP3U+w1l/KVFBdcCsrGaEX
+RPLDkZ5J73ssUlDogu4WZqXSsgUeiNS7vibCEztXLL4UnB13C1lJiWYArcOPJT+q
+xzo+dIV8ekSxp0Sko2ttPZEIQ2DvPn82VFaMjHXw41IjHyQm0QM=
+=dUmV
+-----END PGP SIGNATURE-----
+--=-=-=--
