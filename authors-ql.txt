@@ -183,7 +183,7 @@ Joel Ong
 Federico Pelloni
     federico.pelloni@gmail.com
 
-"CreamyCookie"
+Joschua Gandert
     CreamyCookie@users.noreply.github.com
     CreamyCookie@github
 
@@ -203,3 +203,7 @@ Felix Krull
 Jason Heard
     jasonpheard@gmail.com
     101100@github
+
+Thomas Leberbauer
+    slosd@posteo.net
+    slosd@github

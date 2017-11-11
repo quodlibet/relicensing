@@ -1,0 +1,61 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp5143951wrc;
+        Sat, 11 Nov 2017 01:12:42 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMYP62iIWaHeWviWcg2urGHfU4xzw+mGSIjL4fjkd+x4kyh4779IcmnIEIgccZnLDOei/6PM
+X-Received: by 10.28.0.5 with SMTP id 5mr2081671wma.109.1510391562491;
+        Sat, 11 Nov 2017 01:12:42 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510391562; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dUafWxmNK1QDKmrBOHaG9ab+DzKFYYd7SAwzxWBXXVjBwn/FJprcj7bDiNovNZ2RBC
+         yEjaHLJozxK0JOXG5WWrAFlKmFxzNzk0OdXswxpUCscJvp6h1+6HJpdk/1scWh8RysJj
+         V4CA5EYJ9eZuV+ccgg0R2jztjAyTMZP+uC9JMK566U5J5bb9h2cMMQ1pQhEO9jMYAaqD
+         lKZAwfA+aHdVWgabZL6A09XNvq7wqfzLQU4To8lS2VBOmH9w5XCnZi66nmQfqJxVy/YZ
+         +ZpX9ZCsyJauKuQi4KVg86LFrvfVNXhx4CvkqYMlpKoTlGr/hrqR7WvnL7FAsfcOqxYT
+         b3Yg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:from:to:reply-to:subject:content-transfer-encoding
+         :mime-version:references:in-reply-to:date:arc-authentication-results;
+        bh=m+T4FZrEsuyoBU9Y8K6wrTzluMe09bNv6xAqzUDts3I=;
+        b=SfJiY3cQAqvadgqHa6lI4OWUuWuXvU6fVECEQFjltdbCNk2LY1Ns//ZcZzxqm0DIeQ
+         +E8xkKbweAVt5meaus6t/IHsxexIrvt7mTbhNczwds8BzzRhyyrrDzu+fNJvzkHtlc3V
+         M5STQTxv80G7hIdYcscZPDqy53BGw4WRd+r3EqZlUpTE+rVGhc9nju7lyB8fQV+zTeAZ
+         0zaXNhe0CXA++dwrOiXAVnYOAsHcQ+wyoYqAXUERIoIGJ6eSIoihRS06A316cpexV3np
+         qX/5iQVa5OW/gLhRiaRqAjuDVYMCi5nj8Yaw7TIblV/03ZjAXgqZv0Sf3cf8l7hgy8CF
+         6Ung==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of slosd@posteo.net designates 185.67.36.66 as permitted sender) smtp.mailfrom=slosd@posteo.net
+Return-Path: <slosd@posteo.net>
+Received: from mout02.posteo.de (mout02.posteo.de. [185.67.36.66])
+        by mx.google.com with ESMTPS id j5si2997840wmh.114.2017.11.11.01.12.42
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 11 Nov 2017 01:12:42 -0800 (PST)
+Received-SPF: pass (google.com: domain of slosd@posteo.net designates 185.67.36.66 as permitted sender) client-ip=185.67.36.66;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of slosd@posteo.net designates 185.67.36.66 as permitted sender) smtp.mailfrom=slosd@posteo.net
+Received: from submission (posteo.de [89.146.220.130]) 
+	by mout02.posteo.de (Postfix) with ESMTPS id 25D7620C7B
+	for <reiter.christoph@gmail.com>; Sat, 11 Nov 2017 10:12:42 +0100 (CET)
+Received: from customer (localhost [127.0.0.1])
+	by submission (posteo.de) with ESMTPSA id 3yYrlX6xd6z109X
+	for <reiter.christoph@gmail.com>; Sat, 11 Nov 2017 10:12:40 +0100 (CET)
+Date: Sat, 11 Nov 2017 10:12:39 +0100
+In-Reply-To: <CAE6_+Ue1dgNuqjfeg0eSvV0DO4rskwtpQwQ-voEbWd_AJq7eZw@mail.gmail.com>
+References: <CAE6_+Ue1dgNuqjfeg0eSvV0DO4rskwtpQwQ-voEbWd_AJq7eZw@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Subject: Re: quodlibet GPLv2+ relicensing
+Reply-to: slosd@posteo.net
+To: Christoph Reiter <reiter.christoph@gmail.com>
+From: Thomas Leberbauer <slosd@posteo.net>
+Message-ID: <56CB3156-6761-4FB8-9FCA-AD6C4C36AF98@posteo.net>
+
+I, Thomas Leberbauer, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or late=
+r"
+[2]
+
+[1] https://github=2Ecom/quodlibet/quodlibet
+[2] https://www=2Egnu=2Eorg/licenses/old-licenses/gpl-2=2E0=2Etxt
