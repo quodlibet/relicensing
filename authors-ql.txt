@@ -199,3 +199,7 @@ Simon Morgan
 Felix Krull
     f_krull@gmx.de
     fkrull@github
+
+Jason Heard
+    jasonpheard@gmail.com
+    101100@github
