@@ -235,3 +235,7 @@ Emil Brink
 Ryan Turner
     zdbiohazard2@gmail.com
     ZDBioHazard@github
+
+"Muges"
+    git@muges.fr
+    Muges@github

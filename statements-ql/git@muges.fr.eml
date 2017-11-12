@@ -1,0 +1,89 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp6301104wrc;
+        Sun, 12 Nov 2017 06:46:51 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMZY9r9Fp5sAe9bxgFrg4jsrf/t4TjDolZHyO9rWCvs5MrUPA8e4fIuO98OER6OFZRgjBgEL
+X-Received: by 10.202.98.135 with SMTP id w129mr3657254oib.7.1510498011677;
+        Sun, 12 Nov 2017 06:46:51 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510498011; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0Xt6zwer2pE8mXweihknaOY9kLCzX634AStDE5/GAOCrJkI4juBtUvHodqPiPhOhQW
+         0c08OqbT70PPjGxAhh0jTevUybatvjbp0/PMm50fOWVSKx7fhIarleRJVpP88SRhpexU
+         hhVd1HkdbB+juNG5UjuC7krQf9SIisUVZG47djQjh1LXo7AYK5SjxbL5YDbZvLgd5iMW
+         dtyUQElq0+p8lXH7igLSe+6ATssAp7yxyNsFS746WELndVVtjZDENJhU6toi4SPdHPrh
+         IPEXHIXbrTiIUxs7Hh+cmwB61uJ3Y2mNSDiPxClyug1Xh8qoH16NqE9V6+5ZcocDG1cR
+         eU3Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=in-reply-to:subject:date:references:content-transfer-encoding
+         :mime-version:to:from:message-id:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=tny4RSM7JzS+OdapgakPouquqeDomlno4jtKmi6HJWU=;
+        b=oP94dxOKKrh/POhiJ3gkZdFYiLLkOStIeo8uTSizKIT5dZ+H08juJNUnZRaWB5H6JX
+         TaXemJ1Lj+RXK9TmLXTy1UnW0NicRRHJVWZLyt6QBQTT0FD6oaZZo/otBtMfKZI3acjn
+         G1TAs9NmzAlQlDBKYqhgl2d/stM2T59iseMkJUiI8o+HnwOZfk+Qx2Da8xHVxuM74B2e
+         nb5fU0aNPPxbwQhdy0v5Mwt5pxeImEaShuB0Y6bTJgr+6JimS5Gdz5eExSQUbfaECaaK
+         SyNkq8vMvwsBebqVNK4+PLaMulqVqFnAgQdGDe6Nc4v6xs8Y7CJ0hRJ8XWzlddDwF8sa
+         R4Wg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@muges.fr header.s=fm1 header.b=tYy27aAv;
+       dkim=pass header.i=@messagingengine.com header.s=fm1 header.b=IVR/+Bhx;
+       spf=pass (google.com: domain of git@muges.fr designates 66.111.4.28 as permitted sender) smtp.mailfrom=git@muges.fr
+Return-Path: <git@muges.fr>
+Received: from out4-smtp.messagingengine.com (out4-smtp.messagingengine.com. [66.111.4.28])
+        by mx.google.com with ESMTPS id z33si5556190otb.408.2017.11.12.06.46.50
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 12 Nov 2017 06:46:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of git@muges.fr designates 66.111.4.28 as permitted sender) client-ip=66.111.4.28;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@muges.fr header.s=fm1 header.b=tYy27aAv;
+       dkim=pass header.i=@messagingengine.com header.s=fm1 header.b=IVR/+Bhx;
+       spf=pass (google.com: domain of git@muges.fr designates 66.111.4.28 as permitted sender) smtp.mailfrom=git@muges.fr
+Received: from compute5.internal (compute5.nyi.internal [10.202.2.45])
+	by mailout.nyi.internal (Postfix) with ESMTP id D183B20B4D
+	for <reiter.christoph@gmail.com>; Sun, 12 Nov 2017 09:46:49 -0500 (EST)
+Received: from web1 ([10.202.2.211])
+  by compute5.internal (MEProxy); Sun, 12 Nov 2017 09:46:49 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=muges.fr; h=
+	content-transfer-encoding:content-type:date:from:in-reply-to
+	:message-id:mime-version:references:subject:to:x-me-sender
+	:x-me-sender:x-sasl-enc; s=fm1; bh=tny4RSM7JzS+OdapgakPouquqeDom
+	lno4jtKmi6HJWU=; b=tYy27aAvaPT0LVgEBqqW7g5Pomei+Fs2jvbez6loIKIAR
+	90t2wX3BZvlMX2b7DOK8zOKpZDYlfsaivTdRsYIRfEbEhMMiobkBxuH9dTQzssrY
+	KkLGPrmFEKNX1CLD9tzCVrcPpSUHMpaLKFB5jMnUg/bzdoasZWbMR9jrakkvxWbY
+	cPrcXPCPbklAsE1p4MrFG4Kgl6IkeCKGgENLxNTU9s2Jg4rrJzFJ6XzBNUeXJOLt
+	DgabqwdcUjwkHSYrE1wM/r79mCkowrry5aH//c4drR//jy9GhaGOKgj8Nt0M6gbP
+	yzW5ugqer+S1HftWJT4e4jWeWSqf0Ftw74QDQIwiw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=
+	messagingengine.com; h=content-transfer-encoding:content-type
+	:date:from:in-reply-to:message-id:mime-version:references
+	:subject:to:x-me-sender:x-me-sender:x-sasl-enc; s=fm1; bh=tny4RS
+	M7JzS+OdapgakPouquqeDomlno4jtKmi6HJWU=; b=IVR/+BhxofzSfv35RINbzB
+	C364cqLyXkn8OGhhuRTyFNl2mm4xvEX6UwRXpuLv7r/i/0/Pa/N5yFdGHXCoS6PC
+	e6Kjx1B7yPxOoUg1Mamh+hcDsePLwj8StSEOJbrPW+CoH8Lea1F1qjuB8bQQX0iu
+	NMfDFpkv0BdOf5A2/N2pVL3QQhAuxuRk31TIn3IyMC+e9B5grQdZ0Er90ZdbwBdD
+	/NhYVUhNDGypTw6aEkGLsfYHyMw+Fnt6wRg9t1M2Qc1hp9XlYxRO1eFz0uRCP6Sg
+	vNQ5GdThVti8SophqyVW2EeRtQCmXNICxEo2EcxOU9JBlbm6c9c77XrzfHsW3DSw
+	==
+X-ME-Sender: <xms:2V4IWnwaMTu514Nj4ZEwEODdZsKqti2aBmzjTmRBCbSO4b6rXdfh3w>
+Received: by mailuser.nyi.internal (Postfix, from userid 99)
+	id BB65895792; Sun, 12 Nov 2017 09:46:49 -0500 (EST)
+Message-Id: <1510498009.3766043.1169817096.2A143EB0@webmail.messagingengine.com>
+From: Muges <git@muges.fr>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="utf-8"
+X-Mailer: MessagingEngine.com Webmail Interface - ajax-f89283c9
+References: <CAE6_+UcncgB1bju77Uiyf3PVTHv9s+OV_XSmysOZkyDD3k1gMA@mail.gmail.com>
+Date: Sun, 12 Nov 2017 15:46:49 +0100
+Subject: Re: quodlibet GPLv2+ relicensing
+In-Reply-To: <CAE6_+UcncgB1bju77Uiyf3PVTHv9s+OV_XSmysOZkyDD3k1gMA@mail.gmail.com>
+
+I, Muges, hereby make all my contributions made to Quod Libet [1]
+available under the terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+-- 
+Muges <git@muges.fr>
