@@ -226,3 +226,12 @@ Jan Path
 Jakub Wilk
     jwilk@jwilk.net
     jwilk@github
+
+Emil Brink
+    emil@obsession.se
+    mil.brink@gmail.com
+    unwind@github
+
+Ryan Turner
+    zdbiohazard2@gmail.com
+    ZDBioHazard@github

@@ -1,0 +1,113 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp5682502wrc;
+        Sat, 11 Nov 2017 13:24:45 -0800 (PST)
+X-Received: by 10.107.131.147 with SMTP id n19mr4885521ioi.87.1510435484965;
+        Sat, 11 Nov 2017 13:24:44 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510435484; cv=none;
+        d=google.com; s=arc-20160816;
+        b=I0jPX8/WRIbqdn04ltjrT5EarvQ2UR4NzJsuO/46dVLkeMCcYmJmYU58Bem7nH4en7
+         anr4zIGj6hAbTl82jifhOwUGDnCxFb1xMRahRAK7l/QM1kK8JabcPirpcDvCJO5hSRYf
+         G2ohGaYEkuKc2wDzcg2FvTVW0XWN9a//NmDlkTTWKSvuta5tLDJAL5fd0Sp0i+bjTRH8
+         0MlvAf5DpgT7zywRPxEO8oewDKS2FJjLCGwM9JBSm1E6kD1gUsgvfZvVD4fx+tXueFy+
+         1kiYhT11LDjR5z1Mgy8Me9GQqp5DukBoYxoC1qZ3v1PlDm+/2fxrghB/ZA0GnA4ug/LE
+         I4tg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=Ea0jGrSuKi/uEHSoBhpNa3vb1R3UTvbo0VyEYkyXZTo=;
+        b=QBYD11PWPuZPOeAcDYmMRM9t3tsqHH0DApYFnZr42rZLknUxk8jJNSn1iI8Hau5/MS
+         nmA7vYdZUYiWTY/L+L+6JGOwNZUAqk8PMSZyfkNZJlMK8erp/O+yqL8jXSd45zOfcySH
+         L7Fja8wo27jjHcD657htVWE4IiunGeVIP6ytGT0MVXSjXvZuxleDsvZ0xLA3yfMk+NeJ
+         nrDR6fqypq0xyE3I188xgFMCDG9CU5+YqHzmDBBp9v4CeLwffqyNOW2Tcgv2F5PVKRfu
+         rWmMwsSWahvgPc+wbaLV26mUB61yvT3tXSFH2Ao+0LVCwmhAGI0em+qcQx06HbXNPNd0
+         umhA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sh3CnS52;
+       spf=pass (google.com: domain of zdbiohazard2@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zdbiohazard2@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <zdbiohazard2@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id l125sor4744903iof.354.2017.11.11.13.24.44
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Sat, 11 Nov 2017 13:24:44 -0800 (PST)
+Received-SPF: pass (google.com: domain of zdbiohazard2@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=sh3CnS52;
+       spf=pass (google.com: domain of zdbiohazard2@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zdbiohazard2@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=Ea0jGrSuKi/uEHSoBhpNa3vb1R3UTvbo0VyEYkyXZTo=;
+        b=sh3CnS5265MPRu2OgOWG9M9u5BafU8o/jBrg9R5yAdbHag9nDXrWCG12w5/c4WHNG1
+         kKxOweNuyB2AcZN1xRUPk8J6y6wiberuZPC+Dmrk2gD8u2URw63sssV+LxJ0ht3GHdj0
+         89XK6B1yTRk7Yr6/DmSAHO96yynNreMK6b7yNtwd8G97sRhY1HPoDSqMKA5Q37nd4fin
+         Y6xEJ1QFBNhZkYV2chUpwXJWRnOAnlZaqkKV8bm8tZKWjsHLBWO0AUXfPu9FntkJHwog
+         CgMsncXOrtaKkrjt4BEhA6SHjoxDHRSWv7RWaIGEVulf7LQVUDkD/Nsr1KJq40KFN0Tr
+         hz0g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=Ea0jGrSuKi/uEHSoBhpNa3vb1R3UTvbo0VyEYkyXZTo=;
+        b=oP1J/wLnvTQzfBS9pUTNWmAbMYpF5l2SAIWEd5Hb46zoXdjGoA8rXllPPbeFHmbMBq
+         8nLlB6/NTeE2uKiU/cjx22sezWzwjbaTxOGvCElfD2V76KqwnUs8AT0L79eDfIyR6/VK
+         CjUKPFWxYBc8x7pc3XZ8N3wPYkDRwJFtvOOvl6BbgaA0hPP3Ggo7APF0F/D4unEKwkX5
+         8I+/ITVuzG7AiR/ZTa3pgL5EoO+jG1ACkTOwRF/FHrN/rgX/BjtqmqOseszKX7uyo0gE
+         oVS6tKMjYnvYs0MZ4FiBT3RBE8dkI7MsfdZDgKCCJANJVuSdnlEYSxDtaPTAB0UjF6VK
+         Z2aA==
+X-Gm-Message-State: AJaThX43vxKWq9Esp0qYnNLs5Bm1u9kdXMausVgOIg8frXu1esUkwD2C
+	TR/AZDMxLSZjiV83AaZI/o2CSDrVe1NsGKrtdgBBA7H0
+X-Google-Smtp-Source: AGs4zMZ8FskHFunQzsGJdU8NIlzc+nXTO/KXtYjjE0vcf5RCOjjloCoJV0OdGEnGH3huOrzz/YggsO8UEInfGdjZdb4=
+X-Received: by 10.107.165.140 with SMTP id o134mr5408001ioe.21.1510435484557;
+ Sat, 11 Nov 2017 13:24:44 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.2.61.14 with HTTP; Sat, 11 Nov 2017 13:24:43 -0800 (PST)
+In-Reply-To: <CAE6_+UczUPA_f8_zEkBEt30ZWNpSbGEqCiBFDWsy6KpKzrMe5A@mail.gmail.com>
+References: <CAE6_+UczUPA_f8_zEkBEt30ZWNpSbGEqCiBFDWsy6KpKzrMe5A@mail.gmail.com>
+From: Ryan Turner <zdbiohazard2@gmail.com>
+Date: Sat, 11 Nov 2017 13:24:43 -0800
+Message-ID: <CAMsG3eOVDx2QJf+0ucn4G16J9FW0NxMS59dmGtcby05P2R7d8Q@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: multipart/alternative; boundary="001a1141fb90836b18055dbbaa38"
+
+--001a1141fb90836b18055dbbaa38
+Content-Type: text/plain; charset="UTF-8"
+
+Hey Christoph,
+
+I'm perfectly happy to relicense. GPL2+ is my go-to license anyway. :)
+
+Thanks,
+-Ryan
+
+-=-=-=-=-
+
+I, Ryan Turner, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+--001a1141fb90836b18055dbbaa38
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div>Hey Christoph,<br><br>I&#39;m perfectly happy to=
+ relicense. GPL2+ is my go-to license anyway. :)<br><br></div>Thanks,<br></=
+div>-Ryan<br><div><div><br></div><div>-=3D-=3D-=3D-=3D-<br><br>I, Ryan Turn=
+er, hereby make all my contributions made to<br>
+Quod Libet [1] available under the terms of the &quot;GNU GPL version 2 or =
+later&quot;<br>
+[2]<br>
+<br>
+[1] <a href=3D"https://github.com/quodlibet/quodlibet" rel=3D"noreferrer" t=
+arget=3D"_blank">https://github.com/quodlibet/<wbr>quodlibet</a><br>
+[2] <a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" rel=
+=3D"noreferrer" target=3D"_blank">https://www.gnu.org/licenses/<wbr>old-lic=
+enses/gpl-2.0.txt</a><br><br></div></div></div>
+
+--001a1141fb90836b18055dbbaa38--
