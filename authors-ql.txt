@@ -239,3 +239,7 @@ Ryan Turner
 "Muges"
     git@muges.fr
     Muges@github
+
+Vasiliy Faronov
+    vfaronov@gmail.com
+    vfaronov@github
