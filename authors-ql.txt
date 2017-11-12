@@ -243,3 +243,6 @@ Ryan Turner
 Vasiliy Faronov
     vfaronov@gmail.com
     vfaronov@github
+
+Nicholas J. Michalek
+    djphazer@gmail.com
