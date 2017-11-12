@@ -246,3 +246,19 @@ Vasiliy Faronov
 
 Nicholas J. Michalek
     djphazer@gmail.com
+
+Niklas Janlert
+    niklasjanlert@gmail.com
+    niklas.janlert@projectplace.com
+    niklasj@github
+
+Ben Zeigler
+    benzeigler@gmail.com
+    JZig@twitter
+
+Dafydd Harries
+    daf@rhydd.org
+    daf@debian.org
+
+Fernando “Lalo” Martins
+    lalo.martins@gmail.com

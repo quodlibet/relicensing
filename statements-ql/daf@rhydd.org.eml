@@ -1,0 +1,136 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp137092wrc;
+        Sun, 12 Nov 2017 14:16:18 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMaeNAxCQvv0TVQx4b7xj1yHWpZCYcPy2sNhcZZWKiLADytF83xvfMpPtiaUbdc8P2OHEysM
+X-Received: by 10.28.191.3 with SMTP id p3mr3015715wmf.81.1510524978651;
+        Sun, 12 Nov 2017 14:16:18 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510524978; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LSAYb69iFvQf/XghORFtud/V/Ht2VCZERPbHZXM88+1nA1GNLGLFHmE73NTwYxsVec
+         DrDXpD/DU/gHs5oUtFvj0CqGnLMx5EUwugS+S1pDNFU98rrnoGI47ioow5laoEhrSoGi
+         mSin/FekcrlFkDHy35uqWpSrVndRSSxL58O0BGhbB2TzXXIrlvXk6TTcPvU6hhNN/wus
+         a6cCTwshaeUGHnlyMO1jTiTq6IRzScmEJ/MknGhrvdmUqfpB7dfaSzpyMhDudSyXsomA
+         2++vnZLSAbs6zMErg/ba9Vx81L43iSB476qPec4i2hvBy84Gh3NKqOeXlgxeqQUfs8bE
+         XcbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:from:to:subject:content-transfer-encoding:mime-version
+         :references:in-reply-to:user-agent:date:arc-authentication-results;
+        bh=DPIAIxqpA/a7O9WGO0+7pTjR/9PXxFxgsZTAj4z0144=;
+        b=Wxrzr7hX7zW7Y1FQjCuEwDyaQBKc3RTlTqZPX7T3pk/NuzxNd8cUNRUunSRGfu3mUH
+         2tlwDxanEEmK8gfZwwf/kU1ynBIVDwucsMwYhCz7VBjaDb+zQVAUBquOPRoCRf9keoMr
+         nNV1/IVZp576voEDZNkxD0AI8sVqoAuC12lZ2q2cTqEspFHyVgK/VOLJgoky5XG2AUHK
+         PYIClaQZDaky7EaYRay03lcw5QgBUznjf0knYc1Ypz5Rxnw6Myv/re1b/lmJTTA/96s/
+         lG9QgEYDs+fnnjYf7t66ZDoy0tYRCK/RQ6ACz3JeMA5nH7v8uFjzeaX3/q/G9WpYxARs
+         PX0w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: best guess record for domain of daf@rhydd.org designates 2a00:1098:0:80:1000:24:0:1 as permitted sender) smtp.mailfrom=daf@rhydd.org
+Return-Path: <daf@rhydd.org>
+Received: from mild.rhydd.org (rhydd.org. [2a00:1098:0:80:1000:24:0:1])
+        by mx.google.com with ESMTPS id b195si4851793wmb.74.2017.11.12.14.16.18
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Sun, 12 Nov 2017 14:16:18 -0800 (PST)
+Received-SPF: pass (google.com: best guess record for domain of daf@rhydd.org designates 2a00:1098:0:80:1000:24:0:1 as permitted sender) client-ip=2a00:1098:0:80:1000:24:0:1;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of daf@rhydd.org designates 2a00:1098:0:80:1000:24:0:1 as permitted sender) smtp.mailfrom=daf@rhydd.org
+Received: from android-9f94b2b414e0ff31.local.tld (unknown [199.36.122.4])
+	by mild.rhydd.org (Postfix) with ESMTPSA id 0340719243A8
+	for <reiter.christoph@gmail.com>; Sun, 12 Nov 2017 22:16:17 +0000 (GMT)
+Date: Sun, 12 Nov 2017 17:16:15 -0500
+User-Agent: K-9 Mail for Android
+In-Reply-To: <CAE6_+UdQxjD_z9Yuexv9qFE5L=PhduRhBprBSbEkDJwhkt4iJA@mail.gmail.com>
+References: <CAE6_+UdQxjD_z9Yuexv9qFE5L=PhduRhBprBSbEkDJwhkt4iJA@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----0N0RM8N4H4QZNMQ8O5AEXZIBVKSW84"
+Content-Transfer-Encoding: 7bit
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+From: Daf Harries <daf@rhydd.org>
+Message-ID: <87380E18-46AB-483F-8DF0-F7EC14117221@rhydd.org>
+
+------0N0RM8N4H4QZNMQ8O5AEXZIBVKSW84
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+I, Dafydd Harries, hereby make all my contributions made to Quod Libet [1]=
+ available under the terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github=2Ecom/quodlibet/quodlibet
+[2] https://www=2Egnu=2Eorg/licenses/old-licenses/gpl-2=2E0=2Etxt
+
+
+On November 12, 2017 5:07:30 PM EST, Christoph Reiter <reiter=2Echristoph@=
+gmail=2Ecom> wrote:
+>Hey,
+>
+>I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU
+>GPLv2
+>or later" for compatibility with GPLv3 and Apache 2=2E0 and it looks like
+>you
+>contributed to it under the "GNU GPLv2"=2E
+>
+>Would you be willing to make your contributions to Quod Libet available
+>under
+>the "GNU GPLv2 or later"? If yes, please respond with the following:
+>
+>=3D=3D=3D=3D=3D=3D=3D=3D=3D
+>
+>I, <insert-name-or-github-username>, hereby make all my contributions
+>made to
+>Quod Libet [1] available under the terms of the "GNU GPL version 2 or
+>later"
+>[2]
+>
+>[1] https://github=2Ecom/quodlibet/quodlibet
+>[2] https://www=2Egnu=2Eorg/licenses/old-licenses/gpl-2=2E0=2Etxt
+>
+>=3D=3D=3D=3D=3D=3D=3D=3D=3D
+>
+>Your response will be published at
+>https://github=2Ecom/quodlibet/relicensing
+>
+>If you have any objections or questions regarding the relicensing or
+>your
+>contributions please tell me=2E
+>
+>thanks!
+
+------0N0RM8N4H4QZNMQ8O5AEXZIBVKSW84
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><br>
+I, Dafydd Harries, hereby make all my contributions made to Quod Libet [1]=
+ available under the terms of the &quot;GNU GPL version 2 or later&quot; [2=
+]<br>
+<br>
+[1] <a href=3D"https://github=2Ecom/quodlibet/quodlibet">https://github=2E=
+com/quodlibet/quodlibet</a><br>
+[2] <a href=3D"https://www=2Egnu=2Eorg/licenses/old-licenses/gpl-2=2E0=2Et=
+xt">https://www=2Egnu=2Eorg/licenses/old-licenses/gpl-2=2E0=2Etxt</a><br>
+<br><br><div class=3D"gmail_quote">On November 12, 2017 5:07:30 PM EST, Ch=
+ristoph Reiter &lt;reiter=2Echristoph@gmail=2Ecom&gt; wrote:<blockquote cla=
+ss=3D"gmail_quote" style=3D"margin: 0pt 0pt 0pt 0=2E8ex; border-left: 1px s=
+olid rgb(204, 204, 204); padding-left: 1ex;">
+<pre class=3D"k9mail">Hey,<br /><br />I'm trying to change the license of =
+Quod Libet from &quot;GNU GPLv2&quot; to &quot;GNU GPLv2<br />or later&quot=
+; for compatibility with GPLv3 and Apache 2=2E0 and it looks like you<br />=
+contributed to it under the &quot;GNU GPLv2&quot;=2E<br /><br />Would you b=
+e willing to make your contributions to Quod Libet available under<br />the=
+ &quot;GNU GPLv2 or later&quot;? If yes, please respond with the following:=
+<br /><br />=3D=3D=3D=3D=3D=3D=3D=3D=3D<br /><br />I, &lt;insert-name-or-gi=
+thub-username&gt;, hereby make all my contributions made to<br />Quod Libet=
+ [1] available under the terms of the &quot;GNU GPL version 2 or later&quot=
+;<br />[2]<br /><br />[1] <a href=3D"https://github=2Ecom/quodlibet/quodlib=
+et">https://github=2Ecom/quodlibet/quodlibet</a><br />[2] <a href=3D"https:=
+//www=2Egnu=2Eorg/licenses/old-licenses/gpl-2=2E0=2Etxt">https://www=2Egnu=
+=2Eorg/licenses/old-licenses/gpl-2=2E0=2Etxt</a><br /><br />=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D<br /><br />Your response will be published at <a href=3D"https=
+://github=2Ecom/quodlibet/relicensing">https://github=2Ecom/quodlibet/relic=
+ensing</a><br /><br />If you have any objections or questions regarding the=
+ relicensing or your<br />contributions please tell me=2E<br /><br />thanks=
+!<br /></pre></blockquote></div></body></html>
+------0N0RM8N4H4QZNMQ8O5AEXZIBVKSW84--
