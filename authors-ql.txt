@@ -278,3 +278,7 @@ Ton van den Heuvel
 Aymeric Mansoux
     aymeric@goto10.org
     aymeric@bleu255.com
+
+Anthony Bretaudeau
+    broccolalia@gmail.com
+    wxcover@users.sourceforge.net
