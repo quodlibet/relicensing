@@ -1,0 +1,73 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp643278wrc;
+        Mon, 13 Nov 2017 03:08:46 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMb9lfCBAJMNO0XPAofV+trBI50icx3aIEzkCjJ5atRiEtpYeMiPRHSUtTT+tvbwyjUiqrmk
+X-Received: by 10.223.166.103 with SMTP id k94mr6956016wrc.22.1510571326565;
+        Mon, 13 Nov 2017 03:08:46 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510571326; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Kre51WbUPSY2w5TcrDYFN2GQqaTyDiuj0Za7gUwVKIV1VRVA/jN7O6xIKb94svf2Bo
+         xb7LTi7qG1ROPWVfR7m4QAAzEGkgL9jq1tB+1lv+LSUCwO53v2TVDgMAf2580QbUSHq0
+         fygF+uJfWO93UfJ+gO4GejhyxhYyL7lhNO4unGOeiaaEB3OzVNeU7Dh4XTdOdeY4U9Ud
+         qgxRVGAJjo7LXTiLS02jt96MhNDb+z7C84XTQHnhX3HZekR1LyDFQCQJM25ZmKdGlzXf
+         43cJbuOO8QpfUrldzExIC6qXsTETMFGaT7D8N7QN55RXGA8feG0KNEbwP13Evs0LxTiA
+         I4AA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=user-agent:in-reply-to:content-disposition:mime-version:references
+         :message-id:subject:to:from:date:arc-authentication-results;
+        bh=IwTD7+XOku+sJADtsw5HE2SbdzBv47L/ptOve+k7Pys=;
+        b=NeFflEDs+FVB8HRgOvv/6WyYKEuzC+kwKFCokKIsISepL1Q7dqLBD3fa4cz4PViWZB
+         CKV++yaRMPPnHLw9ol4FSrwqi7p3tRJuhkAXAmv1H2cRe5sdMT30XZMIhIlKVCmPAV8O
+         C+fWReih+nvvZP9MGeci4dY4LAiM+WYSJVIach/ysv0n1rrY+8ql9AdjdTReY90pM8Rh
+         SKOUJ6AlowyhnxfmDbxorLSLj8D1jLrxB2RjBiFOXocwEhsu4X1s9MgvSFLBrcRy/vA7
+         r+LGFtc9yvDFi4h+Eizum8TqglfJW8tizoCphJRNfAo3iP+D4SK0maRPQDnPfut5/Xh8
+         2s3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of aymeric@bleu255.com designates 193.170.194.196 as permitted sender) smtp.mailfrom=aymeric@bleu255.com
+Return-Path: <aymeric@bleu255.com>
+Received: from borok.bleu255.com (borok.bleu255.com. [193.170.194.196])
+        by mx.google.com with ESMTP id i38si12878284wra.279.2017.11.13.03.08.46
+        for <reiter.christoph@gmail.com>;
+        Mon, 13 Nov 2017 03:08:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of aymeric@bleu255.com designates 193.170.194.196 as permitted sender) client-ip=193.170.194.196;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of aymeric@bleu255.com designates 193.170.194.196 as permitted sender) smtp.mailfrom=aymeric@bleu255.com
+Received: from localhost (localhost [127.0.0.1])
+	by borok.bleu255.com (Postfix) with ESMTP id 7499CE009B
+	for <reiter.christoph@gmail.com>; Mon, 13 Nov 2017 12:19:36 +0100 (CET)
+X-Virus-Scanned: Debian amavisd-new at bleu255.com
+Received: from borok.bleu255.com ([127.0.0.1])
+	by localhost (borok.bleu255.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ejYzXWaCTeBQ for <reiter.christoph@gmail.com>;
+	Mon, 13 Nov 2017 12:19:36 +0100 (CET)
+Date: Mon, 13 Nov 2017 12:08:46 +0100
+From: Aymeric Mansoux <aymeric@bleu255.com>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Message-ID: <20171113110846.GF13020@tartorium>
+References: <CAE6_+UdZ3VCVCMebAzmZivZPSLPpPxWh3Q_avsitSq1noi4e+Q@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <CAE6_+UdZ3VCVCMebAzmZivZPSLPpPxWh3Q_avsitSq1noi4e+Q@mail.gmail.com>
+User-Agent: Mutt/1.5.23 (2014-03-12)
+
+Hi Christoph,
+
+Sure, my contribution was insignificant but here is the paperwork.
+(and thanks again for working on this project!)
+
+
+=========
+ 
+I, Aymeric Mansoux, hereby make all my contributions made to Quod Libet
+[1] available under the terms of the "GNU GPL version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+=========
+
+a.
+--
+https://bleu255.com/~aymeric

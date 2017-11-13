@@ -274,3 +274,7 @@ Ryan McGuire
 Ton van den Heuvel
     tonvandenheuvel@gmail.com
     ton@github
+
+Aymeric Mansoux
+    aymeric@goto10.org
+    aymeric@bleu255.com
