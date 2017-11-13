@@ -262,3 +262,15 @@ Dafydd Harries
 
 Fernando “Lalo” Martins
     lalo.martins@gmail.com
+
+Nikolai Prokoschenko
+    nikolai@prokoschenko.de
+    rassie@github
+
+Ryan McGuire
+    ryan@enigmacurry.com
+    EnigmaCurry@github
+
+Ton van den Heuvel
+    tonvandenheuvel@gmail.com
+    ton@github
