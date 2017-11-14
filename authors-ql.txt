@@ -285,3 +285,8 @@ Anthony Bretaudeau
 
 Rémi Vanicat
     vanicat@debian.org
+
+Franz Pletz
+    fpletz@fnordicwalking.de
+    fpletz@franz-pletz.org
+    fpletz@github

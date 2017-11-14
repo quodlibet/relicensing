@@ -1,0 +1,104 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp905636wrc;
+        Mon, 13 Nov 2017 07:28:58 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMZj3jKsLZa+MHx8UC3ft3RMhf0gyvhM2S7SlsZfjV/2Kw4XNZgqoa05M5gm+QbPEElMQkLn
+X-Received: by 10.223.158.136 with SMTP id a8mr3856582wrf.47.1510586938837;
+        Mon, 13 Nov 2017 07:28:58 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510586938; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0KKyiz1D7QMyMxxhorHVEbRt73is1Y8uRFBSdA/Iy4+f5YC2c6eOSXvnoOo3CPOif4
+         SOYS0adyzKUy2UicuTxsQOhnTqqgVEYZvusokQZRFvCNrun3ERlybh7IwCXck61GZVdH
+         si5fzE5l+WNz2Qos+UNZuB6lzqEjBb0HlSzUN1QVh7HpqeDGokpscHmcdhYParv2b0om
+         11Jc9T1yIzc7P2KBFeAqd054Qm7sAlk6XHytevf85pw1KLFjbw0Hs71vq5ialPqo6nH7
+         NW4yrSBPgENnChNBY9wRMSCbFgAdg2EGSVi1CHBux9kK+7+Urv/mmVHlFYI35NJ23F10
+         ZKaQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:references:in-reply-to:message-id:subject:to:from:date
+         :arc-authentication-results;
+        bh=04ohrriqfUbLPrnT0qs8p2PX1TkOf1SUnirB7E9YlvE=;
+        b=pFSH3jE5yX0vrR0U1LrXh3n3h5NruDltJSkZ3xcjSp6HlaF0OTDZYVDSmiYkXUiySi
+         OrFNFBCEbvmow1q1hb3AsPfQmO/6gVkeKWw/Cqgbz/jKxie1Vup0lF9b1kkMmLPEh3jz
+         HA3Oi9JQPu1ZazN21ZEc5RV9Youoc60PCn3XHRPesxpSpO3qyVwlfPILYeMORNDrMB6i
+         +TtPr+CuO6B5UVoBkd99FzNOgI8vYMPn4vyMx35fUW90lTLHankLDmMUYq1tw/hii7MP
+         wOm5bKNZaO7Qi9hGOx6AOhxw5R5ZfAt9w618Z4cxKbDDhWhQz2jQswReaW3iZi7O2V0F
+         e9Mg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of fpletz@fnordicwalking.de designates 2a01:4f8:161:2ffd::f00d as permitted sender) smtp.mailfrom=fpletz@fnordicwalking.de
+Return-Path: <fpletz@fnordicwalking.de>
+Received: from poststelle.bpletza.de (poststelle.bpletza.de. [2a01:4f8:161:2ffd::f00d])
+        by mx.google.com with ESMTPS id m19si12939831wrg.503.2017.11.13.07.28.58
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Mon, 13 Nov 2017 07:28:58 -0800 (PST)
+Received-SPF: pass (google.com: domain of fpletz@fnordicwalking.de designates 2a01:4f8:161:2ffd::f00d as permitted sender) client-ip=2a01:4f8:161:2ffd::f00d;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of fpletz@fnordicwalking.de designates 2a01:4f8:161:2ffd::f00d as permitted sender) smtp.mailfrom=fpletz@fnordicwalking.de
+Received: from yolovo (unknown [IPv6:2a00:cb0:8002:1054:5ee0:c5ff:fe88:9b31])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by poststelle.bpletza.de (Postfix) with ESMTPSA id 0A8A8548B9F
+	for <reiter.christoph@gmail.com>; Mon, 13 Nov 2017 15:28:58 +0000 (UTC)
+Date: Mon, 13 Nov 2017 16:28:49 +0100
+From: Franz Pletz <fpletz@fnordicwalking.de>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+Message-ID: <20171113162849.0007fdb2@yolovo>
+In-Reply-To: <CAE6_+Uer3T16EPUAPQH_8HiLnVfbr3SQ5VODVp-Mjxneg19kvQ@mail.gmail.com>
+References: <CAE6_+Uer3T16EPUAPQH_8HiLnVfbr3SQ5VODVp-Mjxneg19kvQ@mail.gmail.com>
+X-Mailer: Claws Mail 3.15.1-dirty (GTK+ 2.24.31; x86_64-unknown-linux-gnu)
+X-Face: (C&]]j"8g!1JH#PrAAuZTTtl6CAu?S]m6@'20~I5e*Mg%PO6AVO+K|]p:+ov4@ll/sA%_\%[?G:
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ boundary="Sig_/SkDkVsVYB=zNMJ_nt2FVsQe"; protocol="application/pgp-signature"
+
+--Sig_/SkDkVsVYB=zNMJ_nt2FVsQe
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+
+On Sun, 12 Nov 2017 18:35:15 +0100
+Christoph Reiter <reiter.christoph@gmail.com> wrote:
+
+> Hey,
+>=20
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to
+> "GNU GPLv2 or later" for compatibility with GPLv3 and Apache 2.0 and
+> it looks like you contributed to it under the "GNU GPLv2".
+
+Hi Christoph,
+
+thanks for your effort. I'll gladly relicense my contributions under
+GPLv2+. This mail is signed with my well-known GPG key.
+
+Cheers,
+Franz
+
+
+I, Franz Pletz (fpletz), hereby make all my contributions
+made to Quod Libet [1] available under the terms of the "GNU GPL
+version 2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+--Sig_/SkDkVsVYB=zNMJ_nt2FVsQe
+Content-Type: application/pgp-signature
+Content-Description: OpenPGP digital signature
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEijlhXc54rwguI/MDhG/e13kmF7QFAloJujEACgkQhG/e13km
+F7SqVA//XMcT8b1/8qSwJ8wn5No5ysJ03C9bpO326psi6gr34oJDCTBWcmFTSybF
+W23iKnDvWrOPHG9FphCZPkqCzsSueHRA3mOFG0LCt0SFq2UP8xMGP8qM+uzr3r9c
+YY9FJL1adBGYe9a5aqcac4Wjy1Ls/gUr2N1ZWL/EOGV/21kgAkUtJbNhPK9YGt9k
+KiphvyXmCbpTR+H5/t2BNJTM5nKvxxyrClrMnTd46CNIvlFnUoFc3HSsxs+dyDLY
+cSA2USaOgTQSUT/WAaDZ0+WzGl0jF4StmwDlyOs+dhMId/3Auk4G5JZ+bq70fwoo
+lHel+qvDTIyMIc/wdzo9Wa7qs/I7gWXKMZiiEOVjdUhz1VJIq6s9WzrQmcjo4EIP
+7DdYkhpzTyS1k1sXvBTBsYqi/jXip4fSMSyGZ1ou1dkM7t+fPT3fA0VEJvnRu/0m
+f9QYDEDXRNIfil1L3M5/00XE+5HV5Sf8cydbLwtZT1d4ZiTwIu17O3IAkUIdDp+R
+BR3POgAbSPW8uoEduSUXHvaIfB9lBEj+prXsPCnLLolIBl8y/jTxqpDpKszHHdZj
+LXhnp1kjaBRxtSt8qPCtGTQWGs/rMN/NXZuW2Es2s/a/UrmVsZDNg4XmyKxc0ZaF
+xoC6wxvi5vbhljClDFf5d1//btpRfDlCfa6aqw6vBS6dD1exzuA=
+=3eb6
+-----END PGP SIGNATURE-----
+
+--Sig_/SkDkVsVYB=zNMJ_nt2FVsQe--
