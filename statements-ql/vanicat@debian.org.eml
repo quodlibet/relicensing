@@ -1,0 +1,129 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp1649015wrc;
+        Mon, 13 Nov 2017 22:33:49 -0800 (PST)
+X-Received: by 10.223.183.13 with SMTP id l13mr9889589wre.1.1510641229216;
+        Mon, 13 Nov 2017 22:33:49 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510641229; cv=none;
+        d=google.com; s=arc-20160816;
+        b=UufOLskrEMWicVaEM3K7VwZRUwxa/EtQ8fbDn4DRQ1W8cyauKz+ytWJPTXXX6I/IHG
+         OywGMyXEGHMSIVcRJG/pvtNk6vQY4NWhxFcFBvHoxFg5b1dMNeDcana3zxsRie+KBbgZ
+         zJURun7MSmjUEDMkyWk9q+/KfIWBvK2c3bEcYGid0f6t10H6klclSpHulMmXAaBbaKa9
+         omW8AZWe0JB0z3TriBlz4ha2h8d/EYAYsJyDKZysyoB+9u3xjWYlhmm5ehZhFTPjt9Z7
+         omHc3dTfw8BcQXZmjoLdZm8YjNvm8Q/3yjPACKWh55J+HVhvkUEaRbfES13dE/5KkkaU
+         Z06w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:date:references:in-reply-to:subject:to:from
+         :sender:dkim-signature:arc-authentication-results;
+        bh=vtdJOm8bOQ6QdZNaGQ6XtDveAQSErURcOO4V+F0cvs0=;
+        b=uE+ogNT5bzQj1szqgBVxE7Uw6Dn/Qe7TfMtuqUjxmWIZ++zRXGueej6AvISmyafrGC
+         PSL2wx9DMdvqx68S9ZrVNZpG0Oj9NUT51dzz9unIpvtlPWS+DffvZ1j9WDKYswYQOLrI
+         I3B7fTqmpTS61jdWsbSNvw/uL879uIKnpFP1GtLY9xffTLVPoV8syhBdU0Dz0VquLqqU
+         UVJ2xEdTBBTFauBN6TnnLRgLh4ZhNvtR5z1UdZfK64ygxC2p/NC3KhP+zH6eSqJ8yn/A
+         y+wfhUstWeckbCz4k2w8xBwBWEGarWudYQmfv62qck59pbdVF5i/hebt5HPAVMJXPf1D
+         nUeg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HHEymw8r;
+       spf=pass (google.com: domain of remi.vanicat@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=remi.vanicat@gmail.com
+Return-Path: <remi.vanicat@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id f10sor6483331wrg.89.2017.11.13.22.33.48
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Mon, 13 Nov 2017 22:33:49 -0800 (PST)
+Received-SPF: pass (google.com: domain of remi.vanicat@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=HHEymw8r;
+       spf=pass (google.com: domain of remi.vanicat@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=remi.vanicat@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=sender:from:to:subject:in-reply-to:references:date:message-id
+         :mime-version;
+        bh=vtdJOm8bOQ6QdZNaGQ6XtDveAQSErURcOO4V+F0cvs0=;
+        b=HHEymw8rig2qOEgfy08WaRWvM4K+0p3md8Otea9MlOnlyUM2ggFlC0Ve6nF1UZ9zZ6
+         8MLThepmQCqadGjcus8HrZ6WCrjAJJe6Ky53SlKmLQbuLaMqp055chn07eg4g/nEu2pN
+         RLiquexIadlq00lOSG9kjr5XvnqhGRAT8fPr6PVcVRmM5fv39U/jCwo3mMXNzTXaGKMu
+         S1fq7Pg0u7O4V5bv/Zl0P5744AyUh3tX8I7sFPvCEJgj6+FSP6O+HMwwSfw7j/L+codd
+         y6aovnntlxik1tC14DTWBJOSe8ZA8t81ifHDP/mneDToiwcm4XB6fyDQpQbtFt8aXKn6
+         cLzg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:sender:from:to:subject:in-reply-to:references
+         :date:message-id:mime-version;
+        bh=vtdJOm8bOQ6QdZNaGQ6XtDveAQSErURcOO4V+F0cvs0=;
+        b=t36jIOX+EJ5jbVfEiv94VmO041Y1NMfC3azjz8Ufw+RUTCfD5XWwMrQy88+ibNCEtA
+         yn2yrqYjxI8xVuiFV21g1XR0CBcqcBtg7+pvVztpY0y2DacyojIAnaIQpWhS0CgKnjm3
+         3sGsJSCUFrECkoR63rmw63JMN1aad/SCvh+cJ6JfxXeMI6AYxLnYTVeUKRryCuje2AFs
+         SryZ5J0o722Rspw7vsynVmgw19vpjA39Uy6Om+Egga+to2GWt2n4yqP1RWKcSLyu5uKh
+         N/7jMuf5EkN0I/khij54eTuwfZXXEz6J2JZvukbTOVMPmdT3PnaihCp+E7e5hVSMAQZK
+         7hzg==
+X-Gm-Message-State: AJaThX4vJjI6TO0Oofnw9gssly41ghM/hssNINLgfozTeBm/WXvzwxdz
+	lHvfkSj99aVAEDi7lwzfNzelwqlG
+X-Google-Smtp-Source: AGs4zMZcWWgY34eN7t94eAWyAGmAIH4+oG7DW/fYLoarzU1tAPwo6xfGWkiQwn87xp0Rfm8oP9PPKg==
+X-Received: by 10.223.139.8 with SMTP id n8mr7936071wra.225.1510641228357;
+        Mon, 13 Nov 2017 22:33:48 -0800 (PST)
+Return-Path: <remi.vanicat@gmail.com>
+Received: from volesprit (i19-les04-th2-31-36-13-142.sfr.lns.abo.bbox.fr. [31.36.13.142])
+        by smtp.gmail.com with ESMTPSA id x17sm5312147wrg.82.2017.11.13.22.33.46
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-CHACHA20-POLY1305 bits=256/256);
+        Mon, 13 Nov 2017 22:33:46 -0800 (PST)
+Sender: =?UTF-8?Q?R=C3=A9mi_Vanicat?= <remi.vanicat@gmail.com>
+From: =?utf-8?Q?R=C3=A9mi?= Vanicat <vanicat@debian.org>
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+In-Reply-To: <CAE6_+UdixJYj0qF=9Vh+-zyqU8kdTQpzTGHHfRcS4CScsuwkvA@mail.gmail.com>
+References: <CAE6_+UdixJYj0qF=9Vh+-zyqU8kdTQpzTGHHfRcS4CScsuwkvA@mail.gmail.com>
+Date: Tue, 14 Nov 2017 07:33:23 +0100
+Message-ID: <87fu9h2wuk.fsf@volesprit.lot-of-stuff.info>
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha256; protocol="application/pgp-signature"
+
+--=-=-=
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Le 12 novembre 2017, Christoph Reiter a =C3=A9crit:
+
+> Hey,
+
+Hello,
+
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU G=
+PLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like y=
+ou
+> contributed to it under the "GNU GPLv2".
+
+It's my main concern with the GPL: it is not compatible with all free
+software...
+
+
+I, R=C3=A9mi Vanicat (vanicat@debian.org), hereby make all my contributions
+made to Quod Libet [1] available under the terms of the "GNU GPL version
+2 or later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+
+--=-=-=
+Content-Type: application/pgp-signature; name="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE3o+SzRb6Hluhbule0mXAhTHtiu8FAloKjjYACgkQ0mXAhTHt
+iu/QlA//XAgZub3Y/hPGau3igUPIz6CQMyZOSLud72ls73+80p9GfDUQ123N8SSC
+gxYINO//bekDzstjMXIBcA9sVc8zlhqmF5IYt1cO/Dd4VEFsMu1Lt3VY0JJKNeh1
+mzyPtcPrcto9F57BLnTGT9W0ZpnuQJIsfFLWv0PEVIgjnhje7AP3nSsmUZGbNcqi
+X3ov8G3M79nOGV68S1KfFMrrsZU/VQkOtFQ7S/90YD219F7hcZ+WNPCemN4Pn4xA
+fllDSa1jgPw4f+ZueWZQYnY60VCQeahZFG4UoCxmgksXosmOa5yC6LCBAwUcMSOs
+8Pvy4Cl+Ixs6v+ciD7ccFN4gvvzfKIib3Do6LfmzSrQpRzdZmFVMuAZirTflX1oj
+oMLZPRiNiWH3DyJosYfnXhJdseJ3Mj9lWMTBXCIgWSPRrlagE64iGelWJTq7Mqcv
+aGw3mynHAM3lqLOCkDvBzKpc9rRiy5nbey5/MYZWVU4U6gktzQF2e6NWpDCfw4Su
+d/jO7nHWusew8/s8tfwu+JNP2X2GoFzw8jsAq+EnbAlgvTtjK/xZpX4QeNuWAvEl
+mitV9F76BkhB/0NO/tbhTG2zSn9zBAFAC3tUY/NuT/WnRN255SRvlxg2fYnk3t9T
+9OcSqnynXR1zfqmN8WW8uwc2I/xXDvJETtFRG/mkCiNV7kDkJm4=
+=qiYX
+-----END PGP SIGNATURE-----
+--=-=-=--

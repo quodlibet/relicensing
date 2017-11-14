@@ -282,3 +282,6 @@ Aymeric Mansoux
 Anthony Bretaudeau
     broccolalia@gmail.com
     wxcover@users.sourceforge.net
+
+Rémi Vanicat
+    vanicat@debian.org
