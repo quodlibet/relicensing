@@ -290,3 +290,10 @@ Franz Pletz
     fpletz@fnordicwalking.de
     fpletz@franz-pletz.org
     fpletz@github
+
+Eduardo Gonzalez
+    wm.eddie@gmail.com
+    wmeddie@github
+
+""
+    ch.trassl
