@@ -297,3 +297,12 @@ Eduardo Gonzalez
 
 ""
     ch.trassl
+
+Tshepang Lekhonkhobe
+    tshepang@gmail.com
+    tshepang@github
+
+Martijn Pieters
+    mj@zopatista.com
+    martijn@stuartict.nl
+    mjpieters@github

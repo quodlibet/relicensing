@@ -1,0 +1,198 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3467167wrc;
+        Wed, 15 Nov 2017 08:52:26 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMZ8WcNXzbMJkuyLJeJShgxlzn+A80+jxRqihygjYW/iM+qJy/12ZVsPYPbLZwTp/SuLoBZa
+X-Received: by 10.223.138.137 with SMTP id y9mr2840381wry.167.1510764746293;
+        Wed, 15 Nov 2017 08:52:26 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510764746; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YTTqMfLxZ8mtAbrbzKK05RtrNE9MRLqXQdsW3yM4jiMY48avdBY/QuuQYRybxXmbAv
+         W9Tr7OVC9Rlat53yD2OOY5OQaX5OBa95DvqMprPGYff/d96wdeQzAF8g2r341vaGrtBT
+         MzvefssuaIOLfJUMnfzobetJsHcD+UBQ20jH6Beyv1hgn19fcisgJekrawXEkpjXglKs
+         CTGHvC9aRvjtAAIXtdhW5NzmGAUBIgd9XSGTKLRwj7rJVylm/GtC2gAODFkrQjY83LkR
+         UHYRlvhOKSvCMWNW2hgwR8XkMssSBetgqYp01oemPp4lHwvTBTD0ZGSsgpaokgs/g2gP
+         ShhA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=references:to:cc:in-reply-to:date:subject:mime-version:message-id
+         :from:dkim-signature:arc-authentication-results;
+        bh=RT8qFLpQM8ASUajTtVLqTXEjOaHZaQRR8tTD4qYopZU=;
+        b=LfXazULnr4mLrGJqdFEOhk9xM2NwuKVkt+v/bu6CYAa0kLddd0o+Z5ev+sQ17XbqY0
+         dwIg/WlhWPkNLMXqf9BhUXIln4LUNqdWpFsvZKdJIlqSZNo/yyxJ4gh3TPKA3dJMTRl1
+         0eZi69kAQQhx8utgMdDUSoqYNJOZ+WNJBpuGVdORyz0Sg/q3GFrXL4O6GD9iZz9oR+fi
+         3iV/YFYxp0p2TVf7C/JeJGpB/jg0Lp0qbppNJfvGTufbH3nBHdltARe605Pcp6mT+/ZQ
+         4M8QZnSu+mB3/BTIF33KPhaZo7e8OYo5pE1K4343gBkXKftaUiYtEBb73eTVrM34Qrrg
+         Nt3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@zopatista.com header.s=20161229 header.b=46yrFVfk;
+       spf=pass (google.com: domain of mj@zopatista.com designates 84.93.230.235 as permitted sender) smtp.mailfrom=mj@zopatista.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=zopatista.com
+Return-Path: <mj@zopatista.com>
+Received: from avasout07.plus.net (avasout07.plus.net. [84.93.230.235])
+        by mx.google.com with ESMTPS id l5si3462581wrh.161.2017.11.15.08.52.25
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 15 Nov 2017 08:52:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of mj@zopatista.com designates 84.93.230.235 as permitted sender) client-ip=84.93.230.235;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@zopatista.com header.s=20161229 header.b=46yrFVfk;
+       spf=pass (google.com: domain of mj@zopatista.com designates 84.93.230.235 as permitted sender) smtp.mailfrom=mj@zopatista.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=zopatista.com
+Received: from parsel.zopatista.com ([84.92.98.170])
+	by smtp with ESMTP
+	id F0vIe9x8RBcPOF0vJeyljO; Wed, 15 Nov 2017 16:52:25 +0000
+X-CM-Score: 0.00
+X-CNFS-Analysis: v=2.2 cv=Kf6iiUQD c=1 sm=1 tr=0
+ a=SbSv0o+1hXFPCSac9AiX+A==:117 a=SbSv0o+1hXFPCSac9AiX+A==:17
+ a=sC3jslCIGhcA:10 a=NEAV23lmAAAA:8 a=mDV3o1hIAAAA:8 a=pGLkceISAAAA:8
+ a=cP1g0BYRhy4ZsbbZD60A:9 a=CjuIK1q_8ugA:10 a=qdYD4csv_iv0CfFAxuwA:9
+ a=0-2FFmHxbT90FgSO:21 a=_W_S_7VecoQA:10 a=YHGxlAVnypHk4eAqu08A:9
+ a=ONNS8QRKHyMA:10 a=_FVE-zBwftR9WsbkzFJk:22
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=zopatista.com; s=20161229;
+	h=References:To:Cc:In-Reply-To:Date:Subject:Mime-Version:Content-Type:Message-Id:From; bh=RT8qFLpQM8ASUajTtVLqTXEjOaHZaQRR8tTD4qYopZU=;
+	b=46yrFVfktt227kjPwmpkmTV8rb3R/rQZBIgzE+9QKZkvdmQozDaCAhC5qCxAh9Ew6d2r9Ot+zcEORBguWFHTMCtHVBsNUCa+PVIN7DYK0JqDBCvcthzbPN3YEJSAKg81ewkgsu5HNMc05hBWrW2va0XHnSGTNuhbwOmpe4DBiar1ANycxLUghUXIMHqFZs8ObuuyiCLlnHSBY6OnTXkDd9Rudh2HrlyueyXbEXk/gam2Zcb+SkdPsP2xOAwxNHeysgMQBeKNYQ8UZMUn9jOhrqsSfTK8NgaaxVR/mOm3R4GwiNY9iRC0P3JMwvpNLBtKxctbOu0dVhCiXET3pfe1gw==;
+Received: from [176.12.107.132] (helo=[10.101.2.89])
+	by parsel.zopatista.com with esmtpsa (TLS1.2:DHE_RSA_AES_256_CBC_SHA256:256)
+	(Exim 4.80)
+	(envelope-from <mj@zopatista.com>)
+	id 1eF0vB-000687-DD; Wed, 15 Nov 2017 16:52:24 +0000
+From: Martijn Pieters <mj@zopatista.com>
+Message-Id: <45B04F64-1A97-431C-8631-4760296E39ED@zopatista.com>
+Content-Type: multipart/signed;
+ boundary="Apple-Mail=_DFBA334E-2CF9-474A-A1F6-4DCCCE478815";
+ protocol="application/pgp-signature"; micalg=pgp-sha1
+Mime-Version: 1.0 (Mac OS X Mail 10.3 \(3273\))
+Subject: Re: quodlibet GPLv2+ relicensing
+Date: Wed, 15 Nov 2017 16:51:20 +0000
+In-Reply-To: <CAE6_+UeydQ3H2dVJYZ8pErnDh+xPfw0t34-6pwLsRvJ+wUUAmA@mail.gmail.com>
+Cc: martijn@stuartict.nl
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UeydQ3H2dVJYZ8pErnDh+xPfw0t34-6pwLsRvJ+wUUAmA@mail.gmail.com>
+X-Mailer: Apple Mail (2.3273)
+X-Clacks-Overhead: GNU Terry Pratchett
+X-CMAE-Envelope: MS4wfPqnDIL5VjPXbAMGxER7seuE+sd650WtrTf1dAjDpz96vbktZr6ZzFjfZo6J1RnpSNuxQ9ibK4d5dY4ml5QZWpFFSAKZFD22oX+meFMblJpuzaSOHN8l
+ 04u+W0rV/34lDPei4ubiz35xgAHDtSclQUX/SIL62/NAn+si3ZjCHTFyxmGzUlqTXKHxyVlXa778EQ==
+
+
+--Apple-Mail=_DFBA334E-2CF9-474A-A1F6-4DCCCE478815
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_55AA170B-C632-4245-B65D-0641D8D46FCD"
+
+
+--Apple-Mail=_55AA170B-C632-4245-B65D-0641D8D46FCD
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=us-ascii
+
+I, Martijn Pieters (mjpieters), hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or =
+later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet =
+<https://github.com/quodlibet/quodlibet>
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt =
+<https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt>
+
+
+> On 14 Nov 2017, at 16:55, Christoph Reiter =
+<reiter.christoph@gmail.com> wrote:
+>=20
+> Hey,
+>=20
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to =
+"GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks =
+like you
+> contributed to it under the "GNU GPLv2".
+>=20
+> Would you be willing to make your contributions to Quod Libet =
+available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+>=20
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D
+>=20
+> I, <insert-name-or-github-username>, hereby make all my contributions =
+made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or =
+later"
+> [2]
+>=20
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+>=20
+> =3D=3D=3D=3D=3D=3D=3D=3D=3D
+>=20
+> Your response will be published at =
+https://github.com/quodlibet/relicensing
+>=20
+> If you have any objections or questions regarding the relicensing or =
+your
+> contributions please tell me.
+>=20
+> thanks!
+
+
+--Apple-Mail=_55AA170B-C632-4245-B65D-0641D8D46FCD
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=us-ascii
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html =
+charset=3Dus-ascii"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" =
+class=3D""><div class=3D"">I, Martijn Pieters (mjpieters), hereby make =
+all my contributions made to</div>Quod Libet [1] available under the =
+terms of the "GNU GPL version 2 or later"<br class=3D"">[2]<br =
+class=3D""><br class=3D"">[1]&nbsp;<a =
+href=3D"https://github.com/quodlibet/quodlibet" =
+class=3D"">https://github.com/quodlibet/quodlibet</a><br =
+class=3D"">[2]&nbsp;<a =
+href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" =
+class=3D"">https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</a><br =
+class=3D""><br class=3D""><br class=3D""><div><blockquote type=3D"cite" =
+class=3D""><div class=3D"">On 14 Nov 2017, at 16:55, Christoph Reiter =
+&lt;<a href=3D"mailto:reiter.christoph@gmail.com" =
+class=3D"">reiter.christoph@gmail.com</a>&gt; wrote:</div><br =
+class=3D"Apple-interchange-newline"><div class=3D""><div =
+class=3D"">Hey,<br class=3D""><br class=3D"">I'm trying to change the =
+license of Quod Libet from "GNU GPLv2" to "GNU GPLv2<br class=3D"">or =
+later" for compatibility with GPLv3 and Apache 2.0 and it looks like =
+you<br class=3D"">contributed to it under the "GNU GPLv2".<br =
+class=3D""><br class=3D"">Would you be willing to make your =
+contributions to Quod Libet available under<br class=3D"">the "GNU GPLv2 =
+or later"? If yes, please respond with the following:<br class=3D""><br =
+class=3D"">=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D""><br class=3D"">I, =
+&lt;insert-name-or-github-username&gt;, hereby make all my contributions =
+made to<br class=3D"">Quod Libet [1] available under the terms of the =
+"GNU GPL version 2 or later"<br class=3D"">[2]<br class=3D""><br =
+class=3D"">[1] <a href=3D"https://github.com/quodlibet/quodlibet" =
+class=3D"">https://github.com/quodlibet/quodlibet</a><br class=3D"">[2] =
+<a href=3D"https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" =
+class=3D"">https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</a><br =
+class=3D""><br class=3D"">=3D=3D=3D=3D=3D=3D=3D=3D=3D<br class=3D""><br =
+class=3D"">Your response will be published at <a =
+href=3D"https://github.com/quodlibet/relicensing" =
+class=3D"">https://github.com/quodlibet/relicensing</a><br class=3D""><br =
+class=3D"">If you have any objections or questions regarding the =
+relicensing or your<br class=3D"">contributions please tell me.<br =
+class=3D""><br class=3D"">thanks!<br =
+class=3D""></div></div></blockquote></div><br class=3D""></body></html>=
+
+--Apple-Mail=_55AA170B-C632-4245-B65D-0641D8D46FCD--
+
+--Apple-Mail=_DFBA334E-2CF9-474A-A1F6-4DCCCE478815
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename=signature.asc
+Content-Type: application/pgp-signature;
+	name=signature.asc
+Content-Description: Message signed with OpenPGP
+
+-----BEGIN PGP SIGNATURE-----
+
+iF0EARECAB0WIQRwN3qI4tVQB3KP3IHfFqPYY6+A/QUCWgxwiAAKCRDfFqPYY6+A
+/dMiAKDIMeHp61tQuToiXHS3kZugUyVUVwCdHljQQdkYe6Md8dHfodbtlECiEOo=
+=mal3
+-----END PGP SIGNATURE-----
+
+--Apple-Mail=_DFBA334E-2CF9-474A-A1F6-4DCCCE478815--

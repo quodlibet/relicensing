@@ -1,0 +1,81 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.207 with SMTP id e15csp3839840wrc;
+        Wed, 15 Nov 2017 15:22:33 -0800 (PST)
+X-Received: by 10.36.111.2 with SMTP id x2mr101405itb.31.1510788153658;
+        Wed, 15 Nov 2017 15:22:33 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1510788153; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HJ1QWAu1tf3JAdsFG/U8fbChqQ2hHhkaqHMVKUr1xXT4J9hXLv5xAGUOhp9f/vQWVF
+         13OxXah2zsAEEQrboTpNxJ6eVB8+YEln8k9sUpsvqK8Oeu636Oo5u2hhGoV7Zi/Ag17c
+         LglYGBcASPfqZjDadVo2VJsAdMon+UM5lBALZhra9YDmQlg4eoRJM6ueQpPvHPvLTrLf
+         vwgrECJNEhzTdO5nRNNYuHsPZcBlbJcpkCzyv4ZZvaM39VEcWhQuJotTCWNCAtzKPHT+
+         KtyVT/rGAN50WSDhnkORrMKCg2LWCaehR5XsqTc0/nhiL7Mw4aPYysA3cX9tJ/vQr20y
+         02BA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=3+0CoblyhuBOv6GKvZHiDpTwy55rSF2+pN6ETAbzr60=;
+        b=PSVBE06lgJv2uyRA+3F5ASAlteRwXJ8GLoiq++R4t19YUE+zvZpgpLNMWYCu8/SeGd
+         phO9FgrS59gJwUR5WBQObnsCvkQV3gYgAkvxMWCRg+cqQ3xPKNZ1nWA2VT1mCmHkTviy
+         m4SUG8kbgWcrtXhl6j5OVnx7lET5n0pE9AUb0RFc0WSrmy/gi+erUqxg3VCgwIOmR36E
+         v8vUh6DnDyLqN33/Z+iaE9yfCCvOt6/Gjkgq3bXfvaXu5ExvvCbttlozC6gIyMENW84H
+         SmLP05pXv84xSdt79Oun5EsPzRtfFJgJjfwDjJ9ioojiMpqFVA10Z09/rhMjiXfVW+j1
+         xZMA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=jsj96YDI;
+       spf=pass (google.com: domain of tshepang@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=tshepang@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <tshepang@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e87sor9815176ioi.328.2017.11.15.15.22.33
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Wed, 15 Nov 2017 15:22:33 -0800 (PST)
+Received-SPF: pass (google.com: domain of tshepang@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=jsj96YDI;
+       spf=pass (google.com: domain of tshepang@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=tshepang@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=3+0CoblyhuBOv6GKvZHiDpTwy55rSF2+pN6ETAbzr60=;
+        b=jsj96YDImzzf0sGGrXT1fuWrfmIWUGikMJdzbnErfO8pcEmIf7XYHxEOK5qHqgyS5i
+         6yCHCPPxNf+JMPl0NjN+2RMy8lzlxcRyZ4BZgHpnOk5MvFK3nepvmZmkMyQYZAH4AI6e
+         YptGAZcnIa+NaRS1lR3jj7A9BztMJOh5lXorxc0IUr93/ka48Ca++ajueQw+9VnmrUHy
+         elDLb8iS/9o/pAcKx3cp7kkJ9iEfTFhi1idwpsST/rPkqjFlz/cFKTTISElRY3vOZxQM
+         fw6yDPuW45PksriM8UudVrW/1WiXTfLMJVoKaTOl/STk8RcOzFOQrxBCrsaeWa9oVe+T
+         Yq5g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=3+0CoblyhuBOv6GKvZHiDpTwy55rSF2+pN6ETAbzr60=;
+        b=DoDyJtaifoD2RJjxLcftgwD/kTBRZIr3n+504ZFikAZBUbnRxnCBTTPECb1Q9MxKfv
+         D3NX7O7h0JqZweDdKcrZh+QSgFqqSbOev4/W8/0ytVtr7XeD4j8KO/fzw2sy7L1HH7xA
+         0v12+KSlGsUAlCZtE3JggmnLC9PUrtoP0It61PyHcPebjjv4ZWLv8kLs7BrFGDpKqL+0
+         9a7ayxH2APXLt6WnEf7HlgHH9BB///VXV4SsaM1XN5DSI/5/tf6RsszI9uAesPWrhTk2
+         t/OSWJf1fzBQGDzUA4/Ob3FSf9Dfk+uFd6BteSI4ZacA+XGDLJmZyv0aAEpm4+wdQLL/
+         3JIA==
+X-Gm-Message-State: AJaThX78MazTdBXHGTTZ6im7hxnOxkC3k7CZz1qZkmsybAoMwwN7fBp3
+	p9bDmqiZJ69mw9Fitix6bJSDuUcbUyXNQen5A0NnRg==
+X-Google-Smtp-Source: AGs4zMapGMnMCUcgSCh+dY6hKCda6RinI/LRdBX5ul5plgLxrlHqiALYrddTwQ8g8+3Rwl8s7Oqx5Zr5goPFiDdbNFY=
+X-Received: by 10.107.47.17 with SMTP id j17mr19524892ioo.96.1510788151850;
+ Wed, 15 Nov 2017 15:22:31 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.79.141.151 with HTTP; Wed, 15 Nov 2017 15:22:11 -0800 (PST)
+In-Reply-To: <CAE6_+UfA7cTLWHBieeHjbVwMnoXBn7EqMtdHCZRPmsaA2FM99Q@mail.gmail.com>
+References: <CAE6_+UfA7cTLWHBieeHjbVwMnoXBn7EqMtdHCZRPmsaA2FM99Q@mail.gmail.com>
+From: Tshepang Lekhonkhobe <tshepang@gmail.com>
+Date: Thu, 16 Nov 2017 01:22:11 +0200
+Message-ID: <CAA77j2AhqqYGv-NBxADTzwd=cGGCtxZAJGdgDhoTc7EwpNaXPg@mail.gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+I, tshepang, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+[2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
