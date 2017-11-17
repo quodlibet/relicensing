@@ -306,3 +306,8 @@ Martijn Pieters
     mj@zopatista.com
     martijn@stuartict.nl
     mjpieters@github
+
+David Riebenbauer
+    davrieb@gmail.com
+    davrieb@liegesta.at
+    davrieb@github
