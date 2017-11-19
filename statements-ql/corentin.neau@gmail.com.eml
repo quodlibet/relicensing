@@ -1,0 +1,132 @@
+Delivered-To: reiter.christoph@gmail.com
+Received: by 10.223.155.200 with SMTP id e8csp2670220wrc;
+        Sun, 19 Nov 2017 04:07:58 -0800 (PST)
+X-Received: by 10.80.215.218 with SMTP id m26mr13577617edj.27.1511093278711;
+        Sun, 19 Nov 2017 04:07:58 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1511093278; cv=none;
+        d=google.com; s=arc-20160816;
+        b=R2/LvY1LDd+TpqmSKHuC8lQg3W937wGGUchzMUlj+jrB9QuKYbYZVFy9iBiTi3ksee
+         fdW9xJCBNNUDecEEqFHT3QIDR6aqR0genON6zol1/cIVdJSjxj8M954v8J8JR0B4WuKy
+         70W18XsYD7R17+sNyyk9x7R1Ot1aGyXtLSa2xFknnsqwMG1fPCLN38uYdttoiXjDNjLc
+         I+WmbfQawLAtBJIZ30rm1Ytqu3bx8/Oo8TF6SjRBAFGfe1FH3Cynp/HNnAdm2xADFbir
+         xmawNaRrTDebp5jdYYwMgjrCVoVlb20RIC7jj/6OPzyZqTiRZy6L2ymvdVvHrOj4jVDi
+         iQkQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:content-language:in-reply-to:mime-version
+         :user-agent:date:message-id:references:to:subject:from
+         :dkim-signature:arc-authentication-results;
+        bh=TYqsyOyF6YHPfhwu0EUgbYasH+BoCMeO/QhJkTTfBKw=;
+        b=OS8pWY4EVQHcIDCN79hhso7j1/b0D0NlvRvkY4JPEBgQtTXx48ZZ8bJkgN7a3PuL2C
+         3e7o6yRLOZM2Inz4THtU7M+oKOJBptwVp/H1nV6lJxEYWvNJOKqj0GlKtvg7qW9TSMoV
+         3uubZjdGMm94CtiUGMOZErl3XHU3+0LhSlgumGko/Hc6k8Fv8ftcbB0bHjT00n/Wg/2L
+         +Fg3BR1ozpao5YN4cGnZAfEsTf5wXczuSG6cKSBLDTBFHz0s/IJYmGFw3uYlhqflRfYK
+         L7GL/cod0TGcPD/o/gtZDaQxCD8xISUoGp/n639xN297yjgv/eKFAz0fBM6MPMiKVcoc
+         kqmw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=c7peFO1a;
+       spf=pass (google.com: domain of corentin.neau@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=corentin.neau@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Return-Path: <corentin.neau@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id t19sor336744edh.29.2017.11.19.04.07.58
+        for <reiter.christoph@gmail.com>
+        (Google Transport Security);
+        Sun, 19 Nov 2017 04:07:58 -0800 (PST)
+Received-SPF: pass (google.com: domain of corentin.neau@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=c7peFO1a;
+       spf=pass (google.com: domain of corentin.neau@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=corentin.neau@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=from:subject:to:references:message-id:date:user-agent:mime-version
+         :in-reply-to:content-language:content-transfer-encoding;
+        bh=TYqsyOyF6YHPfhwu0EUgbYasH+BoCMeO/QhJkTTfBKw=;
+        b=c7peFO1arU9SqsRov2dsjX5VFSvK8Mx4QqDxjfxrpmahXGZ9I5AYjLVHgmRHZnzXDg
+         So0qwAwCWMERitRhC4uVIuPO1JERaRn1F8vWxAFciH16EMdNfJgooWEUPiO+OGN+DI3T
+         j0+5Ymjz5huGfGNUYRK4lyHNeaSWWt5MlMwac2eKzlUftIfoF7xMwqaRDf6MwfMaUJhy
+         CizZSbPwedrJ55GwTBibXUQuqA4J9ZMzAFLKLAxdEJ411B/I19JgLCJCZwBP60JE63qJ
+         NpRsa4aGt+IZp4R+HvVMaag9fwPv8l0hVaSVH18h2mZffPu/P6ofO8fFS8h83pYOgNDa
+         08gA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:subject:to:references:message-id:date
+         :user-agent:mime-version:in-reply-to:content-language
+         :content-transfer-encoding;
+        bh=TYqsyOyF6YHPfhwu0EUgbYasH+BoCMeO/QhJkTTfBKw=;
+        b=R7aQuRTgD4O1lViSwISt5aSV1y0RWlScEP7Zg4f3z//sKCS/d+sZh5mDw2ovksznWN
+         nfA8VNJnlhu0GrBjJJV0euCSCrqGHt+BsqSll19xpV7pfxK9alXmCnopxsB3QP4HAIUr
+         XsvgYpbSiplHyYov4PKtz9p81tcfV5NwbLrpzPDKXXhX/KRDpdcKt/rsrzTqwm3Zruoq
+         x6WwcHzmJHzdQYx8mp3ee7P5L1MTcHGFfldlrROpb1i5FaUmGJK0ZluY85BQHbWgO1J5
+         cy5uf+fz7820LTQbkGLf1RASZum7m41TRovDLyn3n49OrpXfSNftD2Og/Bz6YmgzF1dI
+         43BA==
+X-Gm-Message-State: AJaThX7PG1D4C+i5Ycuf7LQAl+74aPI18KaB7p1a7UdQaqfmYY+rlEN6
+	eR0B+J9ZrDBWFjxSZvro44RF5nnJ
+X-Google-Smtp-Source: AGs4zMbNWTGz0CvEuos/OkToWAOR61CF9cpLrUiOkA55N/xSwq4d/o72wp1STwBKxvFczQQeew0w2A==
+X-Received: by 10.80.204.72 with SMTP id n8mr8427859edi.64.1511093278163;
+        Sun, 19 Nov 2017 04:07:58 -0800 (PST)
+Return-Path: <corentin.neau@gmail.com>
+Received: from [192.168.1.65] (131.160.159.143.dyn.plus.net. [143.159.160.131])
+        by smtp.gmail.com with ESMTPSA id v23sm535424eda.63.2017.11.19.04.07.56
+        for <reiter.christoph@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 19 Nov 2017 04:07:57 -0800 (PST)
+From: =?UTF-8?Q?Corentin_N=c3=a9au?= <corentin.neau@gmail.com>
+Subject: Re: quodlibet GPLv2+ relicensing
+To: Christoph Reiter <reiter.christoph@gmail.com>
+References: <CAE6_+UfLVcSVgVzxU=ELew7X17Hysvj82ZiWV7Rnb1ca2R0Cfg@mail.gmail.com>
+Message-ID: <54ecaa7e-e5df-9d8c-aa69-fd96192a41e5@gmail.com>
+Date: Sun, 19 Nov 2017 12:07:56 +0000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ Thunderbird/52.4.0
+MIME-Version: 1.0
+In-Reply-To: <CAE6_+UfLVcSVgVzxU=ELew7X17Hysvj82ZiWV7Rnb1ca2R0Cfg@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: en-US
+Content-Transfer-Encoding: 8bit
+
+Hi Christoph,
+
+Thanks for the heads-up, and for taking care of this.
+
+I, Corentin Néau, hereby make all my contributions made to
+Quod Libet [1] available under the terms of the "GNU GPL version 2 or 
+later" [2]
+
+[1] https://github.com/quodlibet/quodlibet
+[2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+Out of interest, why is compatibility with GPLv3 and Apache 2.0 needed 
+or relevant at this point? Or is that explained somewhere, in case that 
+could prevent you from having to explain it, possibly for the n-th time? :)
+
+Thanks!
+
+On 08/11/17 18:57, Christoph Reiter wrote:
+> Hey,
+> 
+> I'm trying to change the license of Quod Libet from "GNU GPLv2" to "GNU GPLv2
+> or later" for compatibility with GPLv3 and Apache 2.0 and it looks like you
+> contributed to it under the "GNU GPLv2".
+> 
+> Would you be willing to make your contributions to Quod Libet available under
+> the "GNU GPLv2 or later"? If yes, please respond with the following:
+> 
+> =========
+> 
+> I, <insert-name-or-github-username>, hereby make all my contributions made to
+> Quod Libet [1] available under the terms of the "GNU GPL version 2 or later"
+> [2]
+> 
+> [1] https://github.com/quodlibet/quodlibet
+> [2] https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+> 
+> =========
+> 
+> Your response will be published at https://github.com/quodlibet/relicensing
+> 
+> If you have any objections or questions regarding the relicensing or your
+> contributions please tell me.
+> 
+> thanks!
+> 

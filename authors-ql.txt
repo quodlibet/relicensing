@@ -311,3 +311,7 @@ David Riebenbauer
     davrieb@gmail.com
     davrieb@liegesta.at
     davrieb@github
+
+Corentin Néau
+    corentin.neau@gmail.com
+    weyfonk@github
