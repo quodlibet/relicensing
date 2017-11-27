@@ -315,3 +315,8 @@ David Riebenbauer
 Corentin Néau
     corentin.neau@gmail.com
     weyfonk@github
+
+David Kågedal
+    david@kagedal.org
+    davidk@lysator.liu.se
+    dkagedal@github
