@@ -1,0 +1,73 @@
+Relicensing quodlibet from GPLv2 to GPLv2+
+------------------------------------------
+
+I've contacted everyone I found from the git blame/log, credited in the commit
+logs, credited in the copyright header and credited in the NEWS file.
+
+The following credits I either couldn't find contact information for, didn't
+contact because it was not needed or I contacted them and they didn't respond.
+Luckily they are all from old contributions (pre github/google code) which no
+longer exist. See each entry for details:
+
+'absoluteflatness'
+    35fb3758d921dabf152af6306f7cb159a9f9faee: code no longer exists
+
+aries.roman
+    https://github.com/quodlibet/quodlibet/issues/776
+    e3e604c1213d4fc39a6d3a7509896562cf1ad0f1:
+        The commited patch was a different one to the submitted one.
+
+Decklin Foster: decklin@red-bean.com / decklin@red-bean.org
+    0f988169c1348f13d38b1daf675e0a1a14443ebe: plugin rewritten since
+    7022537d7202fd365937d9553d138d61360e6198: code gone
+    421ad32d88cf742ca24a3c0c74dc72e1a9e4f64f: plugin rewritten since
+    3d0269f7cd79449ee748df730c59379227b31722: tiny change
+
+Jeremy Cantrell: jmcantrell@gmail.com / jmcantrell@github
+    Noted in albumart.py
+    The plugin was rewritten in 2009 with commit
+    I've removed the name form the file
+    3bcdd56f52215ec779787fa584babf68362f5fa8
+
+jinkstjb
+    a00c2cd652c875f76e42d0390062751c571af96e: code no longer exists
+
+Josh Lee
+    3243c7cc0dbcbf47825ed782e6b86a7a31383d19: tiny change
+    caa21e18ef9ea3b140ff6c86a7919af6207d23eb: tiny change
+
+Josh Triplett
+    9cf72eb2c00f343168581f64791b69cec5ee6428: code no longer exists
+
+Longpoke@gmail.com
+    https://github.com/quodlibet/quodlibet/issues/952: tiny change
+
+Martin Bergström
+    1b50b6d9ea8f0f40c58352e291d4b2d6692f645c: tiny change
+
+MikeiLL
+    7041c6ff83011d369b5cca052c4e0a20bb3ec7f7: the text was reworded by nick
+
+Mirco Müller
+    77bd1b6ea61e0e622df9815f05336e1cd56e7cb8: code no longer exists
+
+Olivier Gambier
+    47cc8a5f6291c8d50daa57c9defcab4fbf5db43a: the plugin no longer exists
+
+Ryan Murray
+    2fcf012d6b30dbdbe373e5155521a100c3c914f6: code no longer exists
+
+sciyoshi
+    7410fe8f067a153a318db223287d8c84affd7c72: code no longer exists
+
+skamp
+    0877c112818d3a1aa1ee34da528f8766e752c1b4: code no longer exists
+
+textshell
+    e451fd2318e136eb251ee64b3b6e4a26b1c67f61: code no longer exists
+
+wrobell
+    451319ee9aae00e249622712d7441a065d5416e3: code no longer exists
+
+Zack Weinberg
+    81b06f8c224022ca897743e07e0701dd1641d063: code no longer exists
